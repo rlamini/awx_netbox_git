@@ -11,8 +11,10 @@ Complete installation guides for Docker, NetBox v4.4.7, and AWX with Docker Comp
 ### 📦 NetBox v4.4.7 Installation / Installation NetBox v4.4.7
 - **[NETBOX_DOCKER_SETUP.md](NETBOX_DOCKER_SETUP.md)** - Guide d'installation et configuration de NetBox v4.4.7 / NetBox v4.4.7 installation and configuration guide
 - **[NETBOX_V4_FEATURES.md](NETBOX_V4_FEATURES.md)** - Nouveautés et fonctionnalités de NetBox v4.x / NetBox v4.x features and what's new
+- **[NETBOX_INTERNET_ACCESS.md](NETBOX_INTERNET_ACCESS.md)** - 🌐 Exposer NetBox sur Internet avec Nginx et SSL / Expose NetBox to Internet with Nginx and SSL
 - **[docker-compose.yml](docker-compose.yml)** - Fichier Docker Compose complet pour NetBox / Complete Docker Compose file for NetBox
 - **[env.example](env.example)** - Exemple de configuration d'environnement / Environment configuration example
+- **[nginx-configs/](nginx-configs/)** - Configurations Nginx prêtes à l'emploi / Ready-to-use Nginx configurations
 
 ## 🚀 Quick Start / Démarrage Rapide
 
@@ -48,6 +50,36 @@ docker compose up -d
 ### 3. Default Credentials / Identifiants par défaut
 - Username / Utilisateur: `admin`
 - Password / Mot de passe: (as configured in .env / tel que configuré dans .env)
+
+## 🌐 Internet Access / Accès Internet
+
+### Pour VPS Cloud / For Cloud VPS
+
+Si vous voulez accéder à NetBox depuis Internet (VPS cloud):
+If you want to access NetBox from the Internet (cloud VPS):
+
+```bash
+# Installation automatique avec Nginx + SSL
+sudo bash setup-nginx-ssl.sh
+
+# Ou suivez le guide détaillé
+# Or follow the detailed guide
+cat NETBOX_INTERNET_ACCESS.md
+```
+
+**Ce que vous obtenez / What you get:**
+- ✅ Nginx reverse proxy configuré / Nginx reverse proxy configured
+- ✅ Certificat SSL gratuit (Let's Encrypt) / Free SSL certificate (Let's Encrypt)
+- ✅ HTTPS sécurisé avec redirection HTTP / Secure HTTPS with HTTP redirect
+- ✅ Pare-feu configuré / Firewall configured
+- ✅ Headers de sécurité / Security headers
+- ✅ Renouvellement automatique SSL / Automatic SSL renewal
+- ✅ Protection Fail2Ban (optionnel) / Fail2Ban protection (optional)
+
+**Prérequis / Prerequisites:**
+- Nom de domaine pointant vers votre VPS / Domain name pointing to your VPS
+- Ports 80 et 443 ouverts / Ports 80 and 443 open
+- Adresse email pour Let's Encrypt / Email address for Let's Encrypt
 
 ## 📋 Features / Fonctionnalités
 
