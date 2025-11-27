@@ -1,0 +1,232 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: netbox-postgres
+    environment:
+      POSTGRES_DB: ${DB_NAME:-netbox}
+      POSTGRES_USER: ${DB_USER:-netbox}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-netbox123}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - netbox-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-netbox}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: netbox-redis
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - netbox-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis Cache (for caching)
+  redis-cache:
+    image: redis:7-alpine
+    container_name: netbox-redis-cache
+    command: redis-server --maxmemory 512mb --maxmemory-policy allkeys-lru
+    restart: unless-stopped
+    networks:
+      - netbox-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # NetBox Application
+  netbox:
+    image: netboxcommunity/netbox:${NETBOX_VERSION:-latest}
+    container_name: netbox
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      redis-cache:
+        condition: service_healthy
+    environment:
+      # Database Configuration
+      DB_HOST: postgres
+      DB_NAME: ${DB_NAME:-netbox}
+      DB_USER: ${DB_USER:-netbox}
+      DB_PASSWORD: ${DB_PASSWORD:-netbox123}
+      DB_PORT: 5432
+
+      # Redis Configuration
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_DATABASE: 0
+      REDIS_CACHE_HOST: redis-cache
+      REDIS_CACHE_PORT: 6379
+      REDIS_CACHE_DATABASE: 0
+
+      # NetBox Configuration
+      SECRET_KEY: ${SECRET_KEY:-changeme_please_use_50_random_characters_minimum}
+      ALLOWED_HOSTS: ${ALLOWED_HOSTS:-*}
+      CORS_ORIGIN_ALLOW_ALL: ${CORS_ORIGIN_ALLOW_ALL:-True}
+
+      # Superuser Configuration (will be created on first run)
+      SUPERUSER_NAME: ${SUPERUSER_NAME:-admin}
+      SUPERUSER_EMAIL: ${SUPERUSER_EMAIL:-admin@example.com}
+      SUPERUSER_PASSWORD: ${SUPERUSER_PASSWORD:-admin}
+      SUPERUSER_API_TOKEN: ${SUPERUSER_API_TOKEN:-}
+
+      # Email Configuration (optional)
+      EMAIL_SERVER: ${EMAIL_SERVER:-localhost}
+      EMAIL_PORT: ${EMAIL_PORT:-25}
+      EMAIL_USERNAME: ${EMAIL_USERNAME:-}
+      EMAIL_PASSWORD: ${EMAIL_PASSWORD:-}
+      EMAIL_USE_SSL: ${EMAIL_USE_SSL:-False}
+      EMAIL_USE_TLS: ${EMAIL_USE_TLS:-False}
+      EMAIL_TIMEOUT: ${EMAIL_TIMEOUT:-10}
+      EMAIL_FROM: ${EMAIL_FROM:-netbox@example.com}
+
+      # Misc Configuration
+      SKIP_SUPERUSER: ${SKIP_SUPERUSER:-false}
+      SKIP_STARTUP_SCRIPTS: ${SKIP_STARTUP_SCRIPTS:-false}
+      WEBHOOKS_ENABLED: ${WEBHOOKS_ENABLED:-true}
+
+      # Metrics
+      METRICS_ENABLED: ${METRICS_ENABLED:-false}
+
+      # Time Zone
+      TIME_ZONE: ${TIME_ZONE:-UTC}
+
+      # Media and Reports
+      MEDIA_ROOT: /opt/netbox/netbox/media
+      REPORTS_ROOT: /opt/netbox/netbox/reports
+      SCRIPTS_ROOT: /opt/netbox/netbox/scripts
+    volumes:
+      - netbox-media:/opt/netbox/netbox/media
+      - netbox-reports:/opt/netbox/netbox/reports
+      - netbox-scripts:/opt/netbox/netbox/scripts
+    ports:
+      - "${NETBOX_PORT:-8000}:8080"
+    restart: unless-stopped
+    networks:
+      - netbox-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+
+  # NetBox Worker (for background tasks)
+  netbox-worker:
+    image: netboxcommunity/netbox:${NETBOX_VERSION:-latest}
+    container_name: netbox-worker
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      netbox:
+        condition: service_started
+    command: /opt/netbox/venv/bin/python /opt/netbox/netbox/manage.py rqworker
+    environment:
+      # Database Configuration
+      DB_HOST: postgres
+      DB_NAME: ${DB_NAME:-netbox}
+      DB_USER: ${DB_USER:-netbox}
+      DB_PASSWORD: ${DB_PASSWORD:-netbox123}
+      DB_PORT: 5432
+
+      # Redis Configuration
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_DATABASE: 0
+      REDIS_CACHE_HOST: redis-cache
+      REDIS_CACHE_PORT: 6379
+      REDIS_CACHE_DATABASE: 0
+
+      # NetBox Configuration
+      SECRET_KEY: ${SECRET_KEY:-changeme_please_use_50_random_characters_minimum}
+
+      # Media and Reports
+      MEDIA_ROOT: /opt/netbox/netbox/media
+      REPORTS_ROOT: /opt/netbox/netbox/reports
+      SCRIPTS_ROOT: /opt/netbox/netbox/scripts
+    volumes:
+      - netbox-media:/opt/netbox/netbox/media
+      - netbox-reports:/opt/netbox/netbox/reports
+      - netbox-scripts:/opt/netbox/netbox/scripts
+    restart: unless-stopped
+    networks:
+      - netbox-network
+
+  # NetBox Housekeeping (periodic maintenance tasks)
+  netbox-housekeeping:
+    image: netboxcommunity/netbox:${NETBOX_VERSION:-latest}
+    container_name: netbox-housekeeping
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      netbox:
+        condition: service_started
+    command: /opt/netbox/housekeeping.sh
+    environment:
+      # Database Configuration
+      DB_HOST: postgres
+      DB_NAME: ${DB_NAME:-netbox}
+      DB_USER: ${DB_USER:-netbox}
+      DB_PASSWORD: ${DB_PASSWORD:-netbox123}
+      DB_PORT: 5432
+
+      # Redis Configuration
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_DATABASE: 0
+      REDIS_CACHE_HOST: redis-cache
+      REDIS_CACHE_PORT: 6379
+      REDIS_CACHE_DATABASE: 0
+
+      # NetBox Configuration
+      SECRET_KEY: ${SECRET_KEY:-changeme_please_use_50_random_characters_minimum}
+
+      # Media and Reports
+      MEDIA_ROOT: /opt/netbox/netbox/media
+      REPORTS_ROOT: /opt/netbox/netbox/reports
+      SCRIPTS_ROOT: /opt/netbox/netbox/scripts
+    volumes:
+      - netbox-media:/opt/netbox/netbox/media
+      - netbox-reports:/opt/netbox/netbox/reports
+      - netbox-scripts:/opt/netbox/netbox/scripts
+    restart: unless-stopped
+    networks:
+      - netbox-network
+
+networks:
+  netbox-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
+    driver: local
+  redis-data:
+    driver: local
+  netbox-media:
+    driver: local
+  netbox-reports:
+    driver: local
+  netbox-scripts:
+    driver: local
