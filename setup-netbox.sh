@@ -16,7 +16,7 @@ NC='\033[0m' # No Color
 
 echo -e "${BLUE}"
 echo "╔════════════════════════════════════════╗"
-echo "║   NetBox Docker Setup Script          ║"
+echo "║  NetBox v4.4.7 Docker Setup Script    ║"
 echo "╚════════════════════════════════════════╝"
 echo -e "${NC}"
 

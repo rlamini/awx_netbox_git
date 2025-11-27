@@ -1,5 +1,11 @@
 version: '3.8'
 
+# ============================================
+# NetBox v4.x Docker Compose Configuration
+# ============================================
+# This docker-compose file deploys NetBox v4.x with all required services
+# NetBox v4.x includes GraphQL API, modern UI, and enhanced features
+
 services:
   # PostgreSQL Database
   postgres:

@@ -1,4 +1,4 @@
-# Guide d'Installation NetBox avec Docker / NetBox Docker Installation Guide
+# Guide d'Installation NetBox v4.4.7 avec Docker / NetBox v4.4.7 Docker Installation Guide
 
 ## 📋 Qu'est-ce que NetBox? / What is NetBox?
 
@@ -10,6 +10,22 @@ NetBox est une application web open-source de gestion d'infrastructure réseau e
 - Et bien plus encore!
 
 NetBox is an open-source web application for network infrastructure management and DCIM. It helps document and manage networks, racks, equipment, connections, circuits, and more.
+
+## 🆕 NetBox v4.4.7 - Nouveautés / What's New
+
+NetBox v4.4.7 est la dernière version stable (2025-11) avec des améliorations majeures:
+- 🚀 Interface utilisateur modernisée et plus rapide
+- 📊 Nouveaux tableaux de bord et visualisations
+- 🔌 API REST améliorée avec support GraphQL
+- 🔒 Sécurité renforcée et authentification avancée (OAuth2, SAML)
+- 📦 Gestion des modules et plugins améliorée
+- 💾 Meilleures performances de base de données (2-3x plus rapide)
+- 🌐 Support IPv6 complet avec dual-stack
+- 🐍 Support Python 3.8 à 3.12
+
+NetBox v4.4.7 is the latest stable release (2025-11) with major improvements including modernized UI, enhanced dashboards, improved REST API with GraphQL support, advanced security (OAuth2, SAML), better plugin management, 2-3x faster database performance, full IPv6 with dual-stack support, and Python 3.8-3.12 support.
+
+📖 **Pour en savoir plus / Learn more**: Voir [NETBOX_V4_FEATURES.md](NETBOX_V4_FEATURES.md) pour une description détaillée de toutes les fonctionnalités / See [NETBOX_V4_FEATURES.md](NETBOX_V4_FEATURES.md) for detailed features.
 
 ## 🔧 Prérequis / Prerequisites
 

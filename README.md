@@ -1,15 +1,16 @@
-# AWX & NetBox Docker Installation Guide
+# AWX & NetBox v4.4.7 Docker Installation Guide
 
-Guides d'installation complètes pour Docker, NetBox et AWX avec Docker Compose.
-Complete installation guides for Docker, NetBox, and AWX with Docker Compose.
+Guides d'installation complètes pour Docker, NetBox v4.4.7 et AWX avec Docker Compose.
+Complete installation guides for Docker, NetBox v4.4.7, and AWX with Docker Compose.
 
 ## 📚 Documentation / Documentation
 
 ### 🐳 Docker Installation / Installation Docker
 - **[DOCKER_INSTALLATION_UBUNTU.md](DOCKER_INSTALLATION_UBUNTU.md)** - Guide complet d'installation de Docker sur Ubuntu / Complete Docker installation guide for Ubuntu
 
-### 📦 NetBox Installation / Installation NetBox
-- **[NETBOX_DOCKER_SETUP.md](NETBOX_DOCKER_SETUP.md)** - Guide d'installation et configuration de NetBox / NetBox installation and configuration guide
+### 📦 NetBox v4.4.7 Installation / Installation NetBox v4.4.7
+- **[NETBOX_DOCKER_SETUP.md](NETBOX_DOCKER_SETUP.md)** - Guide d'installation et configuration de NetBox v4.4.7 / NetBox v4.4.7 installation and configuration guide
+- **[NETBOX_V4_FEATURES.md](NETBOX_V4_FEATURES.md)** - Nouveautés et fonctionnalités de NetBox v4.x / NetBox v4.x features and what's new
 - **[docker-compose.yml](docker-compose.yml)** - Fichier Docker Compose complet pour NetBox / Complete Docker Compose file for NetBox
 - **[env.example](env.example)** - Exemple de configuration d'environnement / Environment configuration example
 
@@ -50,14 +51,18 @@ docker compose up -d
 
 ## 📋 Features / Fonctionnalités
 
-### NetBox Services / Services NetBox
-- ✅ NetBox Web Application
-- ✅ PostgreSQL Database
-- ✅ Redis Cache & Message Queue
-- ✅ Background Workers
-- ✅ Housekeeping Tasks
-- ✅ Health Checks
-- ✅ Persistent Storage
+### NetBox v4.4.7 Services / Services NetBox v4.4.7
+- ✅ NetBox v4.4.7 Web Application (latest stable - Nov 2025)
+- ✅ PostgreSQL 15 Database
+- ✅ Redis Cache & Message Queue (dual Redis setup)
+- ✅ Background Workers (RQ Worker for async tasks)
+- ✅ Housekeeping Tasks (automated maintenance)
+- ✅ Health Checks (all services monitored)
+- ✅ Persistent Storage (Docker volumes)
+- ✅ GraphQL API Support (new in v4.x)
+- ✅ Modern UI & Enhanced Dashboards
+- ✅ OAuth2/SAML Authentication
+- ✅ Python 3.8-3.12 Support
 
 ## 🛠️ Prerequisites / Prérequis
 
