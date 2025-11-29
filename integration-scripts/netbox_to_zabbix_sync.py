@@ -47,6 +47,11 @@ DEFAULT_HOST_GROUP = "NetBox Devices"
 DEFAULT_TEMPLATE = "Linux by Zabbix agent"
 ZABBIX_AGENT_PORT = 10050
 
+# Custom Field for Monitoring Control
+MONITORING_CUSTOM_FIELD = "cf_monitoring"  # NetBox custom field name
+MONITORING_ENABLED_VALUE = "yes"           # Value to enable monitoring
+MONITORING_DISABLED_VALUE = "no"           # Value to disable monitoring
+
 # Logging Configuration
 LOG_FILE = os.getenv('LOG_FILE', '/var/log/netbox-zabbix-sync.log')
 LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
@@ -145,6 +150,41 @@ class NetBoxZabbixSync:
             return str(device.primary_ip6).split('/')[0]
         return None
 
+    def get_monitoring_status(self, device):
+        """
+        Determine if monitoring should be enabled based on NetBox custom field
+
+        Returns:
+            0 = Enabled
+            1 = Disabled
+        """
+        try:
+            # Get custom field value
+            cf_value = device.custom_fields.get(MONITORING_CUSTOM_FIELD)
+
+            if cf_value is None:
+                # Custom field not set, default to enabled
+                logger.debug(f"{device.name}: Custom field '{MONITORING_CUSTOM_FIELD}' not set, defaulting to enabled")
+                return 0
+
+            # Convert to string and lowercase for comparison
+            cf_value_str = str(cf_value).lower().strip()
+
+            if cf_value_str == MONITORING_ENABLED_VALUE.lower():
+                logger.debug(f"{device.name}: Monitoring ENABLED (cf_monitoring='{cf_value}')")
+                return 0  # Enabled
+            elif cf_value_str == MONITORING_DISABLED_VALUE.lower():
+                logger.debug(f"{device.name}: Monitoring DISABLED (cf_monitoring='{cf_value}')")
+                return 1  # Disabled
+            else:
+                # Unknown value, default to enabled with warning
+                logger.warning(f"{device.name}: Unknown cf_monitoring value '{cf_value}', defaulting to enabled")
+                return 0
+
+        except Exception as e:
+            logger.warning(f"{device.name}: Error reading custom field: {e}, defaulting to enabled")
+            return 0
+
     def sync_devices(self, filter_site=None, filter_status='active'):
         """
         Synchronize devices from NetBox to Zabbix
@@ -193,6 +233,10 @@ class NetBoxZabbixSync:
             self.stats['skipped'] += 1
             return
 
+        # Get monitoring status from custom field
+        monitoring_status = self.get_monitoring_status(device)
+        status_text = "ENABLED" if monitoring_status == 0 else "DISABLED"
+
         # Determine group based on NetBox site
         if device.site:
             group_name = f"NetBox - {device.site.name}"
@@ -221,16 +265,25 @@ class NetBoxZabbixSync:
         if existing_hosts:
             # Update existing host
             host_id = existing_hosts[0]['hostid']
+            old_status = int(existing_hosts[0].get('status', 0))
+            old_status_text = "ENABLED" if old_status == 0 else "DISABLED"
 
             update_params = {
                 "hostid": host_id,
                 "host": device_name,
                 "interfaces": [interface],
-                "groups": [{"groupid": group_id}]
+                "groups": [{"groupid": group_id}],
+                "status": monitoring_status
             }
 
             self.zabbix.host.update(**update_params)
-            logger.info(f"🔄 {device_name} ({device_ip}) - Updated")
+
+            # Log status change if it occurred
+            if old_status != monitoring_status:
+                logger.info(f"🔄 {device_name} ({device_ip}) - Updated | Status: {old_status_text} → {status_text}")
+            else:
+                logger.info(f"🔄 {device_name} ({device_ip}) - Updated | Status: {status_text}")
+
             self.stats['updated'] += 1
 
         else:
@@ -238,7 +291,8 @@ class NetBoxZabbixSync:
             create_params = {
                 "host": device_name,
                 "interfaces": [interface],
-                "groups": [{"groupid": group_id}]
+                "groups": [{"groupid": group_id}],
+                "status": monitoring_status
             }
 
             # Add template if available
@@ -246,7 +300,7 @@ class NetBoxZabbixSync:
                 create_params["templates"] = [{"templateid": template_id}]
 
             self.zabbix.host.create(**create_params)
-            logger.info(f"✅ {device_name} ({device_ip}) - Created")
+            logger.info(f"✅ {device_name} ({device_ip}) - Created | Status: {status_text}")
             self.stats['created'] += 1
 
     def sync_with_tags(self):
@@ -262,6 +316,10 @@ class NetBoxZabbixSync:
 
                 if not device_ip:
                     continue
+
+                # Get monitoring status from custom field
+                monitoring_status = self.get_monitoring_status(device)
+                status_text = "ENABLED" if monitoring_status == 0 else "DISABLED"
 
                 # Build group list based on tags
                 group_ids = []
@@ -293,21 +351,32 @@ class NetBoxZabbixSync:
                 if existing_hosts:
                     # Update
                     host_id = existing_hosts[0]['hostid']
+                    old_status = int(existing_hosts[0].get('status', 0))
+                    old_status_text = "ENABLED" if old_status == 0 else "DISABLED"
+
                     self.zabbix.host.update(
                         hostid=host_id,
                         groups=group_ids,
-                        interfaces=[interface]
+                        interfaces=[interface],
+                        status=monitoring_status
                     )
-                    logger.info(f"🔄 {device_name} - Tags updated")
+
+                    # Log status change if it occurred
+                    if old_status != monitoring_status:
+                        logger.info(f"🔄 {device_name} - Tags updated | Status: {old_status_text} → {status_text}")
+                    else:
+                        logger.info(f"🔄 {device_name} - Tags updated | Status: {status_text}")
+
                     self.stats['updated'] += 1
                 else:
                     # Create
                     self.zabbix.host.create(
                         host=device_name,
                         interfaces=[interface],
-                        groups=group_ids
+                        groups=group_ids,
+                        status=monitoring_status
                     )
-                    logger.info(f"✅ {device_name} - Created with tags")
+                    logger.info(f"✅ {device_name} - Created with tags | Status: {status_text}")
                     self.stats['created'] += 1
 
             except Exception as e:
