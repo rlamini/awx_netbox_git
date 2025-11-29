@@ -21,6 +21,11 @@ Complete installation guides for Docker, NetBox v4.4.7, Zabbix 7.0 LTS, and AWX 
 - **[zabbix-docker-compose.yml](zabbix-docker-compose.yml)** - Fichier Docker Compose complet pour Zabbix / Complete Docker Compose file for Zabbix
 - **[zabbix-env.example](zabbix-env.example)** - Exemple de configuration d'environnement pour Zabbix / Zabbix environment configuration example
 
+### 🤖 AWX (Ansible Tower) Installation / Installation AWX
+- **[AWX_MINIKUBE_SETUP.md](AWX_MINIKUBE_SETUP.md)** - Guide d'installation et configuration d'AWX avec Minikube / AWX with Minikube installation and configuration guide
+- **[awx-instance.yaml](awx-instance.yaml)** - Configuration AWX Kubernetes / AWX Kubernetes configuration
+- **[awx-ingress.yaml](awx-ingress.yaml)** - Configuration Ingress pour AWX (optionnel) / Ingress configuration for AWX (optional)
+
 ## 🚀 Quick Start / Démarrage Rapide
 
 ### 1. Install Docker / Installer Docker
@@ -121,6 +126,48 @@ docker compose up -d
 - ✅ Métriques personnalisées / Custom metrics
 - ✅ Alertes en temps réel / Real-time alerts
 
+## 🤖 AWX Automation / Automatisation AWX
+
+### Installation Rapide / Quick Installation
+
+```bash
+# Installation automatique / Automatic installation
+bash setup-awx.sh
+
+# Ou installation manuelle / Or manual installation
+# Install Minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+# Install kubectl
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+sudo install kubectl /usr/local/bin/kubectl
+
+# Start Minikube and deploy AWX
+minikube start --cpus=4 --memory=8192
+kubectl create namespace awx
+kubectl apply -f https://raw.githubusercontent.com/ansible/awx-operator/devel/deploy/awx-operator.yaml -n awx
+kubectl apply -f awx-instance.yaml -n awx
+
+# Access / Accès
+# http://localhost:30080
+```
+
+### Identifiants Par Défaut / Default Credentials
+- Username / Utilisateur: `admin`
+- Password / Mot de passe: (généré automatiquement / auto-generated - check awx-credentials.txt)
+- **⚠️ IMPORTANT:** Sauvegardez le mot de passe en lieu sûr! / Save password securely!
+
+### Ce que vous pouvez automatiser / What you can automate
+- ✅ Configuration de serveurs / Server configuration
+- ✅ Déploiement d'applications / Application deployment
+- ✅ Gestion des patchs / Patch management
+- ✅ Provisioning d'infrastructure / Infrastructure provisioning
+- ✅ Conformité et audit / Compliance and audit
+- ✅ Orchestration multi-cloud / Multi-cloud orchestration
+- ✅ CI/CD pipelines
+- ✅ Intégration NetBox (inventaires dynamiques) / NetBox integration (dynamic inventories)
+
 ## 📋 Features / Fonctionnalités
 
 ### NetBox v4.4.7 Services / Services NetBox v4.4.7
@@ -150,6 +197,22 @@ docker compose up -d
 - ✅ Pre-configured Templates (Linux, Windows, Network, Cloud)
 - ✅ Performance Metrics & Trending
 
+### AWX (Ansible Tower) Services / Services AWX
+- ✅ AWX Web Interface (modern UI)
+- ✅ Minikube (Kubernetes cluster)
+- ✅ AWX Operator (automatic management)
+- ✅ PostgreSQL Database
+- ✅ Job Execution Engine
+- ✅ Dynamic Inventories (NetBox, AWS, Azure, VMware, etc.)
+- ✅ Role-Based Access Control (RBAC)
+- ✅ Workflow Engine
+- ✅ REST API & CLI
+- ✅ Git Integration
+- ✅ Credential Management (Vault support)
+- ✅ Job Templates & Scheduling
+- ✅ Real-time Job Monitoring
+- ✅ Audit Logging
+
 ## 🛠️ Prerequisites / Prérequis
 
 - Ubuntu 20.04+ or similar Linux distribution / Ubuntu 20.04+ ou distribution Linux similaire
@@ -170,6 +233,17 @@ docker compose up -d
 - [Zabbix Docker Repository](https://github.com/zabbix/zabbix-docker)
 - [Zabbix Community Templates](https://www.zabbix.com/integrations)
 - [Zabbix Forum](https://www.zabbix.com/forum/)
+
+### AWX
+- [AWX Official Documentation](https://ansible.readthedocs.io/projects/awx/en/latest/)
+- [AWX GitHub Repository](https://github.com/ansible/awx)
+- [AWX Operator GitHub](https://github.com/ansible/awx-operator)
+- [Ansible Documentation](https://docs.ansible.com/)
+
+### Kubernetes & Minikube
+- [Minikube Documentation](https://minikube.sigs.k8s.io/docs/)
+- [Kubernetes Documentation](https://kubernetes.io/docs/)
+- [kubectl Documentation](https://kubernetes.io/docs/reference/kubectl/)
 
 ### Docker
 - [Docker Documentation](https://docs.docker.com/)
