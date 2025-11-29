@@ -168,6 +168,47 @@ kubectl apply -f awx-instance.yaml -n awx
 - ✅ CI/CD pipelines
 - ✅ Intégration NetBox (inventaires dynamiques) / NetBox integration (dynamic inventories)
 
+## 🔗 Intégrations / Integrations
+
+### NetBox ↔ Zabbix Integration
+
+Synchronisez automatiquement vos devices NetBox avec Zabbix pour le monitoring:
+Automatically synchronize your NetBox devices with Zabbix for monitoring:
+
+```bash
+# Installation des dépendances / Install dependencies
+cd integration-scripts
+pip install -r requirements.txt
+
+# Configuration / Configure
+cp .env.example .env
+nano .env  # Modifier avec vos valeurs / Update with your values
+
+# Exécution / Run
+python3 netbox_to_zabbix_sync.py
+```
+
+**Guide complet / Full guide:** [NETBOX_ZABBIX_INTEGRATION.md](NETBOX_ZABBIX_INTEGRATION.md)
+
+**Bénéfices / Benefits:**
+- ✅ NetBox comme source de vérité / NetBox as source of truth
+- ✅ Synchronisation automatique des hôtes / Automatic host synchronization
+- ✅ Organisation par sites et tags / Organization by sites and tags
+- ✅ Pas de double saisie / No duplicate data entry
+- ✅ Cohérence garantie / Guaranteed consistency
+
+### NetBox ↔ AWX Integration
+
+Utilisez NetBox comme inventaire dynamique pour AWX:
+Use NetBox as dynamic inventory for AWX:
+
+1. Dans AWX, créez des credentials NetBox / In AWX, create NetBox credentials
+2. Ajoutez une source d'inventaire NetBox / Add NetBox inventory source
+3. Synchronisez automatiquement / Synchronize automatically
+4. Exécutez vos playbooks sur l'infrastructure NetBox / Run playbooks on NetBox infrastructure
+
+**Guide complet / Full guide:** [AWX_MINIKUBE_SETUP.md](AWX_MINIKUBE_SETUP.md#étape-10--intégration-avec-netbox--netbox-integration)
+
 ## 📋 Features / Fonctionnalités
 
 ### NetBox v4.4.7 Services / Services NetBox v4.4.7
