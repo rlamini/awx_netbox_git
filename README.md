@@ -1,7 +1,7 @@
-# AWX & NetBox v4.4.7 Docker Installation Guide
+# AWX, NetBox & Zabbix Docker Installation Guide
 
-Guides d'installation complètes pour Docker, NetBox v4.4.7 et AWX avec Docker Compose.
-Complete installation guides for Docker, NetBox v4.4.7, and AWX with Docker Compose.
+Guides d'installation complètes pour Docker, NetBox v4.4.7, Zabbix 7.0 LTS et AWX avec Docker Compose.
+Complete installation guides for Docker, NetBox v4.4.7, Zabbix 7.0 LTS, and AWX with Docker Compose.
 
 ## 📚 Documentation / Documentation
 
@@ -15,6 +15,11 @@ Complete installation guides for Docker, NetBox v4.4.7, and AWX with Docker Comp
 - **[docker-compose.yml](docker-compose.yml)** - Fichier Docker Compose complet pour NetBox / Complete Docker Compose file for NetBox
 - **[env.example](env.example)** - Exemple de configuration d'environnement / Environment configuration example
 - **[nginx-configs/](nginx-configs/)** - Configurations Nginx prêtes à l'emploi / Ready-to-use Nginx configurations
+
+### 📊 Zabbix 7.0 LTS Installation / Installation Zabbix 7.0 LTS
+- **[ZABBIX_DOCKER_SETUP.md](ZABBIX_DOCKER_SETUP.md)** - Guide d'installation et configuration de Zabbix 7.0 LTS / Zabbix 7.0 LTS installation and configuration guide
+- **[zabbix-docker-compose.yml](zabbix-docker-compose.yml)** - Fichier Docker Compose complet pour Zabbix / Complete Docker Compose file for Zabbix
+- **[zabbix-env.example](zabbix-env.example)** - Exemple de configuration d'environnement pour Zabbix / Zabbix environment configuration example
 
 ## 🚀 Quick Start / Démarrage Rapide
 
@@ -81,6 +86,41 @@ cat NETBOX_INTERNET_ACCESS.md
 - Ports 80 et 443 ouverts / Ports 80 and 443 open
 - Adresse email pour Let's Encrypt / Email address for Let's Encrypt
 
+## 📊 Zabbix Monitoring / Monitoring Zabbix
+
+### Installation Rapide / Quick Installation
+
+```bash
+# Installation automatique / Automatic installation
+bash setup-zabbix.sh
+
+# Ou installation manuelle / Or manual installation
+mkdir -p ~/zabbix-docker
+cd ~/zabbix-docker
+cp zabbix-docker-compose.yml docker-compose.yml
+cp zabbix-env.example .env
+nano .env  # Modifier les configurations / Edit configurations
+docker compose up -d
+
+# Accès / Access
+# http://localhost:8080
+```
+
+### Identifiants Par Défaut / Default Credentials
+- Username / Utilisateur: `Admin` (avec A majuscule / capital A)
+- Password / Mot de passe: `zabbix`
+- **⚠️ IMPORTANT:** Changez le mot de passe immédiatement! / Change password immediately!
+
+### Ce que vous pouvez monitorer / What you can monitor
+- ✅ Serveurs Linux et Windows / Linux and Windows servers
+- ✅ Équipements réseau (SNMP) / Network equipment (SNMP)
+- ✅ Applications et bases de données / Applications and databases
+- ✅ Conteneurs Docker / Docker containers
+- ✅ Services cloud (AWS, Azure, GCP)
+- ✅ NetBox lui-même / NetBox itself
+- ✅ Métriques personnalisées / Custom metrics
+- ✅ Alertes en temps réel / Real-time alerts
+
 ## 📋 Features / Fonctionnalités
 
 ### NetBox v4.4.7 Services / Services NetBox v4.4.7
@@ -96,6 +136,20 @@ cat NETBOX_INTERNET_ACCESS.md
 - ✅ OAuth2/SAML Authentication
 - ✅ Python 3.8-3.12 Support
 
+### Zabbix 7.0 LTS Services / Services Zabbix 7.0 LTS
+- ✅ Zabbix Server 7.0 LTS (long-term support)
+- ✅ PostgreSQL 15 Database
+- ✅ Zabbix Web Interface (Nginx-based)
+- ✅ Zabbix Agent (self-monitoring)
+- ✅ SNMP Traps Support
+- ✅ Real-time Monitoring & Alerting
+- ✅ Auto-discovery
+- ✅ Custom Dashboards & Widgets
+- ✅ REST API
+- ✅ Email/SMS/Webhook Notifications
+- ✅ Pre-configured Templates (Linux, Windows, Network, Cloud)
+- ✅ Performance Metrics & Trending
+
 ## 🛠️ Prerequisites / Prérequis
 
 - Ubuntu 20.04+ or similar Linux distribution / Ubuntu 20.04+ ou distribution Linux similaire
@@ -106,9 +160,20 @@ cat NETBOX_INTERNET_ACCESS.md
 
 ## 📖 Documentation Links / Liens Documentation
 
+### NetBox
 - [NetBox Official Documentation](https://docs.netbox.dev/)
-- [Docker Documentation](https://docs.docker.com/)
 - [NetBox Docker Repository](https://github.com/netbox-community/netbox-docker)
+- [NetBox Community](https://github.com/netbox-community/netbox/discussions)
+
+### Zabbix
+- [Zabbix Official Documentation](https://www.zabbix.com/documentation/7.0/)
+- [Zabbix Docker Repository](https://github.com/zabbix/zabbix-docker)
+- [Zabbix Community Templates](https://www.zabbix.com/integrations)
+- [Zabbix Forum](https://www.zabbix.com/forum/)
+
+### Docker
+- [Docker Documentation](https://docs.docker.com/)
+- [Docker Compose Documentation](https://docs.docker.com/compose/)
 
 ## 🤝 Contributing / Contribuer
 
