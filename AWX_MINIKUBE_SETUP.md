@@ -14,6 +14,8 @@ AWX is the open-source version of Red Hat Ansible Tower, providing a web interfa
 
 ## 🆕 AWX Latest Version
 
+**Version actuelle / Current Version: AWX 24.6.1 avec / with AWX Operator 2.19.1**
+
 AWX est développé activement avec des releases fréquentes:
 - 🚀 Interface utilisateur moderne (AWX UI)
 - 📊 Tableaux de bord et visualisations
@@ -91,12 +93,30 @@ kubectl get nodes
 L'AWX Operator gère le déploiement d'AWX sur Kubernetes.
 The AWX Operator manages AWX deployment on Kubernetes.
 
+**⚠️ Note:** AWX Operator utilise maintenant Kustomize pour l'installation (la méthode YAML directe est dépréciée).
+**⚠️ Note:** AWX Operator now uses Kustomize for installation (direct YAML method is deprecated).
+
 ```bash
 # Créer le namespace / Create namespace
 kubectl create namespace awx
 
-# Installer l'opérateur AWX / Install AWX Operator
-kubectl apply -f https://raw.githubusercontent.com/ansible/awx-operator/devel/deploy/awx-operator.yaml -n awx
+# Créer le fichier kustomization.yaml / Create kustomization.yaml file
+cat > kustomization.yaml <<EOF
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  # Version 2.19.1 (latest stable)
+  - github.com/ansible/awx-operator/config/default?ref=2.19.1
+
+images:
+  - name: quay.io/ansible/awx-operator
+    newTag: 2.19.1
+
+namespace: awx
+EOF
+
+# Installer l'opérateur AWX avec Kustomize / Install AWX Operator with Kustomize
+kubectl apply -k .
 
 # Attendre que l'opérateur soit prêt / Wait for operator to be ready
 kubectl wait --for=condition=available --timeout=300s deployment/awx-operator-controller-manager -n awx
@@ -104,6 +124,11 @@ kubectl wait --for=condition=available --timeout=300s deployment/awx-operator-co
 # Vérifier le déploiement / Check deployment
 kubectl get pods -n awx
 ```
+
+**Versions disponibles / Available versions:**
+- `2.19.1` (latest stable, recommandé)
+- `2.19.0`
+- Pour voir toutes les versions: https://github.com/ansible/awx-operator/releases
 
 ## 📋 Étape 5 : Créer la Configuration AWX / Step 5: Create AWX Configuration
 
@@ -404,10 +429,27 @@ kubectl get awx awx -n awx -o yaml > awx_config_backup.yaml
 ### Mettre à jour AWX / Update AWX
 
 ```bash
-# Mettre à jour l'opérateur / Update operator
-kubectl apply -f https://raw.githubusercontent.com/ansible/awx-operator/devel/deploy/awx-operator.yaml -n awx
+# Mettre à jour l'opérateur vers une nouvelle version / Update operator to new version
+# 1. Modifier la version dans kustomization.yaml
+# Edit version in kustomization.yaml
 
-# Attendre la mise à jour / Wait for update
+cat > kustomization.yaml <<EOF
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - github.com/ansible/awx-operator/config/default?ref=2.19.1  # Changez la version ici
+
+images:
+  - name: quay.io/ansible/awx-operator
+    newTag: 2.19.1  # Et ici / And here
+
+namespace: awx
+EOF
+
+# 2. Appliquer la mise à jour / Apply update
+kubectl apply -k .
+
+# 3. Attendre la mise à jour / Wait for update
 kubectl wait --for=condition=ready pod -l app.kubernetes.io/name=awx -n awx --timeout=600s
 ```
 
@@ -512,7 +554,7 @@ kubectl delete namespace awx
 
 # Recréer / Recreate
 kubectl create namespace awx
-kubectl apply -f https://raw.githubusercontent.com/ansible/awx-operator/devel/deploy/awx-operator.yaml -n awx
+kubectl apply -k .  # Utilise kustomization.yaml
 kubectl apply -f awx-instance.yaml -n awx
 ```
 
