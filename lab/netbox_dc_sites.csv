@@ -1,0 +1,7 @@
+name,slug,status,region,facility,description,physical_address,tags
+EMEA-DC-CLOUD,emea-dc-cloud,active,EMEA,Equinix AM5,"Cloud Datacenter - Amsterdam, Netherlands","Equinix AM5, Amsterdam, Netherlands","datacenter,cloud,emea"
+EMEA-DC-ONPREM,emea-dc-onprem,active,EMEA,Interxion PAR7,"On-Premises Datacenter - Paris, France","Interxion PAR7, Paris, France","datacenter,onprem,emea"
+APAC-DC-CLOUD,apac-dc-cloud,active,APAC,Equinix SG3,"Cloud Datacenter - Singapore, Singapore","Equinix SG3, Singapore, Singapore","datacenter,cloud,apac"
+APAC-DC-ONPREM,apac-dc-onprem,active,APAC,Equinix TY4,"On-Premises Datacenter - Tokyo, Japan","Equinix TY4, Tokyo, Japan","datacenter,onprem,apac"
+AMER-DC-CLOUD,amer-dc-cloud,active,AMER,Equinix DC6,"Cloud Datacenter - Ashburn, United States","Equinix DC6, Ashburn, United States","datacenter,cloud,amer"
+AMER-DC-ONPREM,amer-dc-onprem,active,AMER,CyrusOne Carrollton,"On-Premises Datacenter - Dallas, United States","CyrusOne Carrollton, Dallas, United States","datacenter,onprem,amer"
