@@ -1,0 +1,22 @@
+manufacturer,model,slug,u_height,is_full_depth,description
+Cisco Systems,Nexus 9508,nexus-9508,13,True,Cisco Systems Nexus 9508
+Cisco Systems,Nexus 93180YC-FX,nexus-93180yc-fx,1,True,Cisco Systems Nexus 93180YC-FX
+Cisco Systems,Catalyst 9300-48P,catalyst-9300-48p,1,True,Cisco Systems Catalyst 9300-48P
+Arista Networks,DCS-7280SR-48C6,dcs-7280sr-48c6,1,True,Arista Networks DCS-7280SR-48C6
+Arista Networks,DCS-7050SX3-48YC12,dcs-7050sx3-48yc12,1,True,Arista Networks DCS-7050SX3-48YC12
+Palo Alto Networks,PA-5450,pa-5450,4,True,Palo Alto Networks PA-5450
+Palo Alto Networks,PA-3260,pa-3260,2,True,Palo Alto Networks PA-3260
+Fortinet,FortiGate 3700F,fortigate-3700f,3,True,Fortinet FortiGate 3700F
+Cisco Systems,ASR 9001,asr-9001,2,True,Cisco Systems ASR 9001
+Juniper Networks,MX204,mx204,1,True,Juniper Networks MX204
+F5 Networks,BIG-IP i5800,big-ip-i5800,1,True,F5 Networks BIG-IP i5800
+F5 Networks,BIG-IP i10800,big-ip-i10800,2,True,F5 Networks BIG-IP i10800
+Dell Technologies,PowerEdge R750,poweredge-r750,2,True,Dell Technologies PowerEdge R750
+Dell Technologies,PowerEdge R650,poweredge-r650,1,True,Dell Technologies PowerEdge R650
+Hewlett Packard Enterprise,ProLiant DL380 Gen10,proliant-dl380-gen10,2,True,Hewlett Packard Enterprise ProLiant DL380 Gen10
+Hewlett Packard Enterprise,ProLiant DL360 Gen10,proliant-dl360-gen10,1,True,Hewlett Packard Enterprise ProLiant DL360 Gen10
+Dell Technologies,PowerStore 9200T,powerstore-9200t,2,True,Dell Technologies PowerStore 9200T
+Dell Technologies,PowerScale F600,powerscale-f600,4,True,Dell Technologies PowerScale F600
+Cisco Systems,ISR 4431,isr-4431,2,True,Cisco Systems ISR 4431
+Aruba Networks,ClearPass C3000,clearpass-c3000,1,True,Aruba Networks ClearPass C3000
+APC by Schneider Electric,AP8886,apc-ap8886,0,False,APC by Schneider Electric AP8886
