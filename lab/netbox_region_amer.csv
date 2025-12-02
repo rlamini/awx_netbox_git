@@ -1,0 +1,47 @@
+name,slug,parent,description
+North America,north-america,AMER,North American countries
+United States,united-states,North America,US - United States of America
+Canada,canada,North America,CA - Canada
+Mexico,mexico,North America,MX - United Mexican States
+Central America,central-america,AMER,Central American countries
+Guatemala,guatemala,Central America,GT - Republic of Guatemala
+Belize,belize,Central America,BZ - Belize
+Honduras,honduras,Central America,HN - Republic of Honduras
+El Salvador,el-salvador,Central America,SV - Republic of El Salvador
+Nicaragua,nicaragua,Central America,NI - Republic of Nicaragua
+Costa Rica,costa-rica,Central America,CR - Republic of Costa Rica
+Panama,panama,Central America,PA - Republic of Panama
+Caribbean,caribbean,AMER,Caribbean countries and territories
+Cuba,cuba,Caribbean,CU - Republic of Cuba
+Jamaica,jamaica,Caribbean,JM - Jamaica
+Haiti,haiti,Caribbean,HT - Republic of Haiti
+Dominican Republic,dominican-republic,Caribbean,DO - Dominican Republic
+Puerto Rico,puerto-rico,Caribbean,PR - Puerto Rico
+Bahamas,bahamas,Caribbean,BS - Commonwealth of The Bahamas
+Trinidad and Tobago,trinidad-and-tobago,Caribbean,TT - Republic of Trinidad and Tobago
+Barbados,barbados,Caribbean,BB - Barbados
+Saint Lucia,saint-lucia,Caribbean,LC - Saint Lucia
+Grenada,grenada,Caribbean,GD - Grenada
+Saint Vincent,saint-vincent,Caribbean,VC - Saint Vincent and the Grenadines
+Antigua and Barbuda,antigua-and-barbuda,Caribbean,AG - Antigua and Barbuda
+Dominica,dominica,Caribbean,DM - Commonwealth of Dominica
+Saint Kitts and Nevis,saint-kitts-and-nevis,Caribbean,KN - Federation of Saint Kitts and Nevis
+Aruba,aruba,Caribbean,AW - Aruba
+Curacao,curacao,Caribbean,CW - Curaçao
+Cayman Islands,cayman-islands,Caribbean,KY - Cayman Islands
+British Virgin Islands,british-virgin-islands,Caribbean,VG - British Virgin Islands
+US Virgin Islands,us-virgin-islands,Caribbean,VI - U.S. Virgin Islands
+South America,south-america,AMER,South American countries
+Brazil,brazil,South America,BR - Federative Republic of Brazil
+Argentina,argentina,South America,AR - Argentine Republic
+Colombia,colombia,South America,CO - Republic of Colombia
+Peru,peru,South America,PE - Republic of Peru
+Venezuela,venezuela,South America,VE - Bolivarian Republic of Venezuela
+Chile,chile,South America,CL - Republic of Chile
+Ecuador,ecuador,South America,EC - Republic of Ecuador
+Bolivia,bolivia,South America,BO - Plurinational State of Bolivia
+Paraguay,paraguay,South America,PY - Republic of Paraguay
+Uruguay,uruguay,South America,UY - Oriental Republic of Uruguay
+Guyana,guyana,South America,GY - Co-operative Republic of Guyana
+Suriname,suriname,South America,SR - Republic of Suriname
+French Guiana,french-guiana,South America,GF - French Guiana
