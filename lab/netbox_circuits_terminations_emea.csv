@@ -223,3 +223,227 @@ MU-Agency1-PRI-001,A,MU-Agency1,1000000,1000000,Primary circuit termination at M
 MU-Agency1-BKP-001,A,MU-Agency1,500000,500000,Backup circuit termination at MU-Agency1
 MU-Agency2-PRI-001,A,MU-Agency2,1000000,1000000,Primary circuit termination at MU-Agency2
 MU-Agency2-BKP-001,A,MU-Agency2,500000,500000,Backup circuit termination at MU-Agency2
+FR-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+FR-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+FR-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+FR-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+DE-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+DE-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+DE-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+DE-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+GB-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+GB-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+GB-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+GB-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+NL-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+NL-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+NL-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+NL-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+BE-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+BE-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+BE-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+BE-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+LU-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+LU-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+LU-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+LU-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+CH-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+CH-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+CH-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+CH-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+AT-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+AT-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+AT-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+AT-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+IE-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+IE-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+IE-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+IE-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+MC-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+MC-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+MC-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+MC-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+ES-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+ES-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+ES-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+ES-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+PT-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+PT-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+PT-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+PT-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+IT-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+IT-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+IT-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+IT-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+GR-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+GR-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+GR-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+GR-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+MT-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+MT-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+MT-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+MT-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+CY-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+CY-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+CY-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+CY-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+AD-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+AD-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+AD-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+AD-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SM-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SM-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SM-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SM-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SE-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SE-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SE-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SE-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+NO-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+NO-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+NO-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+NO-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+DK-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+DK-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+DK-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+DK-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+FI-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+FI-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+FI-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+FI-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+IS-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+IS-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+IS-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+IS-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+PL-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+PL-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+PL-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+PL-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+CZ-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+CZ-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+CZ-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+CZ-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+HU-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+HU-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+HU-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+HU-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+RO-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+RO-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+RO-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+RO-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+BG-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+BG-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+BG-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+BG-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SK-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SK-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SK-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SK-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SI-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SI-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SI-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SI-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+HR-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+HR-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+HR-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+HR-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+RS-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+RS-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+RS-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+RS-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+UA-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+UA-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+UA-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+UA-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+LT-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+LT-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+LT-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+LT-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+LV-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+LV-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+LV-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+LV-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+EE-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+EE-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+EE-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+EE-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+AE-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+AE-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+AE-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+AE-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SA-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SA-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SA-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SA-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+QA-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+QA-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+QA-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+QA-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+KW-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+KW-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+KW-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+KW-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+BH-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+BH-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+BH-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+BH-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+OM-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+OM-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+OM-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+OM-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+IL-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+IL-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+IL-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+IL-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+JO-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+JO-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+JO-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+JO-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+LB-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+LB-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+LB-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+LB-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+TR-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+TR-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+TR-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+TR-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+ZA-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+ZA-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+ZA-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+ZA-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+EG-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+EG-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+EG-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+EG-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+MA-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+MA-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+MA-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+MA-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+NG-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+NG-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+NG-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+NG-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+KE-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+KE-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+KE-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+KE-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+GH-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+GH-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+GH-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+GH-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+TN-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+TN-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+TN-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+TN-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SN-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SN-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+SN-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+SN-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+CI-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+CI-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+CI-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+CI-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+MU-Agency1-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+MU-Agency1-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
+MU-Agency2-PRI-001,Z,,1000000,1000000,Z-side termination at Orange Business Services
+MU-Agency2-BKP-001,Z,,500000,500000,Z-side termination at Colt Technology
