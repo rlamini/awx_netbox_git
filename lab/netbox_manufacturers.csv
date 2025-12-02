@@ -1,0 +1,101 @@
+name,slug,description
+Cisco Systems,cisco-systems,Networking and telecommunications equipment
+Palo Alto Networks,palo-alto-networks,Cybersecurity and firewall solutions
+Juniper Networks,juniper-networks,Networking and cybersecurity solutions
+Arista Networks,arista-networks,Cloud networking solutions
+Fortinet,fortinet,Cybersecurity and network security appliances
+Hewlett Packard Enterprise,hpe,Enterprise IT infrastructure
+Dell Technologies,dell-technologies,Computers and IT infrastructure
+Aruba Networks,aruba-networks,Wireless networking solutions
+Meraki,meraki,Cloud-managed IT solutions
+F5 Networks,f5-networks,Application delivery and security
+Check Point,check-point,Cybersecurity solutions
+SonicWall,sonicwall,Network security appliances
+Ubiquiti Networks,ubiquiti-networks,Wireless networking equipment
+MikroTik,mikrotik,Networking equipment and software
+TP-Link,tp-link,Networking and smart home products
+Netgear,netgear,Networking hardware
+D-Link,d-link,Networking equipment
+Extreme Networks,extreme-networks,Network infrastructure solutions
+Brocade,brocade,Data and storage networking
+Ruckus Networks,ruckus-networks,Wireless infrastructure
+Cambium Networks,cambium-networks,Wireless networking solutions
+CommScope,commscope,Network infrastructure solutions
+Huawei,huawei,Telecommunications equipment
+ZTE Corporation,zte-corporation,Telecommunications equipment
+Nokia Networks,nokia-networks,Telecommunications infrastructure
+Ericsson,ericsson,Telecommunications equipment
+Alcatel-Lucent Enterprise,alcatel-lucent-enterprise,Enterprise communications
+ADTRAN,adtran,Networking and communications equipment
+Ciena,ciena,Optical and routing systems
+Infinera,infinera,Optical networking solutions
+Calix,calix,Broadband communications access
+ADVA Optical,adva-optical,Optical networking equipment
+Ribbon Communications,ribbon-communications,Communications technology
+Fujitsu,fujitsu,IT services and products
+NEC Corporation,nec-corporation,IT and network solutions
+Lenovo,lenovo,Computers and servers
+IBM,ibm,Enterprise technology solutions
+Oracle,oracle,Enterprise hardware and software
+Supermicro,supermicro,Server and storage technology
+Intel,intel,Semiconductors and computing
+AMD,amd,Semiconductors and processors
+NVIDIA,nvidia,Graphics and AI computing
+Broadcom,broadcom,Semiconductor and infrastructure software
+Marvell Technology,marvell-technology,Data infrastructure semiconductors
+Qualcomm,qualcomm,Wireless technology
+MediaTek,mediatek,Semiconductor company
+Mellanox,mellanox,High-performance networking
+Cavium,cavium,Semiconductor processors
+Barefoot Networks,barefoot-networks,Programmable network switches
+Cumulus Networks,cumulus-networks,Network operating system
+Big Switch Networks,big-switch-networks,SDN solutions
+Pluribus Networks,pluribus-networks,SDN fabric solutions
+Apstra,apstra,Intent-based networking
+VMware,vmware,Virtualization and cloud
+Nutanix,nutanix,Hyperconverged infrastructure
+Citrix,citrix,Virtualization and networking
+Red Hat,red-hat,Open source enterprise software
+Canonical,canonical,Ubuntu and open source solutions
+SUSE,suse,Enterprise Linux solutions
+Versa Networks,versa-networks,SD-WAN and SASE
+Silver Peak,silver-peak,SD-WAN solutions
+VeloCloud,velocloud,SD-WAN platform
+Cradlepoint,cradlepoint,Wireless edge solutions
+Peplink,peplink,SD-WAN and cellular routers
+Digi International,digi-international,IoT connectivity
+Sierra Wireless,sierra-wireless,IoT solutions
+Cato Networks,cato-networks,SASE cloud platform
+Zscaler,zscaler,Cloud security
+Cloudflare,cloudflare,CDN and security services
+Akamai,akamai,CDN and cloud services
+Imperva,imperva,Cybersecurity solutions
+Radware,radware,Application delivery and security
+A10 Networks,a10-networks,Application networking
+Kemp Technologies,kemp-technologies,Load balancing solutions
+Barracuda Networks,barracuda-networks,Security and data protection
+Sophos,sophos,Cybersecurity solutions
+WatchGuard,watchguard,Network security
+Trend Micro,trend-micro,Cybersecurity software
+Symantec,symantec,Cybersecurity solutions
+CrowdStrike,crowdstrike,Endpoint security
+SentinelOne,sentinelone,AI security platform
+Carbon Black,carbon-black,Endpoint security
+FireEye,fireeye,Cybersecurity solutions
+Mandiant,mandiant,Threat intelligence
+Proofpoint,proofpoint,Email security
+Mimecast,mimecast,Email and data security
+Tenable,tenable,Vulnerability management
+Qualys,qualys,Cloud security and compliance
+Rapid7,rapid7,Security analytics
+Splunk,splunk,Data platform and security
+Elastic,elastic,Search and observability
+Datadog,datadog,Monitoring and security
+Dynatrace,dynatrace,Software intelligence
+New Relic,new-relic,Observability platform
+AppDynamics,appdynamics,Application performance
+SolarWinds,solarwinds,IT management software
+ManageEngine,manageengine,IT management solutions
+Paessler,paessler,Network monitoring PRTG
+APC by Schneider Electric,apc-schneider,Power and cooling solutions
+Generic,generic,Generic manufacturer for standard equipment
