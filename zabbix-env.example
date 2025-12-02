@@ -1,0 +1,211 @@
+# ============================================
+# ZABBIX DOCKER ENVIRONMENT CONFIGURATION
+# ============================================
+# Copy this file to .env and modify the values
+# cp zabbix-env.example .env
+
+# ============================================
+# DATABASE CONFIGURATION
+# ============================================
+POSTGRES_DB=zabbix
+POSTGRES_USER=zabbix
+POSTGRES_PASSWORD=ChangeMe_SecureZabbixPassword123!
+
+# ============================================
+# ZABBIX VERSION
+# ============================================
+# Specify Zabbix version (e.g., alpine-7.0-latest, alpine-6.4-latest)
+# Zabbix 7.0 is the latest LTS release
+# See: https://hub.docker.com/r/zabbix/zabbix-server-pgsql/tags
+ZABBIX_VERSION=alpine-7.0-latest
+
+# ============================================
+# NETWORK PORTS
+# ============================================
+# Web interface HTTP port
+ZABBIX_WEB_PORT=8080
+
+# Web interface HTTPS port (if SSL configured)
+ZABBIX_WEB_HTTPS_PORT=8443
+
+# Zabbix server port (for agents)
+ZABBIX_SERVER_PORT=10051
+
+# Zabbix agent port
+ZABBIX_AGENT_PORT=10050
+
+# SNMP traps port
+ZABBIX_SNMP_PORT=162
+
+# ============================================
+# ZABBIX SERVER CONFIGURATION
+# ============================================
+# Server name displayed in web interface
+ZBX_SERVER_NAME=Zabbix Monitoring Server
+
+# Timezone (see: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+PHP_TZ=UTC
+
+# Session name for cookies
+ZBX_SESSION_NAME=zbx_session_docker
+
+# ============================================
+# ZABBIX SERVER PROCESSES
+# ============================================
+# Number of pre-forked instances of pollers
+# Increase for more hosts (default: 5)
+ZBX_STARTPOLLERS=5
+
+# Number of pre-forked instances of IPMI pollers
+ZBX_STARTIPMIPOLLERS=0
+
+# Number of pre-forked instances of pollers for unreachable hosts
+ZBX_STARTPOLLERSUNREACHABLE=1
+
+# Number of pre-forked instances of trappers
+# Increase for more active checks (default: 5)
+ZBX_STARTTRAPPERS=5
+
+# Number of pre-forked instances of ICMP pingers
+ZBX_STARTPINGERS=1
+
+# Number of pre-forked instances of discoverers
+ZBX_STARTDISCOVERERS=1
+
+# Number of pre-forked instances of HTTP pollers
+ZBX_STARTHTTPPOLLERS=1
+
+# ============================================
+# CACHE CONFIGURATION
+# ============================================
+# Size of configuration cache (in bytes)
+# 128M is good for 10,000+ items
+ZBX_CACHESIZE=128M
+
+# Size of history cache (in bytes)
+# 64M is good for 10,000+ items
+ZBX_HISTORYCACHESIZE=64M
+
+# Size of history index cache (in bytes)
+ZBX_HISTORYINDEXCACHESIZE=32M
+
+# Size of trend cache (in bytes)
+ZBX_TRENDCACHESIZE=16M
+
+# Size of value cache (in bytes)
+# Increase for better performance
+ZBX_VALUECACHESIZE=64M
+
+# ============================================
+# TIMEOUTS
+# ============================================
+# Timeout in seconds (default: 4, max: 30)
+ZBX_TIMEOUT=4
+
+# How long a host can be unreachable before marking unavailable (seconds)
+ZBX_UNREACHABLEPERIOD=45
+
+# How long to wait before next availability check (seconds)
+ZBX_UNAVAILABLEDELAY=60
+
+# ============================================
+# HOUSEKEEPING
+# ============================================
+# How often to perform housekeeping (hours)
+# 1 = every hour
+ZBX_HOUSEKEEPINGFREQUENCY=1
+
+# ============================================
+# SNMP CONFIGURATION
+# ============================================
+# Enable SNMP traps
+ZBX_ENABLE_SNMP_TRAPS=true
+
+# ============================================
+# DEBUG CONFIGURATION
+# ============================================
+# Zabbix server debug level
+# 0 = no debug
+# 1 = critical information
+# 2 = error information
+# 3 = warnings (default)
+# 4 = for debugging (produces lots of information)
+# 5 = extended debugging (produces even more information)
+ZBX_DEBUGLEVEL=3
+
+# Zabbix agent debug level
+ZBX_AGENT_DEBUGLEVEL=3
+
+# ============================================
+# WEB INTERFACE CONFIGURATION
+# ============================================
+# Maximum execution time of scripts (seconds)
+ZBX_MAXEXECUTIONTIME=300
+
+# Memory limit for PHP scripts
+ZBX_MEMORYLIMIT=128M
+
+# Maximum size of POST data
+ZBX_POSTMAXSIZE=16M
+
+# Maximum size of file uploads
+ZBX_UPLOADMAXFILESIZE=2M
+
+# Maximum input time (seconds)
+ZBX_MAXINPUTTIME=300
+
+# ============================================
+# AGENT CONFIGURATION
+# ============================================
+# Allow passive checks
+ZBX_PASSIVE_ALLOW=true
+
+# Allow active checks
+ZBX_ACTIVE_ALLOW=true
+
+# Host metadata (for auto-registration)
+ZBX_METADATA=Linux Docker
+
+# ============================================
+# SECURITY NOTES
+# ============================================
+# 1. ALWAYS change POSTGRES_PASSWORD before deploying to production
+# 2. Change default Zabbix admin password (Admin/zabbix) immediately
+# 3. In production, use HTTPS for web interface
+# 4. Limit access by IP if possible
+# 5. Use strong passwords for all database users
+# 6. Enable audit logs
+# 7. Never commit the .env file to version control
+# 8. Regularly backup your database
+# 9. Keep Zabbix updated to latest version
+# 10. Monitor Zabbix server performance itself
+
+# ============================================
+# EXAMPLE PRODUCTION VALUES
+# ============================================
+# POSTGRES_PASSWORD=Sup3rS3cur3Zabb!xP@ssw0rd2024
+# ZBX_STARTPOLLERS=10
+# ZBX_CACHESIZE=256M
+# ZBX_HISTORYCACHESIZE=128M
+# ZBX_VALUECACHESIZE=128M
+# PHP_TZ=America/New_York
+# ZBX_SERVER_NAME=Production Monitoring
+# ZBX_DEBUGLEVEL=2
+
+# ============================================
+# PERFORMANCE TUNING
+# ============================================
+# For large deployments (1000+ hosts):
+# ZBX_STARTPOLLERS=20
+# ZBX_STARTTRAPPERS=10
+# ZBX_CACHESIZE=512M
+# ZBX_HISTORYCACHESIZE=256M
+# ZBX_VALUECACHESIZE=256M
+# ZBX_TRENDCACHESIZE=32M
+
+# For small deployments (<100 hosts):
+# ZBX_STARTPOLLERS=3
+# ZBX_STARTTRAPPERS=3
+# ZBX_CACHESIZE=64M
+# ZBX_HISTORYCACHESIZE=32M
+# ZBX_VALUECACHESIZE=32M

@@ -1,0 +1,3 @@
+manufacturer,model,slug,width,u_height,form_factor,starting_unit,desc_units,outer_width,outer_height,outer_depth,outer_unit,mounting_depth,weight,max_weight,weight_unit,description,comments,tags
+Generic,Standard 42U Rack,standard-42u-rack,19,42,4-post-cabinet,1,false,600,2000,1000,mm,750,80,1000,kg,Standard 42U 4-post server cabinet - 600x1000mm,Enterprise standard rack for network and server equipment,rack-42u
+Generic,Standard 22U Rack,standard-22u-rack,19,22,4-post-cabinet,1,false,600,1200,600,mm,450,45,500,kg,Standard 22U 4-post cabinet - 600x600mm,Secondary rack for network distribution equipment,rack-22u

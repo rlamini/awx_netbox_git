@@ -1,0 +1,54 @@
+name,slug,parent,description
+East Asia,east-asia,APAC,East Asian countries
+China,china,East Asia,CN - People's Republic of China
+Japan,japan,East Asia,JP - Japan
+South Korea,south-korea,East Asia,KR - Republic of Korea
+Taiwan,taiwan,East Asia,TW - Taiwan
+Hong Kong,hong-kong,East Asia,HK - Hong Kong SAR
+Macau,macau,East Asia,MO - Macau SAR
+Mongolia,mongolia,East Asia,MN - Mongolia
+Southeast Asia,southeast-asia,APAC,Southeast Asian countries
+Singapore,singapore,Southeast Asia,SG - Republic of Singapore
+Malaysia,malaysia,Southeast Asia,MY - Malaysia
+Thailand,thailand,Southeast Asia,TH - Kingdom of Thailand
+Indonesia,indonesia,Southeast Asia,ID - Republic of Indonesia
+Vietnam,vietnam,Southeast Asia,VN - Socialist Republic of Vietnam
+Philippines,philippines,Southeast Asia,PH - Republic of the Philippines
+Myanmar,myanmar,Southeast Asia,MM - Republic of the Union of Myanmar
+Cambodia,cambodia,Southeast Asia,KH - Kingdom of Cambodia
+Laos,laos,Southeast Asia,LA - Lao People's Democratic Republic
+Brunei,brunei,Southeast Asia,BN - Brunei Darussalam
+Timor-Leste,timor-leste,Southeast Asia,TL - Democratic Republic of Timor-Leste
+South Asia,south-asia,APAC,South Asian countries
+India,india,South Asia,IN - Republic of India
+Pakistan,pakistan,South Asia,PK - Islamic Republic of Pakistan
+Bangladesh,bangladesh,South Asia,BD - People's Republic of Bangladesh
+Sri Lanka,sri-lanka,South Asia,LK - Democratic Socialist Republic of Sri Lanka
+Nepal,nepal,South Asia,NP - Federal Democratic Republic of Nepal
+Bhutan,bhutan,South Asia,BT - Kingdom of Bhutan
+Maldives,maldives,South Asia,MV - Republic of Maldives
+Afghanistan,afghanistan,South Asia,AF - Islamic Republic of Afghanistan
+Oceania,oceania,APAC,Oceanian countries
+Australia,australia,Oceania,AU - Commonwealth of Australia
+New Zealand,new-zealand,Oceania,NZ - New Zealand
+Papua New Guinea,papua-new-guinea,Oceania,PG - Independent State of Papua New Guinea
+Fiji,fiji,Oceania,FJ - Republic of Fiji
+Samoa,samoa,Oceania,WS - Independent State of Samoa
+Tonga,tonga,Oceania,TO - Kingdom of Tonga
+Vanuatu,vanuatu,Oceania,VU - Republic of Vanuatu
+Solomon Islands,solomon-islands,Oceania,SB - Solomon Islands
+New Caledonia,new-caledonia,Oceania,NC - New Caledonia
+French Polynesia,french-polynesia,Oceania,PF - French Polynesia
+Guam,guam,Oceania,GU - Guam
+Palau,palau,Oceania,PW - Republic of Palau
+Micronesia,micronesia,Oceania,FM - Federated States of Micronesia
+Marshall Islands,marshall-islands,Oceania,MH - Republic of the Marshall Islands
+Kiribati,kiribati,Oceania,KI - Republic of Kiribati
+Nauru,nauru,Oceania,NR - Republic of Nauru
+Tuvalu,tuvalu,Oceania,TV - Tuvalu
+Central Asia,central-asia,APAC,Central Asian countries
+Kazakhstan,kazakhstan,Central Asia,KZ - Republic of Kazakhstan
+Uzbekistan,uzbekistan,Central Asia,UZ - Republic of Uzbekistan
+Turkmenistan,turkmenistan,Central Asia,TM - Turkmenistan
+Kyrgyzstan,kyrgyzstan,Central Asia,KG - Kyrgyz Republic
+Tajikistan,tajikistan,Central Asia,TJ - Republic of Tajikistan

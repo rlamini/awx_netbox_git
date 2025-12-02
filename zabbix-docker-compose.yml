@@ -1,0 +1,214 @@
+version: '3.8'
+
+# ============================================
+# Zabbix 7.0 LTS Docker Compose Configuration
+# ============================================
+# This docker-compose file deploys Zabbix 7.0 LTS with all required services
+# Zabbix is an enterprise-class monitoring solution
+
+services:
+  # PostgreSQL Database for Zabbix
+  postgres:
+    image: postgres:15-alpine
+    container_name: zabbix-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-zabbix}
+      POSTGRES_USER: ${POSTGRES_USER:-zabbix}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-zabbix}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    networks:
+      - zabbix-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-zabbix}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Zabbix Server
+  zabbix-server:
+    image: zabbix/zabbix-server-pgsql:${ZABBIX_VERSION:-alpine-7.0-latest}
+    container_name: zabbix-server
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Database Configuration
+      DB_SERVER_HOST: postgres
+      DB_SERVER_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-zabbix}
+      POSTGRES_USER: ${POSTGRES_USER:-zabbix}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-zabbix}
+
+      # Zabbix Server Configuration
+      ZBX_ENABLE_SNMP_TRAPS: ${ZBX_ENABLE_SNMP_TRAPS:-true}
+      ZBX_STARTPOLLERS: ${ZBX_STARTPOLLERS:-5}
+      ZBX_STARTPOLLERSUNREACHABLE: ${ZBX_STARTPOLLERSUNREACHABLE:-1}
+      ZBX_STARTTRAPPERS: ${ZBX_STARTTRAPPERS:-5}
+      ZBX_STARTPINGERS: ${ZBX_STARTPINGERS:-1}
+      ZBX_STARTDISCOVERERS: ${ZBX_STARTDISCOVERERS:-1}
+      ZBX_STARTHTTPPOLLERS: ${ZBX_STARTHTTPPOLLERS:-1}
+
+      # Cache and Memory
+      ZBX_CACHESIZE: ${ZBX_CACHESIZE:-128M}
+      ZBX_HISTORYCACHESIZE: ${ZBX_HISTORYCACHESIZE:-64M}
+      ZBX_HISTORYINDEXCACHESIZE: ${ZBX_HISTORYINDEXCACHESIZE:-32M}
+      ZBX_TRENDCACHESIZE: ${ZBX_TRENDCACHESIZE:-16M}
+      ZBX_VALUECACHESIZE: ${ZBX_VALUECACHESIZE:-64M}
+
+      # Timeouts
+      ZBX_TIMEOUT: ${ZBX_TIMEOUT:-4}
+      ZBX_UNREACHABLEPERIOD: ${ZBX_UNREACHABLEPERIOD:-45}
+      ZBX_UNAVAILABLEDELAY: ${ZBX_UNAVAILABLEDELAY:-60}
+
+      # Housekeeping
+      ZBX_HOUSEKEEPINGFREQUENCY: ${ZBX_HOUSEKEEPINGFREQUENCY:-1}
+
+      # Debug Level (0=no debug, 5=trace)
+      ZBX_DEBUGLEVEL: ${ZBX_DEBUGLEVEL:-3}
+    volumes:
+      - zabbix-scripts:/usr/lib/zabbix/alertscripts
+      - zabbix-modules:/var/lib/zabbix/modules
+      - zabbix-enc:/var/lib/zabbix/enc
+      - zabbix-ssh_keys:/var/lib/zabbix/ssh_keys
+      - zabbix-ssl-certs:/var/lib/zabbix/ssl/certs
+      - zabbix-ssl-keys:/var/lib/zabbix/ssl/keys
+      - zabbix-ssl-ssl_ca:/var/lib/zabbix/ssl/ssl_ca
+      - zabbix-snmptraps:/var/lib/zabbix/snmptraps
+      - zabbix-mibs:/var/lib/zabbix/mibs
+    ports:
+      - "${ZABBIX_SERVER_PORT:-10051}:10051"
+    restart: unless-stopped
+    networks:
+      - zabbix-network
+    healthcheck:
+      test: ["CMD", "zabbix_server", "-R", "config_cache_reload"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+  # Zabbix Web Interface (Nginx)
+  zabbix-web:
+    image: zabbix/zabbix-web-nginx-pgsql:${ZABBIX_VERSION:-alpine-7.0-latest}
+    container_name: zabbix-web
+    depends_on:
+      postgres:
+        condition: service_healthy
+      zabbix-server:
+        condition: service_started
+    environment:
+      # Database Configuration
+      DB_SERVER_HOST: postgres
+      DB_SERVER_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-zabbix}
+      POSTGRES_USER: ${POSTGRES_USER:-zabbix}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-zabbix}
+
+      # Zabbix Server Connection
+      ZBX_SERVER_HOST: zabbix-server
+      ZBX_SERVER_PORT: 10051
+
+      # Web Interface Configuration
+      ZBX_SERVER_NAME: ${ZBX_SERVER_NAME:-Zabbix Docker}
+      PHP_TZ: ${PHP_TZ:-UTC}
+
+      # Session Configuration
+      ZBX_SESSION_NAME: ${ZBX_SESSION_NAME:-zbx_session}
+
+      # SSL/HTTPS Configuration (if using reverse proxy)
+      # ZBX_DENY_GUI_ACCESS: ${ZBX_DENY_GUI_ACCESS:-false}
+      # ZBX_GUI_ACCESS_IP_RANGE: ${ZBX_GUI_ACCESS_IP_RANGE:-['0.0.0.0/0']}
+      # ZBX_GUI_WARNING_MSG: ${ZBX_GUI_WARNING_MSG:-}
+
+      # Max execution time
+      ZBX_MAXEXECUTIONTIME: ${ZBX_MAXEXECUTIONTIME:-300}
+      ZBX_MEMORYLIMIT: ${ZBX_MEMORYLIMIT:-128M}
+      ZBX_POSTMAXSIZE: ${ZBX_POSTMAXSIZE:-16M}
+      ZBX_UPLOADMAXFILESIZE: ${ZBX_UPLOADMAXFILESIZE:-2M}
+
+      # Max input time
+      ZBX_MAXINPUTTIME: ${ZBX_MAXINPUTTIME:-300}
+    volumes:
+      - zabbix-ssl-nginx-certs:/etc/ssl/nginx
+    ports:
+      - "${ZABBIX_WEB_PORT:-8080}:8080"
+      - "${ZABBIX_WEB_HTTPS_PORT:-8443}:8443"
+    restart: unless-stopped
+    networks:
+      - zabbix-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 90s
+
+  # Zabbix Agent (to monitor Zabbix server itself)
+  zabbix-agent:
+    image: zabbix/zabbix-agent:${ZABBIX_VERSION:-alpine-7.0-latest}
+    container_name: zabbix-agent
+    depends_on:
+      - zabbix-server
+    environment:
+      # Server Configuration
+      ZBX_SERVER_HOST: zabbix-server
+      ZBX_SERVER_PORT: 10051
+      ZBX_HOSTNAME: Zabbix server
+      ZBX_PASSIVE_ALLOW: ${ZBX_PASSIVE_ALLOW:-true}
+      ZBX_ACTIVE_ALLOW: ${ZBX_ACTIVE_ALLOW:-true}
+
+      # Metadata
+      ZBX_METADATA: ${ZBX_METADATA:-Linux Docker}
+
+      # Debug Level
+      ZBX_DEBUGLEVEL: ${ZBX_AGENT_DEBUGLEVEL:-3}
+    ports:
+      - "${ZABBIX_AGENT_PORT:-10050}:10050"
+    restart: unless-stopped
+    networks:
+      - zabbix-network
+    privileged: true
+    pid: "host"
+
+  # Zabbix SNMP Traps (optional but useful for network monitoring)
+  zabbix-snmptraps:
+    image: zabbix/zabbix-snmptraps:${ZABBIX_VERSION:-alpine-7.0-latest}
+    container_name: zabbix-snmptraps
+    volumes:
+      - zabbix-snmptraps:/var/lib/zabbix/snmptraps
+      - zabbix-mibs:/var/lib/zabbix/mibs
+    ports:
+      - "${ZABBIX_SNMP_PORT:-162}:1162/udp"
+    restart: unless-stopped
+    networks:
+      - zabbix-network
+
+networks:
+  zabbix-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
+    driver: local
+  zabbix-scripts:
+    driver: local
+  zabbix-modules:
+    driver: local
+  zabbix-enc:
+    driver: local
+  zabbix-ssh_keys:
+    driver: local
+  zabbix-ssl-certs:
+    driver: local
+  zabbix-ssl-keys:
+    driver: local
+  zabbix-ssl-ssl_ca:
+    driver: local
+  zabbix-ssl-nginx-certs:
+    driver: local
+  zabbix-snmptraps:
+    driver: local
+  zabbix-mibs:
+    driver: local

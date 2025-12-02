@@ -1,0 +1,10 @@
+name,slug,color,description
+Datacenter,datacenter,3f51b5,Datacenter site
+Cloud,cloud,00bcd4,Cloud datacenter
+OnPrem,onprem,4caf50,On-premises datacenter
+Carrier,carrier,ff5722,Carrier provider
+Internet-DIA,internet-dia,2196f3,Dedicated Internet Access
+MPLS,mpls,9c27b0,MPLS circuit
+Dark-Fiber,dark-fiber,607d8b,Dark fiber circuit
+Cross-Connect,cross-connect,795548,Cross connect
+Cloud-Connect,cloud-connect,ff9800,Cloud provider connect

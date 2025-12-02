@@ -1,0 +1,65 @@
+---
+# ============================================
+# AWX Ingress Configuration (Optional)
+# ============================================
+# Use this file if you want to expose AWX via Ingress with SSL
+# Requires cert-manager to be installed in your cluster
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: awx-ingress
+  namespace: awx
+  annotations:
+    # For cert-manager to automatically provision SSL certificates
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+
+    # Nginx ingress annotations (if using nginx-ingress)
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+
+    # Force HTTPS redirect
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  ingressClassName: nginx
+
+  # TLS configuration
+  tls:
+  - hosts:
+    - awx.example.com  # Change to your domain
+    secretName: awx-tls
+
+  # Routing rules
+  rules:
+  - host: awx.example.com  # Change to your domain
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: awx-service
+            port:
+              number: 80
+
+---
+# ============================================
+# ClusterIssuer for Let's Encrypt (Optional)
+# ============================================
+# Uncomment if cert-manager is installed
+
+# apiVersion: cert-manager.io/v1
+# kind: ClusterIssuer
+# metadata:
+#   name: letsencrypt-prod
+# spec:
+#   acme:
+#     server: https://acme-v02.api.letsencrypt.org/directory
+#     email: your-email@example.com  # Change to your email
+#     privateKeySecretRef:
+#       name: letsencrypt-prod
+#     solvers:
+#     - http01:
+#         ingress:
+#           class: nginx

@@ -1,0 +1,84 @@
+---
+# ============================================
+# AWX Instance Configuration
+# ============================================
+# This file defines the AWX deployment on Kubernetes
+
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx
+  namespace: awx
+spec:
+  # Service type - NodePort for local access
+  # Change to LoadBalancer for cloud deployments
+  service_type: NodePort
+  nodeport_port: 30080
+
+  # AWX Web Container Resources
+  # IMPORTANT: awx-web needs MORE memory (was OOMKilled with 1Gi limit)
+  web_resource_requirements:
+    requests:
+      cpu: 250m        # Reduced for 2-core VPS
+      memory: 1Gi      # 1 GB RAM
+    limits:
+      cpu: 500m        # Reduced to avoid CPU overcommit
+      memory: 2Gi      # 2 GB RAM max (INCREASED to prevent OOM)
+
+  # AWX Task Container Resources
+  task_resource_requirements:
+    requests:
+      cpu: 250m        # Reduced for 2-core VPS
+      memory: 512Mi    # 512 MB RAM
+    limits:
+      cpu: 500m        # Reduced to avoid CPU overcommit
+      memory: 1Gi      # 1 GB RAM max
+
+  # PostgreSQL Resource Requirements (added for optimization)
+  postgres_resource_requirements:
+    requests:
+      cpu: 100m
+      memory: 256Mi
+    limits:
+      cpu: 200m
+      memory: 512Mi
+
+  # PostgreSQL Database Configuration
+  postgres_storage_class: standard
+  postgres_storage_requirements:
+    requests:
+      storage: 8Gi    # 8 GB for database
+
+  # Projects Persistence (for Ansible playbooks)
+  projects_persistence: true
+  projects_storage_class: standard
+  projects_storage_size: 8Gi
+
+  # Admin User Configuration
+  admin_user: admin
+  admin_password_secret: awx-admin-password
+
+  # Optional: Custom hostname
+  # hostname: awx.example.com
+
+  # Optional: Image pull policy
+  # image_pull_policy: IfNotPresent
+
+  # Optional: Enable or disable ingress
+  # ingress_type: none
+
+  # Optional: Extra environment variables
+  # extra_settings:
+  #   - setting: AWX_TASK_ENV['HOME']
+  #     value: /var/lib/awx
+
+  # Optional: Node selector (for multi-node clusters)
+  # node_selector: |
+  #   disktype: ssd
+
+  # Optional: Tolerations
+  # tolerations: |
+  #   - key: "dedicated"
+  #     operator: "Equal"
+  #     value: "AWX"
+  #     effect: "NoSchedule"

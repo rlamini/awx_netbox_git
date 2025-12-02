@@ -1,0 +1,127 @@
+name,site,location,status,rack_type,description
+EMEA-DC-CLOUD-NET-R01,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R01 in Network Core
+EMEA-DC-CLOUD-NET-R02,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R02 in Network Core
+EMEA-DC-CLOUD-NET-R03,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R03 in Network Core
+EMEA-DC-CLOUD-NET-R04,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R04 in Network Core
+EMEA-DC-CLOUD-SRV-A-R01,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R01 in Server Hall A
+EMEA-DC-CLOUD-SRV-A-R02,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R02 in Server Hall A
+EMEA-DC-CLOUD-SRV-A-R03,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R03 in Server Hall A
+EMEA-DC-CLOUD-SRV-A-R04,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R04 in Server Hall A
+EMEA-DC-CLOUD-SRV-A-R05,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R05 in Server Hall A
+EMEA-DC-CLOUD-SRV-A-R06,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R06 in Server Hall A
+EMEA-DC-CLOUD-SRV-B-R01,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R01 in Server Hall B
+EMEA-DC-CLOUD-SRV-B-R02,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R02 in Server Hall B
+EMEA-DC-CLOUD-SRV-B-R03,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R03 in Server Hall B
+EMEA-DC-CLOUD-SRV-B-R04,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R04 in Server Hall B
+EMEA-DC-CLOUD-SRV-B-R05,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R05 in Server Hall B
+EMEA-DC-CLOUD-SRV-B-R06,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R06 in Server Hall B
+EMEA-DC-CLOUD-STG-R01,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,active,Standard 42U Rack,Rack STG-R01 in Storage Room
+EMEA-DC-CLOUD-STG-R02,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,active,Standard 42U Rack,Rack STG-R02 in Storage Room
+EMEA-DC-CLOUD-STG-R03,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,active,Standard 42U Rack,Rack STG-R03 in Storage Room
+EMEA-DC-CLOUD-MMR-R01,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R01 in Meet-Me Room
+EMEA-DC-CLOUD-MMR-R02,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R02 in Meet-Me Room
+EMEA-DC-ONPREM-NET-R01,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R01 in Network Core
+EMEA-DC-ONPREM-NET-R02,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R02 in Network Core
+EMEA-DC-ONPREM-NET-R03,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R03 in Network Core
+EMEA-DC-ONPREM-NET-R04,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R04 in Network Core
+EMEA-DC-ONPREM-SRV-A-R01,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R01 in Server Hall A
+EMEA-DC-ONPREM-SRV-A-R02,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R02 in Server Hall A
+EMEA-DC-ONPREM-SRV-A-R03,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R03 in Server Hall A
+EMEA-DC-ONPREM-SRV-A-R04,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R04 in Server Hall A
+EMEA-DC-ONPREM-SRV-A-R05,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R05 in Server Hall A
+EMEA-DC-ONPREM-SRV-A-R06,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R06 in Server Hall A
+EMEA-DC-ONPREM-SRV-B-R01,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R01 in Server Hall B
+EMEA-DC-ONPREM-SRV-B-R02,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R02 in Server Hall B
+EMEA-DC-ONPREM-SRV-B-R03,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R03 in Server Hall B
+EMEA-DC-ONPREM-SRV-B-R04,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R04 in Server Hall B
+EMEA-DC-ONPREM-SRV-B-R05,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R05 in Server Hall B
+EMEA-DC-ONPREM-SRV-B-R06,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R06 in Server Hall B
+EMEA-DC-ONPREM-STG-R01,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,active,Standard 42U Rack,Rack STG-R01 in Storage Room
+EMEA-DC-ONPREM-STG-R02,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,active,Standard 42U Rack,Rack STG-R02 in Storage Room
+EMEA-DC-ONPREM-STG-R03,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,active,Standard 42U Rack,Rack STG-R03 in Storage Room
+EMEA-DC-ONPREM-MMR-R01,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R01 in Meet-Me Room
+EMEA-DC-ONPREM-MMR-R02,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R02 in Meet-Me Room
+APAC-DC-CLOUD-NET-R01,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R01 in Network Core
+APAC-DC-CLOUD-NET-R02,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R02 in Network Core
+APAC-DC-CLOUD-NET-R03,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R03 in Network Core
+APAC-DC-CLOUD-NET-R04,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R04 in Network Core
+APAC-DC-CLOUD-SRV-A-R01,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R01 in Server Hall A
+APAC-DC-CLOUD-SRV-A-R02,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R02 in Server Hall A
+APAC-DC-CLOUD-SRV-A-R03,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R03 in Server Hall A
+APAC-DC-CLOUD-SRV-A-R04,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R04 in Server Hall A
+APAC-DC-CLOUD-SRV-A-R05,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R05 in Server Hall A
+APAC-DC-CLOUD-SRV-A-R06,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R06 in Server Hall A
+APAC-DC-CLOUD-SRV-B-R01,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R01 in Server Hall B
+APAC-DC-CLOUD-SRV-B-R02,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R02 in Server Hall B
+APAC-DC-CLOUD-SRV-B-R03,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R03 in Server Hall B
+APAC-DC-CLOUD-SRV-B-R04,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R04 in Server Hall B
+APAC-DC-CLOUD-SRV-B-R05,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R05 in Server Hall B
+APAC-DC-CLOUD-SRV-B-R06,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R06 in Server Hall B
+APAC-DC-CLOUD-STG-R01,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,active,Standard 42U Rack,Rack STG-R01 in Storage Room
+APAC-DC-CLOUD-STG-R02,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,active,Standard 42U Rack,Rack STG-R02 in Storage Room
+APAC-DC-CLOUD-STG-R03,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,active,Standard 42U Rack,Rack STG-R03 in Storage Room
+APAC-DC-CLOUD-MMR-R01,APAC-DC-CLOUD,APAC-DC-CLOUD-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R01 in Meet-Me Room
+APAC-DC-CLOUD-MMR-R02,APAC-DC-CLOUD,APAC-DC-CLOUD-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R02 in Meet-Me Room
+APAC-DC-ONPREM-NET-R01,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R01 in Network Core
+APAC-DC-ONPREM-NET-R02,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R02 in Network Core
+APAC-DC-ONPREM-NET-R03,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R03 in Network Core
+APAC-DC-ONPREM-NET-R04,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R04 in Network Core
+APAC-DC-ONPREM-SRV-A-R01,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R01 in Server Hall A
+APAC-DC-ONPREM-SRV-A-R02,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R02 in Server Hall A
+APAC-DC-ONPREM-SRV-A-R03,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R03 in Server Hall A
+APAC-DC-ONPREM-SRV-A-R04,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R04 in Server Hall A
+APAC-DC-ONPREM-SRV-A-R05,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R05 in Server Hall A
+APAC-DC-ONPREM-SRV-A-R06,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R06 in Server Hall A
+APAC-DC-ONPREM-SRV-B-R01,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R01 in Server Hall B
+APAC-DC-ONPREM-SRV-B-R02,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R02 in Server Hall B
+APAC-DC-ONPREM-SRV-B-R03,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R03 in Server Hall B
+APAC-DC-ONPREM-SRV-B-R04,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R04 in Server Hall B
+APAC-DC-ONPREM-SRV-B-R05,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R05 in Server Hall B
+APAC-DC-ONPREM-SRV-B-R06,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R06 in Server Hall B
+APAC-DC-ONPREM-STG-R01,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,active,Standard 42U Rack,Rack STG-R01 in Storage Room
+APAC-DC-ONPREM-STG-R02,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,active,Standard 42U Rack,Rack STG-R02 in Storage Room
+APAC-DC-ONPREM-STG-R03,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,active,Standard 42U Rack,Rack STG-R03 in Storage Room
+APAC-DC-ONPREM-MMR-R01,APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R01 in Meet-Me Room
+APAC-DC-ONPREM-MMR-R02,APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R02 in Meet-Me Room
+AMER-DC-CLOUD-NET-R01,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R01 in Network Core
+AMER-DC-CLOUD-NET-R02,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R02 in Network Core
+AMER-DC-CLOUD-NET-R03,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R03 in Network Core
+AMER-DC-CLOUD-NET-R04,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,active,Standard 42U Rack,Rack NET-R04 in Network Core
+AMER-DC-CLOUD-SRV-A-R01,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R01 in Server Hall A
+AMER-DC-CLOUD-SRV-A-R02,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R02 in Server Hall A
+AMER-DC-CLOUD-SRV-A-R03,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R03 in Server Hall A
+AMER-DC-CLOUD-SRV-A-R04,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R04 in Server Hall A
+AMER-DC-CLOUD-SRV-A-R05,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R05 in Server Hall A
+AMER-DC-CLOUD-SRV-A-R06,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R06 in Server Hall A
+AMER-DC-CLOUD-SRV-B-R01,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R01 in Server Hall B
+AMER-DC-CLOUD-SRV-B-R02,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R02 in Server Hall B
+AMER-DC-CLOUD-SRV-B-R03,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R03 in Server Hall B
+AMER-DC-CLOUD-SRV-B-R04,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R04 in Server Hall B
+AMER-DC-CLOUD-SRV-B-R05,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R05 in Server Hall B
+AMER-DC-CLOUD-SRV-B-R06,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R06 in Server Hall B
+AMER-DC-CLOUD-STG-R01,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,active,Standard 42U Rack,Rack STG-R01 in Storage Room
+AMER-DC-CLOUD-STG-R02,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,active,Standard 42U Rack,Rack STG-R02 in Storage Room
+AMER-DC-CLOUD-STG-R03,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,active,Standard 42U Rack,Rack STG-R03 in Storage Room
+AMER-DC-CLOUD-MMR-R01,AMER-DC-CLOUD,AMER-DC-CLOUD-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R01 in Meet-Me Room
+AMER-DC-CLOUD-MMR-R02,AMER-DC-CLOUD,AMER-DC-CLOUD-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R02 in Meet-Me Room
+AMER-DC-ONPREM-NET-R01,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R01 in Network Core
+AMER-DC-ONPREM-NET-R02,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R02 in Network Core
+AMER-DC-ONPREM-NET-R03,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R03 in Network Core
+AMER-DC-ONPREM-NET-R04,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,active,Standard 42U Rack,Rack NET-R04 in Network Core
+AMER-DC-ONPREM-SRV-A-R01,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R01 in Server Hall A
+AMER-DC-ONPREM-SRV-A-R02,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R02 in Server Hall A
+AMER-DC-ONPREM-SRV-A-R03,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R03 in Server Hall A
+AMER-DC-ONPREM-SRV-A-R04,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R04 in Server Hall A
+AMER-DC-ONPREM-SRV-A-R05,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R05 in Server Hall A
+AMER-DC-ONPREM-SRV-A-R06,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,active,Standard 42U Rack,Rack SRV-A-R06 in Server Hall A
+AMER-DC-ONPREM-SRV-B-R01,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R01 in Server Hall B
+AMER-DC-ONPREM-SRV-B-R02,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R02 in Server Hall B
+AMER-DC-ONPREM-SRV-B-R03,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R03 in Server Hall B
+AMER-DC-ONPREM-SRV-B-R04,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R04 in Server Hall B
+AMER-DC-ONPREM-SRV-B-R05,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R05 in Server Hall B
+AMER-DC-ONPREM-SRV-B-R06,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,active,Standard 42U Rack,Rack SRV-B-R06 in Server Hall B
+AMER-DC-ONPREM-STG-R01,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,active,Standard 42U Rack,Rack STG-R01 in Storage Room
+AMER-DC-ONPREM-STG-R02,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,active,Standard 42U Rack,Rack STG-R02 in Storage Room
+AMER-DC-ONPREM-STG-R03,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,active,Standard 42U Rack,Rack STG-R03 in Storage Room
+AMER-DC-ONPREM-MMR-R01,AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R01 in Meet-Me Room
+AMER-DC-ONPREM-MMR-R02,AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me Room,active,Standard 22U Rack,Rack MMR-R02 in Meet-Me Room

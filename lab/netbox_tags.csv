@@ -1,0 +1,165 @@
+name,slug,color,description
+Datacenter,datacenter,3f51b5,Datacenter site
+Cloud,cloud,00bcd4,Cloud datacenter
+OnPrem,onprem,4caf50,On-premises datacenter
+Carrier,carrier,ff5722,Carrier provider
+Internet-DIA,internet-dia,2196f3,Dedicated Internet Access
+MPLS,mpls,9c27b0,MPLS circuit
+Dark-Fiber,dark-fiber,607d8b,Dark fiber circuit
+Cross-Connect,cross-connect,795548,Cross connect
+Cloud-Connect,cloud-connect,ff9800,Cloud provider connect
+AMER,amer,dc3545,AMER - Main geographic region
+APAC,apac,198754,APAC - Main geographic region
+EMEA,emea,0d6efd,EMEA - Main geographic region
+Agency,agency,ffc107,Agency site type
+Afghanistan,afghanistan,6c757d,Country: Afghanistan
+Andorra,andorra,6c757d,Country: Andorra
+Antigua And Barbuda,antigua-and-barbuda,6c757d,Country: Antigua And Barbuda
+Argentina,argentina,6c757d,Country: Argentina
+Aruba,aruba,6c757d,Country: Aruba
+Australia,australia,6c757d,Country: Australia
+Austria,austria,6c757d,Country: Austria
+Bahamas,bahamas,6c757d,Country: Bahamas
+Bahrain,bahrain,6c757d,Country: Bahrain
+Bangladesh,bangladesh,6c757d,Country: Bangladesh
+Barbados,barbados,6c757d,Country: Barbados
+Belgium,belgium,6c757d,Country: Belgium
+Belize,belize,6c757d,Country: Belize
+Bhutan,bhutan,6c757d,Country: Bhutan
+Bolivia,bolivia,6c757d,Country: Bolivia
+Brazil,brazil,6c757d,Country: Brazil
+British Virgin Islands,british-virgin-islands,6c757d,Country: British Virgin Islands
+Brunei,brunei,6c757d,Country: Brunei
+Bulgaria,bulgaria,6c757d,Country: Bulgaria
+Cambodia,cambodia,6c757d,Country: Cambodia
+Canada,canada,6c757d,Country: Canada
+Cayman Islands,cayman-islands,6c757d,Country: Cayman Islands
+Chile,chile,6c757d,Country: Chile
+China,china,6c757d,Country: China
+Colombia,colombia,6c757d,Country: Colombia
+Costa Rica,costa-rica,6c757d,Country: Costa Rica
+Croatia,croatia,6c757d,Country: Croatia
+Cuba,cuba,6c757d,Country: Cuba
+Curacao,curacao,6c757d,Country: Curacao
+Cyprus,cyprus,6c757d,Country: Cyprus
+Czech Republic,czech-republic,6c757d,Country: Czech Republic
+Denmark,denmark,6c757d,Country: Denmark
+Dominica,dominica,6c757d,Country: Dominica
+Dominican Republic,dominican-republic,6c757d,Country: Dominican Republic
+Ecuador,ecuador,6c757d,Country: Ecuador
+Egypt,egypt,6c757d,Country: Egypt
+El Salvador,el-salvador,6c757d,Country: El Salvador
+Estonia,estonia,6c757d,Country: Estonia
+Fiji,fiji,6c757d,Country: Fiji
+Finland,finland,6c757d,Country: Finland
+France,france,6c757d,Country: France
+French Guiana,french-guiana,6c757d,Country: French Guiana
+French Polynesia,french-polynesia,6c757d,Country: French Polynesia
+Germany,germany,6c757d,Country: Germany
+Ghana,ghana,6c757d,Country: Ghana
+Greece,greece,6c757d,Country: Greece
+Grenada,grenada,6c757d,Country: Grenada
+Guam,guam,6c757d,Country: Guam
+Guatemala,guatemala,6c757d,Country: Guatemala
+Guyana,guyana,6c757d,Country: Guyana
+Haiti,haiti,6c757d,Country: Haiti
+Honduras,honduras,6c757d,Country: Honduras
+Hong Kong,hong-kong,6c757d,Country: Hong Kong
+Hungary,hungary,6c757d,Country: Hungary
+Iceland,iceland,6c757d,Country: Iceland
+India,india,6c757d,Country: India
+Indonesia,indonesia,6c757d,Country: Indonesia
+Ireland,ireland,6c757d,Country: Ireland
+Israel,israel,6c757d,Country: Israel
+Italy,italy,6c757d,Country: Italy
+Ivory Coast,ivory-coast,6c757d,Country: Ivory Coast
+Jamaica,jamaica,6c757d,Country: Jamaica
+Japan,japan,6c757d,Country: Japan
+Jordan,jordan,6c757d,Country: Jordan
+Kazakhstan,kazakhstan,6c757d,Country: Kazakhstan
+Kenya,kenya,6c757d,Country: Kenya
+Kiribati,kiribati,6c757d,Country: Kiribati
+Kuwait,kuwait,6c757d,Country: Kuwait
+Kyrgyzstan,kyrgyzstan,6c757d,Country: Kyrgyzstan
+Laos,laos,6c757d,Country: Laos
+Latvia,latvia,6c757d,Country: Latvia
+Lebanon,lebanon,6c757d,Country: Lebanon
+Lithuania,lithuania,6c757d,Country: Lithuania
+Luxembourg,luxembourg,6c757d,Country: Luxembourg
+Macau,macau,6c757d,Country: Macau
+Malaysia,malaysia,6c757d,Country: Malaysia
+Maldives,maldives,6c757d,Country: Maldives
+Malta,malta,6c757d,Country: Malta
+Marshall Islands,marshall-islands,6c757d,Country: Marshall Islands
+Mauritius,mauritius,6c757d,Country: Mauritius
+Mexico,mexico,6c757d,Country: Mexico
+Micronesia,micronesia,6c757d,Country: Micronesia
+Monaco,monaco,6c757d,Country: Monaco
+Mongolia,mongolia,6c757d,Country: Mongolia
+Morocco,morocco,6c757d,Country: Morocco
+Myanmar,myanmar,6c757d,Country: Myanmar
+Nauru,nauru,6c757d,Country: Nauru
+Nepal,nepal,6c757d,Country: Nepal
+Netherlands,netherlands,6c757d,Country: Netherlands
+New Caledonia,new-caledonia,6c757d,Country: New Caledonia
+New Zealand,new-zealand,6c757d,Country: New Zealand
+Nicaragua,nicaragua,6c757d,Country: Nicaragua
+Nigeria,nigeria,6c757d,Country: Nigeria
+Norway,norway,6c757d,Country: Norway
+Oman,oman,6c757d,Country: Oman
+Pakistan,pakistan,6c757d,Country: Pakistan
+Palau,palau,6c757d,Country: Palau
+Panama,panama,6c757d,Country: Panama
+Papua New Guinea,papua-new-guinea,6c757d,Country: Papua New Guinea
+Paraguay,paraguay,6c757d,Country: Paraguay
+Peru,peru,6c757d,Country: Peru
+Philippines,philippines,6c757d,Country: Philippines
+Poland,poland,6c757d,Country: Poland
+Portugal,portugal,6c757d,Country: Portugal
+Puerto Rico,puerto-rico,6c757d,Country: Puerto Rico
+Qatar,qatar,6c757d,Country: Qatar
+Romania,romania,6c757d,Country: Romania
+Saint Kitts And Nevis,saint-kitts-and-nevis,6c757d,Country: Saint Kitts And Nevis
+Saint Lucia,saint-lucia,6c757d,Country: Saint Lucia
+Saint Vincent,saint-vincent,6c757d,Country: Saint Vincent
+Samoa,samoa,6c757d,Country: Samoa
+San Marino,san-marino,6c757d,Country: San Marino
+Saudi Arabia,saudi-arabia,6c757d,Country: Saudi Arabia
+Senegal,senegal,6c757d,Country: Senegal
+Serbia,serbia,6c757d,Country: Serbia
+Singapore,singapore,6c757d,Country: Singapore
+Slovakia,slovakia,6c757d,Country: Slovakia
+Slovenia,slovenia,6c757d,Country: Slovenia
+Solomon Islands,solomon-islands,6c757d,Country: Solomon Islands
+South Africa,south-africa,6c757d,Country: South Africa
+South Korea,south-korea,6c757d,Country: South Korea
+Spain,spain,6c757d,Country: Spain
+Sri Lanka,sri-lanka,6c757d,Country: Sri Lanka
+Suriname,suriname,6c757d,Country: Suriname
+Sweden,sweden,6c757d,Country: Sweden
+Switzerland,switzerland,6c757d,Country: Switzerland
+Taiwan,taiwan,6c757d,Country: Taiwan
+Tajikistan,tajikistan,6c757d,Country: Tajikistan
+Thailand,thailand,6c757d,Country: Thailand
+Timor Leste,timor-leste,6c757d,Country: Timor Leste
+Tonga,tonga,6c757d,Country: Tonga
+Trinidad And Tobago,trinidad-and-tobago,6c757d,Country: Trinidad And Tobago
+Tunisia,tunisia,6c757d,Country: Tunisia
+Turkey,turkey,6c757d,Country: Turkey
+Turkmenistan,turkmenistan,6c757d,Country: Turkmenistan
+Tuvalu,tuvalu,6c757d,Country: Tuvalu
+Ukraine,ukraine,6c757d,Country: Ukraine
+United Arab Emirates,united-arab-emirates,6c757d,Country: United Arab Emirates
+United Kingdom,united-kingdom,6c757d,Country: United Kingdom
+United States,united-states,6c757d,Country: United States
+Uruguay,uruguay,6c757d,Country: Uruguay
+Us Virgin Islands,us-virgin-islands,6c757d,Country: Us Virgin Islands
+Uzbekistan,uzbekistan,6c757d,Country: Uzbekistan
+Vanuatu,vanuatu,6c757d,Country: Vanuatu
+Venezuela,venezuela,6c757d,Country: Venezuela
+Vietnam,vietnam,6c757d,Country: Vietnam
+rack-42u,rack-42u,6610f2,Rack Type: Standard 42U
+rack-22u,rack-22u,6610f2,Rack Type: Standard 22U
+provider,provider,17a2b8,Circuit Provider
+circuit-primary,circuit-primary,28a745,Primary Circuit
+circuit-backup,circuit-backup,fd7e14,Backup Circuit

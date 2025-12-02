@@ -1,0 +1,193 @@
+name,slug,site,status,description
+CN-Agency1-MDF1,cn-agency1-mdf1,CN-Agency1,active,Main Distribution Frame 1 - China
+CN-Agency1-MDF2,cn-agency1-mdf2,CN-Agency1,active,Main Distribution Frame 2 - China
+CN-Agency2-MDF1,cn-agency2-mdf1,CN-Agency2,active,Main Distribution Frame 1 - China
+CN-Agency2-MDF2,cn-agency2-mdf2,CN-Agency2,active,Main Distribution Frame 2 - China
+JP-Agency1-MDF1,jp-agency1-mdf1,JP-Agency1,active,Main Distribution Frame 1 - Japan
+JP-Agency1-MDF2,jp-agency1-mdf2,JP-Agency1,active,Main Distribution Frame 2 - Japan
+JP-Agency2-MDF1,jp-agency2-mdf1,JP-Agency2,active,Main Distribution Frame 1 - Japan
+JP-Agency2-MDF2,jp-agency2-mdf2,JP-Agency2,active,Main Distribution Frame 2 - Japan
+KR-Agency1-MDF1,kr-agency1-mdf1,KR-Agency1,active,Main Distribution Frame 1 - South Korea
+KR-Agency1-MDF2,kr-agency1-mdf2,KR-Agency1,active,Main Distribution Frame 2 - South Korea
+KR-Agency2-MDF1,kr-agency2-mdf1,KR-Agency2,active,Main Distribution Frame 1 - South Korea
+KR-Agency2-MDF2,kr-agency2-mdf2,KR-Agency2,active,Main Distribution Frame 2 - South Korea
+TW-Agency1-MDF1,tw-agency1-mdf1,TW-Agency1,active,Main Distribution Frame 1 - Taiwan
+TW-Agency1-MDF2,tw-agency1-mdf2,TW-Agency1,active,Main Distribution Frame 2 - Taiwan
+TW-Agency2-MDF1,tw-agency2-mdf1,TW-Agency2,active,Main Distribution Frame 1 - Taiwan
+TW-Agency2-MDF2,tw-agency2-mdf2,TW-Agency2,active,Main Distribution Frame 2 - Taiwan
+HK-Agency1-MDF1,hk-agency1-mdf1,HK-Agency1,active,Main Distribution Frame 1 - Hong Kong
+HK-Agency1-MDF2,hk-agency1-mdf2,HK-Agency1,active,Main Distribution Frame 2 - Hong Kong
+HK-Agency2-MDF1,hk-agency2-mdf1,HK-Agency2,active,Main Distribution Frame 1 - Hong Kong
+HK-Agency2-MDF2,hk-agency2-mdf2,HK-Agency2,active,Main Distribution Frame 2 - Hong Kong
+MO-Agency1-MDF1,mo-agency1-mdf1,MO-Agency1,active,Main Distribution Frame 1 - Macau
+MO-Agency1-MDF2,mo-agency1-mdf2,MO-Agency1,active,Main Distribution Frame 2 - Macau
+MO-Agency2-MDF1,mo-agency2-mdf1,MO-Agency2,active,Main Distribution Frame 1 - Macau
+MO-Agency2-MDF2,mo-agency2-mdf2,MO-Agency2,active,Main Distribution Frame 2 - Macau
+MN-Agency1-MDF1,mn-agency1-mdf1,MN-Agency1,active,Main Distribution Frame 1 - Mongolia
+MN-Agency1-MDF2,mn-agency1-mdf2,MN-Agency1,active,Main Distribution Frame 2 - Mongolia
+MN-Agency2-MDF1,mn-agency2-mdf1,MN-Agency2,active,Main Distribution Frame 1 - Mongolia
+MN-Agency2-MDF2,mn-agency2-mdf2,MN-Agency2,active,Main Distribution Frame 2 - Mongolia
+SG-Agency1-MDF1,sg-agency1-mdf1,SG-Agency1,active,Main Distribution Frame 1 - Singapore
+SG-Agency1-MDF2,sg-agency1-mdf2,SG-Agency1,active,Main Distribution Frame 2 - Singapore
+SG-Agency2-MDF1,sg-agency2-mdf1,SG-Agency2,active,Main Distribution Frame 1 - Singapore
+SG-Agency2-MDF2,sg-agency2-mdf2,SG-Agency2,active,Main Distribution Frame 2 - Singapore
+MY-Agency1-MDF1,my-agency1-mdf1,MY-Agency1,active,Main Distribution Frame 1 - Malaysia
+MY-Agency1-MDF2,my-agency1-mdf2,MY-Agency1,active,Main Distribution Frame 2 - Malaysia
+MY-Agency2-MDF1,my-agency2-mdf1,MY-Agency2,active,Main Distribution Frame 1 - Malaysia
+MY-Agency2-MDF2,my-agency2-mdf2,MY-Agency2,active,Main Distribution Frame 2 - Malaysia
+TH-Agency1-MDF1,th-agency1-mdf1,TH-Agency1,active,Main Distribution Frame 1 - Thailand
+TH-Agency1-MDF2,th-agency1-mdf2,TH-Agency1,active,Main Distribution Frame 2 - Thailand
+TH-Agency2-MDF1,th-agency2-mdf1,TH-Agency2,active,Main Distribution Frame 1 - Thailand
+TH-Agency2-MDF2,th-agency2-mdf2,TH-Agency2,active,Main Distribution Frame 2 - Thailand
+ID-Agency1-MDF1,id-agency1-mdf1,ID-Agency1,active,Main Distribution Frame 1 - Indonesia
+ID-Agency1-MDF2,id-agency1-mdf2,ID-Agency1,active,Main Distribution Frame 2 - Indonesia
+ID-Agency2-MDF1,id-agency2-mdf1,ID-Agency2,active,Main Distribution Frame 1 - Indonesia
+ID-Agency2-MDF2,id-agency2-mdf2,ID-Agency2,active,Main Distribution Frame 2 - Indonesia
+VN-Agency1-MDF1,vn-agency1-mdf1,VN-Agency1,active,Main Distribution Frame 1 - Vietnam
+VN-Agency1-MDF2,vn-agency1-mdf2,VN-Agency1,active,Main Distribution Frame 2 - Vietnam
+VN-Agency2-MDF1,vn-agency2-mdf1,VN-Agency2,active,Main Distribution Frame 1 - Vietnam
+VN-Agency2-MDF2,vn-agency2-mdf2,VN-Agency2,active,Main Distribution Frame 2 - Vietnam
+PH-Agency1-MDF1,ph-agency1-mdf1,PH-Agency1,active,Main Distribution Frame 1 - Philippines
+PH-Agency1-MDF2,ph-agency1-mdf2,PH-Agency1,active,Main Distribution Frame 2 - Philippines
+PH-Agency2-MDF1,ph-agency2-mdf1,PH-Agency2,active,Main Distribution Frame 1 - Philippines
+PH-Agency2-MDF2,ph-agency2-mdf2,PH-Agency2,active,Main Distribution Frame 2 - Philippines
+MM-Agency1-MDF1,mm-agency1-mdf1,MM-Agency1,active,Main Distribution Frame 1 - Myanmar
+MM-Agency1-MDF2,mm-agency1-mdf2,MM-Agency1,active,Main Distribution Frame 2 - Myanmar
+MM-Agency2-MDF1,mm-agency2-mdf1,MM-Agency2,active,Main Distribution Frame 1 - Myanmar
+MM-Agency2-MDF2,mm-agency2-mdf2,MM-Agency2,active,Main Distribution Frame 2 - Myanmar
+KH-Agency1-MDF1,kh-agency1-mdf1,KH-Agency1,active,Main Distribution Frame 1 - Cambodia
+KH-Agency1-MDF2,kh-agency1-mdf2,KH-Agency1,active,Main Distribution Frame 2 - Cambodia
+KH-Agency2-MDF1,kh-agency2-mdf1,KH-Agency2,active,Main Distribution Frame 1 - Cambodia
+KH-Agency2-MDF2,kh-agency2-mdf2,KH-Agency2,active,Main Distribution Frame 2 - Cambodia
+LA-Agency1-MDF1,la-agency1-mdf1,LA-Agency1,active,Main Distribution Frame 1 - Laos
+LA-Agency1-MDF2,la-agency1-mdf2,LA-Agency1,active,Main Distribution Frame 2 - Laos
+LA-Agency2-MDF1,la-agency2-mdf1,LA-Agency2,active,Main Distribution Frame 1 - Laos
+LA-Agency2-MDF2,la-agency2-mdf2,LA-Agency2,active,Main Distribution Frame 2 - Laos
+BN-Agency1-MDF1,bn-agency1-mdf1,BN-Agency1,active,Main Distribution Frame 1 - Brunei
+BN-Agency1-MDF2,bn-agency1-mdf2,BN-Agency1,active,Main Distribution Frame 2 - Brunei
+BN-Agency2-MDF1,bn-agency2-mdf1,BN-Agency2,active,Main Distribution Frame 1 - Brunei
+BN-Agency2-MDF2,bn-agency2-mdf2,BN-Agency2,active,Main Distribution Frame 2 - Brunei
+TL-Agency1-MDF1,tl-agency1-mdf1,TL-Agency1,active,Main Distribution Frame 1 - Timor-Leste
+TL-Agency1-MDF2,tl-agency1-mdf2,TL-Agency1,active,Main Distribution Frame 2 - Timor-Leste
+TL-Agency2-MDF1,tl-agency2-mdf1,TL-Agency2,active,Main Distribution Frame 1 - Timor-Leste
+TL-Agency2-MDF2,tl-agency2-mdf2,TL-Agency2,active,Main Distribution Frame 2 - Timor-Leste
+IN-Agency1-MDF1,in-agency1-mdf1,IN-Agency1,active,Main Distribution Frame 1 - India
+IN-Agency1-MDF2,in-agency1-mdf2,IN-Agency1,active,Main Distribution Frame 2 - India
+IN-Agency2-MDF1,in-agency2-mdf1,IN-Agency2,active,Main Distribution Frame 1 - India
+IN-Agency2-MDF2,in-agency2-mdf2,IN-Agency2,active,Main Distribution Frame 2 - India
+PK-Agency1-MDF1,pk-agency1-mdf1,PK-Agency1,active,Main Distribution Frame 1 - Pakistan
+PK-Agency1-MDF2,pk-agency1-mdf2,PK-Agency1,active,Main Distribution Frame 2 - Pakistan
+PK-Agency2-MDF1,pk-agency2-mdf1,PK-Agency2,active,Main Distribution Frame 1 - Pakistan
+PK-Agency2-MDF2,pk-agency2-mdf2,PK-Agency2,active,Main Distribution Frame 2 - Pakistan
+BD-Agency1-MDF1,bd-agency1-mdf1,BD-Agency1,active,Main Distribution Frame 1 - Bangladesh
+BD-Agency1-MDF2,bd-agency1-mdf2,BD-Agency1,active,Main Distribution Frame 2 - Bangladesh
+BD-Agency2-MDF1,bd-agency2-mdf1,BD-Agency2,active,Main Distribution Frame 1 - Bangladesh
+BD-Agency2-MDF2,bd-agency2-mdf2,BD-Agency2,active,Main Distribution Frame 2 - Bangladesh
+LK-Agency1-MDF1,lk-agency1-mdf1,LK-Agency1,active,Main Distribution Frame 1 - Sri Lanka
+LK-Agency1-MDF2,lk-agency1-mdf2,LK-Agency1,active,Main Distribution Frame 2 - Sri Lanka
+LK-Agency2-MDF1,lk-agency2-mdf1,LK-Agency2,active,Main Distribution Frame 1 - Sri Lanka
+LK-Agency2-MDF2,lk-agency2-mdf2,LK-Agency2,active,Main Distribution Frame 2 - Sri Lanka
+NP-Agency1-MDF1,np-agency1-mdf1,NP-Agency1,active,Main Distribution Frame 1 - Nepal
+NP-Agency1-MDF2,np-agency1-mdf2,NP-Agency1,active,Main Distribution Frame 2 - Nepal
+NP-Agency2-MDF1,np-agency2-mdf1,NP-Agency2,active,Main Distribution Frame 1 - Nepal
+NP-Agency2-MDF2,np-agency2-mdf2,NP-Agency2,active,Main Distribution Frame 2 - Nepal
+BT-Agency1-MDF1,bt-agency1-mdf1,BT-Agency1,active,Main Distribution Frame 1 - Bhutan
+BT-Agency1-MDF2,bt-agency1-mdf2,BT-Agency1,active,Main Distribution Frame 2 - Bhutan
+BT-Agency2-MDF1,bt-agency2-mdf1,BT-Agency2,active,Main Distribution Frame 1 - Bhutan
+BT-Agency2-MDF2,bt-agency2-mdf2,BT-Agency2,active,Main Distribution Frame 2 - Bhutan
+MV-Agency1-MDF1,mv-agency1-mdf1,MV-Agency1,active,Main Distribution Frame 1 - Maldives
+MV-Agency1-MDF2,mv-agency1-mdf2,MV-Agency1,active,Main Distribution Frame 2 - Maldives
+MV-Agency2-MDF1,mv-agency2-mdf1,MV-Agency2,active,Main Distribution Frame 1 - Maldives
+MV-Agency2-MDF2,mv-agency2-mdf2,MV-Agency2,active,Main Distribution Frame 2 - Maldives
+AF-Agency1-MDF1,af-agency1-mdf1,AF-Agency1,active,Main Distribution Frame 1 - Afghanistan
+AF-Agency1-MDF2,af-agency1-mdf2,AF-Agency1,active,Main Distribution Frame 2 - Afghanistan
+AF-Agency2-MDF1,af-agency2-mdf1,AF-Agency2,active,Main Distribution Frame 1 - Afghanistan
+AF-Agency2-MDF2,af-agency2-mdf2,AF-Agency2,active,Main Distribution Frame 2 - Afghanistan
+AU-Agency1-MDF1,au-agency1-mdf1,AU-Agency1,active,Main Distribution Frame 1 - Australia
+AU-Agency1-MDF2,au-agency1-mdf2,AU-Agency1,active,Main Distribution Frame 2 - Australia
+AU-Agency2-MDF1,au-agency2-mdf1,AU-Agency2,active,Main Distribution Frame 1 - Australia
+AU-Agency2-MDF2,au-agency2-mdf2,AU-Agency2,active,Main Distribution Frame 2 - Australia
+NZ-Agency1-MDF1,nz-agency1-mdf1,NZ-Agency1,active,Main Distribution Frame 1 - New Zealand
+NZ-Agency1-MDF2,nz-agency1-mdf2,NZ-Agency1,active,Main Distribution Frame 2 - New Zealand
+NZ-Agency2-MDF1,nz-agency2-mdf1,NZ-Agency2,active,Main Distribution Frame 1 - New Zealand
+NZ-Agency2-MDF2,nz-agency2-mdf2,NZ-Agency2,active,Main Distribution Frame 2 - New Zealand
+PG-Agency1-MDF1,pg-agency1-mdf1,PG-Agency1,active,Main Distribution Frame 1 - Papua New Guinea
+PG-Agency1-MDF2,pg-agency1-mdf2,PG-Agency1,active,Main Distribution Frame 2 - Papua New Guinea
+PG-Agency2-MDF1,pg-agency2-mdf1,PG-Agency2,active,Main Distribution Frame 1 - Papua New Guinea
+PG-Agency2-MDF2,pg-agency2-mdf2,PG-Agency2,active,Main Distribution Frame 2 - Papua New Guinea
+FJ-Agency1-MDF1,fj-agency1-mdf1,FJ-Agency1,active,Main Distribution Frame 1 - Fiji
+FJ-Agency1-MDF2,fj-agency1-mdf2,FJ-Agency1,active,Main Distribution Frame 2 - Fiji
+FJ-Agency2-MDF1,fj-agency2-mdf1,FJ-Agency2,active,Main Distribution Frame 1 - Fiji
+FJ-Agency2-MDF2,fj-agency2-mdf2,FJ-Agency2,active,Main Distribution Frame 2 - Fiji
+WS-Agency1-MDF1,ws-agency1-mdf1,WS-Agency1,active,Main Distribution Frame 1 - Samoa
+WS-Agency1-MDF2,ws-agency1-mdf2,WS-Agency1,active,Main Distribution Frame 2 - Samoa
+WS-Agency2-MDF1,ws-agency2-mdf1,WS-Agency2,active,Main Distribution Frame 1 - Samoa
+WS-Agency2-MDF2,ws-agency2-mdf2,WS-Agency2,active,Main Distribution Frame 2 - Samoa
+TO-Agency1-MDF1,to-agency1-mdf1,TO-Agency1,active,Main Distribution Frame 1 - Tonga
+TO-Agency1-MDF2,to-agency1-mdf2,TO-Agency1,active,Main Distribution Frame 2 - Tonga
+TO-Agency2-MDF1,to-agency2-mdf1,TO-Agency2,active,Main Distribution Frame 1 - Tonga
+TO-Agency2-MDF2,to-agency2-mdf2,TO-Agency2,active,Main Distribution Frame 2 - Tonga
+VU-Agency1-MDF1,vu-agency1-mdf1,VU-Agency1,active,Main Distribution Frame 1 - Vanuatu
+VU-Agency1-MDF2,vu-agency1-mdf2,VU-Agency1,active,Main Distribution Frame 2 - Vanuatu
+VU-Agency2-MDF1,vu-agency2-mdf1,VU-Agency2,active,Main Distribution Frame 1 - Vanuatu
+VU-Agency2-MDF2,vu-agency2-mdf2,VU-Agency2,active,Main Distribution Frame 2 - Vanuatu
+SB-Agency1-MDF1,sb-agency1-mdf1,SB-Agency1,active,Main Distribution Frame 1 - Solomon Islands
+SB-Agency1-MDF2,sb-agency1-mdf2,SB-Agency1,active,Main Distribution Frame 2 - Solomon Islands
+SB-Agency2-MDF1,sb-agency2-mdf1,SB-Agency2,active,Main Distribution Frame 1 - Solomon Islands
+SB-Agency2-MDF2,sb-agency2-mdf2,SB-Agency2,active,Main Distribution Frame 2 - Solomon Islands
+NC-Agency1-MDF1,nc-agency1-mdf1,NC-Agency1,active,Main Distribution Frame 1 - New Caledonia
+NC-Agency1-MDF2,nc-agency1-mdf2,NC-Agency1,active,Main Distribution Frame 2 - New Caledonia
+NC-Agency2-MDF1,nc-agency2-mdf1,NC-Agency2,active,Main Distribution Frame 1 - New Caledonia
+NC-Agency2-MDF2,nc-agency2-mdf2,NC-Agency2,active,Main Distribution Frame 2 - New Caledonia
+PF-Agency1-MDF1,pf-agency1-mdf1,PF-Agency1,active,Main Distribution Frame 1 - French Polynesia
+PF-Agency1-MDF2,pf-agency1-mdf2,PF-Agency1,active,Main Distribution Frame 2 - French Polynesia
+PF-Agency2-MDF1,pf-agency2-mdf1,PF-Agency2,active,Main Distribution Frame 1 - French Polynesia
+PF-Agency2-MDF2,pf-agency2-mdf2,PF-Agency2,active,Main Distribution Frame 2 - French Polynesia
+GU-Agency1-MDF1,gu-agency1-mdf1,GU-Agency1,active,Main Distribution Frame 1 - Guam
+GU-Agency1-MDF2,gu-agency1-mdf2,GU-Agency1,active,Main Distribution Frame 2 - Guam
+GU-Agency2-MDF1,gu-agency2-mdf1,GU-Agency2,active,Main Distribution Frame 1 - Guam
+GU-Agency2-MDF2,gu-agency2-mdf2,GU-Agency2,active,Main Distribution Frame 2 - Guam
+PW-Agency1-MDF1,pw-agency1-mdf1,PW-Agency1,active,Main Distribution Frame 1 - Palau
+PW-Agency1-MDF2,pw-agency1-mdf2,PW-Agency1,active,Main Distribution Frame 2 - Palau
+PW-Agency2-MDF1,pw-agency2-mdf1,PW-Agency2,active,Main Distribution Frame 1 - Palau
+PW-Agency2-MDF2,pw-agency2-mdf2,PW-Agency2,active,Main Distribution Frame 2 - Palau
+FM-Agency1-MDF1,fm-agency1-mdf1,FM-Agency1,active,Main Distribution Frame 1 - Micronesia
+FM-Agency1-MDF2,fm-agency1-mdf2,FM-Agency1,active,Main Distribution Frame 2 - Micronesia
+FM-Agency2-MDF1,fm-agency2-mdf1,FM-Agency2,active,Main Distribution Frame 1 - Micronesia
+FM-Agency2-MDF2,fm-agency2-mdf2,FM-Agency2,active,Main Distribution Frame 2 - Micronesia
+MH-Agency1-MDF1,mh-agency1-mdf1,MH-Agency1,active,Main Distribution Frame 1 - Marshall Islands
+MH-Agency1-MDF2,mh-agency1-mdf2,MH-Agency1,active,Main Distribution Frame 2 - Marshall Islands
+MH-Agency2-MDF1,mh-agency2-mdf1,MH-Agency2,active,Main Distribution Frame 1 - Marshall Islands
+MH-Agency2-MDF2,mh-agency2-mdf2,MH-Agency2,active,Main Distribution Frame 2 - Marshall Islands
+KI-Agency1-MDF1,ki-agency1-mdf1,KI-Agency1,active,Main Distribution Frame 1 - Kiribati
+KI-Agency1-MDF2,ki-agency1-mdf2,KI-Agency1,active,Main Distribution Frame 2 - Kiribati
+KI-Agency2-MDF1,ki-agency2-mdf1,KI-Agency2,active,Main Distribution Frame 1 - Kiribati
+KI-Agency2-MDF2,ki-agency2-mdf2,KI-Agency2,active,Main Distribution Frame 2 - Kiribati
+NR-Agency1-MDF1,nr-agency1-mdf1,NR-Agency1,active,Main Distribution Frame 1 - Nauru
+NR-Agency1-MDF2,nr-agency1-mdf2,NR-Agency1,active,Main Distribution Frame 2 - Nauru
+NR-Agency2-MDF1,nr-agency2-mdf1,NR-Agency2,active,Main Distribution Frame 1 - Nauru
+NR-Agency2-MDF2,nr-agency2-mdf2,NR-Agency2,active,Main Distribution Frame 2 - Nauru
+TV-Agency1-MDF1,tv-agency1-mdf1,TV-Agency1,active,Main Distribution Frame 1 - Tuvalu
+TV-Agency1-MDF2,tv-agency1-mdf2,TV-Agency1,active,Main Distribution Frame 2 - Tuvalu
+TV-Agency2-MDF1,tv-agency2-mdf1,TV-Agency2,active,Main Distribution Frame 1 - Tuvalu
+TV-Agency2-MDF2,tv-agency2-mdf2,TV-Agency2,active,Main Distribution Frame 2 - Tuvalu
+KZ-Agency1-MDF1,kz-agency1-mdf1,KZ-Agency1,active,Main Distribution Frame 1 - Kazakhstan
+KZ-Agency1-MDF2,kz-agency1-mdf2,KZ-Agency1,active,Main Distribution Frame 2 - Kazakhstan
+KZ-Agency2-MDF1,kz-agency2-mdf1,KZ-Agency2,active,Main Distribution Frame 1 - Kazakhstan
+KZ-Agency2-MDF2,kz-agency2-mdf2,KZ-Agency2,active,Main Distribution Frame 2 - Kazakhstan
+UZ-Agency1-MDF1,uz-agency1-mdf1,UZ-Agency1,active,Main Distribution Frame 1 - Uzbekistan
+UZ-Agency1-MDF2,uz-agency1-mdf2,UZ-Agency1,active,Main Distribution Frame 2 - Uzbekistan
+UZ-Agency2-MDF1,uz-agency2-mdf1,UZ-Agency2,active,Main Distribution Frame 1 - Uzbekistan
+UZ-Agency2-MDF2,uz-agency2-mdf2,UZ-Agency2,active,Main Distribution Frame 2 - Uzbekistan
+TM-Agency1-MDF1,tm-agency1-mdf1,TM-Agency1,active,Main Distribution Frame 1 - Turkmenistan
+TM-Agency1-MDF2,tm-agency1-mdf2,TM-Agency1,active,Main Distribution Frame 2 - Turkmenistan
+TM-Agency2-MDF1,tm-agency2-mdf1,TM-Agency2,active,Main Distribution Frame 1 - Turkmenistan
+TM-Agency2-MDF2,tm-agency2-mdf2,TM-Agency2,active,Main Distribution Frame 2 - Turkmenistan
+KG-Agency1-MDF1,kg-agency1-mdf1,KG-Agency1,active,Main Distribution Frame 1 - Kyrgyzstan
+KG-Agency1-MDF2,kg-agency1-mdf2,KG-Agency1,active,Main Distribution Frame 2 - Kyrgyzstan
+KG-Agency2-MDF1,kg-agency2-mdf1,KG-Agency2,active,Main Distribution Frame 1 - Kyrgyzstan
+KG-Agency2-MDF2,kg-agency2-mdf2,KG-Agency2,active,Main Distribution Frame 2 - Kyrgyzstan
+TJ-Agency1-MDF1,tj-agency1-mdf1,TJ-Agency1,active,Main Distribution Frame 1 - Tajikistan
+TJ-Agency1-MDF2,tj-agency1-mdf2,TJ-Agency1,active,Main Distribution Frame 2 - Tajikistan
+TJ-Agency2-MDF1,tj-agency2-mdf1,TJ-Agency2,active,Main Distribution Frame 1 - Tajikistan
+TJ-Agency2-MDF2,tj-agency2-mdf2,TJ-Agency2,active,Main Distribution Frame 2 - Tajikistan

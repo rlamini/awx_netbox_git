@@ -1,0 +1,6 @@
+name,slug,description
+Internet DIA,internet-dia,Dedicated Internet Access
+MPLS,mpls,MPLS WAN connectivity
+Dark Fiber,dark-fiber,Dark fiber interconnect
+Cross Connect,cross-connect,Datacenter cross connect
+Cloud Connect,cloud-connect,Cloud provider direct connect
