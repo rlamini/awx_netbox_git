@@ -1,0 +1,31 @@
+name,slug,site,status,description
+EMEA-DC-CLOUD-Network Core,emea-dc-cloud-network-core,EMEA-DC-CLOUD,active,Core network equipment room
+EMEA-DC-CLOUD-Server Hall A,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD,active,Primary server hall
+EMEA-DC-CLOUD-Server Hall B,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD,active,Secondary server hall
+EMEA-DC-CLOUD-Storage Room,emea-dc-cloud-storage-room,EMEA-DC-CLOUD,active,Storage systems room
+EMEA-DC-CLOUD-Meet-Me Room,emea-dc-cloud-meet-me-room,EMEA-DC-CLOUD,active,Carrier interconnection room
+EMEA-DC-ONPREM-Network Core,emea-dc-onprem-network-core,EMEA-DC-ONPREM,active,Core network equipment room
+EMEA-DC-ONPREM-Server Hall A,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM,active,Primary server hall
+EMEA-DC-ONPREM-Server Hall B,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM,active,Secondary server hall
+EMEA-DC-ONPREM-Storage Room,emea-dc-onprem-storage-room,EMEA-DC-ONPREM,active,Storage systems room
+EMEA-DC-ONPREM-Meet-Me Room,emea-dc-onprem-meet-me-room,EMEA-DC-ONPREM,active,Carrier interconnection room
+APAC-DC-CLOUD-Network Core,apac-dc-cloud-network-core,APAC-DC-CLOUD,active,Core network equipment room
+APAC-DC-CLOUD-Server Hall A,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD,active,Primary server hall
+APAC-DC-CLOUD-Server Hall B,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD,active,Secondary server hall
+APAC-DC-CLOUD-Storage Room,apac-dc-cloud-storage-room,APAC-DC-CLOUD,active,Storage systems room
+APAC-DC-CLOUD-Meet-Me Room,apac-dc-cloud-meet-me-room,APAC-DC-CLOUD,active,Carrier interconnection room
+APAC-DC-ONPREM-Network Core,apac-dc-onprem-network-core,APAC-DC-ONPREM,active,Core network equipment room
+APAC-DC-ONPREM-Server Hall A,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM,active,Primary server hall
+APAC-DC-ONPREM-Server Hall B,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM,active,Secondary server hall
+APAC-DC-ONPREM-Storage Room,apac-dc-onprem-storage-room,APAC-DC-ONPREM,active,Storage systems room
+APAC-DC-ONPREM-Meet-Me Room,apac-dc-onprem-meet-me-room,APAC-DC-ONPREM,active,Carrier interconnection room
+AMER-DC-CLOUD-Network Core,amer-dc-cloud-network-core,AMER-DC-CLOUD,active,Core network equipment room
+AMER-DC-CLOUD-Server Hall A,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD,active,Primary server hall
+AMER-DC-CLOUD-Server Hall B,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD,active,Secondary server hall
+AMER-DC-CLOUD-Storage Room,amer-dc-cloud-storage-room,AMER-DC-CLOUD,active,Storage systems room
+AMER-DC-CLOUD-Meet-Me Room,amer-dc-cloud-meet-me-room,AMER-DC-CLOUD,active,Carrier interconnection room
+AMER-DC-ONPREM-Network Core,amer-dc-onprem-network-core,AMER-DC-ONPREM,active,Core network equipment room
+AMER-DC-ONPREM-Server Hall A,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM,active,Primary server hall
+AMER-DC-ONPREM-Server Hall B,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM,active,Secondary server hall
+AMER-DC-ONPREM-Storage Room,amer-dc-onprem-storage-room,AMER-DC-ONPREM,active,Storage systems room
+AMER-DC-ONPREM-Meet-Me Room,amer-dc-onprem-meet-me-room,AMER-DC-ONPREM,active,Carrier interconnection room
