@@ -1,235 +1,235 @@
 name,device_type,role,site,location,rack,position,face,status,description
-EMEA-DC-CLOUD-CORE-SW01,nexus-9508,Core Switch,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R01,1,front,active,Core Switch - Nexus 9508
-EMEA-DC-CLOUD-CORE-SW02,nexus-9508,Core Switch,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R02,14,front,active,Core Switch - Nexus 9508
-EMEA-DC-CLOUD-DIST-SW01,nexus-93180yc-fx,Distribution Switch,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
-EMEA-DC-CLOUD-DIST-SW02,nexus-93180yc-fx,Distribution Switch,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
-EMEA-DC-CLOUD-FW-EXT-01,pa-5450,Firewall,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R01,30,front,active,Firewall - PA-5450
-EMEA-DC-CLOUD-FW-EXT-02,pa-5450,Firewall,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R02,34,front,active,Firewall - PA-5450
-EMEA-DC-CLOUD-FW-INT-01,pa-3260,Firewall,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R03,38,front,active,Firewall - PA-3260
-EMEA-DC-CLOUD-FW-INT-02,pa-3260,Firewall,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R04,40,front,active,Firewall - PA-3260
-EMEA-DC-CLOUD-RTR-EDGE-01,asr-9001,Router,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R01,42,front,active,Router - ASR 9001
-EMEA-DC-CLOUD-RTR-EDGE-02,asr-9001,Router,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R02,44,front,active,Router - ASR 9001
-EMEA-DC-CLOUD-LB-01,big-ip-i10800,Load Balancer,emea-dc-cloud,emea-dc-cloud-network-core,EMEA-DC-CLOUD-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
-EMEA-DC-CLOUD-SPINE-A01,dcs-7280sr-48c6,Spine Switch,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-EMEA-DC-CLOUD-SPINE-A02,dcs-7280sr-48c6,Spine Switch,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-EMEA-DC-CLOUD-LEAF-A01,dcs-7050sx3-48yc12,Leaf Switch,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-EMEA-DC-CLOUD-LEAF-A02,dcs-7050sx3-48yc12,Leaf Switch,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-EMEA-DC-CLOUD-ESX-A01,poweredge-r750,Server,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R05,1,front,active,Server - PowerEdge R750
-EMEA-DC-CLOUD-ESX-A02,poweredge-r750,Server,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R06,3,front,active,Server - PowerEdge R750
-EMEA-DC-CLOUD-ESX-A03,poweredge-r750,Server,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R01,5,front,active,Server - PowerEdge R750
-EMEA-DC-CLOUD-ESX-A04,poweredge-r750,Server,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R02,7,front,active,Server - PowerEdge R750
-EMEA-DC-CLOUD-ESX-A05,proliant-dl380-gen10,Server,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
-EMEA-DC-CLOUD-ESX-A06,proliant-dl380-gen10,Server,emea-dc-cloud,emea-dc-cloud-server-hall-a,EMEA-DC-CLOUD-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
-EMEA-DC-CLOUD-SPINE-B01,dcs-7280sr-48c6,Spine Switch,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-EMEA-DC-CLOUD-SPINE-B02,dcs-7280sr-48c6,Spine Switch,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-EMEA-DC-CLOUD-LEAF-B01,dcs-7050sx3-48yc12,Leaf Switch,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-EMEA-DC-CLOUD-LEAF-B02,dcs-7050sx3-48yc12,Leaf Switch,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-EMEA-DC-CLOUD-ESX-B01,poweredge-r750,Server,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R05,1,front,active,Server - PowerEdge R750
-EMEA-DC-CLOUD-ESX-B02,poweredge-r750,Server,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R06,3,front,active,Server - PowerEdge R750
-EMEA-DC-CLOUD-ESX-B03,poweredge-r750,Server,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R01,5,front,active,Server - PowerEdge R750
-EMEA-DC-CLOUD-ESX-B04,poweredge-r750,Server,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R02,7,front,active,Server - PowerEdge R750
-EMEA-DC-CLOUD-PHYS-DB01,proliant-dl380-gen10,Server,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
-EMEA-DC-CLOUD-PHYS-DB02,proliant-dl380-gen10,Server,emea-dc-cloud,emea-dc-cloud-server-hall-b,EMEA-DC-CLOUD-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
-EMEA-DC-CLOUD-ACC-STG-01,catalyst-9300-48p,Access Switch,emea-dc-cloud,emea-dc-cloud-storage-room,EMEA-DC-CLOUD-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
-EMEA-DC-CLOUD-ACC-STG-02,catalyst-9300-48p,Access Switch,emea-dc-cloud,emea-dc-cloud-storage-room,EMEA-DC-CLOUD-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
-EMEA-DC-CLOUD-SAN-01,powerstore-9200t,Storage,emea-dc-cloud,emea-dc-cloud-storage-room,EMEA-DC-CLOUD-STG-R03,1,front,active,Storage - PowerStore 9200T
-EMEA-DC-CLOUD-SAN-02,powerstore-9200t,Storage,emea-dc-cloud,emea-dc-cloud-storage-room,EMEA-DC-CLOUD-STG-R01,3,front,active,Storage - PowerStore 9200T
-EMEA-DC-CLOUD-NAS-01,powerscale-f600,Storage,emea-dc-cloud,emea-dc-cloud-storage-room,EMEA-DC-CLOUD-STG-R02,5,front,active,Storage - PowerScale F600
-EMEA-DC-CLOUD-NAS-02,powerscale-f600,Storage,emea-dc-cloud,emea-dc-cloud-storage-room,EMEA-DC-CLOUD-STG-R03,9,front,active,Storage - PowerScale F600
-EMEA-DC-CLOUD-MMR-SW01,catalyst-9300-48p,Access Switch,emea-dc-cloud,emea-dc-cloud-meet-me-room,EMEA-DC-CLOUD-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
-EMEA-DC-CLOUD-OOB-RTR01,isr-4431,OOB Router,emea-dc-cloud,emea-dc-cloud-meet-me-room,EMEA-DC-CLOUD-MMR-R02,2,front,active,OOB Router - ISR 4431
-EMEA-DC-ONPREM-CORE-SW01,nexus-9508,Core Switch,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R01,1,front,active,Core Switch - Nexus 9508
-EMEA-DC-ONPREM-CORE-SW02,nexus-9508,Core Switch,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R02,14,front,active,Core Switch - Nexus 9508
-EMEA-DC-ONPREM-DIST-SW01,nexus-93180yc-fx,Distribution Switch,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
-EMEA-DC-ONPREM-DIST-SW02,nexus-93180yc-fx,Distribution Switch,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
-EMEA-DC-ONPREM-FW-EXT-01,pa-5450,Firewall,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R01,30,front,active,Firewall - PA-5450
-EMEA-DC-ONPREM-FW-EXT-02,pa-5450,Firewall,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R02,34,front,active,Firewall - PA-5450
-EMEA-DC-ONPREM-FW-INT-01,pa-3260,Firewall,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R03,38,front,active,Firewall - PA-3260
-EMEA-DC-ONPREM-FW-INT-02,pa-3260,Firewall,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R04,40,front,active,Firewall - PA-3260
-EMEA-DC-ONPREM-RTR-EDGE-01,asr-9001,Router,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R01,42,front,active,Router - ASR 9001
-EMEA-DC-ONPREM-RTR-EDGE-02,asr-9001,Router,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R02,44,front,active,Router - ASR 9001
-EMEA-DC-ONPREM-LB-01,big-ip-i10800,Load Balancer,emea-dc-onprem,emea-dc-onprem-network-core,EMEA-DC-ONPREM-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
-EMEA-DC-ONPREM-SPINE-A01,dcs-7280sr-48c6,Spine Switch,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-EMEA-DC-ONPREM-SPINE-A02,dcs-7280sr-48c6,Spine Switch,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-EMEA-DC-ONPREM-LEAF-A01,dcs-7050sx3-48yc12,Leaf Switch,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-EMEA-DC-ONPREM-LEAF-A02,dcs-7050sx3-48yc12,Leaf Switch,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-EMEA-DC-ONPREM-ESX-A01,poweredge-r750,Server,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R05,1,front,active,Server - PowerEdge R750
-EMEA-DC-ONPREM-ESX-A02,poweredge-r750,Server,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R06,3,front,active,Server - PowerEdge R750
-EMEA-DC-ONPREM-ESX-A03,poweredge-r750,Server,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R01,5,front,active,Server - PowerEdge R750
-EMEA-DC-ONPREM-ESX-A04,poweredge-r750,Server,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R02,7,front,active,Server - PowerEdge R750
-EMEA-DC-ONPREM-ESX-A05,proliant-dl380-gen10,Server,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
-EMEA-DC-ONPREM-ESX-A06,proliant-dl380-gen10,Server,emea-dc-onprem,emea-dc-onprem-server-hall-a,EMEA-DC-ONPREM-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
-EMEA-DC-ONPREM-SPINE-B01,dcs-7280sr-48c6,Spine Switch,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-EMEA-DC-ONPREM-SPINE-B02,dcs-7280sr-48c6,Spine Switch,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-EMEA-DC-ONPREM-LEAF-B01,dcs-7050sx3-48yc12,Leaf Switch,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-EMEA-DC-ONPREM-LEAF-B02,dcs-7050sx3-48yc12,Leaf Switch,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-EMEA-DC-ONPREM-ESX-B01,poweredge-r750,Server,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R05,1,front,active,Server - PowerEdge R750
-EMEA-DC-ONPREM-ESX-B02,poweredge-r750,Server,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R06,3,front,active,Server - PowerEdge R750
-EMEA-DC-ONPREM-ESX-B03,poweredge-r750,Server,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R01,5,front,active,Server - PowerEdge R750
-EMEA-DC-ONPREM-ESX-B04,poweredge-r750,Server,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R02,7,front,active,Server - PowerEdge R750
-EMEA-DC-ONPREM-PHYS-DB01,proliant-dl380-gen10,Server,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
-EMEA-DC-ONPREM-PHYS-DB02,proliant-dl380-gen10,Server,emea-dc-onprem,emea-dc-onprem-server-hall-b,EMEA-DC-ONPREM-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
-EMEA-DC-ONPREM-ACC-STG-01,catalyst-9300-48p,Access Switch,emea-dc-onprem,emea-dc-onprem-storage-room,EMEA-DC-ONPREM-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
-EMEA-DC-ONPREM-ACC-STG-02,catalyst-9300-48p,Access Switch,emea-dc-onprem,emea-dc-onprem-storage-room,EMEA-DC-ONPREM-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
-EMEA-DC-ONPREM-SAN-01,powerstore-9200t,Storage,emea-dc-onprem,emea-dc-onprem-storage-room,EMEA-DC-ONPREM-STG-R03,1,front,active,Storage - PowerStore 9200T
-EMEA-DC-ONPREM-SAN-02,powerstore-9200t,Storage,emea-dc-onprem,emea-dc-onprem-storage-room,EMEA-DC-ONPREM-STG-R01,3,front,active,Storage - PowerStore 9200T
-EMEA-DC-ONPREM-NAS-01,powerscale-f600,Storage,emea-dc-onprem,emea-dc-onprem-storage-room,EMEA-DC-ONPREM-STG-R02,5,front,active,Storage - PowerScale F600
-EMEA-DC-ONPREM-NAS-02,powerscale-f600,Storage,emea-dc-onprem,emea-dc-onprem-storage-room,EMEA-DC-ONPREM-STG-R03,9,front,active,Storage - PowerScale F600
-EMEA-DC-ONPREM-MMR-SW01,catalyst-9300-48p,Access Switch,emea-dc-onprem,emea-dc-onprem-meet-me-room,EMEA-DC-ONPREM-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
-EMEA-DC-ONPREM-OOB-RTR01,isr-4431,OOB Router,emea-dc-onprem,emea-dc-onprem-meet-me-room,EMEA-DC-ONPREM-MMR-R02,2,front,active,OOB Router - ISR 4431
-APAC-DC-CLOUD-CORE-SW01,nexus-9508,Core Switch,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R01,1,front,active,Core Switch - Nexus 9508
-APAC-DC-CLOUD-CORE-SW02,nexus-9508,Core Switch,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R02,14,front,active,Core Switch - Nexus 9508
-APAC-DC-CLOUD-DIST-SW01,nexus-93180yc-fx,Distribution Switch,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
-APAC-DC-CLOUD-DIST-SW02,nexus-93180yc-fx,Distribution Switch,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
-APAC-DC-CLOUD-FW-EXT-01,pa-5450,Firewall,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R01,30,front,active,Firewall - PA-5450
-APAC-DC-CLOUD-FW-EXT-02,pa-5450,Firewall,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R02,34,front,active,Firewall - PA-5450
-APAC-DC-CLOUD-FW-INT-01,pa-3260,Firewall,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R03,38,front,active,Firewall - PA-3260
-APAC-DC-CLOUD-FW-INT-02,pa-3260,Firewall,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R04,40,front,active,Firewall - PA-3260
-APAC-DC-CLOUD-RTR-EDGE-01,asr-9001,Router,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R01,42,front,active,Router - ASR 9001
-APAC-DC-CLOUD-RTR-EDGE-02,asr-9001,Router,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R02,44,front,active,Router - ASR 9001
-APAC-DC-CLOUD-LB-01,big-ip-i10800,Load Balancer,apac-dc-cloud,apac-dc-cloud-network-core,APAC-DC-CLOUD-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
-APAC-DC-CLOUD-SPINE-A01,dcs-7280sr-48c6,Spine Switch,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-APAC-DC-CLOUD-SPINE-A02,dcs-7280sr-48c6,Spine Switch,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-APAC-DC-CLOUD-LEAF-A01,dcs-7050sx3-48yc12,Leaf Switch,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-APAC-DC-CLOUD-LEAF-A02,dcs-7050sx3-48yc12,Leaf Switch,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-APAC-DC-CLOUD-ESX-A01,poweredge-r750,Server,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R05,1,front,active,Server - PowerEdge R750
-APAC-DC-CLOUD-ESX-A02,poweredge-r750,Server,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R06,3,front,active,Server - PowerEdge R750
-APAC-DC-CLOUD-ESX-A03,poweredge-r750,Server,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R01,5,front,active,Server - PowerEdge R750
-APAC-DC-CLOUD-ESX-A04,poweredge-r750,Server,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R02,7,front,active,Server - PowerEdge R750
-APAC-DC-CLOUD-ESX-A05,proliant-dl380-gen10,Server,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
-APAC-DC-CLOUD-ESX-A06,proliant-dl380-gen10,Server,apac-dc-cloud,apac-dc-cloud-server-hall-a,APAC-DC-CLOUD-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
-APAC-DC-CLOUD-SPINE-B01,dcs-7280sr-48c6,Spine Switch,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-APAC-DC-CLOUD-SPINE-B02,dcs-7280sr-48c6,Spine Switch,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-APAC-DC-CLOUD-LEAF-B01,dcs-7050sx3-48yc12,Leaf Switch,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-APAC-DC-CLOUD-LEAF-B02,dcs-7050sx3-48yc12,Leaf Switch,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-APAC-DC-CLOUD-ESX-B01,poweredge-r750,Server,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R05,1,front,active,Server - PowerEdge R750
-APAC-DC-CLOUD-ESX-B02,poweredge-r750,Server,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R06,3,front,active,Server - PowerEdge R750
-APAC-DC-CLOUD-ESX-B03,poweredge-r750,Server,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R01,5,front,active,Server - PowerEdge R750
-APAC-DC-CLOUD-ESX-B04,poweredge-r750,Server,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R02,7,front,active,Server - PowerEdge R750
-APAC-DC-CLOUD-PHYS-DB01,proliant-dl380-gen10,Server,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
-APAC-DC-CLOUD-PHYS-DB02,proliant-dl380-gen10,Server,apac-dc-cloud,apac-dc-cloud-server-hall-b,APAC-DC-CLOUD-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
-APAC-DC-CLOUD-ACC-STG-01,catalyst-9300-48p,Access Switch,apac-dc-cloud,apac-dc-cloud-storage-room,APAC-DC-CLOUD-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
-APAC-DC-CLOUD-ACC-STG-02,catalyst-9300-48p,Access Switch,apac-dc-cloud,apac-dc-cloud-storage-room,APAC-DC-CLOUD-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
-APAC-DC-CLOUD-SAN-01,powerstore-9200t,Storage,apac-dc-cloud,apac-dc-cloud-storage-room,APAC-DC-CLOUD-STG-R03,1,front,active,Storage - PowerStore 9200T
-APAC-DC-CLOUD-SAN-02,powerstore-9200t,Storage,apac-dc-cloud,apac-dc-cloud-storage-room,APAC-DC-CLOUD-STG-R01,3,front,active,Storage - PowerStore 9200T
-APAC-DC-CLOUD-NAS-01,powerscale-f600,Storage,apac-dc-cloud,apac-dc-cloud-storage-room,APAC-DC-CLOUD-STG-R02,5,front,active,Storage - PowerScale F600
-APAC-DC-CLOUD-NAS-02,powerscale-f600,Storage,apac-dc-cloud,apac-dc-cloud-storage-room,APAC-DC-CLOUD-STG-R03,9,front,active,Storage - PowerScale F600
-APAC-DC-CLOUD-MMR-SW01,catalyst-9300-48p,Access Switch,apac-dc-cloud,apac-dc-cloud-meet-me-room,APAC-DC-CLOUD-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
-APAC-DC-CLOUD-OOB-RTR01,isr-4431,OOB Router,apac-dc-cloud,apac-dc-cloud-meet-me-room,APAC-DC-CLOUD-MMR-R02,2,front,active,OOB Router - ISR 4431
-APAC-DC-ONPREM-CORE-SW01,nexus-9508,Core Switch,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R01,1,front,active,Core Switch - Nexus 9508
-APAC-DC-ONPREM-CORE-SW02,nexus-9508,Core Switch,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R02,14,front,active,Core Switch - Nexus 9508
-APAC-DC-ONPREM-DIST-SW01,nexus-93180yc-fx,Distribution Switch,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
-APAC-DC-ONPREM-DIST-SW02,nexus-93180yc-fx,Distribution Switch,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
-APAC-DC-ONPREM-FW-EXT-01,pa-5450,Firewall,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R01,30,front,active,Firewall - PA-5450
-APAC-DC-ONPREM-FW-EXT-02,pa-5450,Firewall,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R02,34,front,active,Firewall - PA-5450
-APAC-DC-ONPREM-FW-INT-01,pa-3260,Firewall,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R03,38,front,active,Firewall - PA-3260
-APAC-DC-ONPREM-FW-INT-02,pa-3260,Firewall,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R04,40,front,active,Firewall - PA-3260
-APAC-DC-ONPREM-RTR-EDGE-01,asr-9001,Router,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R01,42,front,active,Router - ASR 9001
-APAC-DC-ONPREM-RTR-EDGE-02,asr-9001,Router,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R02,44,front,active,Router - ASR 9001
-APAC-DC-ONPREM-LB-01,big-ip-i10800,Load Balancer,apac-dc-onprem,apac-dc-onprem-network-core,APAC-DC-ONPREM-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
-APAC-DC-ONPREM-SPINE-A01,dcs-7280sr-48c6,Spine Switch,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-APAC-DC-ONPREM-SPINE-A02,dcs-7280sr-48c6,Spine Switch,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-APAC-DC-ONPREM-LEAF-A01,dcs-7050sx3-48yc12,Leaf Switch,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-APAC-DC-ONPREM-LEAF-A02,dcs-7050sx3-48yc12,Leaf Switch,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-APAC-DC-ONPREM-ESX-A01,poweredge-r750,Server,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R05,1,front,active,Server - PowerEdge R750
-APAC-DC-ONPREM-ESX-A02,poweredge-r750,Server,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R06,3,front,active,Server - PowerEdge R750
-APAC-DC-ONPREM-ESX-A03,poweredge-r750,Server,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R01,5,front,active,Server - PowerEdge R750
-APAC-DC-ONPREM-ESX-A04,poweredge-r750,Server,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R02,7,front,active,Server - PowerEdge R750
-APAC-DC-ONPREM-ESX-A05,proliant-dl380-gen10,Server,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
-APAC-DC-ONPREM-ESX-A06,proliant-dl380-gen10,Server,apac-dc-onprem,apac-dc-onprem-server-hall-a,APAC-DC-ONPREM-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
-APAC-DC-ONPREM-SPINE-B01,dcs-7280sr-48c6,Spine Switch,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-APAC-DC-ONPREM-SPINE-B02,dcs-7280sr-48c6,Spine Switch,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-APAC-DC-ONPREM-LEAF-B01,dcs-7050sx3-48yc12,Leaf Switch,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-APAC-DC-ONPREM-LEAF-B02,dcs-7050sx3-48yc12,Leaf Switch,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-APAC-DC-ONPREM-ESX-B01,poweredge-r750,Server,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R05,1,front,active,Server - PowerEdge R750
-APAC-DC-ONPREM-ESX-B02,poweredge-r750,Server,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R06,3,front,active,Server - PowerEdge R750
-APAC-DC-ONPREM-ESX-B03,poweredge-r750,Server,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R01,5,front,active,Server - PowerEdge R750
-APAC-DC-ONPREM-ESX-B04,poweredge-r750,Server,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R02,7,front,active,Server - PowerEdge R750
-APAC-DC-ONPREM-PHYS-DB01,proliant-dl380-gen10,Server,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
-APAC-DC-ONPREM-PHYS-DB02,proliant-dl380-gen10,Server,apac-dc-onprem,apac-dc-onprem-server-hall-b,APAC-DC-ONPREM-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
-APAC-DC-ONPREM-ACC-STG-01,catalyst-9300-48p,Access Switch,apac-dc-onprem,apac-dc-onprem-storage-room,APAC-DC-ONPREM-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
-APAC-DC-ONPREM-ACC-STG-02,catalyst-9300-48p,Access Switch,apac-dc-onprem,apac-dc-onprem-storage-room,APAC-DC-ONPREM-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
-APAC-DC-ONPREM-SAN-01,powerstore-9200t,Storage,apac-dc-onprem,apac-dc-onprem-storage-room,APAC-DC-ONPREM-STG-R03,1,front,active,Storage - PowerStore 9200T
-APAC-DC-ONPREM-SAN-02,powerstore-9200t,Storage,apac-dc-onprem,apac-dc-onprem-storage-room,APAC-DC-ONPREM-STG-R01,3,front,active,Storage - PowerStore 9200T
-APAC-DC-ONPREM-NAS-01,powerscale-f600,Storage,apac-dc-onprem,apac-dc-onprem-storage-room,APAC-DC-ONPREM-STG-R02,5,front,active,Storage - PowerScale F600
-APAC-DC-ONPREM-NAS-02,powerscale-f600,Storage,apac-dc-onprem,apac-dc-onprem-storage-room,APAC-DC-ONPREM-STG-R03,9,front,active,Storage - PowerScale F600
-APAC-DC-ONPREM-MMR-SW01,catalyst-9300-48p,Access Switch,apac-dc-onprem,apac-dc-onprem-meet-me-room,APAC-DC-ONPREM-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
-APAC-DC-ONPREM-OOB-RTR01,isr-4431,OOB Router,apac-dc-onprem,apac-dc-onprem-meet-me-room,APAC-DC-ONPREM-MMR-R02,2,front,active,OOB Router - ISR 4431
-AMER-DC-CLOUD-CORE-SW01,nexus-9508,Core Switch,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R01,1,front,active,Core Switch - Nexus 9508
-AMER-DC-CLOUD-CORE-SW02,nexus-9508,Core Switch,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R02,14,front,active,Core Switch - Nexus 9508
-AMER-DC-CLOUD-DIST-SW01,nexus-93180yc-fx,Distribution Switch,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
-AMER-DC-CLOUD-DIST-SW02,nexus-93180yc-fx,Distribution Switch,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
-AMER-DC-CLOUD-FW-EXT-01,pa-5450,Firewall,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R01,30,front,active,Firewall - PA-5450
-AMER-DC-CLOUD-FW-EXT-02,pa-5450,Firewall,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R02,34,front,active,Firewall - PA-5450
-AMER-DC-CLOUD-FW-INT-01,pa-3260,Firewall,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R03,38,front,active,Firewall - PA-3260
-AMER-DC-CLOUD-FW-INT-02,pa-3260,Firewall,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R04,40,front,active,Firewall - PA-3260
-AMER-DC-CLOUD-RTR-EDGE-01,asr-9001,Router,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R01,42,front,active,Router - ASR 9001
-AMER-DC-CLOUD-RTR-EDGE-02,asr-9001,Router,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R02,44,front,active,Router - ASR 9001
-AMER-DC-CLOUD-LB-01,big-ip-i10800,Load Balancer,amer-dc-cloud,amer-dc-cloud-network-core,AMER-DC-CLOUD-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
-AMER-DC-CLOUD-SPINE-A01,dcs-7280sr-48c6,Spine Switch,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-AMER-DC-CLOUD-SPINE-A02,dcs-7280sr-48c6,Spine Switch,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-AMER-DC-CLOUD-LEAF-A01,dcs-7050sx3-48yc12,Leaf Switch,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-AMER-DC-CLOUD-LEAF-A02,dcs-7050sx3-48yc12,Leaf Switch,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-AMER-DC-CLOUD-ESX-A01,poweredge-r750,Server,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R05,1,front,active,Server - PowerEdge R750
-AMER-DC-CLOUD-ESX-A02,poweredge-r750,Server,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R06,3,front,active,Server - PowerEdge R750
-AMER-DC-CLOUD-ESX-A03,poweredge-r750,Server,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R01,5,front,active,Server - PowerEdge R750
-AMER-DC-CLOUD-ESX-A04,poweredge-r750,Server,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R02,7,front,active,Server - PowerEdge R750
-AMER-DC-CLOUD-ESX-A05,proliant-dl380-gen10,Server,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
-AMER-DC-CLOUD-ESX-A06,proliant-dl380-gen10,Server,amer-dc-cloud,amer-dc-cloud-server-hall-a,AMER-DC-CLOUD-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
-AMER-DC-CLOUD-SPINE-B01,dcs-7280sr-48c6,Spine Switch,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-AMER-DC-CLOUD-SPINE-B02,dcs-7280sr-48c6,Spine Switch,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-AMER-DC-CLOUD-LEAF-B01,dcs-7050sx3-48yc12,Leaf Switch,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-AMER-DC-CLOUD-LEAF-B02,dcs-7050sx3-48yc12,Leaf Switch,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-AMER-DC-CLOUD-ESX-B01,poweredge-r750,Server,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R05,1,front,active,Server - PowerEdge R750
-AMER-DC-CLOUD-ESX-B02,poweredge-r750,Server,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R06,3,front,active,Server - PowerEdge R750
-AMER-DC-CLOUD-ESX-B03,poweredge-r750,Server,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R01,5,front,active,Server - PowerEdge R750
-AMER-DC-CLOUD-ESX-B04,poweredge-r750,Server,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R02,7,front,active,Server - PowerEdge R750
-AMER-DC-CLOUD-PHYS-DB01,proliant-dl380-gen10,Server,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
-AMER-DC-CLOUD-PHYS-DB02,proliant-dl380-gen10,Server,amer-dc-cloud,amer-dc-cloud-server-hall-b,AMER-DC-CLOUD-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
-AMER-DC-CLOUD-ACC-STG-01,catalyst-9300-48p,Access Switch,amer-dc-cloud,amer-dc-cloud-storage-room,AMER-DC-CLOUD-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
-AMER-DC-CLOUD-ACC-STG-02,catalyst-9300-48p,Access Switch,amer-dc-cloud,amer-dc-cloud-storage-room,AMER-DC-CLOUD-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
-AMER-DC-CLOUD-SAN-01,powerstore-9200t,Storage,amer-dc-cloud,amer-dc-cloud-storage-room,AMER-DC-CLOUD-STG-R03,1,front,active,Storage - PowerStore 9200T
-AMER-DC-CLOUD-SAN-02,powerstore-9200t,Storage,amer-dc-cloud,amer-dc-cloud-storage-room,AMER-DC-CLOUD-STG-R01,3,front,active,Storage - PowerStore 9200T
-AMER-DC-CLOUD-NAS-01,powerscale-f600,Storage,amer-dc-cloud,amer-dc-cloud-storage-room,AMER-DC-CLOUD-STG-R02,5,front,active,Storage - PowerScale F600
-AMER-DC-CLOUD-NAS-02,powerscale-f600,Storage,amer-dc-cloud,amer-dc-cloud-storage-room,AMER-DC-CLOUD-STG-R03,9,front,active,Storage - PowerScale F600
-AMER-DC-CLOUD-MMR-SW01,catalyst-9300-48p,Access Switch,amer-dc-cloud,amer-dc-cloud-meet-me-room,AMER-DC-CLOUD-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
-AMER-DC-CLOUD-OOB-RTR01,isr-4431,OOB Router,amer-dc-cloud,amer-dc-cloud-meet-me-room,AMER-DC-CLOUD-MMR-R02,2,front,active,OOB Router - ISR 4431
-AMER-DC-ONPREM-CORE-SW01,nexus-9508,Core Switch,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R01,1,front,active,Core Switch - Nexus 9508
-AMER-DC-ONPREM-CORE-SW02,nexus-9508,Core Switch,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R02,14,front,active,Core Switch - Nexus 9508
-AMER-DC-ONPREM-DIST-SW01,nexus-93180yc-fx,Distribution Switch,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
-AMER-DC-ONPREM-DIST-SW02,nexus-93180yc-fx,Distribution Switch,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
-AMER-DC-ONPREM-FW-EXT-01,pa-5450,Firewall,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R01,30,front,active,Firewall - PA-5450
-AMER-DC-ONPREM-FW-EXT-02,pa-5450,Firewall,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R02,34,front,active,Firewall - PA-5450
-AMER-DC-ONPREM-FW-INT-01,pa-3260,Firewall,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R03,38,front,active,Firewall - PA-3260
-AMER-DC-ONPREM-FW-INT-02,pa-3260,Firewall,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R04,40,front,active,Firewall - PA-3260
-AMER-DC-ONPREM-RTR-EDGE-01,asr-9001,Router,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R01,42,front,active,Router - ASR 9001
-AMER-DC-ONPREM-RTR-EDGE-02,asr-9001,Router,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R02,44,front,active,Router - ASR 9001
-AMER-DC-ONPREM-LB-01,big-ip-i10800,Load Balancer,amer-dc-onprem,amer-dc-onprem-network-core,AMER-DC-ONPREM-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
-AMER-DC-ONPREM-SPINE-A01,dcs-7280sr-48c6,Spine Switch,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-AMER-DC-ONPREM-SPINE-A02,dcs-7280sr-48c6,Spine Switch,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-AMER-DC-ONPREM-LEAF-A01,dcs-7050sx3-48yc12,Leaf Switch,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-AMER-DC-ONPREM-LEAF-A02,dcs-7050sx3-48yc12,Leaf Switch,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-AMER-DC-ONPREM-ESX-A01,poweredge-r750,Server,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R05,1,front,active,Server - PowerEdge R750
-AMER-DC-ONPREM-ESX-A02,poweredge-r750,Server,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R06,3,front,active,Server - PowerEdge R750
-AMER-DC-ONPREM-ESX-A03,poweredge-r750,Server,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R01,5,front,active,Server - PowerEdge R750
-AMER-DC-ONPREM-ESX-A04,poweredge-r750,Server,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R02,7,front,active,Server - PowerEdge R750
-AMER-DC-ONPREM-ESX-A05,proliant-dl380-gen10,Server,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
-AMER-DC-ONPREM-ESX-A06,proliant-dl380-gen10,Server,amer-dc-onprem,amer-dc-onprem-server-hall-a,AMER-DC-ONPREM-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
-AMER-DC-ONPREM-SPINE-B01,dcs-7280sr-48c6,Spine Switch,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
-AMER-DC-ONPREM-SPINE-B02,dcs-7280sr-48c6,Spine Switch,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
-AMER-DC-ONPREM-LEAF-B01,dcs-7050sx3-48yc12,Leaf Switch,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
-AMER-DC-ONPREM-LEAF-B02,dcs-7050sx3-48yc12,Leaf Switch,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
-AMER-DC-ONPREM-ESX-B01,poweredge-r750,Server,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R05,1,front,active,Server - PowerEdge R750
-AMER-DC-ONPREM-ESX-B02,poweredge-r750,Server,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R06,3,front,active,Server - PowerEdge R750
-AMER-DC-ONPREM-ESX-B03,poweredge-r750,Server,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R01,5,front,active,Server - PowerEdge R750
-AMER-DC-ONPREM-ESX-B04,poweredge-r750,Server,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R02,7,front,active,Server - PowerEdge R750
-AMER-DC-ONPREM-PHYS-DB01,proliant-dl380-gen10,Server,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
-AMER-DC-ONPREM-PHYS-DB02,proliant-dl380-gen10,Server,amer-dc-onprem,amer-dc-onprem-server-hall-b,AMER-DC-ONPREM-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
-AMER-DC-ONPREM-ACC-STG-01,catalyst-9300-48p,Access Switch,amer-dc-onprem,amer-dc-onprem-storage-room,AMER-DC-ONPREM-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
-AMER-DC-ONPREM-ACC-STG-02,catalyst-9300-48p,Access Switch,amer-dc-onprem,amer-dc-onprem-storage-room,AMER-DC-ONPREM-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
-AMER-DC-ONPREM-SAN-01,powerstore-9200t,Storage,amer-dc-onprem,amer-dc-onprem-storage-room,AMER-DC-ONPREM-STG-R03,1,front,active,Storage - PowerStore 9200T
-AMER-DC-ONPREM-SAN-02,powerstore-9200t,Storage,amer-dc-onprem,amer-dc-onprem-storage-room,AMER-DC-ONPREM-STG-R01,3,front,active,Storage - PowerStore 9200T
-AMER-DC-ONPREM-NAS-01,powerscale-f600,Storage,amer-dc-onprem,amer-dc-onprem-storage-room,AMER-DC-ONPREM-STG-R02,5,front,active,Storage - PowerScale F600
-AMER-DC-ONPREM-NAS-02,powerscale-f600,Storage,amer-dc-onprem,amer-dc-onprem-storage-room,AMER-DC-ONPREM-STG-R03,9,front,active,Storage - PowerScale F600
-AMER-DC-ONPREM-MMR-SW01,catalyst-9300-48p,Access Switch,amer-dc-onprem,amer-dc-onprem-meet-me-room,AMER-DC-ONPREM-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
-AMER-DC-ONPREM-OOB-RTR01,isr-4431,OOB Router,amer-dc-onprem,amer-dc-onprem-meet-me-room,AMER-DC-ONPREM-MMR-R02,2,front,active,OOB Router - ISR 4431
+EMEA-DC-CLOUD-CORE-SW01,Nexus 9508,Core Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R01,1,front,active,Core Switch - Nexus 9508
+EMEA-DC-CLOUD-CORE-SW02,Nexus 9508,Core Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R02,14,front,active,Core Switch - Nexus 9508
+EMEA-DC-CLOUD-DIST-SW01,Nexus 93180YC-FX,Distribution Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
+EMEA-DC-CLOUD-DIST-SW02,Nexus 93180YC-FX,Distribution Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
+EMEA-DC-CLOUD-FW-EXT-01,PA-5450,Firewall,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R01,30,front,active,Firewall - PA-5450
+EMEA-DC-CLOUD-FW-EXT-02,PA-5450,Firewall,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R02,34,front,active,Firewall - PA-5450
+EMEA-DC-CLOUD-FW-INT-01,PA-3260,Firewall,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R03,38,front,active,Firewall - PA-3260
+EMEA-DC-CLOUD-FW-INT-02,PA-3260,Firewall,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R04,40,front,active,Firewall - PA-3260
+EMEA-DC-CLOUD-RTR-EDGE-01,ASR 9001,Router,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R01,42,front,active,Router - ASR 9001
+EMEA-DC-CLOUD-RTR-EDGE-02,ASR 9001,Router,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R02,44,front,active,Router - ASR 9001
+EMEA-DC-CLOUD-LB-01,BIG-IP i10800,Load Balancer,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
+EMEA-DC-CLOUD-SPINE-A01,DCS-7280SR-48C6,Spine Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+EMEA-DC-CLOUD-SPINE-A02,DCS-7280SR-48C6,Spine Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+EMEA-DC-CLOUD-LEAF-A01,DCS-7050SX3-48YC12,Leaf Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+EMEA-DC-CLOUD-LEAF-A02,DCS-7050SX3-48YC12,Leaf Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+EMEA-DC-CLOUD-ESX-A01,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R05,1,front,active,Server - PowerEdge R750
+EMEA-DC-CLOUD-ESX-A02,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R06,3,front,active,Server - PowerEdge R750
+EMEA-DC-CLOUD-ESX-A03,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R01,5,front,active,Server - PowerEdge R750
+EMEA-DC-CLOUD-ESX-A04,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R02,7,front,active,Server - PowerEdge R750
+EMEA-DC-CLOUD-ESX-A05,ProLiant DL380 Gen10,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
+EMEA-DC-CLOUD-ESX-A06,ProLiant DL380 Gen10,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
+EMEA-DC-CLOUD-SPINE-B01,DCS-7280SR-48C6,Spine Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+EMEA-DC-CLOUD-SPINE-B02,DCS-7280SR-48C6,Spine Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+EMEA-DC-CLOUD-LEAF-B01,DCS-7050SX3-48YC12,Leaf Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+EMEA-DC-CLOUD-LEAF-B02,DCS-7050SX3-48YC12,Leaf Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+EMEA-DC-CLOUD-ESX-B01,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R05,1,front,active,Server - PowerEdge R750
+EMEA-DC-CLOUD-ESX-B02,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R06,3,front,active,Server - PowerEdge R750
+EMEA-DC-CLOUD-ESX-B03,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R01,5,front,active,Server - PowerEdge R750
+EMEA-DC-CLOUD-ESX-B04,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R02,7,front,active,Server - PowerEdge R750
+EMEA-DC-CLOUD-PHYS-DB01,ProLiant DL380 Gen10,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
+EMEA-DC-CLOUD-PHYS-DB02,ProLiant DL380 Gen10,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
+EMEA-DC-CLOUD-ACC-STG-01,Catalyst 9300-48P,Access Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
+EMEA-DC-CLOUD-ACC-STG-02,Catalyst 9300-48P,Access Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
+EMEA-DC-CLOUD-SAN-01,PowerStore 9200T,Storage,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R03,1,front,active,Storage - PowerStore 9200T
+EMEA-DC-CLOUD-SAN-02,PowerStore 9200T,Storage,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R01,3,front,active,Storage - PowerStore 9200T
+EMEA-DC-CLOUD-NAS-01,PowerScale F600,Storage,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R02,5,front,active,Storage - PowerScale F600
+EMEA-DC-CLOUD-NAS-02,PowerScale F600,Storage,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R03,9,front,active,Storage - PowerScale F600
+EMEA-DC-CLOUD-MMR-SW01,Catalyst 9300-48P,Access Switch,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Meet-Me Room,EMEA-DC-CLOUD-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
+EMEA-DC-CLOUD-OOB-RTR01,ISR 4431,OOB Router,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Meet-Me Room,EMEA-DC-CLOUD-MMR-R02,2,front,active,OOB Router - ISR 4431
+EMEA-DC-ONPREM-CORE-SW01,Nexus 9508,Core Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R01,1,front,active,Core Switch - Nexus 9508
+EMEA-DC-ONPREM-CORE-SW02,Nexus 9508,Core Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R02,14,front,active,Core Switch - Nexus 9508
+EMEA-DC-ONPREM-DIST-SW01,Nexus 93180YC-FX,Distribution Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
+EMEA-DC-ONPREM-DIST-SW02,Nexus 93180YC-FX,Distribution Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
+EMEA-DC-ONPREM-FW-EXT-01,PA-5450,Firewall,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R01,30,front,active,Firewall - PA-5450
+EMEA-DC-ONPREM-FW-EXT-02,PA-5450,Firewall,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R02,34,front,active,Firewall - PA-5450
+EMEA-DC-ONPREM-FW-INT-01,PA-3260,Firewall,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R03,38,front,active,Firewall - PA-3260
+EMEA-DC-ONPREM-FW-INT-02,PA-3260,Firewall,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R04,40,front,active,Firewall - PA-3260
+EMEA-DC-ONPREM-RTR-EDGE-01,ASR 9001,Router,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R01,42,front,active,Router - ASR 9001
+EMEA-DC-ONPREM-RTR-EDGE-02,ASR 9001,Router,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R02,44,front,active,Router - ASR 9001
+EMEA-DC-ONPREM-LB-01,BIG-IP i10800,Load Balancer,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
+EMEA-DC-ONPREM-SPINE-A01,DCS-7280SR-48C6,Spine Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+EMEA-DC-ONPREM-SPINE-A02,DCS-7280SR-48C6,Spine Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+EMEA-DC-ONPREM-LEAF-A01,DCS-7050SX3-48YC12,Leaf Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+EMEA-DC-ONPREM-LEAF-A02,DCS-7050SX3-48YC12,Leaf Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+EMEA-DC-ONPREM-ESX-A01,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R05,1,front,active,Server - PowerEdge R750
+EMEA-DC-ONPREM-ESX-A02,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R06,3,front,active,Server - PowerEdge R750
+EMEA-DC-ONPREM-ESX-A03,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R01,5,front,active,Server - PowerEdge R750
+EMEA-DC-ONPREM-ESX-A04,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R02,7,front,active,Server - PowerEdge R750
+EMEA-DC-ONPREM-ESX-A05,ProLiant DL380 Gen10,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
+EMEA-DC-ONPREM-ESX-A06,ProLiant DL380 Gen10,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
+EMEA-DC-ONPREM-SPINE-B01,DCS-7280SR-48C6,Spine Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+EMEA-DC-ONPREM-SPINE-B02,DCS-7280SR-48C6,Spine Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+EMEA-DC-ONPREM-LEAF-B01,DCS-7050SX3-48YC12,Leaf Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+EMEA-DC-ONPREM-LEAF-B02,DCS-7050SX3-48YC12,Leaf Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+EMEA-DC-ONPREM-ESX-B01,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R05,1,front,active,Server - PowerEdge R750
+EMEA-DC-ONPREM-ESX-B02,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R06,3,front,active,Server - PowerEdge R750
+EMEA-DC-ONPREM-ESX-B03,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R01,5,front,active,Server - PowerEdge R750
+EMEA-DC-ONPREM-ESX-B04,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R02,7,front,active,Server - PowerEdge R750
+EMEA-DC-ONPREM-PHYS-DB01,ProLiant DL380 Gen10,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
+EMEA-DC-ONPREM-PHYS-DB02,ProLiant DL380 Gen10,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
+EMEA-DC-ONPREM-ACC-STG-01,Catalyst 9300-48P,Access Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
+EMEA-DC-ONPREM-ACC-STG-02,Catalyst 9300-48P,Access Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
+EMEA-DC-ONPREM-SAN-01,PowerStore 9200T,Storage,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R03,1,front,active,Storage - PowerStore 9200T
+EMEA-DC-ONPREM-SAN-02,PowerStore 9200T,Storage,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R01,3,front,active,Storage - PowerStore 9200T
+EMEA-DC-ONPREM-NAS-01,PowerScale F600,Storage,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R02,5,front,active,Storage - PowerScale F600
+EMEA-DC-ONPREM-NAS-02,PowerScale F600,Storage,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R03,9,front,active,Storage - PowerScale F600
+EMEA-DC-ONPREM-MMR-SW01,Catalyst 9300-48P,Access Switch,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me Room,EMEA-DC-ONPREM-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
+EMEA-DC-ONPREM-OOB-RTR01,ISR 4431,OOB Router,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me Room,EMEA-DC-ONPREM-MMR-R02,2,front,active,OOB Router - ISR 4431
+APAC-DC-CLOUD-CORE-SW01,Nexus 9508,Core Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R01,1,front,active,Core Switch - Nexus 9508
+APAC-DC-CLOUD-CORE-SW02,Nexus 9508,Core Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R02,14,front,active,Core Switch - Nexus 9508
+APAC-DC-CLOUD-DIST-SW01,Nexus 93180YC-FX,Distribution Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
+APAC-DC-CLOUD-DIST-SW02,Nexus 93180YC-FX,Distribution Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
+APAC-DC-CLOUD-FW-EXT-01,PA-5450,Firewall,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R01,30,front,active,Firewall - PA-5450
+APAC-DC-CLOUD-FW-EXT-02,PA-5450,Firewall,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R02,34,front,active,Firewall - PA-5450
+APAC-DC-CLOUD-FW-INT-01,PA-3260,Firewall,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R03,38,front,active,Firewall - PA-3260
+APAC-DC-CLOUD-FW-INT-02,PA-3260,Firewall,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R04,40,front,active,Firewall - PA-3260
+APAC-DC-CLOUD-RTR-EDGE-01,ASR 9001,Router,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R01,42,front,active,Router - ASR 9001
+APAC-DC-CLOUD-RTR-EDGE-02,ASR 9001,Router,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R02,44,front,active,Router - ASR 9001
+APAC-DC-CLOUD-LB-01,BIG-IP i10800,Load Balancer,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
+APAC-DC-CLOUD-SPINE-A01,DCS-7280SR-48C6,Spine Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+APAC-DC-CLOUD-SPINE-A02,DCS-7280SR-48C6,Spine Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+APAC-DC-CLOUD-LEAF-A01,DCS-7050SX3-48YC12,Leaf Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+APAC-DC-CLOUD-LEAF-A02,DCS-7050SX3-48YC12,Leaf Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+APAC-DC-CLOUD-ESX-A01,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R05,1,front,active,Server - PowerEdge R750
+APAC-DC-CLOUD-ESX-A02,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R06,3,front,active,Server - PowerEdge R750
+APAC-DC-CLOUD-ESX-A03,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R01,5,front,active,Server - PowerEdge R750
+APAC-DC-CLOUD-ESX-A04,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R02,7,front,active,Server - PowerEdge R750
+APAC-DC-CLOUD-ESX-A05,ProLiant DL380 Gen10,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
+APAC-DC-CLOUD-ESX-A06,ProLiant DL380 Gen10,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
+APAC-DC-CLOUD-SPINE-B01,DCS-7280SR-48C6,Spine Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+APAC-DC-CLOUD-SPINE-B02,DCS-7280SR-48C6,Spine Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+APAC-DC-CLOUD-LEAF-B01,DCS-7050SX3-48YC12,Leaf Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+APAC-DC-CLOUD-LEAF-B02,DCS-7050SX3-48YC12,Leaf Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+APAC-DC-CLOUD-ESX-B01,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R05,1,front,active,Server - PowerEdge R750
+APAC-DC-CLOUD-ESX-B02,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R06,3,front,active,Server - PowerEdge R750
+APAC-DC-CLOUD-ESX-B03,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R01,5,front,active,Server - PowerEdge R750
+APAC-DC-CLOUD-ESX-B04,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R02,7,front,active,Server - PowerEdge R750
+APAC-DC-CLOUD-PHYS-DB01,ProLiant DL380 Gen10,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
+APAC-DC-CLOUD-PHYS-DB02,ProLiant DL380 Gen10,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
+APAC-DC-CLOUD-ACC-STG-01,Catalyst 9300-48P,Access Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
+APAC-DC-CLOUD-ACC-STG-02,Catalyst 9300-48P,Access Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
+APAC-DC-CLOUD-SAN-01,PowerStore 9200T,Storage,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R03,1,front,active,Storage - PowerStore 9200T
+APAC-DC-CLOUD-SAN-02,PowerStore 9200T,Storage,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R01,3,front,active,Storage - PowerStore 9200T
+APAC-DC-CLOUD-NAS-01,PowerScale F600,Storage,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R02,5,front,active,Storage - PowerScale F600
+APAC-DC-CLOUD-NAS-02,PowerScale F600,Storage,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R03,9,front,active,Storage - PowerScale F600
+APAC-DC-CLOUD-MMR-SW01,Catalyst 9300-48P,Access Switch,APAC-DC-CLOUD,APAC-DC-CLOUD-Meet-Me Room,APAC-DC-CLOUD-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
+APAC-DC-CLOUD-OOB-RTR01,ISR 4431,OOB Router,APAC-DC-CLOUD,APAC-DC-CLOUD-Meet-Me Room,APAC-DC-CLOUD-MMR-R02,2,front,active,OOB Router - ISR 4431
+APAC-DC-ONPREM-CORE-SW01,Nexus 9508,Core Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R01,1,front,active,Core Switch - Nexus 9508
+APAC-DC-ONPREM-CORE-SW02,Nexus 9508,Core Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R02,14,front,active,Core Switch - Nexus 9508
+APAC-DC-ONPREM-DIST-SW01,Nexus 93180YC-FX,Distribution Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
+APAC-DC-ONPREM-DIST-SW02,Nexus 93180YC-FX,Distribution Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
+APAC-DC-ONPREM-FW-EXT-01,PA-5450,Firewall,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R01,30,front,active,Firewall - PA-5450
+APAC-DC-ONPREM-FW-EXT-02,PA-5450,Firewall,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R02,34,front,active,Firewall - PA-5450
+APAC-DC-ONPREM-FW-INT-01,PA-3260,Firewall,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R03,38,front,active,Firewall - PA-3260
+APAC-DC-ONPREM-FW-INT-02,PA-3260,Firewall,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R04,40,front,active,Firewall - PA-3260
+APAC-DC-ONPREM-RTR-EDGE-01,ASR 9001,Router,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R01,42,front,active,Router - ASR 9001
+APAC-DC-ONPREM-RTR-EDGE-02,ASR 9001,Router,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R02,44,front,active,Router - ASR 9001
+APAC-DC-ONPREM-LB-01,BIG-IP i10800,Load Balancer,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
+APAC-DC-ONPREM-SPINE-A01,DCS-7280SR-48C6,Spine Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+APAC-DC-ONPREM-SPINE-A02,DCS-7280SR-48C6,Spine Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+APAC-DC-ONPREM-LEAF-A01,DCS-7050SX3-48YC12,Leaf Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+APAC-DC-ONPREM-LEAF-A02,DCS-7050SX3-48YC12,Leaf Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+APAC-DC-ONPREM-ESX-A01,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R05,1,front,active,Server - PowerEdge R750
+APAC-DC-ONPREM-ESX-A02,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R06,3,front,active,Server - PowerEdge R750
+APAC-DC-ONPREM-ESX-A03,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R01,5,front,active,Server - PowerEdge R750
+APAC-DC-ONPREM-ESX-A04,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R02,7,front,active,Server - PowerEdge R750
+APAC-DC-ONPREM-ESX-A05,ProLiant DL380 Gen10,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
+APAC-DC-ONPREM-ESX-A06,ProLiant DL380 Gen10,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
+APAC-DC-ONPREM-SPINE-B01,DCS-7280SR-48C6,Spine Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+APAC-DC-ONPREM-SPINE-B02,DCS-7280SR-48C6,Spine Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+APAC-DC-ONPREM-LEAF-B01,DCS-7050SX3-48YC12,Leaf Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+APAC-DC-ONPREM-LEAF-B02,DCS-7050SX3-48YC12,Leaf Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+APAC-DC-ONPREM-ESX-B01,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R05,1,front,active,Server - PowerEdge R750
+APAC-DC-ONPREM-ESX-B02,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R06,3,front,active,Server - PowerEdge R750
+APAC-DC-ONPREM-ESX-B03,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R01,5,front,active,Server - PowerEdge R750
+APAC-DC-ONPREM-ESX-B04,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R02,7,front,active,Server - PowerEdge R750
+APAC-DC-ONPREM-PHYS-DB01,ProLiant DL380 Gen10,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
+APAC-DC-ONPREM-PHYS-DB02,ProLiant DL380 Gen10,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
+APAC-DC-ONPREM-ACC-STG-01,Catalyst 9300-48P,Access Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
+APAC-DC-ONPREM-ACC-STG-02,Catalyst 9300-48P,Access Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
+APAC-DC-ONPREM-SAN-01,PowerStore 9200T,Storage,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R03,1,front,active,Storage - PowerStore 9200T
+APAC-DC-ONPREM-SAN-02,PowerStore 9200T,Storage,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R01,3,front,active,Storage - PowerStore 9200T
+APAC-DC-ONPREM-NAS-01,PowerScale F600,Storage,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R02,5,front,active,Storage - PowerScale F600
+APAC-DC-ONPREM-NAS-02,PowerScale F600,Storage,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R03,9,front,active,Storage - PowerScale F600
+APAC-DC-ONPREM-MMR-SW01,Catalyst 9300-48P,Access Switch,APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me Room,APAC-DC-ONPREM-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
+APAC-DC-ONPREM-OOB-RTR01,ISR 4431,OOB Router,APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me Room,APAC-DC-ONPREM-MMR-R02,2,front,active,OOB Router - ISR 4431
+AMER-DC-CLOUD-CORE-SW01,Nexus 9508,Core Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R01,1,front,active,Core Switch - Nexus 9508
+AMER-DC-CLOUD-CORE-SW02,Nexus 9508,Core Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R02,14,front,active,Core Switch - Nexus 9508
+AMER-DC-CLOUD-DIST-SW01,Nexus 93180YC-FX,Distribution Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
+AMER-DC-CLOUD-DIST-SW02,Nexus 93180YC-FX,Distribution Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
+AMER-DC-CLOUD-FW-EXT-01,PA-5450,Firewall,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R01,30,front,active,Firewall - PA-5450
+AMER-DC-CLOUD-FW-EXT-02,PA-5450,Firewall,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R02,34,front,active,Firewall - PA-5450
+AMER-DC-CLOUD-FW-INT-01,PA-3260,Firewall,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R03,38,front,active,Firewall - PA-3260
+AMER-DC-CLOUD-FW-INT-02,PA-3260,Firewall,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R04,40,front,active,Firewall - PA-3260
+AMER-DC-CLOUD-RTR-EDGE-01,ASR 9001,Router,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R01,42,front,active,Router - ASR 9001
+AMER-DC-CLOUD-RTR-EDGE-02,ASR 9001,Router,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R02,44,front,active,Router - ASR 9001
+AMER-DC-CLOUD-LB-01,BIG-IP i10800,Load Balancer,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
+AMER-DC-CLOUD-SPINE-A01,DCS-7280SR-48C6,Spine Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+AMER-DC-CLOUD-SPINE-A02,DCS-7280SR-48C6,Spine Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+AMER-DC-CLOUD-LEAF-A01,DCS-7050SX3-48YC12,Leaf Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+AMER-DC-CLOUD-LEAF-A02,DCS-7050SX3-48YC12,Leaf Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+AMER-DC-CLOUD-ESX-A01,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R05,1,front,active,Server - PowerEdge R750
+AMER-DC-CLOUD-ESX-A02,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R06,3,front,active,Server - PowerEdge R750
+AMER-DC-CLOUD-ESX-A03,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R01,5,front,active,Server - PowerEdge R750
+AMER-DC-CLOUD-ESX-A04,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R02,7,front,active,Server - PowerEdge R750
+AMER-DC-CLOUD-ESX-A05,ProLiant DL380 Gen10,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
+AMER-DC-CLOUD-ESX-A06,ProLiant DL380 Gen10,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
+AMER-DC-CLOUD-SPINE-B01,DCS-7280SR-48C6,Spine Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+AMER-DC-CLOUD-SPINE-B02,DCS-7280SR-48C6,Spine Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+AMER-DC-CLOUD-LEAF-B01,DCS-7050SX3-48YC12,Leaf Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+AMER-DC-CLOUD-LEAF-B02,DCS-7050SX3-48YC12,Leaf Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+AMER-DC-CLOUD-ESX-B01,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R05,1,front,active,Server - PowerEdge R750
+AMER-DC-CLOUD-ESX-B02,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R06,3,front,active,Server - PowerEdge R750
+AMER-DC-CLOUD-ESX-B03,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R01,5,front,active,Server - PowerEdge R750
+AMER-DC-CLOUD-ESX-B04,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R02,7,front,active,Server - PowerEdge R750
+AMER-DC-CLOUD-PHYS-DB01,ProLiant DL380 Gen10,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
+AMER-DC-CLOUD-PHYS-DB02,ProLiant DL380 Gen10,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
+AMER-DC-CLOUD-ACC-STG-01,Catalyst 9300-48P,Access Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
+AMER-DC-CLOUD-ACC-STG-02,Catalyst 9300-48P,Access Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
+AMER-DC-CLOUD-SAN-01,PowerStore 9200T,Storage,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R03,1,front,active,Storage - PowerStore 9200T
+AMER-DC-CLOUD-SAN-02,PowerStore 9200T,Storage,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R01,3,front,active,Storage - PowerStore 9200T
+AMER-DC-CLOUD-NAS-01,PowerScale F600,Storage,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R02,5,front,active,Storage - PowerScale F600
+AMER-DC-CLOUD-NAS-02,PowerScale F600,Storage,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R03,9,front,active,Storage - PowerScale F600
+AMER-DC-CLOUD-MMR-SW01,Catalyst 9300-48P,Access Switch,AMER-DC-CLOUD,AMER-DC-CLOUD-Meet-Me Room,AMER-DC-CLOUD-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
+AMER-DC-CLOUD-OOB-RTR01,ISR 4431,OOB Router,AMER-DC-CLOUD,AMER-DC-CLOUD-Meet-Me Room,AMER-DC-CLOUD-MMR-R02,2,front,active,OOB Router - ISR 4431
+AMER-DC-ONPREM-CORE-SW01,Nexus 9508,Core Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R01,1,front,active,Core Switch - Nexus 9508
+AMER-DC-ONPREM-CORE-SW02,Nexus 9508,Core Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R02,14,front,active,Core Switch - Nexus 9508
+AMER-DC-ONPREM-DIST-SW01,Nexus 93180YC-FX,Distribution Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R03,27,front,active,Distribution Switch - Nexus 93180YC-FX
+AMER-DC-ONPREM-DIST-SW02,Nexus 93180YC-FX,Distribution Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R04,28,front,active,Distribution Switch - Nexus 93180YC-FX
+AMER-DC-ONPREM-FW-EXT-01,PA-5450,Firewall,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R01,30,front,active,Firewall - PA-5450
+AMER-DC-ONPREM-FW-EXT-02,PA-5450,Firewall,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R02,34,front,active,Firewall - PA-5450
+AMER-DC-ONPREM-FW-INT-01,PA-3260,Firewall,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R03,38,front,active,Firewall - PA-3260
+AMER-DC-ONPREM-FW-INT-02,PA-3260,Firewall,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R04,40,front,active,Firewall - PA-3260
+AMER-DC-ONPREM-RTR-EDGE-01,ASR 9001,Router,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R01,42,front,active,Router - ASR 9001
+AMER-DC-ONPREM-RTR-EDGE-02,ASR 9001,Router,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R02,44,front,active,Router - ASR 9001
+AMER-DC-ONPREM-LB-01,BIG-IP i10800,Load Balancer,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R03,46,front,active,Load Balancer - BIG-IP i10800
+AMER-DC-ONPREM-SPINE-A01,DCS-7280SR-48C6,Spine Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+AMER-DC-ONPREM-SPINE-A02,DCS-7280SR-48C6,Spine Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+AMER-DC-ONPREM-LEAF-A01,DCS-7050SX3-48YC12,Leaf Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+AMER-DC-ONPREM-LEAF-A02,DCS-7050SX3-48YC12,Leaf Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+AMER-DC-ONPREM-ESX-A01,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R05,1,front,active,Server - PowerEdge R750
+AMER-DC-ONPREM-ESX-A02,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R06,3,front,active,Server - PowerEdge R750
+AMER-DC-ONPREM-ESX-A03,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R01,5,front,active,Server - PowerEdge R750
+AMER-DC-ONPREM-ESX-A04,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R02,7,front,active,Server - PowerEdge R750
+AMER-DC-ONPREM-ESX-A05,ProLiant DL380 Gen10,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R03,9,front,active,Server - ProLiant DL380 Gen10
+AMER-DC-ONPREM-ESX-A06,ProLiant DL380 Gen10,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R04,11,front,active,Server - ProLiant DL380 Gen10
+AMER-DC-ONPREM-SPINE-B01,DCS-7280SR-48C6,Spine Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R01,45,front,active,Spine Switch - DCS-7280SR-48C6
+AMER-DC-ONPREM-SPINE-B02,DCS-7280SR-48C6,Spine Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R02,46,front,active,Spine Switch - DCS-7280SR-48C6
+AMER-DC-ONPREM-LEAF-B01,DCS-7050SX3-48YC12,Leaf Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R03,44,front,active,Leaf Switch - DCS-7050SX3-48YC12
+AMER-DC-ONPREM-LEAF-B02,DCS-7050SX3-48YC12,Leaf Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R04,43,front,active,Leaf Switch - DCS-7050SX3-48YC12
+AMER-DC-ONPREM-ESX-B01,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R05,1,front,active,Server - PowerEdge R750
+AMER-DC-ONPREM-ESX-B02,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R06,3,front,active,Server - PowerEdge R750
+AMER-DC-ONPREM-ESX-B03,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R01,5,front,active,Server - PowerEdge R750
+AMER-DC-ONPREM-ESX-B04,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R02,7,front,active,Server - PowerEdge R750
+AMER-DC-ONPREM-PHYS-DB01,ProLiant DL380 Gen10,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R03,9,front,active,Server - ProLiant DL380 Gen10
+AMER-DC-ONPREM-PHYS-DB02,ProLiant DL380 Gen10,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R04,11,front,active,Server - ProLiant DL380 Gen10
+AMER-DC-ONPREM-ACC-STG-01,Catalyst 9300-48P,Access Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R01,45,front,active,Access Switch - Catalyst 9300-48P
+AMER-DC-ONPREM-ACC-STG-02,Catalyst 9300-48P,Access Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R02,46,front,active,Access Switch - Catalyst 9300-48P
+AMER-DC-ONPREM-SAN-01,PowerStore 9200T,Storage,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R03,1,front,active,Storage - PowerStore 9200T
+AMER-DC-ONPREM-SAN-02,PowerStore 9200T,Storage,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R01,3,front,active,Storage - PowerStore 9200T
+AMER-DC-ONPREM-NAS-01,PowerScale F600,Storage,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R02,5,front,active,Storage - PowerScale F600
+AMER-DC-ONPREM-NAS-02,PowerScale F600,Storage,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R03,9,front,active,Storage - PowerScale F600
+AMER-DC-ONPREM-MMR-SW01,Catalyst 9300-48P,Access Switch,AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me Room,AMER-DC-ONPREM-MMR-R01,1,front,active,Access Switch - Catalyst 9300-48P
+AMER-DC-ONPREM-OOB-RTR01,ISR 4431,OOB Router,AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me Room,AMER-DC-ONPREM-MMR-R02,2,front,active,OOB Router - ISR 4431
