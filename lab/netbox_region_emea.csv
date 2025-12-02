@@ -1,0 +1,63 @@
+name,slug,parent,description
+Western Europe,western-europe,EMEA,Western European countries
+France,france,Western Europe,FR - French Republic
+Germany,germany,Western Europe,DE - Federal Republic of Germany
+United Kingdom,united-kingdom,Western Europe,GB - United Kingdom
+Netherlands,netherlands,Western Europe,NL - Kingdom of the Netherlands
+Belgium,belgium,Western Europe,BE - Kingdom of Belgium
+Luxembourg,luxembourg,Western Europe,LU - Grand Duchy of Luxembourg
+Switzerland,switzerland,Western Europe,CH - Swiss Confederation
+Austria,austria,Western Europe,AT - Republic of Austria
+Ireland,ireland,Western Europe,IE - Republic of Ireland
+Monaco,monaco,Western Europe,MC - Principality of Monaco
+Southern Europe,southern-europe,EMEA,Southern European countries
+Spain,spain,Southern Europe,ES - Kingdom of Spain
+Portugal,portugal,Southern Europe,PT - Portuguese Republic
+Italy,italy,Southern Europe,IT - Italian Republic
+Greece,greece,Southern Europe,GR - Hellenic Republic
+Malta,malta,Southern Europe,MT - Republic of Malta
+Cyprus,cyprus,Southern Europe,CY - Republic of Cyprus
+Andorra,andorra,Southern Europe,AD - Principality of Andorra
+San Marino,san-marino,Southern Europe,SM - Republic of San Marino
+Northern Europe,northern-europe,EMEA,Northern European countries
+Sweden,sweden,Northern Europe,SE - Kingdom of Sweden
+Norway,norway,Northern Europe,NO - Kingdom of Norway
+Denmark,denmark,Northern Europe,DK - Kingdom of Denmark
+Finland,finland,Northern Europe,FI - Republic of Finland
+Iceland,iceland,Northern Europe,IS - Republic of Iceland
+Eastern Europe,eastern-europe,EMEA,Eastern European countries
+Poland,poland,Eastern Europe,PL - Republic of Poland
+Czech Republic,czech-republic,Eastern Europe,CZ - Czech Republic
+Hungary,hungary,Eastern Europe,HU - Hungary
+Romania,romania,Eastern Europe,RO - Romania
+Bulgaria,bulgaria,Eastern Europe,BG - Republic of Bulgaria
+Slovakia,slovakia,Eastern Europe,SK - Slovak Republic
+Slovenia,slovenia,Eastern Europe,SI - Republic of Slovenia
+Croatia,croatia,Eastern Europe,HR - Republic of Croatia
+Serbia,serbia,Eastern Europe,RS - Republic of Serbia
+Ukraine,ukraine,Eastern Europe,UA - Ukraine
+Lithuania,lithuania,Eastern Europe,LT - Republic of Lithuania
+Latvia,latvia,Eastern Europe,LV - Republic of Latvia
+Estonia,estonia,Eastern Europe,EE - Republic of Estonia
+Middle East,middle-east,EMEA,Middle Eastern countries
+United Arab Emirates,united-arab-emirates,Middle East,AE - United Arab Emirates
+Saudi Arabia,saudi-arabia,Middle East,SA - Kingdom of Saudi Arabia
+Qatar,qatar,Middle East,QA - State of Qatar
+Kuwait,kuwait,Middle East,KW - State of Kuwait
+Bahrain,bahrain,Middle East,BH - Kingdom of Bahrain
+Oman,oman,Middle East,OM - Sultanate of Oman
+Israel,israel,Middle East,IL - State of Israel
+Jordan,jordan,Middle East,JO - Hashemite Kingdom of Jordan
+Lebanon,lebanon,Middle East,LB - Lebanese Republic
+Turkey,turkey,Middle East,TR - Republic of Turkey
+Africa,africa,EMEA,African countries
+South Africa,south-africa,Africa,ZA - Republic of South Africa
+Algeria,algeria,Africa,DZ - Republic of Algeria
+Morocco,morocco,Africa,MA - Kingdom of Morocco
+Nigeria,nigeria,Africa,NG - Federal Republic of Nigeria
+Kenya,kenya,Africa,KE - Republic of Kenya
+Ghana,ghana,Africa,GH - Republic of Ghana
+Tunisia,tunisia,Africa,TN - Republic of Tunisia
+Senegal,senegal,Africa,SN - Republic of Senegal
+Ivory Coast,ivory-coast,Africa,CI - Republic of Côte d'Ivoire
+Mauritius,mauritius,Africa,MU - Republic of Mauritius
