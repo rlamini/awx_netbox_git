@@ -1,169 +1,169 @@
-circuit,term_side,site,port_speed,upstream_speed,description
-US-Agency1-PRI-001,A,US-Agency1,1000000,1000000,Primary circuit termination at US-Agency1
-US-Agency1-BKP-001,A,US-Agency1,500000,500000,Backup circuit termination at US-Agency1
-US-Agency2-PRI-001,A,US-Agency2,1000000,1000000,Primary circuit termination at US-Agency2
-US-Agency2-BKP-001,A,US-Agency2,500000,500000,Backup circuit termination at US-Agency2
-CA-Agency1-PRI-001,A,CA-Agency1,1000000,1000000,Primary circuit termination at CA-Agency1
-CA-Agency1-BKP-001,A,CA-Agency1,500000,500000,Backup circuit termination at CA-Agency1
-CA-Agency2-PRI-001,A,CA-Agency2,1000000,1000000,Primary circuit termination at CA-Agency2
-CA-Agency2-BKP-001,A,CA-Agency2,500000,500000,Backup circuit termination at CA-Agency2
-MX-Agency1-PRI-001,A,MX-Agency1,1000000,1000000,Primary circuit termination at MX-Agency1
-MX-Agency1-BKP-001,A,MX-Agency1,500000,500000,Backup circuit termination at MX-Agency1
-MX-Agency2-PRI-001,A,MX-Agency2,1000000,1000000,Primary circuit termination at MX-Agency2
-MX-Agency2-BKP-001,A,MX-Agency2,500000,500000,Backup circuit termination at MX-Agency2
-GT-Agency1-PRI-001,A,GT-Agency1,1000000,1000000,Primary circuit termination at GT-Agency1
-GT-Agency1-BKP-001,A,GT-Agency1,500000,500000,Backup circuit termination at GT-Agency1
-GT-Agency2-PRI-001,A,GT-Agency2,1000000,1000000,Primary circuit termination at GT-Agency2
-GT-Agency2-BKP-001,A,GT-Agency2,500000,500000,Backup circuit termination at GT-Agency2
-BZ-Agency1-PRI-001,A,BZ-Agency1,1000000,1000000,Primary circuit termination at BZ-Agency1
-BZ-Agency1-BKP-001,A,BZ-Agency1,500000,500000,Backup circuit termination at BZ-Agency1
-BZ-Agency2-PRI-001,A,BZ-Agency2,1000000,1000000,Primary circuit termination at BZ-Agency2
-BZ-Agency2-BKP-001,A,BZ-Agency2,500000,500000,Backup circuit termination at BZ-Agency2
-HN-Agency1-PRI-001,A,HN-Agency1,1000000,1000000,Primary circuit termination at HN-Agency1
-HN-Agency1-BKP-001,A,HN-Agency1,500000,500000,Backup circuit termination at HN-Agency1
-HN-Agency2-PRI-001,A,HN-Agency2,1000000,1000000,Primary circuit termination at HN-Agency2
-HN-Agency2-BKP-001,A,HN-Agency2,500000,500000,Backup circuit termination at HN-Agency2
-SV-Agency1-PRI-001,A,SV-Agency1,1000000,1000000,Primary circuit termination at SV-Agency1
-SV-Agency1-BKP-001,A,SV-Agency1,500000,500000,Backup circuit termination at SV-Agency1
-SV-Agency2-PRI-001,A,SV-Agency2,1000000,1000000,Primary circuit termination at SV-Agency2
-SV-Agency2-BKP-001,A,SV-Agency2,500000,500000,Backup circuit termination at SV-Agency2
-NI-Agency1-PRI-001,A,NI-Agency1,1000000,1000000,Primary circuit termination at NI-Agency1
-NI-Agency1-BKP-001,A,NI-Agency1,500000,500000,Backup circuit termination at NI-Agency1
-NI-Agency2-PRI-001,A,NI-Agency2,1000000,1000000,Primary circuit termination at NI-Agency2
-NI-Agency2-BKP-001,A,NI-Agency2,500000,500000,Backup circuit termination at NI-Agency2
-CR-Agency1-PRI-001,A,CR-Agency1,1000000,1000000,Primary circuit termination at CR-Agency1
-CR-Agency1-BKP-001,A,CR-Agency1,500000,500000,Backup circuit termination at CR-Agency1
-CR-Agency2-PRI-001,A,CR-Agency2,1000000,1000000,Primary circuit termination at CR-Agency2
-CR-Agency2-BKP-001,A,CR-Agency2,500000,500000,Backup circuit termination at CR-Agency2
-PA-Agency1-PRI-001,A,PA-Agency1,1000000,1000000,Primary circuit termination at PA-Agency1
-PA-Agency1-BKP-001,A,PA-Agency1,500000,500000,Backup circuit termination at PA-Agency1
-PA-Agency2-PRI-001,A,PA-Agency2,1000000,1000000,Primary circuit termination at PA-Agency2
-PA-Agency2-BKP-001,A,PA-Agency2,500000,500000,Backup circuit termination at PA-Agency2
-CU-Agency1-PRI-001,A,CU-Agency1,1000000,1000000,Primary circuit termination at CU-Agency1
-CU-Agency1-BKP-001,A,CU-Agency1,500000,500000,Backup circuit termination at CU-Agency1
-CU-Agency2-PRI-001,A,CU-Agency2,1000000,1000000,Primary circuit termination at CU-Agency2
-CU-Agency2-BKP-001,A,CU-Agency2,500000,500000,Backup circuit termination at CU-Agency2
-JM-Agency1-PRI-001,A,JM-Agency1,1000000,1000000,Primary circuit termination at JM-Agency1
-JM-Agency1-BKP-001,A,JM-Agency1,500000,500000,Backup circuit termination at JM-Agency1
-JM-Agency2-PRI-001,A,JM-Agency2,1000000,1000000,Primary circuit termination at JM-Agency2
-JM-Agency2-BKP-001,A,JM-Agency2,500000,500000,Backup circuit termination at JM-Agency2
-HT-Agency1-PRI-001,A,HT-Agency1,1000000,1000000,Primary circuit termination at HT-Agency1
-HT-Agency1-BKP-001,A,HT-Agency1,500000,500000,Backup circuit termination at HT-Agency1
-HT-Agency2-PRI-001,A,HT-Agency2,1000000,1000000,Primary circuit termination at HT-Agency2
-HT-Agency2-BKP-001,A,HT-Agency2,500000,500000,Backup circuit termination at HT-Agency2
-DO-Agency1-PRI-001,A,DO-Agency1,1000000,1000000,Primary circuit termination at DO-Agency1
-DO-Agency1-BKP-001,A,DO-Agency1,500000,500000,Backup circuit termination at DO-Agency1
-DO-Agency2-PRI-001,A,DO-Agency2,1000000,1000000,Primary circuit termination at DO-Agency2
-DO-Agency2-BKP-001,A,DO-Agency2,500000,500000,Backup circuit termination at DO-Agency2
-PR-Agency1-PRI-001,A,PR-Agency1,1000000,1000000,Primary circuit termination at PR-Agency1
-PR-Agency1-BKP-001,A,PR-Agency1,500000,500000,Backup circuit termination at PR-Agency1
-PR-Agency2-PRI-001,A,PR-Agency2,1000000,1000000,Primary circuit termination at PR-Agency2
-PR-Agency2-BKP-001,A,PR-Agency2,500000,500000,Backup circuit termination at PR-Agency2
-BS-Agency1-PRI-001,A,BS-Agency1,1000000,1000000,Primary circuit termination at BS-Agency1
-BS-Agency1-BKP-001,A,BS-Agency1,500000,500000,Backup circuit termination at BS-Agency1
-BS-Agency2-PRI-001,A,BS-Agency2,1000000,1000000,Primary circuit termination at BS-Agency2
-BS-Agency2-BKP-001,A,BS-Agency2,500000,500000,Backup circuit termination at BS-Agency2
-TT-Agency1-PRI-001,A,TT-Agency1,1000000,1000000,Primary circuit termination at TT-Agency1
-TT-Agency1-BKP-001,A,TT-Agency1,500000,500000,Backup circuit termination at TT-Agency1
-TT-Agency2-PRI-001,A,TT-Agency2,1000000,1000000,Primary circuit termination at TT-Agency2
-TT-Agency2-BKP-001,A,TT-Agency2,500000,500000,Backup circuit termination at TT-Agency2
-BB-Agency1-PRI-001,A,BB-Agency1,1000000,1000000,Primary circuit termination at BB-Agency1
-BB-Agency1-BKP-001,A,BB-Agency1,500000,500000,Backup circuit termination at BB-Agency1
-BB-Agency2-PRI-001,A,BB-Agency2,1000000,1000000,Primary circuit termination at BB-Agency2
-BB-Agency2-BKP-001,A,BB-Agency2,500000,500000,Backup circuit termination at BB-Agency2
-LC-Agency1-PRI-001,A,LC-Agency1,1000000,1000000,Primary circuit termination at LC-Agency1
-LC-Agency1-BKP-001,A,LC-Agency1,500000,500000,Backup circuit termination at LC-Agency1
-LC-Agency2-PRI-001,A,LC-Agency2,1000000,1000000,Primary circuit termination at LC-Agency2
-LC-Agency2-BKP-001,A,LC-Agency2,500000,500000,Backup circuit termination at LC-Agency2
-GD-Agency1-PRI-001,A,GD-Agency1,1000000,1000000,Primary circuit termination at GD-Agency1
-GD-Agency1-BKP-001,A,GD-Agency1,500000,500000,Backup circuit termination at GD-Agency1
-GD-Agency2-PRI-001,A,GD-Agency2,1000000,1000000,Primary circuit termination at GD-Agency2
-GD-Agency2-BKP-001,A,GD-Agency2,500000,500000,Backup circuit termination at GD-Agency2
-VC-Agency1-PRI-001,A,VC-Agency1,1000000,1000000,Primary circuit termination at VC-Agency1
-VC-Agency1-BKP-001,A,VC-Agency1,500000,500000,Backup circuit termination at VC-Agency1
-VC-Agency2-PRI-001,A,VC-Agency2,1000000,1000000,Primary circuit termination at VC-Agency2
-VC-Agency2-BKP-001,A,VC-Agency2,500000,500000,Backup circuit termination at VC-Agency2
-AG-Agency1-PRI-001,A,AG-Agency1,1000000,1000000,Primary circuit termination at AG-Agency1
-AG-Agency1-BKP-001,A,AG-Agency1,500000,500000,Backup circuit termination at AG-Agency1
-AG-Agency2-PRI-001,A,AG-Agency2,1000000,1000000,Primary circuit termination at AG-Agency2
-AG-Agency2-BKP-001,A,AG-Agency2,500000,500000,Backup circuit termination at AG-Agency2
-DM-Agency1-PRI-001,A,DM-Agency1,1000000,1000000,Primary circuit termination at DM-Agency1
-DM-Agency1-BKP-001,A,DM-Agency1,500000,500000,Backup circuit termination at DM-Agency1
-DM-Agency2-PRI-001,A,DM-Agency2,1000000,1000000,Primary circuit termination at DM-Agency2
-DM-Agency2-BKP-001,A,DM-Agency2,500000,500000,Backup circuit termination at DM-Agency2
-KN-Agency1-PRI-001,A,KN-Agency1,1000000,1000000,Primary circuit termination at KN-Agency1
-KN-Agency1-BKP-001,A,KN-Agency1,500000,500000,Backup circuit termination at KN-Agency1
-KN-Agency2-PRI-001,A,KN-Agency2,1000000,1000000,Primary circuit termination at KN-Agency2
-KN-Agency2-BKP-001,A,KN-Agency2,500000,500000,Backup circuit termination at KN-Agency2
-AW-Agency1-PRI-001,A,AW-Agency1,1000000,1000000,Primary circuit termination at AW-Agency1
-AW-Agency1-BKP-001,A,AW-Agency1,500000,500000,Backup circuit termination at AW-Agency1
-AW-Agency2-PRI-001,A,AW-Agency2,1000000,1000000,Primary circuit termination at AW-Agency2
-AW-Agency2-BKP-001,A,AW-Agency2,500000,500000,Backup circuit termination at AW-Agency2
-CW-Agency1-PRI-001,A,CW-Agency1,1000000,1000000,Primary circuit termination at CW-Agency1
-CW-Agency1-BKP-001,A,CW-Agency1,500000,500000,Backup circuit termination at CW-Agency1
-CW-Agency2-PRI-001,A,CW-Agency2,1000000,1000000,Primary circuit termination at CW-Agency2
-CW-Agency2-BKP-001,A,CW-Agency2,500000,500000,Backup circuit termination at CW-Agency2
-KY-Agency1-PRI-001,A,KY-Agency1,1000000,1000000,Primary circuit termination at KY-Agency1
-KY-Agency1-BKP-001,A,KY-Agency1,500000,500000,Backup circuit termination at KY-Agency1
-KY-Agency2-PRI-001,A,KY-Agency2,1000000,1000000,Primary circuit termination at KY-Agency2
-KY-Agency2-BKP-001,A,KY-Agency2,500000,500000,Backup circuit termination at KY-Agency2
-VG-Agency1-PRI-001,A,VG-Agency1,1000000,1000000,Primary circuit termination at VG-Agency1
-VG-Agency1-BKP-001,A,VG-Agency1,500000,500000,Backup circuit termination at VG-Agency1
-VG-Agency2-PRI-001,A,VG-Agency2,1000000,1000000,Primary circuit termination at VG-Agency2
-VG-Agency2-BKP-001,A,VG-Agency2,500000,500000,Backup circuit termination at VG-Agency2
-VI-Agency1-PRI-001,A,VI-Agency1,1000000,1000000,Primary circuit termination at VI-Agency1
-VI-Agency1-BKP-001,A,VI-Agency1,500000,500000,Backup circuit termination at VI-Agency1
-VI-Agency2-PRI-001,A,VI-Agency2,1000000,1000000,Primary circuit termination at VI-Agency2
-VI-Agency2-BKP-001,A,VI-Agency2,500000,500000,Backup circuit termination at VI-Agency2
-BR-Agency1-PRI-001,A,BR-Agency1,1000000,1000000,Primary circuit termination at BR-Agency1
-BR-Agency1-BKP-001,A,BR-Agency1,500000,500000,Backup circuit termination at BR-Agency1
-BR-Agency2-PRI-001,A,BR-Agency2,1000000,1000000,Primary circuit termination at BR-Agency2
-BR-Agency2-BKP-001,A,BR-Agency2,500000,500000,Backup circuit termination at BR-Agency2
-AR-Agency1-PRI-001,A,AR-Agency1,1000000,1000000,Primary circuit termination at AR-Agency1
-AR-Agency1-BKP-001,A,AR-Agency1,500000,500000,Backup circuit termination at AR-Agency1
-AR-Agency2-PRI-001,A,AR-Agency2,1000000,1000000,Primary circuit termination at AR-Agency2
-AR-Agency2-BKP-001,A,AR-Agency2,500000,500000,Backup circuit termination at AR-Agency2
-CO-Agency1-PRI-001,A,CO-Agency1,1000000,1000000,Primary circuit termination at CO-Agency1
-CO-Agency1-BKP-001,A,CO-Agency1,500000,500000,Backup circuit termination at CO-Agency1
-CO-Agency2-PRI-001,A,CO-Agency2,1000000,1000000,Primary circuit termination at CO-Agency2
-CO-Agency2-BKP-001,A,CO-Agency2,500000,500000,Backup circuit termination at CO-Agency2
-PE-Agency1-PRI-001,A,PE-Agency1,1000000,1000000,Primary circuit termination at PE-Agency1
-PE-Agency1-BKP-001,A,PE-Agency1,500000,500000,Backup circuit termination at PE-Agency1
-PE-Agency2-PRI-001,A,PE-Agency2,1000000,1000000,Primary circuit termination at PE-Agency2
-PE-Agency2-BKP-001,A,PE-Agency2,500000,500000,Backup circuit termination at PE-Agency2
-VE-Agency1-PRI-001,A,VE-Agency1,1000000,1000000,Primary circuit termination at VE-Agency1
-VE-Agency1-BKP-001,A,VE-Agency1,500000,500000,Backup circuit termination at VE-Agency1
-VE-Agency2-PRI-001,A,VE-Agency2,1000000,1000000,Primary circuit termination at VE-Agency2
-VE-Agency2-BKP-001,A,VE-Agency2,500000,500000,Backup circuit termination at VE-Agency2
-CL-Agency1-PRI-001,A,CL-Agency1,1000000,1000000,Primary circuit termination at CL-Agency1
-CL-Agency1-BKP-001,A,CL-Agency1,500000,500000,Backup circuit termination at CL-Agency1
-CL-Agency2-PRI-001,A,CL-Agency2,1000000,1000000,Primary circuit termination at CL-Agency2
-CL-Agency2-BKP-001,A,CL-Agency2,500000,500000,Backup circuit termination at CL-Agency2
-EC-Agency1-PRI-001,A,EC-Agency1,1000000,1000000,Primary circuit termination at EC-Agency1
-EC-Agency1-BKP-001,A,EC-Agency1,500000,500000,Backup circuit termination at EC-Agency1
-EC-Agency2-PRI-001,A,EC-Agency2,1000000,1000000,Primary circuit termination at EC-Agency2
-EC-Agency2-BKP-001,A,EC-Agency2,500000,500000,Backup circuit termination at EC-Agency2
-BO-Agency1-PRI-001,A,BO-Agency1,1000000,1000000,Primary circuit termination at BO-Agency1
-BO-Agency1-BKP-001,A,BO-Agency1,500000,500000,Backup circuit termination at BO-Agency1
-BO-Agency2-PRI-001,A,BO-Agency2,1000000,1000000,Primary circuit termination at BO-Agency2
-BO-Agency2-BKP-001,A,BO-Agency2,500000,500000,Backup circuit termination at BO-Agency2
-PY-Agency1-PRI-001,A,PY-Agency1,1000000,1000000,Primary circuit termination at PY-Agency1
-PY-Agency1-BKP-001,A,PY-Agency1,500000,500000,Backup circuit termination at PY-Agency1
-PY-Agency2-PRI-001,A,PY-Agency2,1000000,1000000,Primary circuit termination at PY-Agency2
-PY-Agency2-BKP-001,A,PY-Agency2,500000,500000,Backup circuit termination at PY-Agency2
-UY-Agency1-PRI-001,A,UY-Agency1,1000000,1000000,Primary circuit termination at UY-Agency1
-UY-Agency1-BKP-001,A,UY-Agency1,500000,500000,Backup circuit termination at UY-Agency1
-UY-Agency2-PRI-001,A,UY-Agency2,1000000,1000000,Primary circuit termination at UY-Agency2
-UY-Agency2-BKP-001,A,UY-Agency2,500000,500000,Backup circuit termination at UY-Agency2
-GY-Agency1-PRI-001,A,GY-Agency1,1000000,1000000,Primary circuit termination at GY-Agency1
-GY-Agency1-BKP-001,A,GY-Agency1,500000,500000,Backup circuit termination at GY-Agency1
-GY-Agency2-PRI-001,A,GY-Agency2,1000000,1000000,Primary circuit termination at GY-Agency2
-GY-Agency2-BKP-001,A,GY-Agency2,500000,500000,Backup circuit termination at GY-Agency2
-SR-Agency1-PRI-001,A,SR-Agency1,1000000,1000000,Primary circuit termination at SR-Agency1
-SR-Agency1-BKP-001,A,SR-Agency1,500000,500000,Backup circuit termination at SR-Agency1
-SR-Agency2-PRI-001,A,SR-Agency2,1000000,1000000,Primary circuit termination at SR-Agency2
-SR-Agency2-BKP-001,A,SR-Agency2,500000,500000,Backup circuit termination at SR-Agency2
-GF-Agency1-PRI-001,A,GF-Agency1,1000000,1000000,Primary circuit termination at GF-Agency1
-GF-Agency1-BKP-001,A,GF-Agency1,500000,500000,Backup circuit termination at GF-Agency1
-GF-Agency2-PRI-001,A,GF-Agency2,1000000,1000000,Primary circuit termination at GF-Agency2
-GF-Agency2-BKP-001,A,GF-Agency2,500000,500000,Backup circuit termination at GF-Agency2
+cid,provider,type,status,commit_rate,description,tags
+US-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for US-Agency1,circuit-primary
+US-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for US-Agency1,circuit-backup
+US-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for US-Agency2,circuit-primary
+US-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for US-Agency2,circuit-backup
+CA-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CA-Agency1,circuit-primary
+CA-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CA-Agency1,circuit-backup
+CA-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CA-Agency2,circuit-primary
+CA-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CA-Agency2,circuit-backup
+MX-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for MX-Agency1,circuit-primary
+MX-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for MX-Agency1,circuit-backup
+MX-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for MX-Agency2,circuit-primary
+MX-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for MX-Agency2,circuit-backup
+GT-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for GT-Agency1,circuit-primary
+GT-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for GT-Agency1,circuit-backup
+GT-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for GT-Agency2,circuit-primary
+GT-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for GT-Agency2,circuit-backup
+BZ-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BZ-Agency1,circuit-primary
+BZ-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BZ-Agency1,circuit-backup
+BZ-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BZ-Agency2,circuit-primary
+BZ-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BZ-Agency2,circuit-backup
+HN-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for HN-Agency1,circuit-primary
+HN-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for HN-Agency1,circuit-backup
+HN-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for HN-Agency2,circuit-primary
+HN-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for HN-Agency2,circuit-backup
+SV-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for SV-Agency1,circuit-primary
+SV-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for SV-Agency1,circuit-backup
+SV-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for SV-Agency2,circuit-primary
+SV-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for SV-Agency2,circuit-backup
+NI-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for NI-Agency1,circuit-primary
+NI-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for NI-Agency1,circuit-backup
+NI-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for NI-Agency2,circuit-primary
+NI-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for NI-Agency2,circuit-backup
+CR-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CR-Agency1,circuit-primary
+CR-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CR-Agency1,circuit-backup
+CR-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CR-Agency2,circuit-primary
+CR-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CR-Agency2,circuit-backup
+PA-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for PA-Agency1,circuit-primary
+PA-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for PA-Agency1,circuit-backup
+PA-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for PA-Agency2,circuit-primary
+PA-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for PA-Agency2,circuit-backup
+CU-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CU-Agency1,circuit-primary
+CU-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CU-Agency1,circuit-backup
+CU-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CU-Agency2,circuit-primary
+CU-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CU-Agency2,circuit-backup
+JM-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for JM-Agency1,circuit-primary
+JM-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for JM-Agency1,circuit-backup
+JM-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for JM-Agency2,circuit-primary
+JM-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for JM-Agency2,circuit-backup
+HT-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for HT-Agency1,circuit-primary
+HT-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for HT-Agency1,circuit-backup
+HT-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for HT-Agency2,circuit-primary
+HT-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for HT-Agency2,circuit-backup
+DO-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for DO-Agency1,circuit-primary
+DO-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for DO-Agency1,circuit-backup
+DO-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for DO-Agency2,circuit-primary
+DO-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for DO-Agency2,circuit-backup
+PR-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for PR-Agency1,circuit-primary
+PR-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for PR-Agency1,circuit-backup
+PR-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for PR-Agency2,circuit-primary
+PR-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for PR-Agency2,circuit-backup
+BS-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BS-Agency1,circuit-primary
+BS-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BS-Agency1,circuit-backup
+BS-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BS-Agency2,circuit-primary
+BS-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BS-Agency2,circuit-backup
+TT-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for TT-Agency1,circuit-primary
+TT-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for TT-Agency1,circuit-backup
+TT-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for TT-Agency2,circuit-primary
+TT-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for TT-Agency2,circuit-backup
+BB-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BB-Agency1,circuit-primary
+BB-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BB-Agency1,circuit-backup
+BB-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BB-Agency2,circuit-primary
+BB-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BB-Agency2,circuit-backup
+LC-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for LC-Agency1,circuit-primary
+LC-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for LC-Agency1,circuit-backup
+LC-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for LC-Agency2,circuit-primary
+LC-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for LC-Agency2,circuit-backup
+GD-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for GD-Agency1,circuit-primary
+GD-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for GD-Agency1,circuit-backup
+GD-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for GD-Agency2,circuit-primary
+GD-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for GD-Agency2,circuit-backup
+VC-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for VC-Agency1,circuit-primary
+VC-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for VC-Agency1,circuit-backup
+VC-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for VC-Agency2,circuit-primary
+VC-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for VC-Agency2,circuit-backup
+AG-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for AG-Agency1,circuit-primary
+AG-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for AG-Agency1,circuit-backup
+AG-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for AG-Agency2,circuit-primary
+AG-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for AG-Agency2,circuit-backup
+DM-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for DM-Agency1,circuit-primary
+DM-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for DM-Agency1,circuit-backup
+DM-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for DM-Agency2,circuit-primary
+DM-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for DM-Agency2,circuit-backup
+KN-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for KN-Agency1,circuit-primary
+KN-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for KN-Agency1,circuit-backup
+KN-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for KN-Agency2,circuit-primary
+KN-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for KN-Agency2,circuit-backup
+AW-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for AW-Agency1,circuit-primary
+AW-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for AW-Agency1,circuit-backup
+AW-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for AW-Agency2,circuit-primary
+AW-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for AW-Agency2,circuit-backup
+CW-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CW-Agency1,circuit-primary
+CW-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CW-Agency1,circuit-backup
+CW-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CW-Agency2,circuit-primary
+CW-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CW-Agency2,circuit-backup
+KY-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for KY-Agency1,circuit-primary
+KY-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for KY-Agency1,circuit-backup
+KY-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for KY-Agency2,circuit-primary
+KY-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for KY-Agency2,circuit-backup
+VG-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for VG-Agency1,circuit-primary
+VG-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for VG-Agency1,circuit-backup
+VG-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for VG-Agency2,circuit-primary
+VG-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for VG-Agency2,circuit-backup
+VI-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for VI-Agency1,circuit-primary
+VI-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for VI-Agency1,circuit-backup
+VI-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for VI-Agency2,circuit-primary
+VI-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for VI-Agency2,circuit-backup
+BR-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BR-Agency1,circuit-primary
+BR-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BR-Agency1,circuit-backup
+BR-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BR-Agency2,circuit-primary
+BR-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BR-Agency2,circuit-backup
+AR-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for AR-Agency1,circuit-primary
+AR-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for AR-Agency1,circuit-backup
+AR-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for AR-Agency2,circuit-primary
+AR-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for AR-Agency2,circuit-backup
+CO-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CO-Agency1,circuit-primary
+CO-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CO-Agency1,circuit-backup
+CO-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CO-Agency2,circuit-primary
+CO-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CO-Agency2,circuit-backup
+PE-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for PE-Agency1,circuit-primary
+PE-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for PE-Agency1,circuit-backup
+PE-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for PE-Agency2,circuit-primary
+PE-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for PE-Agency2,circuit-backup
+VE-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for VE-Agency1,circuit-primary
+VE-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for VE-Agency1,circuit-backup
+VE-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for VE-Agency2,circuit-primary
+VE-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for VE-Agency2,circuit-backup
+CL-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CL-Agency1,circuit-primary
+CL-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CL-Agency1,circuit-backup
+CL-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for CL-Agency2,circuit-primary
+CL-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for CL-Agency2,circuit-backup
+EC-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for EC-Agency1,circuit-primary
+EC-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for EC-Agency1,circuit-backup
+EC-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for EC-Agency2,circuit-primary
+EC-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for EC-Agency2,circuit-backup
+BO-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BO-Agency1,circuit-primary
+BO-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BO-Agency1,circuit-backup
+BO-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for BO-Agency2,circuit-primary
+BO-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for BO-Agency2,circuit-backup
+PY-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for PY-Agency1,circuit-primary
+PY-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for PY-Agency1,circuit-backup
+PY-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for PY-Agency2,circuit-primary
+PY-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for PY-Agency2,circuit-backup
+UY-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for UY-Agency1,circuit-primary
+UY-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for UY-Agency1,circuit-backup
+UY-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for UY-Agency2,circuit-primary
+UY-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for UY-Agency2,circuit-backup
+GY-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for GY-Agency1,circuit-primary
+GY-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for GY-Agency1,circuit-backup
+GY-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for GY-Agency2,circuit-primary
+GY-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for GY-Agency2,circuit-backup
+SR-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for SR-Agency1,circuit-primary
+SR-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for SR-Agency1,circuit-backup
+SR-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for SR-Agency2,circuit-primary
+SR-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for SR-Agency2,circuit-backup
+GF-Agency1-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for GF-Agency1,circuit-primary
+GF-Agency1-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for GF-Agency1,circuit-backup
+GF-Agency2-PRI-001,Lumen Technologies,Internet Primary,active,1000000,Primary Internet circuit for GF-Agency2,circuit-primary
+GF-Agency2-BKP-001,Cogent Communications,Internet Backup,active,500000,Backup Internet circuit for GF-Agency2,circuit-backup
