@@ -1,7 +1,7 @@
-name,slug,asn,description,comments,tags
-Orange Business Services,orange-business,5511,Orange Business Services - EMEA Region Provider,Tier 1/2 provider for EMEA,provider
-Colt Technology,colt-technology,8220,Colt Technology - EMEA Region Provider,Tier 1/2 provider for EMEA,provider
-NTT Communications,ntt-communications,2914,NTT Communications - APAC Region Provider,Tier 1/2 provider for APAC,provider
-PCCW Global,pccw-global,3491,PCCW Global - APAC Region Provider,Tier 1/2 provider for APAC,provider
-Lumen Technologies,lumen-technologies,3356,Lumen Technologies - AMER Region Provider,Tier 1/2 provider for AMER,provider
-Cogent Communications,cogent-communications,174,Cogent Communications - AMER Region Provider,Tier 1/2 provider for AMER,provider
+name,slug,description,comments,tags
+Orange Business Services,orange-business,Orange Business Services - EMEA Region Provider,Tier 1/2 provider for EMEA,provider
+Colt Technology,colt-technology,Colt Technology - EMEA Region Provider,Tier 1/2 provider for EMEA,provider
+NTT Communications,ntt-communications,NTT Communications - APAC Region Provider,Tier 1/2 provider for APAC,provider
+PCCW Global,pccw-global,PCCW Global - APAC Region Provider,Tier 1/2 provider for APAC,provider
+Lumen Technologies,lumen-technologies,Lumen Technologies - AMER Region Provider,Tier 1/2 provider for AMER,provider
+Cogent Communications,cogent-communications,Cogent Communications - AMER Region Provider,Tier 1/2 provider for AMER,provider
