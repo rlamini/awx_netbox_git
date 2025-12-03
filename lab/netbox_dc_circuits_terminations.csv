@@ -41,45 +41,45 @@ AMER-DC-ONPREM-MPLS-02,A,dcim.site,392,5000000,5000000,A-side termination at AME
 AMER-DC-ONPREM-DF-INTERDC,A,dcim.site,392,100000000,100000000,A-side termination at AMER-DC-ONPREM
 AMER-DC-ONPREM-AWS-DX,A,dcim.site,392,10000000,10000000,A-side termination at AMER-DC-ONPREM
 AMER-DC-ONPREM-AZURE-ER,A,dcim.site,392,10000000,10000000,A-side termination at AMER-DC-ONPREM
-EMEA-DC-CLOUD-DIA-PRI,Z,,,10000000,10000000,Z-side termination at GTT Communications
-EMEA-DC-CLOUD-DIA-SEC,Z,,,10000000,10000000,Z-side termination at Zayo Group
-EMEA-DC-CLOUD-MPLS-01,Z,,,5000000,5000000,Z-side termination at GTT Communications
-EMEA-DC-CLOUD-MPLS-02,Z,,,5000000,5000000,Z-side termination at Zayo Group
-EMEA-DC-CLOUD-DF-INTERDC,Z,,,100000000,100000000,Z-side termination at Telia Carrier
-EMEA-DC-CLOUD-AWS-DX,Z,,,10000000,10000000,Z-side termination at Telia Carrier
-EMEA-DC-CLOUD-AZURE-ER,Z,,,10000000,10000000,Z-side termination at Telia Carrier
-EMEA-DC-ONPREM-DIA-PRI,Z,,,10000000,10000000,Z-side termination at GTT Communications
-EMEA-DC-ONPREM-DIA-SEC,Z,,,10000000,10000000,Z-side termination at Zayo Group
-EMEA-DC-ONPREM-MPLS-01,Z,,,5000000,5000000,Z-side termination at GTT Communications
-EMEA-DC-ONPREM-MPLS-02,Z,,,5000000,5000000,Z-side termination at Zayo Group
-EMEA-DC-ONPREM-DF-INTERDC,Z,,,100000000,100000000,Z-side termination at Telia Carrier
-EMEA-DC-ONPREM-AWS-DX,Z,,,10000000,10000000,Z-side termination at Telia Carrier
-EMEA-DC-ONPREM-AZURE-ER,Z,,,10000000,10000000,Z-side termination at Telia Carrier
-APAC-DC-CLOUD-DIA-PRI,Z,,,10000000,10000000,Z-side termination at Telstra Global
-APAC-DC-CLOUD-DIA-SEC,Z,,,10000000,10000000,Z-side termination at Singtel
-APAC-DC-CLOUD-MPLS-01,Z,,,5000000,5000000,Z-side termination at Telstra Global
-APAC-DC-CLOUD-MPLS-02,Z,,,5000000,5000000,Z-side termination at Singtel
-APAC-DC-CLOUD-DF-INTERDC,Z,,,100000000,100000000,Z-side termination at China Telecom Global
-APAC-DC-CLOUD-AWS-DX,Z,,,10000000,10000000,Z-side termination at China Telecom Global
-APAC-DC-CLOUD-AZURE-ER,Z,,,10000000,10000000,Z-side termination at China Telecom Global
-APAC-DC-ONPREM-DIA-PRI,Z,,,10000000,10000000,Z-side termination at Telstra Global
-APAC-DC-ONPREM-DIA-SEC,Z,,,10000000,10000000,Z-side termination at Singtel
-APAC-DC-ONPREM-MPLS-01,Z,,,5000000,5000000,Z-side termination at Telstra Global
-APAC-DC-ONPREM-MPLS-02,Z,,,5000000,5000000,Z-side termination at Singtel
-APAC-DC-ONPREM-DF-INTERDC,Z,,,100000000,100000000,Z-side termination at China Telecom Global
-APAC-DC-ONPREM-AWS-DX,Z,,,10000000,10000000,Z-side termination at China Telecom Global
-APAC-DC-ONPREM-AZURE-ER,Z,,,10000000,10000000,Z-side termination at China Telecom Global
-AMER-DC-CLOUD-DIA-PRI,Z,,,10000000,10000000,Z-side termination at Zayo Group
-AMER-DC-CLOUD-DIA-SEC,Z,,,10000000,10000000,Z-side termination at GTT Communications
-AMER-DC-CLOUD-MPLS-01,Z,,,5000000,5000000,Z-side termination at Zayo Group
-AMER-DC-CLOUD-MPLS-02,Z,,,5000000,5000000,Z-side termination at GTT Communications
-AMER-DC-CLOUD-DF-INTERDC,Z,,,100000000,100000000,Z-side termination at Crown Castle Fiber
-AMER-DC-CLOUD-AWS-DX,Z,,,10000000,10000000,Z-side termination at Crown Castle Fiber
-AMER-DC-CLOUD-AZURE-ER,Z,,,10000000,10000000,Z-side termination at Crown Castle Fiber
-AMER-DC-ONPREM-DIA-PRI,Z,,,10000000,10000000,Z-side termination at Zayo Group
-AMER-DC-ONPREM-DIA-SEC,Z,,,10000000,10000000,Z-side termination at GTT Communications
-AMER-DC-ONPREM-MPLS-01,Z,,,5000000,5000000,Z-side termination at Zayo Group
-AMER-DC-ONPREM-MPLS-02,Z,,,5000000,5000000,Z-side termination at GTT Communications
-AMER-DC-ONPREM-DF-INTERDC,Z,,,100000000,100000000,Z-side termination at Crown Castle Fiber
-AMER-DC-ONPREM-AWS-DX,Z,,,10000000,10000000,Z-side termination at Crown Castle Fiber
-AMER-DC-ONPREM-AZURE-ER,Z,,,10000000,10000000,Z-side termination at Crown Castle Fiber
+EMEA-DC-CLOUD-DIA-PRI,Z,circuits.providernetwork,GTT Communications,10000000,10000000,Z-side termination at GTT Communications
+EMEA-DC-CLOUD-DIA-SEC,Z,circuits.providernetwork,Zayo Group,10000000,10000000,Z-side termination at Zayo Group
+EMEA-DC-CLOUD-MPLS-01,Z,circuits.providernetwork,GTT Communications,5000000,5000000,Z-side termination at GTT Communications
+EMEA-DC-CLOUD-MPLS-02,Z,circuits.providernetwork,Zayo Group,5000000,5000000,Z-side termination at Zayo Group
+EMEA-DC-CLOUD-DF-INTERDC,Z,circuits.providernetwork,Telia Carrier,100000000,100000000,Z-side termination at Telia Carrier
+EMEA-DC-CLOUD-AWS-DX,Z,circuits.providernetwork,Telia Carrier,10000000,10000000,Z-side termination at Telia Carrier
+EMEA-DC-CLOUD-AZURE-ER,Z,circuits.providernetwork,Telia Carrier,10000000,10000000,Z-side termination at Telia Carrier
+EMEA-DC-ONPREM-DIA-PRI,Z,circuits.providernetwork,GTT Communications,10000000,10000000,Z-side termination at GTT Communications
+EMEA-DC-ONPREM-DIA-SEC,Z,circuits.providernetwork,Zayo Group,10000000,10000000,Z-side termination at Zayo Group
+EMEA-DC-ONPREM-MPLS-01,Z,circuits.providernetwork,GTT Communications,5000000,5000000,Z-side termination at GTT Communications
+EMEA-DC-ONPREM-MPLS-02,Z,circuits.providernetwork,Zayo Group,5000000,5000000,Z-side termination at Zayo Group
+EMEA-DC-ONPREM-DF-INTERDC,Z,circuits.providernetwork,Telia Carrier,100000000,100000000,Z-side termination at Telia Carrier
+EMEA-DC-ONPREM-AWS-DX,Z,circuits.providernetwork,Telia Carrier,10000000,10000000,Z-side termination at Telia Carrier
+EMEA-DC-ONPREM-AZURE-ER,Z,circuits.providernetwork,Telia Carrier,10000000,10000000,Z-side termination at Telia Carrier
+APAC-DC-CLOUD-DIA-PRI,Z,circuits.providernetwork,Telstra Global,10000000,10000000,Z-side termination at Telstra Global
+APAC-DC-CLOUD-DIA-SEC,Z,circuits.providernetwork,Singtel,10000000,10000000,Z-side termination at Singtel
+APAC-DC-CLOUD-MPLS-01,Z,circuits.providernetwork,Telstra Global,5000000,5000000,Z-side termination at Telstra Global
+APAC-DC-CLOUD-MPLS-02,Z,circuits.providernetwork,Singtel,5000000,5000000,Z-side termination at Singtel
+APAC-DC-CLOUD-DF-INTERDC,Z,circuits.providernetwork,China Telecom Global,100000000,100000000,Z-side termination at China Telecom Global
+APAC-DC-CLOUD-AWS-DX,Z,circuits.providernetwork,China Telecom Global,10000000,10000000,Z-side termination at China Telecom Global
+APAC-DC-CLOUD-AZURE-ER,Z,circuits.providernetwork,China Telecom Global,10000000,10000000,Z-side termination at China Telecom Global
+APAC-DC-ONPREM-DIA-PRI,Z,circuits.providernetwork,Telstra Global,10000000,10000000,Z-side termination at Telstra Global
+APAC-DC-ONPREM-DIA-SEC,Z,circuits.providernetwork,Singtel,10000000,10000000,Z-side termination at Singtel
+APAC-DC-ONPREM-MPLS-01,Z,circuits.providernetwork,Telstra Global,5000000,5000000,Z-side termination at Telstra Global
+APAC-DC-ONPREM-MPLS-02,Z,circuits.providernetwork,Singtel,5000000,5000000,Z-side termination at Singtel
+APAC-DC-ONPREM-DF-INTERDC,Z,circuits.providernetwork,China Telecom Global,100000000,100000000,Z-side termination at China Telecom Global
+APAC-DC-ONPREM-AWS-DX,Z,circuits.providernetwork,China Telecom Global,10000000,10000000,Z-side termination at China Telecom Global
+APAC-DC-ONPREM-AZURE-ER,Z,circuits.providernetwork,China Telecom Global,10000000,10000000,Z-side termination at China Telecom Global
+AMER-DC-CLOUD-DIA-PRI,Z,circuits.providernetwork,Zayo Group,10000000,10000000,Z-side termination at Zayo Group
+AMER-DC-CLOUD-DIA-SEC,Z,circuits.providernetwork,GTT Communications,10000000,10000000,Z-side termination at GTT Communications
+AMER-DC-CLOUD-MPLS-01,Z,circuits.providernetwork,Zayo Group,5000000,5000000,Z-side termination at Zayo Group
+AMER-DC-CLOUD-MPLS-02,Z,circuits.providernetwork,GTT Communications,5000000,5000000,Z-side termination at GTT Communications
+AMER-DC-CLOUD-DF-INTERDC,Z,circuits.providernetwork,Crown Castle Fiber,100000000,100000000,Z-side termination at Crown Castle Fiber
+AMER-DC-CLOUD-AWS-DX,Z,circuits.providernetwork,Crown Castle Fiber,10000000,10000000,Z-side termination at Crown Castle Fiber
+AMER-DC-CLOUD-AZURE-ER,Z,circuits.providernetwork,Crown Castle Fiber,10000000,10000000,Z-side termination at Crown Castle Fiber
+AMER-DC-ONPREM-DIA-PRI,Z,circuits.providernetwork,Zayo Group,10000000,10000000,Z-side termination at Zayo Group
+AMER-DC-ONPREM-DIA-SEC,Z,circuits.providernetwork,GTT Communications,10000000,10000000,Z-side termination at GTT Communications
+AMER-DC-ONPREM-MPLS-01,Z,circuits.providernetwork,Zayo Group,5000000,5000000,Z-side termination at Zayo Group
+AMER-DC-ONPREM-MPLS-02,Z,circuits.providernetwork,GTT Communications,5000000,5000000,Z-side termination at GTT Communications
+AMER-DC-ONPREM-DF-INTERDC,Z,circuits.providernetwork,Crown Castle Fiber,100000000,100000000,Z-side termination at Crown Castle Fiber
+AMER-DC-ONPREM-AWS-DX,Z,circuits.providernetwork,Crown Castle Fiber,10000000,10000000,Z-side termination at Crown Castle Fiber
+AMER-DC-ONPREM-AZURE-ER,Z,circuits.providernetwork,Crown Castle Fiber,10000000,10000000,Z-side termination at Crown Castle Fiber
