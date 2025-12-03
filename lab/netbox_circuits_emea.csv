@@ -1,225 +1,225 @@
-cid,provider,type,status,site,commit_rate,description,tags
-FR-Agency1-PRI-001,Orange Business Services,Internet Primary,active,FR-Agency1,1000000,Primary Internet circuit for FR-Agency1,circuit-primary
-FR-Agency1-BKP-001,Colt Technology,Internet Backup,active,FR-Agency1,500000,Backup Internet circuit for FR-Agency1,circuit-backup
-FR-Agency2-PRI-001,Orange Business Services,Internet Primary,active,FR-Agency2,1000000,Primary Internet circuit for FR-Agency2,circuit-primary
-FR-Agency2-BKP-001,Colt Technology,Internet Backup,active,FR-Agency2,500000,Backup Internet circuit for FR-Agency2,circuit-backup
-DE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,DE-Agency1,1000000,Primary Internet circuit for DE-Agency1,circuit-primary
-DE-Agency1-BKP-001,Colt Technology,Internet Backup,active,DE-Agency1,500000,Backup Internet circuit for DE-Agency1,circuit-backup
-DE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,DE-Agency2,1000000,Primary Internet circuit for DE-Agency2,circuit-primary
-DE-Agency2-BKP-001,Colt Technology,Internet Backup,active,DE-Agency2,500000,Backup Internet circuit for DE-Agency2,circuit-backup
-GB-Agency1-PRI-001,Orange Business Services,Internet Primary,active,GB-Agency1,1000000,Primary Internet circuit for GB-Agency1,circuit-primary
-GB-Agency1-BKP-001,Colt Technology,Internet Backup,active,GB-Agency1,500000,Backup Internet circuit for GB-Agency1,circuit-backup
-GB-Agency2-PRI-001,Orange Business Services,Internet Primary,active,GB-Agency2,1000000,Primary Internet circuit for GB-Agency2,circuit-primary
-GB-Agency2-BKP-001,Colt Technology,Internet Backup,active,GB-Agency2,500000,Backup Internet circuit for GB-Agency2,circuit-backup
-NL-Agency1-PRI-001,Orange Business Services,Internet Primary,active,NL-Agency1,1000000,Primary Internet circuit for NL-Agency1,circuit-primary
-NL-Agency1-BKP-001,Colt Technology,Internet Backup,active,NL-Agency1,500000,Backup Internet circuit for NL-Agency1,circuit-backup
-NL-Agency2-PRI-001,Orange Business Services,Internet Primary,active,NL-Agency2,1000000,Primary Internet circuit for NL-Agency2,circuit-primary
-NL-Agency2-BKP-001,Colt Technology,Internet Backup,active,NL-Agency2,500000,Backup Internet circuit for NL-Agency2,circuit-backup
-BE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,BE-Agency1,1000000,Primary Internet circuit for BE-Agency1,circuit-primary
-BE-Agency1-BKP-001,Colt Technology,Internet Backup,active,BE-Agency1,500000,Backup Internet circuit for BE-Agency1,circuit-backup
-BE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,BE-Agency2,1000000,Primary Internet circuit for BE-Agency2,circuit-primary
-BE-Agency2-BKP-001,Colt Technology,Internet Backup,active,BE-Agency2,500000,Backup Internet circuit for BE-Agency2,circuit-backup
-LU-Agency1-PRI-001,Orange Business Services,Internet Primary,active,LU-Agency1,1000000,Primary Internet circuit for LU-Agency1,circuit-primary
-LU-Agency1-BKP-001,Colt Technology,Internet Backup,active,LU-Agency1,500000,Backup Internet circuit for LU-Agency1,circuit-backup
-LU-Agency2-PRI-001,Orange Business Services,Internet Primary,active,LU-Agency2,1000000,Primary Internet circuit for LU-Agency2,circuit-primary
-LU-Agency2-BKP-001,Colt Technology,Internet Backup,active,LU-Agency2,500000,Backup Internet circuit for LU-Agency2,circuit-backup
-CH-Agency1-PRI-001,Orange Business Services,Internet Primary,active,CH-Agency1,1000000,Primary Internet circuit for CH-Agency1,circuit-primary
-CH-Agency1-BKP-001,Colt Technology,Internet Backup,active,CH-Agency1,500000,Backup Internet circuit for CH-Agency1,circuit-backup
-CH-Agency2-PRI-001,Orange Business Services,Internet Primary,active,CH-Agency2,1000000,Primary Internet circuit for CH-Agency2,circuit-primary
-CH-Agency2-BKP-001,Colt Technology,Internet Backup,active,CH-Agency2,500000,Backup Internet circuit for CH-Agency2,circuit-backup
-AT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,AT-Agency1,1000000,Primary Internet circuit for AT-Agency1,circuit-primary
-AT-Agency1-BKP-001,Colt Technology,Internet Backup,active,AT-Agency1,500000,Backup Internet circuit for AT-Agency1,circuit-backup
-AT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,AT-Agency2,1000000,Primary Internet circuit for AT-Agency2,circuit-primary
-AT-Agency2-BKP-001,Colt Technology,Internet Backup,active,AT-Agency2,500000,Backup Internet circuit for AT-Agency2,circuit-backup
-IE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,IE-Agency1,1000000,Primary Internet circuit for IE-Agency1,circuit-primary
-IE-Agency1-BKP-001,Colt Technology,Internet Backup,active,IE-Agency1,500000,Backup Internet circuit for IE-Agency1,circuit-backup
-IE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,IE-Agency2,1000000,Primary Internet circuit for IE-Agency2,circuit-primary
-IE-Agency2-BKP-001,Colt Technology,Internet Backup,active,IE-Agency2,500000,Backup Internet circuit for IE-Agency2,circuit-backup
-MC-Agency1-PRI-001,Orange Business Services,Internet Primary,active,MC-Agency1,1000000,Primary Internet circuit for MC-Agency1,circuit-primary
-MC-Agency1-BKP-001,Colt Technology,Internet Backup,active,MC-Agency1,500000,Backup Internet circuit for MC-Agency1,circuit-backup
-MC-Agency2-PRI-001,Orange Business Services,Internet Primary,active,MC-Agency2,1000000,Primary Internet circuit for MC-Agency2,circuit-primary
-MC-Agency2-BKP-001,Colt Technology,Internet Backup,active,MC-Agency2,500000,Backup Internet circuit for MC-Agency2,circuit-backup
-ES-Agency1-PRI-001,Orange Business Services,Internet Primary,active,ES-Agency1,1000000,Primary Internet circuit for ES-Agency1,circuit-primary
-ES-Agency1-BKP-001,Colt Technology,Internet Backup,active,ES-Agency1,500000,Backup Internet circuit for ES-Agency1,circuit-backup
-ES-Agency2-PRI-001,Orange Business Services,Internet Primary,active,ES-Agency2,1000000,Primary Internet circuit for ES-Agency2,circuit-primary
-ES-Agency2-BKP-001,Colt Technology,Internet Backup,active,ES-Agency2,500000,Backup Internet circuit for ES-Agency2,circuit-backup
-PT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,PT-Agency1,1000000,Primary Internet circuit for PT-Agency1,circuit-primary
-PT-Agency1-BKP-001,Colt Technology,Internet Backup,active,PT-Agency1,500000,Backup Internet circuit for PT-Agency1,circuit-backup
-PT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,PT-Agency2,1000000,Primary Internet circuit for PT-Agency2,circuit-primary
-PT-Agency2-BKP-001,Colt Technology,Internet Backup,active,PT-Agency2,500000,Backup Internet circuit for PT-Agency2,circuit-backup
-IT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,IT-Agency1,1000000,Primary Internet circuit for IT-Agency1,circuit-primary
-IT-Agency1-BKP-001,Colt Technology,Internet Backup,active,IT-Agency1,500000,Backup Internet circuit for IT-Agency1,circuit-backup
-IT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,IT-Agency2,1000000,Primary Internet circuit for IT-Agency2,circuit-primary
-IT-Agency2-BKP-001,Colt Technology,Internet Backup,active,IT-Agency2,500000,Backup Internet circuit for IT-Agency2,circuit-backup
-GR-Agency1-PRI-001,Orange Business Services,Internet Primary,active,GR-Agency1,1000000,Primary Internet circuit for GR-Agency1,circuit-primary
-GR-Agency1-BKP-001,Colt Technology,Internet Backup,active,GR-Agency1,500000,Backup Internet circuit for GR-Agency1,circuit-backup
-GR-Agency2-PRI-001,Orange Business Services,Internet Primary,active,GR-Agency2,1000000,Primary Internet circuit for GR-Agency2,circuit-primary
-GR-Agency2-BKP-001,Colt Technology,Internet Backup,active,GR-Agency2,500000,Backup Internet circuit for GR-Agency2,circuit-backup
-MT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,MT-Agency1,1000000,Primary Internet circuit for MT-Agency1,circuit-primary
-MT-Agency1-BKP-001,Colt Technology,Internet Backup,active,MT-Agency1,500000,Backup Internet circuit for MT-Agency1,circuit-backup
-MT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,MT-Agency2,1000000,Primary Internet circuit for MT-Agency2,circuit-primary
-MT-Agency2-BKP-001,Colt Technology,Internet Backup,active,MT-Agency2,500000,Backup Internet circuit for MT-Agency2,circuit-backup
-CY-Agency1-PRI-001,Orange Business Services,Internet Primary,active,CY-Agency1,1000000,Primary Internet circuit for CY-Agency1,circuit-primary
-CY-Agency1-BKP-001,Colt Technology,Internet Backup,active,CY-Agency1,500000,Backup Internet circuit for CY-Agency1,circuit-backup
-CY-Agency2-PRI-001,Orange Business Services,Internet Primary,active,CY-Agency2,1000000,Primary Internet circuit for CY-Agency2,circuit-primary
-CY-Agency2-BKP-001,Colt Technology,Internet Backup,active,CY-Agency2,500000,Backup Internet circuit for CY-Agency2,circuit-backup
-AD-Agency1-PRI-001,Orange Business Services,Internet Primary,active,AD-Agency1,1000000,Primary Internet circuit for AD-Agency1,circuit-primary
-AD-Agency1-BKP-001,Colt Technology,Internet Backup,active,AD-Agency1,500000,Backup Internet circuit for AD-Agency1,circuit-backup
-AD-Agency2-PRI-001,Orange Business Services,Internet Primary,active,AD-Agency2,1000000,Primary Internet circuit for AD-Agency2,circuit-primary
-AD-Agency2-BKP-001,Colt Technology,Internet Backup,active,AD-Agency2,500000,Backup Internet circuit for AD-Agency2,circuit-backup
-SM-Agency1-PRI-001,Orange Business Services,Internet Primary,active,SM-Agency1,1000000,Primary Internet circuit for SM-Agency1,circuit-primary
-SM-Agency1-BKP-001,Colt Technology,Internet Backup,active,SM-Agency1,500000,Backup Internet circuit for SM-Agency1,circuit-backup
-SM-Agency2-PRI-001,Orange Business Services,Internet Primary,active,SM-Agency2,1000000,Primary Internet circuit for SM-Agency2,circuit-primary
-SM-Agency2-BKP-001,Colt Technology,Internet Backup,active,SM-Agency2,500000,Backup Internet circuit for SM-Agency2,circuit-backup
-SE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,SE-Agency1,1000000,Primary Internet circuit for SE-Agency1,circuit-primary
-SE-Agency1-BKP-001,Colt Technology,Internet Backup,active,SE-Agency1,500000,Backup Internet circuit for SE-Agency1,circuit-backup
-SE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,SE-Agency2,1000000,Primary Internet circuit for SE-Agency2,circuit-primary
-SE-Agency2-BKP-001,Colt Technology,Internet Backup,active,SE-Agency2,500000,Backup Internet circuit for SE-Agency2,circuit-backup
-NO-Agency1-PRI-001,Orange Business Services,Internet Primary,active,NO-Agency1,1000000,Primary Internet circuit for NO-Agency1,circuit-primary
-NO-Agency1-BKP-001,Colt Technology,Internet Backup,active,NO-Agency1,500000,Backup Internet circuit for NO-Agency1,circuit-backup
-NO-Agency2-PRI-001,Orange Business Services,Internet Primary,active,NO-Agency2,1000000,Primary Internet circuit for NO-Agency2,circuit-primary
-NO-Agency2-BKP-001,Colt Technology,Internet Backup,active,NO-Agency2,500000,Backup Internet circuit for NO-Agency2,circuit-backup
-DK-Agency1-PRI-001,Orange Business Services,Internet Primary,active,DK-Agency1,1000000,Primary Internet circuit for DK-Agency1,circuit-primary
-DK-Agency1-BKP-001,Colt Technology,Internet Backup,active,DK-Agency1,500000,Backup Internet circuit for DK-Agency1,circuit-backup
-DK-Agency2-PRI-001,Orange Business Services,Internet Primary,active,DK-Agency2,1000000,Primary Internet circuit for DK-Agency2,circuit-primary
-DK-Agency2-BKP-001,Colt Technology,Internet Backup,active,DK-Agency2,500000,Backup Internet circuit for DK-Agency2,circuit-backup
-FI-Agency1-PRI-001,Orange Business Services,Internet Primary,active,FI-Agency1,1000000,Primary Internet circuit for FI-Agency1,circuit-primary
-FI-Agency1-BKP-001,Colt Technology,Internet Backup,active,FI-Agency1,500000,Backup Internet circuit for FI-Agency1,circuit-backup
-FI-Agency2-PRI-001,Orange Business Services,Internet Primary,active,FI-Agency2,1000000,Primary Internet circuit for FI-Agency2,circuit-primary
-FI-Agency2-BKP-001,Colt Technology,Internet Backup,active,FI-Agency2,500000,Backup Internet circuit for FI-Agency2,circuit-backup
-IS-Agency1-PRI-001,Orange Business Services,Internet Primary,active,IS-Agency1,1000000,Primary Internet circuit for IS-Agency1,circuit-primary
-IS-Agency1-BKP-001,Colt Technology,Internet Backup,active,IS-Agency1,500000,Backup Internet circuit for IS-Agency1,circuit-backup
-IS-Agency2-PRI-001,Orange Business Services,Internet Primary,active,IS-Agency2,1000000,Primary Internet circuit for IS-Agency2,circuit-primary
-IS-Agency2-BKP-001,Colt Technology,Internet Backup,active,IS-Agency2,500000,Backup Internet circuit for IS-Agency2,circuit-backup
-PL-Agency1-PRI-001,Orange Business Services,Internet Primary,active,PL-Agency1,1000000,Primary Internet circuit for PL-Agency1,circuit-primary
-PL-Agency1-BKP-001,Colt Technology,Internet Backup,active,PL-Agency1,500000,Backup Internet circuit for PL-Agency1,circuit-backup
-PL-Agency2-PRI-001,Orange Business Services,Internet Primary,active,PL-Agency2,1000000,Primary Internet circuit for PL-Agency2,circuit-primary
-PL-Agency2-BKP-001,Colt Technology,Internet Backup,active,PL-Agency2,500000,Backup Internet circuit for PL-Agency2,circuit-backup
-CZ-Agency1-PRI-001,Orange Business Services,Internet Primary,active,CZ-Agency1,1000000,Primary Internet circuit for CZ-Agency1,circuit-primary
-CZ-Agency1-BKP-001,Colt Technology,Internet Backup,active,CZ-Agency1,500000,Backup Internet circuit for CZ-Agency1,circuit-backup
-CZ-Agency2-PRI-001,Orange Business Services,Internet Primary,active,CZ-Agency2,1000000,Primary Internet circuit for CZ-Agency2,circuit-primary
-CZ-Agency2-BKP-001,Colt Technology,Internet Backup,active,CZ-Agency2,500000,Backup Internet circuit for CZ-Agency2,circuit-backup
-HU-Agency1-PRI-001,Orange Business Services,Internet Primary,active,HU-Agency1,1000000,Primary Internet circuit for HU-Agency1,circuit-primary
-HU-Agency1-BKP-001,Colt Technology,Internet Backup,active,HU-Agency1,500000,Backup Internet circuit for HU-Agency1,circuit-backup
-HU-Agency2-PRI-001,Orange Business Services,Internet Primary,active,HU-Agency2,1000000,Primary Internet circuit for HU-Agency2,circuit-primary
-HU-Agency2-BKP-001,Colt Technology,Internet Backup,active,HU-Agency2,500000,Backup Internet circuit for HU-Agency2,circuit-backup
-RO-Agency1-PRI-001,Orange Business Services,Internet Primary,active,RO-Agency1,1000000,Primary Internet circuit for RO-Agency1,circuit-primary
-RO-Agency1-BKP-001,Colt Technology,Internet Backup,active,RO-Agency1,500000,Backup Internet circuit for RO-Agency1,circuit-backup
-RO-Agency2-PRI-001,Orange Business Services,Internet Primary,active,RO-Agency2,1000000,Primary Internet circuit for RO-Agency2,circuit-primary
-RO-Agency2-BKP-001,Colt Technology,Internet Backup,active,RO-Agency2,500000,Backup Internet circuit for RO-Agency2,circuit-backup
-BG-Agency1-PRI-001,Orange Business Services,Internet Primary,active,BG-Agency1,1000000,Primary Internet circuit for BG-Agency1,circuit-primary
-BG-Agency1-BKP-001,Colt Technology,Internet Backup,active,BG-Agency1,500000,Backup Internet circuit for BG-Agency1,circuit-backup
-BG-Agency2-PRI-001,Orange Business Services,Internet Primary,active,BG-Agency2,1000000,Primary Internet circuit for BG-Agency2,circuit-primary
-BG-Agency2-BKP-001,Colt Technology,Internet Backup,active,BG-Agency2,500000,Backup Internet circuit for BG-Agency2,circuit-backup
-SK-Agency1-PRI-001,Orange Business Services,Internet Primary,active,SK-Agency1,1000000,Primary Internet circuit for SK-Agency1,circuit-primary
-SK-Agency1-BKP-001,Colt Technology,Internet Backup,active,SK-Agency1,500000,Backup Internet circuit for SK-Agency1,circuit-backup
-SK-Agency2-PRI-001,Orange Business Services,Internet Primary,active,SK-Agency2,1000000,Primary Internet circuit for SK-Agency2,circuit-primary
-SK-Agency2-BKP-001,Colt Technology,Internet Backup,active,SK-Agency2,500000,Backup Internet circuit for SK-Agency2,circuit-backup
-SI-Agency1-PRI-001,Orange Business Services,Internet Primary,active,SI-Agency1,1000000,Primary Internet circuit for SI-Agency1,circuit-primary
-SI-Agency1-BKP-001,Colt Technology,Internet Backup,active,SI-Agency1,500000,Backup Internet circuit for SI-Agency1,circuit-backup
-SI-Agency2-PRI-001,Orange Business Services,Internet Primary,active,SI-Agency2,1000000,Primary Internet circuit for SI-Agency2,circuit-primary
-SI-Agency2-BKP-001,Colt Technology,Internet Backup,active,SI-Agency2,500000,Backup Internet circuit for SI-Agency2,circuit-backup
-HR-Agency1-PRI-001,Orange Business Services,Internet Primary,active,HR-Agency1,1000000,Primary Internet circuit for HR-Agency1,circuit-primary
-HR-Agency1-BKP-001,Colt Technology,Internet Backup,active,HR-Agency1,500000,Backup Internet circuit for HR-Agency1,circuit-backup
-HR-Agency2-PRI-001,Orange Business Services,Internet Primary,active,HR-Agency2,1000000,Primary Internet circuit for HR-Agency2,circuit-primary
-HR-Agency2-BKP-001,Colt Technology,Internet Backup,active,HR-Agency2,500000,Backup Internet circuit for HR-Agency2,circuit-backup
-RS-Agency1-PRI-001,Orange Business Services,Internet Primary,active,RS-Agency1,1000000,Primary Internet circuit for RS-Agency1,circuit-primary
-RS-Agency1-BKP-001,Colt Technology,Internet Backup,active,RS-Agency1,500000,Backup Internet circuit for RS-Agency1,circuit-backup
-RS-Agency2-PRI-001,Orange Business Services,Internet Primary,active,RS-Agency2,1000000,Primary Internet circuit for RS-Agency2,circuit-primary
-RS-Agency2-BKP-001,Colt Technology,Internet Backup,active,RS-Agency2,500000,Backup Internet circuit for RS-Agency2,circuit-backup
-UA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,UA-Agency1,1000000,Primary Internet circuit for UA-Agency1,circuit-primary
-UA-Agency1-BKP-001,Colt Technology,Internet Backup,active,UA-Agency1,500000,Backup Internet circuit for UA-Agency1,circuit-backup
-UA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,UA-Agency2,1000000,Primary Internet circuit for UA-Agency2,circuit-primary
-UA-Agency2-BKP-001,Colt Technology,Internet Backup,active,UA-Agency2,500000,Backup Internet circuit for UA-Agency2,circuit-backup
-LT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,LT-Agency1,1000000,Primary Internet circuit for LT-Agency1,circuit-primary
-LT-Agency1-BKP-001,Colt Technology,Internet Backup,active,LT-Agency1,500000,Backup Internet circuit for LT-Agency1,circuit-backup
-LT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,LT-Agency2,1000000,Primary Internet circuit for LT-Agency2,circuit-primary
-LT-Agency2-BKP-001,Colt Technology,Internet Backup,active,LT-Agency2,500000,Backup Internet circuit for LT-Agency2,circuit-backup
-LV-Agency1-PRI-001,Orange Business Services,Internet Primary,active,LV-Agency1,1000000,Primary Internet circuit for LV-Agency1,circuit-primary
-LV-Agency1-BKP-001,Colt Technology,Internet Backup,active,LV-Agency1,500000,Backup Internet circuit for LV-Agency1,circuit-backup
-LV-Agency2-PRI-001,Orange Business Services,Internet Primary,active,LV-Agency2,1000000,Primary Internet circuit for LV-Agency2,circuit-primary
-LV-Agency2-BKP-001,Colt Technology,Internet Backup,active,LV-Agency2,500000,Backup Internet circuit for LV-Agency2,circuit-backup
-EE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,EE-Agency1,1000000,Primary Internet circuit for EE-Agency1,circuit-primary
-EE-Agency1-BKP-001,Colt Technology,Internet Backup,active,EE-Agency1,500000,Backup Internet circuit for EE-Agency1,circuit-backup
-EE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,EE-Agency2,1000000,Primary Internet circuit for EE-Agency2,circuit-primary
-EE-Agency2-BKP-001,Colt Technology,Internet Backup,active,EE-Agency2,500000,Backup Internet circuit for EE-Agency2,circuit-backup
-AE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,AE-Agency1,1000000,Primary Internet circuit for AE-Agency1,circuit-primary
-AE-Agency1-BKP-001,Colt Technology,Internet Backup,active,AE-Agency1,500000,Backup Internet circuit for AE-Agency1,circuit-backup
-AE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,AE-Agency2,1000000,Primary Internet circuit for AE-Agency2,circuit-primary
-AE-Agency2-BKP-001,Colt Technology,Internet Backup,active,AE-Agency2,500000,Backup Internet circuit for AE-Agency2,circuit-backup
-SA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,SA-Agency1,1000000,Primary Internet circuit for SA-Agency1,circuit-primary
-SA-Agency1-BKP-001,Colt Technology,Internet Backup,active,SA-Agency1,500000,Backup Internet circuit for SA-Agency1,circuit-backup
-SA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,SA-Agency2,1000000,Primary Internet circuit for SA-Agency2,circuit-primary
-SA-Agency2-BKP-001,Colt Technology,Internet Backup,active,SA-Agency2,500000,Backup Internet circuit for SA-Agency2,circuit-backup
-QA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,QA-Agency1,1000000,Primary Internet circuit for QA-Agency1,circuit-primary
-QA-Agency1-BKP-001,Colt Technology,Internet Backup,active,QA-Agency1,500000,Backup Internet circuit for QA-Agency1,circuit-backup
-QA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,QA-Agency2,1000000,Primary Internet circuit for QA-Agency2,circuit-primary
-QA-Agency2-BKP-001,Colt Technology,Internet Backup,active,QA-Agency2,500000,Backup Internet circuit for QA-Agency2,circuit-backup
-KW-Agency1-PRI-001,Orange Business Services,Internet Primary,active,KW-Agency1,1000000,Primary Internet circuit for KW-Agency1,circuit-primary
-KW-Agency1-BKP-001,Colt Technology,Internet Backup,active,KW-Agency1,500000,Backup Internet circuit for KW-Agency1,circuit-backup
-KW-Agency2-PRI-001,Orange Business Services,Internet Primary,active,KW-Agency2,1000000,Primary Internet circuit for KW-Agency2,circuit-primary
-KW-Agency2-BKP-001,Colt Technology,Internet Backup,active,KW-Agency2,500000,Backup Internet circuit for KW-Agency2,circuit-backup
-BH-Agency1-PRI-001,Orange Business Services,Internet Primary,active,BH-Agency1,1000000,Primary Internet circuit for BH-Agency1,circuit-primary
-BH-Agency1-BKP-001,Colt Technology,Internet Backup,active,BH-Agency1,500000,Backup Internet circuit for BH-Agency1,circuit-backup
-BH-Agency2-PRI-001,Orange Business Services,Internet Primary,active,BH-Agency2,1000000,Primary Internet circuit for BH-Agency2,circuit-primary
-BH-Agency2-BKP-001,Colt Technology,Internet Backup,active,BH-Agency2,500000,Backup Internet circuit for BH-Agency2,circuit-backup
-OM-Agency1-PRI-001,Orange Business Services,Internet Primary,active,OM-Agency1,1000000,Primary Internet circuit for OM-Agency1,circuit-primary
-OM-Agency1-BKP-001,Colt Technology,Internet Backup,active,OM-Agency1,500000,Backup Internet circuit for OM-Agency1,circuit-backup
-OM-Agency2-PRI-001,Orange Business Services,Internet Primary,active,OM-Agency2,1000000,Primary Internet circuit for OM-Agency2,circuit-primary
-OM-Agency2-BKP-001,Colt Technology,Internet Backup,active,OM-Agency2,500000,Backup Internet circuit for OM-Agency2,circuit-backup
-IL-Agency1-PRI-001,Orange Business Services,Internet Primary,active,IL-Agency1,1000000,Primary Internet circuit for IL-Agency1,circuit-primary
-IL-Agency1-BKP-001,Colt Technology,Internet Backup,active,IL-Agency1,500000,Backup Internet circuit for IL-Agency1,circuit-backup
-IL-Agency2-PRI-001,Orange Business Services,Internet Primary,active,IL-Agency2,1000000,Primary Internet circuit for IL-Agency2,circuit-primary
-IL-Agency2-BKP-001,Colt Technology,Internet Backup,active,IL-Agency2,500000,Backup Internet circuit for IL-Agency2,circuit-backup
-JO-Agency1-PRI-001,Orange Business Services,Internet Primary,active,JO-Agency1,1000000,Primary Internet circuit for JO-Agency1,circuit-primary
-JO-Agency1-BKP-001,Colt Technology,Internet Backup,active,JO-Agency1,500000,Backup Internet circuit for JO-Agency1,circuit-backup
-JO-Agency2-PRI-001,Orange Business Services,Internet Primary,active,JO-Agency2,1000000,Primary Internet circuit for JO-Agency2,circuit-primary
-JO-Agency2-BKP-001,Colt Technology,Internet Backup,active,JO-Agency2,500000,Backup Internet circuit for JO-Agency2,circuit-backup
-LB-Agency1-PRI-001,Orange Business Services,Internet Primary,active,LB-Agency1,1000000,Primary Internet circuit for LB-Agency1,circuit-primary
-LB-Agency1-BKP-001,Colt Technology,Internet Backup,active,LB-Agency1,500000,Backup Internet circuit for LB-Agency1,circuit-backup
-LB-Agency2-PRI-001,Orange Business Services,Internet Primary,active,LB-Agency2,1000000,Primary Internet circuit for LB-Agency2,circuit-primary
-LB-Agency2-BKP-001,Colt Technology,Internet Backup,active,LB-Agency2,500000,Backup Internet circuit for LB-Agency2,circuit-backup
-TR-Agency1-PRI-001,Orange Business Services,Internet Primary,active,TR-Agency1,1000000,Primary Internet circuit for TR-Agency1,circuit-primary
-TR-Agency1-BKP-001,Colt Technology,Internet Backup,active,TR-Agency1,500000,Backup Internet circuit for TR-Agency1,circuit-backup
-TR-Agency2-PRI-001,Orange Business Services,Internet Primary,active,TR-Agency2,1000000,Primary Internet circuit for TR-Agency2,circuit-primary
-TR-Agency2-BKP-001,Colt Technology,Internet Backup,active,TR-Agency2,500000,Backup Internet circuit for TR-Agency2,circuit-backup
-ZA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,ZA-Agency1,1000000,Primary Internet circuit for ZA-Agency1,circuit-primary
-ZA-Agency1-BKP-001,Colt Technology,Internet Backup,active,ZA-Agency1,500000,Backup Internet circuit for ZA-Agency1,circuit-backup
-ZA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,ZA-Agency2,1000000,Primary Internet circuit for ZA-Agency2,circuit-primary
-ZA-Agency2-BKP-001,Colt Technology,Internet Backup,active,ZA-Agency2,500000,Backup Internet circuit for ZA-Agency2,circuit-backup
-DZ-Agency1-PRI-001,Orange Business Services,Internet Primary,active,DZ-Agency1,1000000,Primary Internet circuit for DZ-Agency1,circuit-primary
-DZ-Agency1-BKP-001,Colt Technology,Internet Backup,active,DZ-Agency1,500000,Backup Internet circuit for DZ-Agency1,circuit-backup
-DZ-Agency2-PRI-001,Orange Business Services,Internet Primary,active,DZ-Agency2,1000000,Primary Internet circuit for DZ-Agency2,circuit-primary
-DZ-Agency2-BKP-001,Colt Technology,Internet Backup,active,DZ-Agency2,500000,Backup Internet circuit for DZ-Agency2,circuit-backup
-MA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,MA-Agency1,1000000,Primary Internet circuit for MA-Agency1,circuit-primary
-MA-Agency1-BKP-001,Colt Technology,Internet Backup,active,MA-Agency1,500000,Backup Internet circuit for MA-Agency1,circuit-backup
-MA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,MA-Agency2,1000000,Primary Internet circuit for MA-Agency2,circuit-primary
-MA-Agency2-BKP-001,Colt Technology,Internet Backup,active,MA-Agency2,500000,Backup Internet circuit for MA-Agency2,circuit-backup
-NG-Agency1-PRI-001,Orange Business Services,Internet Primary,active,NG-Agency1,1000000,Primary Internet circuit for NG-Agency1,circuit-primary
-NG-Agency1-BKP-001,Colt Technology,Internet Backup,active,NG-Agency1,500000,Backup Internet circuit for NG-Agency1,circuit-backup
-NG-Agency2-PRI-001,Orange Business Services,Internet Primary,active,NG-Agency2,1000000,Primary Internet circuit for NG-Agency2,circuit-primary
-NG-Agency2-BKP-001,Colt Technology,Internet Backup,active,NG-Agency2,500000,Backup Internet circuit for NG-Agency2,circuit-backup
-KE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,KE-Agency1,1000000,Primary Internet circuit for KE-Agency1,circuit-primary
-KE-Agency1-BKP-001,Colt Technology,Internet Backup,active,KE-Agency1,500000,Backup Internet circuit for KE-Agency1,circuit-backup
-KE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,KE-Agency2,1000000,Primary Internet circuit for KE-Agency2,circuit-primary
-KE-Agency2-BKP-001,Colt Technology,Internet Backup,active,KE-Agency2,500000,Backup Internet circuit for KE-Agency2,circuit-backup
-GH-Agency1-PRI-001,Orange Business Services,Internet Primary,active,GH-Agency1,1000000,Primary Internet circuit for GH-Agency1,circuit-primary
-GH-Agency1-BKP-001,Colt Technology,Internet Backup,active,GH-Agency1,500000,Backup Internet circuit for GH-Agency1,circuit-backup
-GH-Agency2-PRI-001,Orange Business Services,Internet Primary,active,GH-Agency2,1000000,Primary Internet circuit for GH-Agency2,circuit-primary
-GH-Agency2-BKP-001,Colt Technology,Internet Backup,active,GH-Agency2,500000,Backup Internet circuit for GH-Agency2,circuit-backup
-TN-Agency1-PRI-001,Orange Business Services,Internet Primary,active,TN-Agency1,1000000,Primary Internet circuit for TN-Agency1,circuit-primary
-TN-Agency1-BKP-001,Colt Technology,Internet Backup,active,TN-Agency1,500000,Backup Internet circuit for TN-Agency1,circuit-backup
-TN-Agency2-PRI-001,Orange Business Services,Internet Primary,active,TN-Agency2,1000000,Primary Internet circuit for TN-Agency2,circuit-primary
-TN-Agency2-BKP-001,Colt Technology,Internet Backup,active,TN-Agency2,500000,Backup Internet circuit for TN-Agency2,circuit-backup
-SN-Agency1-PRI-001,Orange Business Services,Internet Primary,active,SN-Agency1,1000000,Primary Internet circuit for SN-Agency1,circuit-primary
-SN-Agency1-BKP-001,Colt Technology,Internet Backup,active,SN-Agency1,500000,Backup Internet circuit for SN-Agency1,circuit-backup
-SN-Agency2-PRI-001,Orange Business Services,Internet Primary,active,SN-Agency2,1000000,Primary Internet circuit for SN-Agency2,circuit-primary
-SN-Agency2-BKP-001,Colt Technology,Internet Backup,active,SN-Agency2,500000,Backup Internet circuit for SN-Agency2,circuit-backup
-CI-Agency1-PRI-001,Orange Business Services,Internet Primary,active,CI-Agency1,1000000,Primary Internet circuit for CI-Agency1,circuit-primary
-CI-Agency1-BKP-001,Colt Technology,Internet Backup,active,CI-Agency1,500000,Backup Internet circuit for CI-Agency1,circuit-backup
-CI-Agency2-PRI-001,Orange Business Services,Internet Primary,active,CI-Agency2,1000000,Primary Internet circuit for CI-Agency2,circuit-primary
-CI-Agency2-BKP-001,Colt Technology,Internet Backup,active,CI-Agency2,500000,Backup Internet circuit for CI-Agency2,circuit-backup
-MU-Agency1-PRI-001,Orange Business Services,Internet Primary,active,MU-Agency1,1000000,Primary Internet circuit for MU-Agency1,circuit-primary
-MU-Agency1-BKP-001,Colt Technology,Internet Backup,active,MU-Agency1,500000,Backup Internet circuit for MU-Agency1,circuit-backup
-MU-Agency2-PRI-001,Orange Business Services,Internet Primary,active,MU-Agency2,1000000,Primary Internet circuit for MU-Agency2,circuit-primary
-MU-Agency2-BKP-001,Colt Technology,Internet Backup,active,MU-Agency2,500000,Backup Internet circuit for MU-Agency2,circuit-backup
+cid,provider,type,status,commit_rate,description,tags
+FR-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for FR-Agency1,circuit-primary
+FR-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for FR-Agency1,circuit-backup
+FR-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for FR-Agency2,circuit-primary
+FR-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for FR-Agency2,circuit-backup
+DE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for DE-Agency1,circuit-primary
+DE-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for DE-Agency1,circuit-backup
+DE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for DE-Agency2,circuit-primary
+DE-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for DE-Agency2,circuit-backup
+GB-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for GB-Agency1,circuit-primary
+GB-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for GB-Agency1,circuit-backup
+GB-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for GB-Agency2,circuit-primary
+GB-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for GB-Agency2,circuit-backup
+NL-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for NL-Agency1,circuit-primary
+NL-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for NL-Agency1,circuit-backup
+NL-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for NL-Agency2,circuit-primary
+NL-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for NL-Agency2,circuit-backup
+BE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for BE-Agency1,circuit-primary
+BE-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for BE-Agency1,circuit-backup
+BE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for BE-Agency2,circuit-primary
+BE-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for BE-Agency2,circuit-backup
+LU-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for LU-Agency1,circuit-primary
+LU-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for LU-Agency1,circuit-backup
+LU-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for LU-Agency2,circuit-primary
+LU-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for LU-Agency2,circuit-backup
+CH-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for CH-Agency1,circuit-primary
+CH-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for CH-Agency1,circuit-backup
+CH-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for CH-Agency2,circuit-primary
+CH-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for CH-Agency2,circuit-backup
+AT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for AT-Agency1,circuit-primary
+AT-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for AT-Agency1,circuit-backup
+AT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for AT-Agency2,circuit-primary
+AT-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for AT-Agency2,circuit-backup
+IE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for IE-Agency1,circuit-primary
+IE-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for IE-Agency1,circuit-backup
+IE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for IE-Agency2,circuit-primary
+IE-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for IE-Agency2,circuit-backup
+MC-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for MC-Agency1,circuit-primary
+MC-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for MC-Agency1,circuit-backup
+MC-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for MC-Agency2,circuit-primary
+MC-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for MC-Agency2,circuit-backup
+ES-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for ES-Agency1,circuit-primary
+ES-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for ES-Agency1,circuit-backup
+ES-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for ES-Agency2,circuit-primary
+ES-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for ES-Agency2,circuit-backup
+PT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for PT-Agency1,circuit-primary
+PT-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for PT-Agency1,circuit-backup
+PT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for PT-Agency2,circuit-primary
+PT-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for PT-Agency2,circuit-backup
+IT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for IT-Agency1,circuit-primary
+IT-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for IT-Agency1,circuit-backup
+IT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for IT-Agency2,circuit-primary
+IT-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for IT-Agency2,circuit-backup
+GR-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for GR-Agency1,circuit-primary
+GR-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for GR-Agency1,circuit-backup
+GR-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for GR-Agency2,circuit-primary
+GR-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for GR-Agency2,circuit-backup
+MT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for MT-Agency1,circuit-primary
+MT-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for MT-Agency1,circuit-backup
+MT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for MT-Agency2,circuit-primary
+MT-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for MT-Agency2,circuit-backup
+CY-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for CY-Agency1,circuit-primary
+CY-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for CY-Agency1,circuit-backup
+CY-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for CY-Agency2,circuit-primary
+CY-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for CY-Agency2,circuit-backup
+AD-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for AD-Agency1,circuit-primary
+AD-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for AD-Agency1,circuit-backup
+AD-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for AD-Agency2,circuit-primary
+AD-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for AD-Agency2,circuit-backup
+SM-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SM-Agency1,circuit-primary
+SM-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SM-Agency1,circuit-backup
+SM-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SM-Agency2,circuit-primary
+SM-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SM-Agency2,circuit-backup
+SE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SE-Agency1,circuit-primary
+SE-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SE-Agency1,circuit-backup
+SE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SE-Agency2,circuit-primary
+SE-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SE-Agency2,circuit-backup
+NO-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for NO-Agency1,circuit-primary
+NO-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for NO-Agency1,circuit-backup
+NO-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for NO-Agency2,circuit-primary
+NO-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for NO-Agency2,circuit-backup
+DK-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for DK-Agency1,circuit-primary
+DK-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for DK-Agency1,circuit-backup
+DK-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for DK-Agency2,circuit-primary
+DK-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for DK-Agency2,circuit-backup
+FI-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for FI-Agency1,circuit-primary
+FI-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for FI-Agency1,circuit-backup
+FI-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for FI-Agency2,circuit-primary
+FI-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for FI-Agency2,circuit-backup
+IS-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for IS-Agency1,circuit-primary
+IS-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for IS-Agency1,circuit-backup
+IS-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for IS-Agency2,circuit-primary
+IS-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for IS-Agency2,circuit-backup
+PL-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for PL-Agency1,circuit-primary
+PL-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for PL-Agency1,circuit-backup
+PL-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for PL-Agency2,circuit-primary
+PL-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for PL-Agency2,circuit-backup
+CZ-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for CZ-Agency1,circuit-primary
+CZ-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for CZ-Agency1,circuit-backup
+CZ-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for CZ-Agency2,circuit-primary
+CZ-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for CZ-Agency2,circuit-backup
+HU-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for HU-Agency1,circuit-primary
+HU-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for HU-Agency1,circuit-backup
+HU-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for HU-Agency2,circuit-primary
+HU-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for HU-Agency2,circuit-backup
+RO-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for RO-Agency1,circuit-primary
+RO-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for RO-Agency1,circuit-backup
+RO-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for RO-Agency2,circuit-primary
+RO-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for RO-Agency2,circuit-backup
+BG-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for BG-Agency1,circuit-primary
+BG-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for BG-Agency1,circuit-backup
+BG-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for BG-Agency2,circuit-primary
+BG-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for BG-Agency2,circuit-backup
+SK-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SK-Agency1,circuit-primary
+SK-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SK-Agency1,circuit-backup
+SK-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SK-Agency2,circuit-primary
+SK-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SK-Agency2,circuit-backup
+SI-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SI-Agency1,circuit-primary
+SI-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SI-Agency1,circuit-backup
+SI-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SI-Agency2,circuit-primary
+SI-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SI-Agency2,circuit-backup
+HR-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for HR-Agency1,circuit-primary
+HR-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for HR-Agency1,circuit-backup
+HR-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for HR-Agency2,circuit-primary
+HR-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for HR-Agency2,circuit-backup
+RS-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for RS-Agency1,circuit-primary
+RS-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for RS-Agency1,circuit-backup
+RS-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for RS-Agency2,circuit-primary
+RS-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for RS-Agency2,circuit-backup
+UA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for UA-Agency1,circuit-primary
+UA-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for UA-Agency1,circuit-backup
+UA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for UA-Agency2,circuit-primary
+UA-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for UA-Agency2,circuit-backup
+LT-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for LT-Agency1,circuit-primary
+LT-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for LT-Agency1,circuit-backup
+LT-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for LT-Agency2,circuit-primary
+LT-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for LT-Agency2,circuit-backup
+LV-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for LV-Agency1,circuit-primary
+LV-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for LV-Agency1,circuit-backup
+LV-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for LV-Agency2,circuit-primary
+LV-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for LV-Agency2,circuit-backup
+EE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for EE-Agency1,circuit-primary
+EE-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for EE-Agency1,circuit-backup
+EE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for EE-Agency2,circuit-primary
+EE-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for EE-Agency2,circuit-backup
+AE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for AE-Agency1,circuit-primary
+AE-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for AE-Agency1,circuit-backup
+AE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for AE-Agency2,circuit-primary
+AE-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for AE-Agency2,circuit-backup
+SA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SA-Agency1,circuit-primary
+SA-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SA-Agency1,circuit-backup
+SA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SA-Agency2,circuit-primary
+SA-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SA-Agency2,circuit-backup
+QA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for QA-Agency1,circuit-primary
+QA-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for QA-Agency1,circuit-backup
+QA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for QA-Agency2,circuit-primary
+QA-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for QA-Agency2,circuit-backup
+KW-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for KW-Agency1,circuit-primary
+KW-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for KW-Agency1,circuit-backup
+KW-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for KW-Agency2,circuit-primary
+KW-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for KW-Agency2,circuit-backup
+BH-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for BH-Agency1,circuit-primary
+BH-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for BH-Agency1,circuit-backup
+BH-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for BH-Agency2,circuit-primary
+BH-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for BH-Agency2,circuit-backup
+OM-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for OM-Agency1,circuit-primary
+OM-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for OM-Agency1,circuit-backup
+OM-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for OM-Agency2,circuit-primary
+OM-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for OM-Agency2,circuit-backup
+IL-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for IL-Agency1,circuit-primary
+IL-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for IL-Agency1,circuit-backup
+IL-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for IL-Agency2,circuit-primary
+IL-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for IL-Agency2,circuit-backup
+JO-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for JO-Agency1,circuit-primary
+JO-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for JO-Agency1,circuit-backup
+JO-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for JO-Agency2,circuit-primary
+JO-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for JO-Agency2,circuit-backup
+LB-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for LB-Agency1,circuit-primary
+LB-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for LB-Agency1,circuit-backup
+LB-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for LB-Agency2,circuit-primary
+LB-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for LB-Agency2,circuit-backup
+TR-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for TR-Agency1,circuit-primary
+TR-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for TR-Agency1,circuit-backup
+TR-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for TR-Agency2,circuit-primary
+TR-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for TR-Agency2,circuit-backup
+ZA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for ZA-Agency1,circuit-primary
+ZA-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for ZA-Agency1,circuit-backup
+ZA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for ZA-Agency2,circuit-primary
+ZA-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for ZA-Agency2,circuit-backup
+DZ-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for DZ-Agency1,circuit-primary
+DZ-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for DZ-Agency1,circuit-backup
+DZ-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for DZ-Agency2,circuit-primary
+DZ-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for DZ-Agency2,circuit-backup
+MA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for MA-Agency1,circuit-primary
+MA-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for MA-Agency1,circuit-backup
+MA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for MA-Agency2,circuit-primary
+MA-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for MA-Agency2,circuit-backup
+NG-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for NG-Agency1,circuit-primary
+NG-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for NG-Agency1,circuit-backup
+NG-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for NG-Agency2,circuit-primary
+NG-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for NG-Agency2,circuit-backup
+KE-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for KE-Agency1,circuit-primary
+KE-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for KE-Agency1,circuit-backup
+KE-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for KE-Agency2,circuit-primary
+KE-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for KE-Agency2,circuit-backup
+GH-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for GH-Agency1,circuit-primary
+GH-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for GH-Agency1,circuit-backup
+GH-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for GH-Agency2,circuit-primary
+GH-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for GH-Agency2,circuit-backup
+TN-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for TN-Agency1,circuit-primary
+TN-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for TN-Agency1,circuit-backup
+TN-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for TN-Agency2,circuit-primary
+TN-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for TN-Agency2,circuit-backup
+SN-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SN-Agency1,circuit-primary
+SN-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SN-Agency1,circuit-backup
+SN-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for SN-Agency2,circuit-primary
+SN-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for SN-Agency2,circuit-backup
+CI-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for CI-Agency1,circuit-primary
+CI-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for CI-Agency1,circuit-backup
+CI-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for CI-Agency2,circuit-primary
+CI-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for CI-Agency2,circuit-backup
+MU-Agency1-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for MU-Agency1,circuit-primary
+MU-Agency1-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for MU-Agency1,circuit-backup
+MU-Agency2-PRI-001,Orange Business Services,Internet Primary,active,1000000,Primary Internet circuit for MU-Agency2,circuit-primary
+MU-Agency2-BKP-001,Colt Technology,Internet Backup,active,500000,Backup Internet circuit for MU-Agency2,circuit-backup
