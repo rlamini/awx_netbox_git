@@ -1,0 +1,5 @@
+manufacturer,model,slug,u_height,is_full_depth,description
+Generic,Fiber Patch Panel 24-Port,fiber-pp-24,1,false,24-Port Fiber Optic Patch Panel
+Generic,Fiber Patch Panel 48-Port,fiber-pp-48,2,false,48-Port Fiber Optic Patch Panel
+Generic,Copper Patch Panel 24-Port,copper-pp-24,1,false,24-Port RJ45 Copper Patch Panel
+Generic,Copper Patch Panel 48-Port,copper-pp-48,1,false,48-Port RJ45 Copper Patch Panel
