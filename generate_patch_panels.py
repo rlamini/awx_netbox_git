@@ -54,7 +54,7 @@ for site in sites:
             patch_panel_interfaces.append({
                 'device': pp_name,
                 'name': f'Port-{port}',
-                'type': 'lc',
+                'type': 'other',  # Generic type for patch panel ports
                 'enabled': 'true',
                 'description': f'Fiber port {port}'
             })
@@ -85,7 +85,7 @@ for site in sites:
                 patch_panel_interfaces.append({
                     'device': pp_name,
                     'name': f'Port-{port}',
-                    'type': 'lc',
+                    'type': 'other',
                     'enabled': 'true',
                     'description': f'Fiber port {port}'
                 })
@@ -113,7 +113,7 @@ for site in sites:
                 patch_panel_interfaces.append({
                     'device': pp_name,
                     'name': f'Port-{port}',
-                    'type': 'lc',
+                    'type': 'other',
                     'enabled': 'true',
                     'description': f'Fiber port {port}'
                 })
@@ -152,7 +152,7 @@ for site in sites:
                 patch_panel_interfaces.append({
                     'device': pp_name,
                     'name': f'Port-{port}',
-                    'type': 'lc',
+                    'type': 'other',
                     'enabled': 'true',
                     'description': f'Fiber port {port}'
                 })
@@ -212,7 +212,7 @@ for site in sites:
         patch_panel_interfaces.append({
             'device': pp_name,
             'name': f'Port-{port}',
-            'type': 'rj45',
+            'type': 'other',
             'enabled': 'true',
             'description': f'Copper port {port}'
         })
