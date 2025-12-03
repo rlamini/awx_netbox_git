@@ -189,7 +189,7 @@ for site in sites:
             })
 
     # MMR - Copper patch panel for management
-    # MMR-R01: MMR-SW01 at 1 (1U) → Place PP at 35 (safe mid-rack position)
+    # MMR-R01: MMR-SW01 at 1 (1U) → Place PP at 10 (well clear of switch)
     print("  - Meet-Me Room: Copper patch panel")
     rack = f'{site}-MMR-R01'
     pp_name = f'{site}-MMR-R01-CPP01'
@@ -202,7 +202,7 @@ for site in sites:
         'site': site,
         'location': f'{site}-Meet-Me Room',
         'rack': rack,
-        'position': '35',  # Mid-rack, safe position
+        'position': '10',  # Safe position well clear of switch at U1
         'face': 'front',
         'status': 'active',
         'description': 'Copper patch panel for management'

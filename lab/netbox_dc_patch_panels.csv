@@ -26,7 +26,7 @@ EMEA-DC-CLOUD-SRV-B-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA
 EMEA-DC-CLOUD-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R01,39,front,active,Fiber patch panel for storage connections
 EMEA-DC-CLOUD-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R02,39,front,active,Fiber patch panel for storage connections
 EMEA-DC-CLOUD-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R03,39,front,active,Fiber patch panel for storage connections
-EMEA-DC-CLOUD-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Meet-Me Room,EMEA-DC-CLOUD-MMR-R01,35,front,active,Copper patch panel for management
+EMEA-DC-CLOUD-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Meet-Me Room,EMEA-DC-CLOUD-MMR-R01,10,front,active,Copper patch panel for management
 EMEA-DC-ONPREM-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R01,20,front,active,Fiber patch panel for network interconnects
 EMEA-DC-ONPREM-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R02,5,front,active,Fiber patch panel for network interconnects
 EMEA-DC-ONPREM-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R03,15,front,active,Fiber patch panel for network interconnects
@@ -54,7 +54,7 @@ EMEA-DC-ONPREM-SRV-B-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EME
 EMEA-DC-ONPREM-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R01,39,front,active,Fiber patch panel for storage connections
 EMEA-DC-ONPREM-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R02,39,front,active,Fiber patch panel for storage connections
 EMEA-DC-ONPREM-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R03,39,front,active,Fiber patch panel for storage connections
-EMEA-DC-ONPREM-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me Room,EMEA-DC-ONPREM-MMR-R01,35,front,active,Copper patch panel for management
+EMEA-DC-ONPREM-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me Room,EMEA-DC-ONPREM-MMR-R01,10,front,active,Copper patch panel for management
 APAC-DC-CLOUD-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R01,20,front,active,Fiber patch panel for network interconnects
 APAC-DC-CLOUD-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R02,5,front,active,Fiber patch panel for network interconnects
 APAC-DC-CLOUD-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R03,15,front,active,Fiber patch panel for network interconnects
@@ -82,7 +82,7 @@ APAC-DC-CLOUD-SRV-B-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC
 APAC-DC-CLOUD-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R01,39,front,active,Fiber patch panel for storage connections
 APAC-DC-CLOUD-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R02,39,front,active,Fiber patch panel for storage connections
 APAC-DC-CLOUD-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R03,39,front,active,Fiber patch panel for storage connections
-APAC-DC-CLOUD-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Meet-Me Room,APAC-DC-CLOUD-MMR-R01,35,front,active,Copper patch panel for management
+APAC-DC-CLOUD-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Meet-Me Room,APAC-DC-CLOUD-MMR-R01,10,front,active,Copper patch panel for management
 APAC-DC-ONPREM-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R01,20,front,active,Fiber patch panel for network interconnects
 APAC-DC-ONPREM-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R02,5,front,active,Fiber patch panel for network interconnects
 APAC-DC-ONPREM-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R03,15,front,active,Fiber patch panel for network interconnects
@@ -110,7 +110,7 @@ APAC-DC-ONPREM-SRV-B-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APA
 APAC-DC-ONPREM-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R01,39,front,active,Fiber patch panel for storage connections
 APAC-DC-ONPREM-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R02,39,front,active,Fiber patch panel for storage connections
 APAC-DC-ONPREM-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R03,39,front,active,Fiber patch panel for storage connections
-APAC-DC-ONPREM-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me Room,APAC-DC-ONPREM-MMR-R01,35,front,active,Copper patch panel for management
+APAC-DC-ONPREM-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me Room,APAC-DC-ONPREM-MMR-R01,10,front,active,Copper patch panel for management
 AMER-DC-CLOUD-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R01,20,front,active,Fiber patch panel for network interconnects
 AMER-DC-CLOUD-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R02,5,front,active,Fiber patch panel for network interconnects
 AMER-DC-CLOUD-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R03,15,front,active,Fiber patch panel for network interconnects
@@ -138,7 +138,7 @@ AMER-DC-CLOUD-SRV-B-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER
 AMER-DC-CLOUD-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R01,39,front,active,Fiber patch panel for storage connections
 AMER-DC-CLOUD-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R02,39,front,active,Fiber patch panel for storage connections
 AMER-DC-CLOUD-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R03,39,front,active,Fiber patch panel for storage connections
-AMER-DC-CLOUD-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Meet-Me Room,AMER-DC-CLOUD-MMR-R01,35,front,active,Copper patch panel for management
+AMER-DC-CLOUD-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Meet-Me Room,AMER-DC-CLOUD-MMR-R01,10,front,active,Copper patch panel for management
 AMER-DC-ONPREM-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R01,20,front,active,Fiber patch panel for network interconnects
 AMER-DC-ONPREM-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R02,5,front,active,Fiber patch panel for network interconnects
 AMER-DC-ONPREM-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R03,15,front,active,Fiber patch panel for network interconnects
@@ -166,4 +166,4 @@ AMER-DC-ONPREM-SRV-B-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AME
 AMER-DC-ONPREM-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R01,39,front,active,Fiber patch panel for storage connections
 AMER-DC-ONPREM-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R02,39,front,active,Fiber patch panel for storage connections
 AMER-DC-ONPREM-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R03,39,front,active,Fiber patch panel for storage connections
-AMER-DC-ONPREM-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me Room,AMER-DC-ONPREM-MMR-R01,35,front,active,Copper patch panel for management
+AMER-DC-ONPREM-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me Room,AMER-DC-ONPREM-MMR-R01,10,front,active,Copper patch panel for management
