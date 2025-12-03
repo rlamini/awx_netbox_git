@@ -12,3 +12,4 @@ Storage,storage,795548,False,Storage device role
 OOB Router,oob-router,009688,False,OOB Router device role
 NAC,nac,cddc39,False,NAC device role
 PDU,pdu,9e9e9e,False,PDU device role
+Patch Panel,patch-panel,607d8b,False,Patch Panel device role
