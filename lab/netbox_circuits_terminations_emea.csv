@@ -187,10 +187,10 @@ ZA-Agency1-PRI-001,A,dcim.site,187,1000000,1000000,Primary circuit termination a
 ZA-Agency1-BKP-001,A,dcim.site,187,500000,500000,Backup circuit termination at ZA-Agency1
 ZA-Agency2-PRI-001,A,dcim.site,188,1000000,1000000,Primary circuit termination at ZA-Agency2
 ZA-Agency2-BKP-001,A,dcim.site,188,500000,500000,Backup circuit termination at ZA-Agency2
-EG-Agency1-PRI-001,A,dcim.site,,1000000,1000000,Primary circuit termination at EG-Agency1
-EG-Agency1-BKP-001,A,dcim.site,,500000,500000,Backup circuit termination at EG-Agency1
-EG-Agency2-PRI-001,A,dcim.site,,1000000,1000000,Primary circuit termination at EG-Agency2
-EG-Agency2-BKP-001,A,dcim.site,,500000,500000,Backup circuit termination at EG-Agency2
+DZ-Agency1-PRI-001,A,dcim.site,189,1000000,1000000,Primary circuit termination at DZ-Agency1
+DZ-Agency1-BKP-001,A,dcim.site,189,500000,500000,Backup circuit termination at DZ-Agency1
+DZ-Agency2-PRI-001,A,dcim.site,190,1000000,1000000,Primary circuit termination at DZ-Agency2
+DZ-Agency2-BKP-001,A,dcim.site,190,500000,500000,Backup circuit termination at DZ-Agency2
 MA-Agency1-PRI-001,A,dcim.site,191,1000000,1000000,Primary circuit termination at MA-Agency1
 MA-Agency1-BKP-001,A,dcim.site,191,500000,500000,Backup circuit termination at MA-Agency1
 MA-Agency2-PRI-001,A,dcim.site,192,1000000,1000000,Primary circuit termination at MA-Agency2

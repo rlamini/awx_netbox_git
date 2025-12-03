@@ -187,10 +187,10 @@ ZA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,ZA-Agency1,1
 ZA-Agency1-BKP-001,Colt Technology,Internet Backup,active,ZA-Agency1,500000,Backup Internet circuit for ZA-Agency1,circuit-backup
 ZA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,ZA-Agency2,1000000,Primary Internet circuit for ZA-Agency2,circuit-primary
 ZA-Agency2-BKP-001,Colt Technology,Internet Backup,active,ZA-Agency2,500000,Backup Internet circuit for ZA-Agency2,circuit-backup
-EG-Agency1-PRI-001,Orange Business Services,Internet Primary,active,EG-Agency1,1000000,Primary Internet circuit for EG-Agency1,circuit-primary
-EG-Agency1-BKP-001,Colt Technology,Internet Backup,active,EG-Agency1,500000,Backup Internet circuit for EG-Agency1,circuit-backup
-EG-Agency2-PRI-001,Orange Business Services,Internet Primary,active,EG-Agency2,1000000,Primary Internet circuit for EG-Agency2,circuit-primary
-EG-Agency2-BKP-001,Colt Technology,Internet Backup,active,EG-Agency2,500000,Backup Internet circuit for EG-Agency2,circuit-backup
+DZ-Agency1-PRI-001,Orange Business Services,Internet Primary,active,DZ-Agency1,1000000,Primary Internet circuit for DZ-Agency1,circuit-primary
+DZ-Agency1-BKP-001,Colt Technology,Internet Backup,active,DZ-Agency1,500000,Backup Internet circuit for DZ-Agency1,circuit-backup
+DZ-Agency2-PRI-001,Orange Business Services,Internet Primary,active,DZ-Agency2,1000000,Primary Internet circuit for DZ-Agency2,circuit-primary
+DZ-Agency2-BKP-001,Colt Technology,Internet Backup,active,DZ-Agency2,500000,Backup Internet circuit for DZ-Agency2,circuit-backup
 MA-Agency1-PRI-001,Orange Business Services,Internet Primary,active,MA-Agency1,1000000,Primary Internet circuit for MA-Agency1,circuit-primary
 MA-Agency1-BKP-001,Colt Technology,Internet Backup,active,MA-Agency1,500000,Backup Internet circuit for MA-Agency1,circuit-backup
 MA-Agency2-PRI-001,Orange Business Services,Internet Primary,active,MA-Agency2,1000000,Primary Internet circuit for MA-Agency2,circuit-primary
