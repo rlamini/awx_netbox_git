@@ -1,4 +1,4 @@
-cid,term_side,site,port_speed,upstream_speed,description
+circuit,term_side,site,port_speed,upstream_speed,description
 FR-Agency1-PRI-001,A,FR-Agency1,1000000,1000000,Primary circuit termination at FR-Agency1
 FR-Agency1-BKP-001,A,FR-Agency1,500000,500000,Backup circuit termination at FR-Agency1
 FR-Agency2-PRI-001,A,FR-Agency2,1000000,1000000,Primary circuit termination at FR-Agency2

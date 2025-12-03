@@ -1,4 +1,4 @@
-cid,term_side,site,port_speed,upstream_speed,description
+circuit,term_side,site,port_speed,upstream_speed,description
 EMEA-DC-CLOUD-DIA-PRI,A,EMEA-DC-CLOUD,10000000,10000000,A-side termination at EMEA-DC-CLOUD
 EMEA-DC-CLOUD-DIA-SEC,A,EMEA-DC-CLOUD,10000000,10000000,A-side termination at EMEA-DC-CLOUD
 EMEA-DC-CLOUD-MPLS-01,A,EMEA-DC-CLOUD,5000000,5000000,A-side termination at EMEA-DC-CLOUD

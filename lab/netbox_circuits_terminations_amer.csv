@@ -1,4 +1,4 @@
-cid,term_side,site,port_speed,upstream_speed,description
+circuit,term_side,site,port_speed,upstream_speed,description
 US-Agency1-PRI-001,A,US-Agency1,1000000,1000000,Primary circuit termination at US-Agency1
 US-Agency1-BKP-001,A,US-Agency1,500000,500000,Backup circuit termination at US-Agency1
 US-Agency2-PRI-001,A,US-Agency2,1000000,1000000,Primary circuit termination at US-Agency2
