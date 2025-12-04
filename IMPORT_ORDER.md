@@ -92,16 +92,77 @@ File: lab/netbox_dc_cables.csv
 
 ---
 
+## Power Infrastructure Import Sequence
+
+### 11. **PDU Device Types**
+```
+Devices → Device Types → Import
+File: lab/netbox_pdu_device_types.csv
+```
+**Contains**: 2 PDU device types
+- APC AP8959EU3: Metered Plus ZeroU 32A (24x C13 outlets)
+- APC AP8981: Switched Plus ZeroU 32A (24x C13 outlets)
+
+### 12. **PDU Devices**
+```
+Devices → Devices → Import
+File: lab/netbox_dc_pdus.csv
+```
+**Contains**: 252 PDUs (2 per rack: PDU-A and PDU-B)
+**Note**: Provides redundant power feeds for all devices
+
+### 13. **Power Outlets**
+```
+Devices → Power Outlets → Import
+File: lab/netbox_dc_power_outlets.csv
+```
+**Contains**: 6,048 power outlets (24 C13 outlets per PDU)
+**Note**: PDU devices must exist before importing outlets
+
+### 14. **Power Ports**
+```
+Devices → Power Ports → Import
+File: lab/netbox_dc_power_ports.csv
+```
+**Contains**: 468 power ports on devices (PSU1 and PSU2)
+**Note**: All devices have dual power supplies for redundancy
+
+### 15. **Power Cables** (AFTER all power ports and outlets!)
+```
+DCIM → Cables → Import
+File: lab/netbox_dc_power_cables.csv
+```
+**Contains**: 468 power cables
+- PSU1 connects to PDU-A for each device
+- PSU2 connects to PDU-B for each device
+**Note**: Provides redundant power - if one PDU/feed fails, device stays online
+
+**Power Redundancy Model**:
+- **PDU-A**: Primary power feed (Metered for monitoring)
+- **PDU-B**: Secondary power feed (Switched for remote control)
+- **Each Device**: Dual PSUs for N+1 redundancy
+
+---
+
 ## Verification Checklist
 
 After importing, verify in NetBox:
 
-✅ **Manufacturers**: "Generic" exists
-✅ **Device Roles**: "Patch Panel" exists
-✅ **Device Types**: 4 patch panel types exist under Generic manufacturer
-✅ **Devices**: 168 patch panels visible in device list
+### Network/Cabling Verification
+✅ **Manufacturers**: "Generic" and "APC by Schneider Electric" exist
+✅ **Device Roles**: "Patch Panel" and "PDU" exist
+✅ **Device Types**: 4 patch panel types + 2 PDU types exist
+✅ **Devices**: 168 patch panels + 252 PDUs visible in device list
 ✅ **Rear Ports**: Each patch panel has rear ports (check any patch panel)
 ✅ **Front Ports**: Each patch panel has front ports mapped to rear ports
+✅ **Cables**: 3,036 network cables connecting devices through patch panels
+
+### Power Infrastructure Verification
+✅ **PDUs**: Each rack has 2 PDUs (PDU-A and PDU-B)
+✅ **Power Outlets**: Each PDU has 24 outlets (C13 type)
+✅ **Power Ports**: Each device has 2 power ports (PSU1 and PSU2)
+✅ **Power Cables**: 468 power cables (redundant connections)
+✅ **Redundancy**: Check any device - PSU1→PDU-A, PSU2→PDU-B
 
 ---
 
@@ -119,13 +180,26 @@ After importing, verify in NetBox:
 
 ## File Summary
 
+### Network/Cabling Files
 | File | Records | Purpose |
 |------|---------|---------|
-| netbox_manufacturers.csv | 1 new | Adds "Generic" manufacturer |
-| netbox_device_roles.csv | 1 new | Adds "Patch Panel" role |
+| netbox_manufacturers.csv | 2 new | "Generic" + "APC by Schneider Electric" |
+| netbox_device_roles.csv | 2 new | "Patch Panel" + "PDU" roles |
 | netbox_patchpanel_device_types.csv | 4 | Patch panel device types |
 | netbox_dc_patch_panels.csv | 168 | Patch panel devices |
-| netbox_dc_patch_panel_rear_ports.csv | 5,904 | Rear ports (permanent) |
+| netbox_dc_patch_panel_rear_ports.csv | 5,904 | Rear ports (permanent cabling) |
 | netbox_dc_patch_panel_front_ports.csv | 5,904 | Front ports (patch cords) |
+| netbox_dc_cables.csv | 3,036 | Network cables |
 
-**Total**: 11,981 objects to import for complete patch panel infrastructure
+### Power Infrastructure Files
+| File | Records | Purpose |
+|------|---------|---------|
+| netbox_pdu_device_types.csv | 2 | PDU device types (Metered/Switched) |
+| netbox_dc_pdus.csv | 252 | PDU devices (2 per rack) |
+| netbox_dc_power_outlets.csv | 6,048 | Power outlets (24 per PDU) |
+| netbox_dc_power_ports.csv | 468 | Power ports (dual PSU per device) |
+| netbox_dc_power_cables.csv | 468 | Power cables (redundant connections) |
+
+**Total**: 22,254 objects for complete datacenter DCIM infrastructure
+- Network/Cabling: 15,016 objects
+- Power Infrastructure: 7,238 objects
