@@ -17,16 +17,18 @@ sites = [
 cables = []
 cable_id = 1
 
-def add_cable(label, cable_type, status, a_term_type, a_term, b_term_type, b_term, desc):
+def add_cable(label, cable_type, status, a_device, a_type, a_name, b_device, b_type, b_name, desc):
     global cable_id
     cables.append({
         'label': label,
         'type': cable_type,
         'status': status,
-        'a_termination_type': a_term_type,
-        'a_termination': a_term,
-        'b_termination_type': b_term_type,
-        'b_termination': b_term,
+        'side_a_device': a_device,
+        'side_a_type': a_type,
+        'side_a_name': a_name,
+        'side_b_device': b_device,
+        'side_b_type': b_type,
+        'side_b_name': b_name,
         'length': '',
         'length_unit': '',
         'description': desc
@@ -51,10 +53,12 @@ for site in sites:
             f'{site}-CABLE-{cable_id:05d}',
             'smf',
             'connected',
+            core_sw01,
             'dcim.interface',
-            f'{core_sw01}:Ethernet1/{port}',
+            f'Ethernet1/{port}',
+            pp_core01,
             'dcim.rearport',
-            f'{pp_core01}:Rear-{port}',
+            f'Rear-{port}',
             f'Equipment cable: {core_sw01} to rear port'
         )
 
@@ -64,10 +68,12 @@ for site in sites:
             f'{site}-CABLE-{cable_id:05d}',
             'smf',
             'connected',
+            core_sw02,
             'dcim.interface',
-            f'{core_sw02}:Ethernet1/{port}',
+            f'Ethernet1/{port}',
+            pp_core02,
             'dcim.rearport',
-            f'{pp_core02}:Rear-{port}',
+            f'Rear-{port}',
             f'Equipment cable: {core_sw02} to rear port'
         )
 
@@ -83,10 +89,12 @@ for site in sites:
             f'{site}-CABLE-{cable_id:05d}',
             'smf',
             'connected',
+            dist_sw01,
             'dcim.interface',
-            f'{dist_sw01}:Ethernet1/{port}',
+            f'Ethernet1/{port}',
+            pp_dist01,
             'dcim.rearport',
-            f'{pp_dist01}:Rear-{port}',
+            f'Rear-{port}',
             f'Equipment cable: {dist_sw01} to rear port'
         )
 
@@ -95,10 +103,12 @@ for site in sites:
             f'{site}-CABLE-{cable_id:05d}',
             'smf',
             'connected',
+            dist_sw02,
             'dcim.interface',
-            f'{dist_sw02}:Ethernet1/{port}',
+            f'Ethernet1/{port}',
+            pp_dist02,
             'dcim.rearport',
-            f'{pp_dist02}:Rear-{port}',
+            f'Rear-{port}',
             f'Equipment cable: {dist_sw02} to rear port'
         )
 
@@ -107,40 +117,40 @@ for site in sites:
 
     # Core VPC peer-link
     add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-             'dcim.frontport', f'{pp_core01}:Front-25',
-             'dcim.frontport', f'{pp_core02}:Front-25',
+             pp_core01, 'dcim.frontport', 'Front-25',
+             pp_core02, 'dcim.frontport', 'Front-25',
              'Patch cord: Core VPC peer-link')
     add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-             'dcim.frontport', f'{pp_core01}:Front-26',
-             'dcim.frontport', f'{pp_core02}:Front-26',
+             pp_core01, 'dcim.frontport', 'Front-26',
+             pp_core02, 'dcim.frontport', 'Front-26',
              'Patch cord: Core VPC peer-link')
 
     # Core01 to Dist01
     for i in range(1, 5):
         add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-                 'dcim.frontport', f'{pp_core01}:Front-{i}',
-                 'dcim.frontport', f'{pp_dist01}:Front-{i}',
+                 pp_core01, 'dcim.frontport', f'Front-{i}',
+                 pp_dist01, 'dcim.frontport', f'Front-{i}',
                  f'Patch cord: Core01 to Dist01 link {i}')
 
     # Core02 to Dist01
     for i in range(1, 5):
         add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-                 'dcim.frontport', f'{pp_core02}:Front-{i}',
-                 'dcim.frontport', f'{pp_dist01}:Front-{i+4}',
+                 pp_core02, 'dcim.frontport', f'Front-{i}',
+                 pp_dist01, 'dcim.frontport', f'Front-{i+4}',
                  f'Patch cord: Core02 to Dist01 link {i}')
 
     # Core01 to Dist02
     for i in range(1, 5):
         add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-                 'dcim.frontport', f'{pp_core01}:Front-{i+4}',
-                 'dcim.frontport', f'{pp_dist02}:Front-{i}',
+                 pp_core01, 'dcim.frontport', f'Front-{i+4}',
+                 pp_dist02, 'dcim.frontport', f'Front-{i}',
                  f'Patch cord: Core01 to Dist02 link {i}')
 
     # Core02 to Dist02
     for i in range(1, 5):
         add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-                 'dcim.frontport', f'{pp_core02}:Front-{i+4}',
-                 'dcim.frontport', f'{pp_dist02}:Front-{i+4}',
+                 pp_core02, 'dcim.frontport', f'Front-{i+4}',
+                 pp_dist02, 'dcim.frontport', f'Front-{i+4}',
                  f'Patch cord: Core02 to Dist02 link {i}')
 
     # Server Halls - Spine/Leaf fabric
@@ -160,76 +170,76 @@ for site in sites:
         # Spine switches to rear ports
         for port in range(1, 49):
             add_cable(f'{site}-CABLE-{cable_id:05d}', 'smf', 'connected',
-                     'dcim.interface', f'{spine_01}:Ethernet{port}',
-                     'dcim.rearport', f'{pp_spine01}:Rear-{port}',
+                     spine_01, 'dcim.interface', f'Ethernet{port}',
+                     pp_spine01, 'dcim.rearport', f'Rear-{port}',
                      f'Equipment cable: {spine_01} to rear port')
 
         for port in range(1, 49):
             add_cable(f'{site}-CABLE-{cable_id:05d}', 'smf', 'connected',
-                     'dcim.interface', f'{spine_02}:Ethernet{port}',
-                     'dcim.rearport', f'{pp_spine02}:Rear-{port}',
+                     spine_02, 'dcim.interface', f'Ethernet{port}',
+                     pp_spine02, 'dcim.rearport', f'Rear-{port}',
                      f'Equipment cable: {spine_02} to rear port')
 
         # Leaf switches uplinks to rear ports
         for port in range(49, 61):
             pp_port = port - 48
             add_cable(f'{site}-CABLE-{cable_id:05d}', 'smf', 'connected',
-                     'dcim.interface', f'{leaf_01}:Ethernet{port}',
-                     'dcim.rearport', f'{pp_leaf01}:Rear-{pp_port}',
+                     leaf_01, 'dcim.interface', f'Ethernet{port}',
+                     pp_leaf01, 'dcim.rearport', f'Rear-{pp_port}',
                      f'Equipment cable: {leaf_01} uplink to rear port')
 
         for port in range(49, 61):
             pp_port = port - 48
             add_cable(f'{site}-CABLE-{cable_id:05d}', 'smf', 'connected',
-                     'dcim.interface', f'{leaf_02}:Ethernet{port}',
-                     'dcim.rearport', f'{pp_leaf02}:Rear-{pp_port}',
+                     leaf_02, 'dcim.interface', f'Ethernet{port}',
+                     pp_leaf02, 'dcim.rearport', f'Rear-{pp_port}',
                      f'Equipment cable: {leaf_02} uplink to rear port')
 
         # Patch cords: Leaf to Spine mesh via front ports
         # Leaf01 to Spine01
         for i in range(1, 5):
             add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-                     'dcim.frontport', f'{pp_leaf01}:Front-{i}',
-                     'dcim.frontport', f'{pp_spine01}:Front-{i}',
+                     pp_leaf01, 'dcim.frontport', f'Front-{i}',
+                     pp_spine01, 'dcim.frontport', f'Front-{i}',
                      f'Patch cord: Leaf01 to Spine01 link {i}')
 
         # Leaf01 to Spine02
         for i in range(1, 5):
             add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-                     'dcim.frontport', f'{pp_leaf01}:Front-{i+4}',
-                     'dcim.frontport', f'{pp_spine02}:Front-{i}',
+                     pp_leaf01, 'dcim.frontport', f'Front-{i+4}',
+                     pp_spine02, 'dcim.frontport', f'Front-{i}',
                      f'Patch cord: Leaf01 to Spine02 link {i}')
 
         # Leaf02 to Spine01
         for i in range(1, 5):
             add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-                     'dcim.frontport', f'{pp_leaf02}:Front-{i}',
-                     'dcim.frontport', f'{pp_spine01}:Front-{i+4}',
+                     pp_leaf02, 'dcim.frontport', f'Front-{i}',
+                     pp_spine01, 'dcim.frontport', f'Front-{i+4}',
                      f'Patch cord: Leaf02 to Spine01 link {i}')
 
         # Leaf02 to Spine02
         for i in range(1, 5):
             add_cable(f'{site}-CABLE-{cable_id:05d}', 'dac-active', 'connected',
-                     'dcim.frontport', f'{pp_leaf02}:Front-{i+4}',
-                     'dcim.frontport', f'{pp_spine02}:Front-{i+4}',
+                     pp_leaf02, 'dcim.frontport', f'Front-{i+4}',
+                     pp_spine02, 'dcim.frontport', f'Front-{i+4}',
                      f'Patch cord: Leaf02 to Spine02 link {i}')
 
         # Spine to Distribution 100G uplinks via front ports
         add_cable(f'{site}-CABLE-{cable_id:05d}', 'aoc', 'connected',
-                 'dcim.frontport', f'{pp_spine01}:Front-45',
-                 'dcim.frontport', f'{pp_dist01}:Front-40',
+                 pp_spine01, 'dcim.frontport', 'Front-45',
+                 pp_dist01, 'dcim.frontport', 'Front-40',
                  f'Vertical backbone: Spine{hall}01 to Dist01 100G')
         add_cable(f'{site}-CABLE-{cable_id:05d}', 'aoc', 'connected',
-                 'dcim.frontport', f'{pp_spine01}:Front-46',
-                 'dcim.frontport', f'{pp_dist02}:Front-40',
+                 pp_spine01, 'dcim.frontport', 'Front-46',
+                 pp_dist02, 'dcim.frontport', 'Front-40',
                  f'Vertical backbone: Spine{hall}01 to Dist02 100G')
         add_cable(f'{site}-CABLE-{cable_id:05d}', 'aoc', 'connected',
-                 'dcim.frontport', f'{pp_spine02}:Front-45',
-                 'dcim.frontport', f'{pp_dist01}:Front-41',
+                 pp_spine02, 'dcim.frontport', 'Front-45',
+                 pp_dist01, 'dcim.frontport', 'Front-41',
                  f'Vertical backbone: Spine{hall}02 to Dist01 100G')
         add_cable(f'{site}-CABLE-{cable_id:05d}', 'aoc', 'connected',
-                 'dcim.frontport', f'{pp_spine02}:Front-46',
-                 'dcim.frontport', f'{pp_dist02}:Front-41',
+                 pp_spine02, 'dcim.frontport', 'Front-46',
+                 pp_dist02, 'dcim.frontport', 'Front-41',
                  f'Vertical backbone: Spine{hall}02 to Dist02 100G')
 
         # Servers to patch panels (simplified - key servers only)
@@ -242,8 +252,8 @@ for site in sites:
             # Server NICs to patch panel rear ports
             for nic in range(1, 5):
                 add_cable(f'{site}-CABLE-{cable_id:05d}', 'smf', 'connected',
-                         'dcim.interface', f'{server}:eno{nic}',
-                         'dcim.rearport', f'{pp_server}:Rear-{nic}',
+                         server, 'dcim.interface', f'eno{nic}',
+                         pp_server, 'dcim.rearport', f'Rear-{nic}',
                          f'Equipment cable: {server} to rear port')
 
 print(f"\n✅ Generated {len(cables)} cables with proper front/rear port terminations")
@@ -251,13 +261,13 @@ print(f"\n✅ Generated {len(cables)} cables with proper front/rear port termina
 # Write cables CSV
 cables_file = 'lab/netbox_dc_cables.csv'
 with open(cables_file, 'w', newline='') as f:
-    fieldnames = ['label', 'type', 'status', 'a_termination_type', 'a_termination',
-                  'b_termination_type', 'b_termination', 'length', 'length_unit', 'description']
+    fieldnames = ['label', 'type', 'status', 'side_a_device', 'side_a_type', 'side_a_name',
+                  'side_b_device', 'side_b_type', 'side_b_name', 'length', 'length_unit', 'description']
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(cables)
 
 print(f"✅ Cables written to {cables_file}")
 print("\n📊 Cable termination types:")
-print(f"  Equipment cables (interface → rearport): {len([c for c in cables if 'rearport' in c['b_termination_type']])}")
-print(f"  Patch cords (frontport → frontport): {len([c for c in cables if 'frontport' in c['a_termination_type']])}")
+print(f"  Equipment cables (interface → rearport): {len([c for c in cables if 'rearport' in c['side_b_type']])}")
+print(f"  Patch cords (frontport → frontport): {len([c for c in cables if 'frontport' in c['side_a_type']])}")
