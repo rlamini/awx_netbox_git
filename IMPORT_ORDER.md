@@ -82,9 +82,13 @@ DCIM → Cables → Import
 File: lab/netbox_dc_cables.csv
 ```
 **Contains**: 3,036 cables with proper terminations
-- 2,688 equipment cables (interface → rearport)
-- 348 patch cords (frontport → frontport)
+- 2,688 equipment cables (interface → frontport) - Equipment connections
+- 348 horizontal cables (rearport → rearport) - Permanent backbone cabling
 **Note**: All devices and ports must exist before importing cables
+
+**Cabling Model**:
+- **Front Ports**: Equipment connections (switches, servers) via patch cords
+- **Rear Ports**: Permanent horizontal/backbone cables between patch panels
 
 ---
 
