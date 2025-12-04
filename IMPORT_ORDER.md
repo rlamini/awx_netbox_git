@@ -76,6 +76,16 @@ File: lab/netbox_dc_patch_panel_front_ports.csv
 **Contains**: 5,904 front ports (patch cord side)
 **Note**: Front ports reference rear ports, so rear ports must exist first
 
+### 10. **Cables** (AFTER all devices and ports!)
+```
+DCIM → Cables → Import
+File: lab/netbox_dc_cables.csv
+```
+**Contains**: 3,036 cables with proper terminations
+- 2,688 equipment cables (interface → rearport)
+- 348 patch cords (frontport → frontport)
+**Note**: All devices and ports must exist before importing cables
+
 ---
 
 ## Verification Checklist
