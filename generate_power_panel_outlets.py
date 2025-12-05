@@ -18,11 +18,13 @@ print(f"Generating power outlets for {len(power_panels)} power panels...")
 
 for panel in power_panels:
     panel_name = panel['name']
+    panel_device_type = panel['device_type']
 
     # Each panel has 42 circuits (standard 3-phase panel)
     for circuit_num in range(1, 43):
         power_panel_outlets.append({
             'device': panel_name,
+            'device_type': panel_device_type,
             'name': f'Circuit-{circuit_num:02d}',
             'type': 'nema-l6-30r',  # 30A 250V twist-lock (common for PDU feeds)
             'power_port': '',
@@ -36,7 +38,7 @@ print(f"   - {len(power_panels)} panels × 42 circuits each")
 # Write power panel outlets CSV
 outlets_file = 'lab/netbox_dc_power_panel_outlets.csv'
 with open(outlets_file, 'w', newline='') as f:
-    fieldnames = ['device', 'name', 'type', 'power_port', 'feed_leg', 'description']
+    fieldnames = ['device', 'device_type', 'name', 'type', 'power_port', 'feed_leg', 'description']
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(power_panel_outlets)
