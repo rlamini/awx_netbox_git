@@ -1,0 +1,3 @@
+manufacturer,model,slug,u_height,is_full_depth,description
+Generic,480V/208V 3-Phase Panel,power-panel-208v,0,false,480V/208V 3-Phase Electrical Distribution Panel (42 circuits)
+Generic,400V/230V 3-Phase Panel,power-panel-230v,0,false,400V/230V 3-Phase Electrical Distribution Panel (42 circuits)
