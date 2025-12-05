@@ -14,8 +14,8 @@ locations = [
     'Network Core',
     'Server Hall A',
     'Server Hall B',
-    'Storage',
-    'MMR'
+    'Storage Room',
+    'Meet Me Room'
 ]
 
 power_panels = []
