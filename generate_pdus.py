@@ -152,8 +152,8 @@ for site in sites:
             'description': f'PDU B-feed for {rack}'
         })
 
-    # MMR (Meet Me Room) racks
-    print("  - Meet Me Room racks")
+    # MMR (Meet-Me Room) racks
+    print("  - Meet-Me Room racks")
     for rack_num in range(1, 3):
         rack = f'{site}-MMR-R0{rack_num}'
 
@@ -163,7 +163,7 @@ for site in sites:
             'device_type': 'AP8959EU3',
             'role': 'PDU',
             'site': site,
-            'location': f'{site}-Meet Me Room',
+            'location': f'{site}-Meet-Me Room',
             'rack': rack,
             'position': '',
             'face': '',
@@ -177,7 +177,7 @@ for site in sites:
             'device_type': 'AP8981',
             'role': 'PDU',
             'site': site,
-            'location': f'{site}-Meet Me Room',
+            'location': f'{site}-Meet-Me Room',
             'rack': rack,
             'position': '',
             'face': '',
