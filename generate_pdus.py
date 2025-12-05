@@ -188,7 +188,7 @@ for site in sites:
 print(f"\n✅ Generated {len(pdus)} PDUs (2 per rack for redundancy)")
 
 # Write PDUs CSV
-pdus_file = 'lab/netbox_dc_pdus.csv'
+pdus_file = 'lab/power/netbox_dc_pdus.csv'
 with open(pdus_file, 'w', newline='') as f:
     fieldnames = ['name', 'manufacturer', 'device_type', 'role', 'site', 'location',
                   'rack', 'position', 'face', 'status', 'description']

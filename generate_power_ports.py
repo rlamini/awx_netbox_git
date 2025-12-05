@@ -74,7 +74,7 @@ print(f"   - Total maximum power draw: {total_max_power:,}W ({total_max_power/10
 print(f"   - Total allocated power draw: {total_allocated_power:,}W ({total_allocated_power/1000:.1f}kW)")
 
 # Write power ports CSV
-ports_file = 'lab/netbox_dc_power_ports.csv'
+ports_file = 'lab/power/netbox_dc_power_ports.csv'
 with open(ports_file, 'w', newline='') as f:
     fieldnames = ['device', 'name', 'type', 'maximum_draw', 'allocated_draw', 'description']
     writer = csv.DictWriter(f, fieldnames=fieldnames)

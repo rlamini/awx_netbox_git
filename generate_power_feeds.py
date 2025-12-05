@@ -9,7 +9,7 @@ from collections import defaultdict
 
 # Read PDUs
 pdus = []
-with open('lab/netbox_dc_pdus.csv', 'r') as f:
+with open('lab/power/netbox_dc_pdus.csv', 'r') as f:
     reader = csv.DictReader(f)
     pdus = [row for row in reader]
 
@@ -85,7 +85,7 @@ max_circuits = max(panel_circuit_usage.values()) if panel_circuit_usage else 0
 print(f"   - Maximum circuits used per panel: {max_circuits}/42")
 
 # Write power feeds CSV
-feeds_file = 'lab/netbox_dc_power_feeds.csv'
+feeds_file = 'lab/power/netbox_dc_power_feeds.csv'
 with open(feeds_file, 'w', newline='') as f:
     fieldnames = ['label', 'type', 'status', 'side_a_device', 'side_a_type', 'side_a_name',
                   'side_b_device', 'side_b_type', 'side_b_name', 'length', 'length_unit', 'description']

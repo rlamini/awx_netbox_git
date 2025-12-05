@@ -8,7 +8,7 @@ import csv
 
 # Read PDU list
 pdus = []
-with open('lab/netbox_dc_pdus.csv', 'r') as f:
+with open('lab/power/netbox_dc_pdus.csv', 'r') as f:
     reader = csv.DictReader(f)
     pdus = [row for row in reader]
 
@@ -34,7 +34,7 @@ print(f"✅ Generated {len(power_outlets)} power outlets")
 print(f"   - {len(pdus)} PDUs × 24 outlets each")
 
 # Write power outlets CSV
-outlets_file = 'lab/netbox_dc_power_outlets.csv'
+outlets_file = 'lab/power/netbox_dc_power_outlets.csv'
 with open(outlets_file, 'w', newline='') as f:
     fieldnames = ['device', 'name', 'type', 'power_port', 'feed_leg', 'description']
     writer = csv.DictWriter(f, fieldnames=fieldnames)

@@ -1,0 +1,61 @@
+name,site,location,description
+EMEA-DC-CLOUD-Network-Core-PANEL-A,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,Primary power panel A-feed for Network Core
+EMEA-DC-CLOUD-Network-Core-PANEL-B,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,Secondary power panel B-feed for Network Core
+EMEA-DC-CLOUD-Server-Hall-A-PANEL-A,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,Primary power panel A-feed for Server Hall A
+EMEA-DC-CLOUD-Server-Hall-A-PANEL-B,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,Secondary power panel B-feed for Server Hall A
+EMEA-DC-CLOUD-Server-Hall-B-PANEL-A,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,Primary power panel A-feed for Server Hall B
+EMEA-DC-CLOUD-Server-Hall-B-PANEL-B,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,Secondary power panel B-feed for Server Hall B
+EMEA-DC-CLOUD-Storage-PANEL-A,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage,Primary power panel A-feed for Storage
+EMEA-DC-CLOUD-Storage-PANEL-B,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage,Secondary power panel B-feed for Storage
+EMEA-DC-CLOUD-MMR-PANEL-A,EMEA-DC-CLOUD,EMEA-DC-CLOUD-MMR,Primary power panel A-feed for MMR
+EMEA-DC-CLOUD-MMR-PANEL-B,EMEA-DC-CLOUD,EMEA-DC-CLOUD-MMR,Secondary power panel B-feed for MMR
+EMEA-DC-ONPREM-Network-Core-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,Primary power panel A-feed for Network Core
+EMEA-DC-ONPREM-Network-Core-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,Secondary power panel B-feed for Network Core
+EMEA-DC-ONPREM-Server-Hall-A-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,Primary power panel A-feed for Server Hall A
+EMEA-DC-ONPREM-Server-Hall-A-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,Secondary power panel B-feed for Server Hall A
+EMEA-DC-ONPREM-Server-Hall-B-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,Primary power panel A-feed for Server Hall B
+EMEA-DC-ONPREM-Server-Hall-B-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,Secondary power panel B-feed for Server Hall B
+EMEA-DC-ONPREM-Storage-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage,Primary power panel A-feed for Storage
+EMEA-DC-ONPREM-Storage-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage,Secondary power panel B-feed for Storage
+EMEA-DC-ONPREM-MMR-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-MMR,Primary power panel A-feed for MMR
+EMEA-DC-ONPREM-MMR-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-MMR,Secondary power panel B-feed for MMR
+APAC-DC-CLOUD-Network-Core-PANEL-A,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,Primary power panel A-feed for Network Core
+APAC-DC-CLOUD-Network-Core-PANEL-B,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,Secondary power panel B-feed for Network Core
+APAC-DC-CLOUD-Server-Hall-A-PANEL-A,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,Primary power panel A-feed for Server Hall A
+APAC-DC-CLOUD-Server-Hall-A-PANEL-B,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,Secondary power panel B-feed for Server Hall A
+APAC-DC-CLOUD-Server-Hall-B-PANEL-A,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,Primary power panel A-feed for Server Hall B
+APAC-DC-CLOUD-Server-Hall-B-PANEL-B,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,Secondary power panel B-feed for Server Hall B
+APAC-DC-CLOUD-Storage-PANEL-A,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage,Primary power panel A-feed for Storage
+APAC-DC-CLOUD-Storage-PANEL-B,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage,Secondary power panel B-feed for Storage
+APAC-DC-CLOUD-MMR-PANEL-A,APAC-DC-CLOUD,APAC-DC-CLOUD-MMR,Primary power panel A-feed for MMR
+APAC-DC-CLOUD-MMR-PANEL-B,APAC-DC-CLOUD,APAC-DC-CLOUD-MMR,Secondary power panel B-feed for MMR
+APAC-DC-ONPREM-Network-Core-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,Primary power panel A-feed for Network Core
+APAC-DC-ONPREM-Network-Core-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,Secondary power panel B-feed for Network Core
+APAC-DC-ONPREM-Server-Hall-A-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,Primary power panel A-feed for Server Hall A
+APAC-DC-ONPREM-Server-Hall-A-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,Secondary power panel B-feed for Server Hall A
+APAC-DC-ONPREM-Server-Hall-B-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,Primary power panel A-feed for Server Hall B
+APAC-DC-ONPREM-Server-Hall-B-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,Secondary power panel B-feed for Server Hall B
+APAC-DC-ONPREM-Storage-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage,Primary power panel A-feed for Storage
+APAC-DC-ONPREM-Storage-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage,Secondary power panel B-feed for Storage
+APAC-DC-ONPREM-MMR-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-MMR,Primary power panel A-feed for MMR
+APAC-DC-ONPREM-MMR-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-MMR,Secondary power panel B-feed for MMR
+AMER-DC-CLOUD-Network-Core-PANEL-A,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,Primary power panel A-feed for Network Core
+AMER-DC-CLOUD-Network-Core-PANEL-B,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,Secondary power panel B-feed for Network Core
+AMER-DC-CLOUD-Server-Hall-A-PANEL-A,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,Primary power panel A-feed for Server Hall A
+AMER-DC-CLOUD-Server-Hall-A-PANEL-B,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,Secondary power panel B-feed for Server Hall A
+AMER-DC-CLOUD-Server-Hall-B-PANEL-A,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,Primary power panel A-feed for Server Hall B
+AMER-DC-CLOUD-Server-Hall-B-PANEL-B,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,Secondary power panel B-feed for Server Hall B
+AMER-DC-CLOUD-Storage-PANEL-A,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage,Primary power panel A-feed for Storage
+AMER-DC-CLOUD-Storage-PANEL-B,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage,Secondary power panel B-feed for Storage
+AMER-DC-CLOUD-MMR-PANEL-A,AMER-DC-CLOUD,AMER-DC-CLOUD-MMR,Primary power panel A-feed for MMR
+AMER-DC-CLOUD-MMR-PANEL-B,AMER-DC-CLOUD,AMER-DC-CLOUD-MMR,Secondary power panel B-feed for MMR
+AMER-DC-ONPREM-Network-Core-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,Primary power panel A-feed for Network Core
+AMER-DC-ONPREM-Network-Core-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,Secondary power panel B-feed for Network Core
+AMER-DC-ONPREM-Server-Hall-A-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,Primary power panel A-feed for Server Hall A
+AMER-DC-ONPREM-Server-Hall-A-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,Secondary power panel B-feed for Server Hall A
+AMER-DC-ONPREM-Server-Hall-B-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,Primary power panel A-feed for Server Hall B
+AMER-DC-ONPREM-Server-Hall-B-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,Secondary power panel B-feed for Server Hall B
+AMER-DC-ONPREM-Storage-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage,Primary power panel A-feed for Storage
+AMER-DC-ONPREM-Storage-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage,Secondary power panel B-feed for Storage
+AMER-DC-ONPREM-MMR-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-MMR,Primary power panel A-feed for MMR
+AMER-DC-ONPREM-MMR-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-MMR,Secondary power panel B-feed for MMR

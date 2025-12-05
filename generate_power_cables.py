@@ -82,7 +82,7 @@ max_outlets_used = max(pdu_outlet_usage.values()) if pdu_outlet_usage else 0
 print(f"   - Maximum outlets used per PDU: {max_outlets_used}/24")
 
 # Write power cables CSV
-cables_file = 'lab/netbox_dc_power_cables.csv'
+cables_file = 'lab/power/netbox_dc_power_cables.csv'
 with open(cables_file, 'w', newline='') as f:
     fieldnames = ['label', 'type', 'status', 'side_a_device', 'side_a_type', 'side_a_name',
                   'side_b_device', 'side_b_type', 'side_b_name', 'length', 'length_unit', 'description']

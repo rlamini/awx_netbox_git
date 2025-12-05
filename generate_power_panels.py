@@ -32,30 +32,16 @@ for site in sites:
         # Panel-A (Primary feed)
         power_panels.append({
             'name': f'{site}-{location_slug}-PANEL-A',
-            'manufacturer': 'Generic',
-            'device_type': '480V/208V 3-Phase Panel',
-            'role': 'PDU',  # Use PDU role for power infrastructure
             'site': site,
             'location': location_full,
-            'rack': '',  # Not rack-mounted
-            'position': '',
-            'face': '',
-            'status': 'active',
             'description': f'Primary power panel A-feed for {location}'
         })
 
         # Panel-B (Secondary feed)
         power_panels.append({
             'name': f'{site}-{location_slug}-PANEL-B',
-            'manufacturer': 'Generic',
-            'device_type': '480V/208V 3-Phase Panel',
-            'role': 'PDU',
             'site': site,
             'location': location_full,
-            'rack': '',
-            'position': '',
-            'face': '',
-            'status': 'active',
             'description': f'Secondary power panel B-feed for {location}'
         })
 
@@ -63,10 +49,9 @@ print(f"\n✅ Generated {len(power_panels)} power panels")
 print(f"   - {len(sites)} sites × {len(locations)} locations × 2 panels = {len(power_panels)} panels")
 
 # Write power panels CSV
-panels_file = 'lab/netbox_dc_power_panels.csv'
+panels_file = 'lab/power/netbox_dc_power_panels.csv'
 with open(panels_file, 'w', newline='') as f:
-    fieldnames = ['name', 'manufacturer', 'device_type', 'role', 'site', 'location',
-                  'rack', 'position', 'face', 'status', 'description']
+    fieldnames = ['name', 'site', 'location', 'description']
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(power_panels)
