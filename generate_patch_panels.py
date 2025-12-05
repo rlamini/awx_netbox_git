@@ -221,7 +221,7 @@ print(f"\n✅ Generated {len(patch_panels)} patch panels")
 print(f"✅ Generated {len(patch_panel_interfaces)} patch panel interfaces")
 
 # Write patch panels CSV
-pp_file = 'lab/netbox_dc_patch_panels.csv'
+pp_file = 'lab/patch-panels/netbox_dc_patch_panels.csv'
 with open(pp_file, 'w', newline='') as f:
     fieldnames = ['name', 'manufacturer', 'device_type', 'role', 'site', 'location',
                   'rack', 'position', 'face', 'status', 'description']

@@ -259,7 +259,7 @@ for site in sites:
 print(f"\n✅ Generated {len(cables)} cables with proper front/rear port terminations")
 
 # Write cables CSV
-cables_file = 'lab/netbox_dc_cables.csv'
+cables_file = 'lab/cables/netbox_dc_cables.csv'
 with open(cables_file, 'w', newline='') as f:
     fieldnames = ['label', 'type', 'status', 'side_a_device', 'side_a_type', 'side_a_name',
                   'side_b_device', 'side_b_type', 'side_b_name', 'length', 'length_unit', 'description']

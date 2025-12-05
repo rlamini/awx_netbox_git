@@ -161,7 +161,7 @@ print(f"\n✅ Generated {len(rear_ports)} rear ports")
 print(f"✅ Generated {len(front_ports)} front ports")
 
 # Write rear ports CSV
-rear_file = 'lab/netbox_dc_patch_panel_rear_ports.csv'
+rear_file = 'lab/patch-panels/netbox_dc_patch_panel_rear_ports.csv'
 with open(rear_file, 'w', newline='') as f:
     fieldnames = ['device', 'name', 'type', 'positions', 'description']
     writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -171,7 +171,7 @@ with open(rear_file, 'w', newline='') as f:
 print(f"✅ Rear ports written to {rear_file}")
 
 # Write front ports CSV
-front_file = 'lab/netbox_dc_patch_panel_front_ports.csv'
+front_file = 'lab/patch-panels/netbox_dc_patch_panel_front_ports.csv'
 with open(front_file, 'w', newline='') as f:
     fieldnames = ['device', 'name', 'type', 'rear_port', 'rear_port_position', 'description']
     writer = csv.DictWriter(f, fieldnames=fieldnames)

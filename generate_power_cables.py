@@ -9,7 +9,7 @@ from collections import defaultdict
 
 # Read devices list
 devices = []
-with open('lab/netbox_dc_devices.csv', 'r') as f:
+with open('lab/devices/netbox_dc_devices.csv', 'r') as f:
     reader = csv.DictReader(f)
     devices = [row for row in reader if row['role'] != 'Patch Panel']  # Skip patch panels
 

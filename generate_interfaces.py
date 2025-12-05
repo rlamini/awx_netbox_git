@@ -56,7 +56,7 @@ interface_templates = {
 }
 
 # Read devices
-devices_file = 'lab/netbox_dc_devices.csv'
+devices_file = 'lab/devices/netbox_dc_devices.csv'
 interfaces_file = 'lab/netbox_dc_interfaces.csv'
 
 interfaces = []
