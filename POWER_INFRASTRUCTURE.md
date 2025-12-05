@@ -533,61 +533,61 @@ Redundancy: 2.8kW per feed (N+1)
 1. **Power Panel Types**
    ```
    DCIM → Device Types → Import
-   File: lab/netbox_power_panel_device_types.csv
+   File: lab/power/netbox_power_panel_device_types.csv
    ```
 
 2. **Power Panels**
    ```
    DCIM → Devices → Import
-   File: lab/netbox_dc_power_panels.csv
+   File: lab/power/netbox_dc_power_panels.csv
    ```
 
 3. **Panel Circuits**
    ```
    DCIM → Power Outlets → Import
-   File: lab/netbox_dc_power_panel_outlets.csv
+   File: lab/power/netbox_dc_power_panel_outlets.csv
    ```
 
 4. **PDU Types**
    ```
    DCIM → Device Types → Import
-   File: lab/netbox_pdu_device_types.csv
+   File: lab/power/netbox_pdu_device_types.csv
    ```
 
 5. **PDUs**
    ```
    DCIM → Devices → Import
-   File: lab/netbox_dc_pdus.csv
+   File: lab/power/netbox_dc_pdus.csv
    ```
 
 6. **PDU Input Ports**
    ```
    DCIM → Power Ports → Import
-   File: lab/netbox_dc_pdu_power_ports.csv
+   File: lab/power/netbox_dc_pdu_power_ports.csv
    ```
 
 7. **PDU Outlets**
    ```
    DCIM → Power Outlets → Import
-   File: lab/netbox_dc_power_outlets.csv
+   File: lab/power/netbox_dc_power_outlets.csv
    ```
 
 8. **Device PSUs**
    ```
    DCIM → Power Ports → Import
-   File: lab/netbox_dc_power_ports.csv
+   File: lab/power/netbox_dc_power_ports.csv
    ```
 
 9. **Power Feeds**
    ```
    DCIM → Cables → Import
-   File: lab/netbox_dc_power_feeds.csv
+   File: lab/power/netbox_dc_power_feeds.csv
    ```
 
 10. **Device Power Cables**
     ```
     DCIM → Cables → Import
-    File: lab/netbox_dc_power_cables.csv
+    File: lab/power/netbox_dc_power_cables.csv
     ```
 
 ---
