@@ -86,52 +86,55 @@ NetBox has several component types for modeling power infrastructure. Each serve
 ### 1. Power Panels
 
 **What they are in NetBox:**
-Power panels are **devices** (like switches or servers) but represent electrical distribution equipment rather than IT equipment.
+Power panels are **NOT devices** - they have their own dedicated data model in NetBox. Power panels and power feeds are managed in the **DCIM → Power** menu, separate from devices.
 
 **NetBox Implementation:**
-- **Object Type**: Device
-- **Device Type**: User-defined (e.g., "480V/208V 3-Phase Panel")
-- **Location**: Can be assigned to a location but not a rack
-- **U-Height**: 0 (zero-U device, doesn't occupy rack space)
+- **Object Type**: PowerPanel (dedicated data model)
+- **Menu Location**: DCIM → Power → Power Panels
+- **Not a Device**: Unlike PDUs (which are devices), power panels are a separate object type
+- **Location**: Can be assigned to a site and location
 
 **Purpose:**
 Power panels represent main electrical distribution panels (breaker panels) that receive utility power and distribute it to PDUs through individual circuit breakers.
 
 **NetBox Fields:**
 ```
-Device:
+PowerPanel:
   - name: "SITE-LOCATION-PANEL-A"
-  - device_type: "480V/208V 3-Phase Panel"
-  - role: "PDU" or "Power Distribution"
   - site: The datacenter site
   - location: The physical location
-  - rack: (empty - not rack-mounted)
-  - position: (empty - zero-U)
+  - description: Optional description
 ```
 
 **Key Features:**
-- Can have power outlets (circuit breakers)
-- Can have power ports (utility input)
-- May have associated power feeds
-- Tracks incoming utility service
+- Can have power outlets (circuit breakers) as components
+- Can receive power feeds (utility connections)
+- Separate from the device model
+- Managed in dedicated Power menu
+
+**Important Distinction:**
+- **Power Panels**: Separate PowerPanel model (DCIM → Power menu)
+- **PDUs**: Device model with role "PDU" (DCIM → Devices menu)
 
 ---
 
 ### 2. Power Outlets
 
 **What they are in NetBox:**
-Power outlets are **components of devices** that **provide power**. They represent physical outlets, receptacles, or circuit breakers.
+Power outlets are **components** that **provide power**. They represent physical outlets, receptacles, or circuit breakers.
 
 **NetBox Implementation:**
-- **Object Type**: PowerOutlet (device component)
-- **Parent**: Must belong to a device (power panel, PDU, UPS)
+- **Object Type**: PowerOutlet (component)
+- **Parent**: Must belong to either:
+  - A **PowerPanel** object (for circuit breakers on power panels)
+  - A **Device** (for outlets on PDUs, UPS units, etc.)
 - **Direction**: Provides power (source)
 
 **Purpose:**
 Power outlets represent:
-- Circuit breakers on power panels
-- Receptacles on PDUs
-- Output ports on UPS units
+- Circuit breakers on power panels (PowerPanel object)
+- Receptacles on PDUs (Device)
+- Output ports on UPS units (Device)
 - Any connector that provides power
 
 **NetBox Fields:**
@@ -309,7 +312,7 @@ Power feeds are **special objects** that represent utility power connections. Th
 
 **NetBox Implementation:**
 - **Object Type**: PowerFeed
-- **Parent**: Power panel (device)
+- **Parent**: Power panel (PowerPanel object)
 - **Purpose**: Track utility/generator connections
 
 **Purpose:**
@@ -391,8 +394,8 @@ NetBox models power as a **directed acyclic graph** (DAG), meaning:
                    │ (provides power to)
                    ↓
 ┌─────────────────────────────────────────────┐
-│           Power Panel (Device)              │
-│        Type: 480V/208V 3-Phase              │
+│       Power Panel (PowerPanel object)       │
+│        Name: SITE-LOCATION-PANEL-A          │
 │        Location: Network Core               │
 └──────────────────┬──────────────────────────┘
                    │ (has components)
@@ -438,13 +441,19 @@ NetBox models power as a **directed acyclic graph** (DAG), meaning:
 
 ### Parent-Child Relationships
 
-**Devices contain components:**
+**Power panels contain components (PowerPanel object):**
 ```
-Power Panel (Device)
+Power Panel (PowerPanel - separate object model)
   ├── Circuit-01 (PowerOutlet)
   ├── Circuit-02 (PowerOutlet)
-  └── Utility-Feed (PowerPort - if fed by upstream)
+  └── ... (42 circuits total)
 
+Power Feeds connect to Power Panels (not components):
+  PowerFeed (Utility-A) → Power Panel
+```
+
+**Devices contain components:**
+```
 PDU (Device)
   ├── Power-In (PowerPort - receives from panel)
   ├── Outlet-01 (PowerOutlet - provides to devices)
@@ -951,7 +960,7 @@ This enables complete power tracing.
 | Component | Type | Purpose | Direction | Example |
 |-----------|------|---------|-----------|---------|
 | **PowerFeed** | Object | Utility connection | Provides | "Utility-A 480V 400A" |
-| **Power Panel** | Device | Electrical distribution | Provides | "SITE-PANEL-A" |
+| **Power Panel** | PowerPanel Object | Electrical distribution | Provides | "SITE-PANEL-A" |
 | **PowerOutlet** | Component | Power source | Provides | "Circuit-01", "Outlet-05" |
 | **PowerPort** | Component | Power consumer | Consumes | "PSU1", "Power-In" |
 | **Cable** | Object | Connection | One-way | Outlet → Port |
