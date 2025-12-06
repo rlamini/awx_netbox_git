@@ -367,11 +367,124 @@ Step 7: Circuit Terminations
    Records: 584 terminations (A-side only)
    Menu: Circuits → Circuit Terminations → Import
 
-Step 8: VPN Tunnel Documentation (Optional)
+Step 8: Agency Cables
+   File: lab/agencies/netbox_agency_cables.csv
+   Records: 2,628 cables (292 agencies × 9 cables)
+   Menu: DCIM → Cables → Import
+   Note: May need to import in batches
+
+Step 9: VPN Tunnel Documentation (Optional)
    File: lab/agencies/netbox_agency_vpn_tunnels.csv
    Records: 292 VPN tunnel configurations
    Note: Import as config context or journal entries
 ```
+
+---
+
+## Cabling Infrastructure
+
+### Standard Cabling per Agency
+
+Each agency has **9 standardized cables**:
+
+#### 1. HA Cable (1× per agency)
+```
+MX-01 Port 8 ↔ MX-02 Port 8
+- Type: Cat6
+- Color: Red
+- Length: 1m
+- Purpose: HA heartbeat/synchronization
+```
+
+#### 2. Uplink Cables (4× per agency)
+Full mesh between MX appliances and switches for maximum redundancy:
+
+```
+MX-01 Port 1 → SW-01 Port 7
+MX-01 Port 2 → SW-02 Port 7
+MX-02 Port 1 → SW-01 Port 8
+MX-02 Port 2 → SW-02 Port 8
+- Type: Cat6
+- Color: Blue
+- Length: 3m
+- Purpose: LAN connectivity
+```
+
+**Redundancy Benefits:**
+- Each MX connects to both switches
+- Each switch has uplinks to both MX devices
+- Loss of 1 MX or 1 switch: no impact
+- Traffic can path through any combination
+
+#### 3. Access Point Cables (4× per agency)
+Switches distribute power and connectivity to WiFi APs:
+
+```
+SW-01 Port 1 → AP-01 Port 1
+SW-01 Port 2 → AP-02 Port 1
+SW-02 Port 1 → AP-03 Port 1
+SW-02 Port 2 → AP-04 Port 1
+- Type: Cat6
+- Color: Green
+- Length: 30m (typical ceiling run)
+- Purpose: AP connectivity + PoE power
+```
+
+**Note:** APs are powered via PoE (Power over Ethernet). No separate power cables needed.
+
+### Cabling Diagram
+
+```
+Agency Branch Cabling:
+
+     [WAN]              [WAN]
+       │                  │
+    ┌──▼───┐  HA Cable ┌──▼───┐
+    │MX-01 │◄─────────►│MX-02 │
+    │      │   (Red)    │      │
+    └──┬┬──┘            └──┬┬──┘
+       ││                  ││
+    ┌──┘│                  │└──┐
+    │   └──────┐    ┌──────┘   │
+    │   ┌──────┘    └──────┐   │
+    │   │  (Blue uplinks)  │   │
+    │   │                  │   │
+  ┌─▼───▼─┐              ┌─▼───▼─┐
+  │ SW-01 │              │ SW-02 │
+  │ MS120 │              │ MS120 │
+  └─┬──┬──┘              └─┬──┬──┘
+    │  │                   │  │
+    │  │   (Green PoE)     │  │
+    │  │                   │  │
+  ┌─▼┐ └──┐             ┌─▼┐ └──┐
+  │AP│    │             │AP│    │
+  │01│  ┌─▼┐            │03│  ┌─▼┐
+  └──┘  │AP│            └──┘  │AP│
+        │02│                  │04│
+        └──┘                  └──┘
+```
+
+### Cable Color Coding
+
+| Color | Purpose | Devices |
+|-------|---------|---------|
+| **Red** | HA heartbeat | MX ↔ MX |
+| **Blue** | Uplinks | MX → Switches |
+| **Green** | Access/PoE | Switches → APs |
+
+### Total Cabling
+
+**Per Agency:**
+- 1 HA cable (red)
+- 4 uplink cables (blue)
+- 4 AP cables (green)
+- **Total: 9 cables**
+
+**All Agencies:**
+- 292 agencies × 9 cables = **2,628 cables**
+- HA cables: 292
+- Uplink cables: 1,168
+- AP cables: 1,168
 
 ---
 
@@ -556,10 +669,11 @@ All devices are managed through the **Meraki Dashboard** (cloud-based):
 | netbox_agency_isp_providers.csv | 12 | ISP providers (ADSL + 5G) |
 | netbox_agency_circuits.csv | 584 | Agency internet circuits |
 | netbox_agency_circuit_terminations.csv | 584 | Circuit terminations |
+| netbox_agency_cables.csv | 2,628 | Agency cabling (HA, uplinks, APs) |
 | netbox_agency_vpn_tunnels.csv | 292 | VPN tunnel documentation |
 | netbox_agency_vpn_tunnels.json | 292 | VPN tunnel details (JSON) |
 
-**Total Objects:** 4,820 agency infrastructure objects
+**Total Objects:** 7,448 agency infrastructure objects (includes 2,628 cables)
 
 ---
 
@@ -570,6 +684,7 @@ This Meraki SD-WAN infrastructure provides:
 - ✅ **Zero-touch VPN** with Meraki Auto VPN
 - ✅ **Dual WAN redundancy** (ADSL + 5G)
 - ✅ **Device-level HA** (MX, switches, WiFi)
+- ✅ **Fully redundant cabling** (HA, uplinks, APs)
 - ✅ **Cloud management** via Meraki Dashboard
 - ✅ **Scalable architecture** for future growth
 
@@ -577,4 +692,5 @@ This Meraki SD-WAN infrastructure provides:
 - 2,336 agency devices (MX + switches + APs)
 - 6 datacenter hub devices (MX250 concentrators)
 - 584 internet circuits (ADSL + 5G)
+- 2,628 cables (HA, uplinks, AP connections)
 - 292 Auto VPN tunnels to regional hubs
