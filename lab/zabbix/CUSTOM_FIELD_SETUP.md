@@ -6,9 +6,15 @@ This guide explains how to create the `cf_monitoring` custom field in NetBox for
 
 ## Overview
 
-The NetBox to Zabbix sync script uses a custom field called `cf_monitoring` to determine which devices should be monitored in Zabbix.
+The NetBox to Zabbix sync script uses a custom field called `cf_monitoring` to control device synchronization and monitoring status.
 
-**Requirement**: Only devices with `cf_monitoring = "Yes"` are synchronized to Zabbix.
+**How it works:**
+
+| cf_monitoring | Behavior |
+|---------------|----------|
+| **Yes** | ✅ Device synced to Zabbix and **enabled** (actively monitored) |
+| **No** | ⚠️ Device synced to Zabbix but **disabled** (not monitored, but tracked) |
+| **Not set** | ❌ Device NOT synced to Zabbix |
 
 ---
 
@@ -282,8 +288,9 @@ curl -H "Authorization: Token YOUR-TOKEN" \
 sync:
   filters:
     custom_field_monitoring:
-      field_name: "cf_monitoring"  # Must match custom field name
-      field_value: "Yes"            # Must match exact value
+      field_name: "cf_monitoring"       # Must match custom field name
+      field_values: ["Yes", "No"]       # Accept both Yes and No
+      # "Yes" = enabled in Zabbix, "No" = disabled in Zabbix
 ```
 
 ---
@@ -319,9 +326,10 @@ python3 sync_netbox_to_zabbix.py --mode site --site "AMER-DC-ONPREM"
 
 Create a workflow:
 1. Device added to NetBox
-2. Set `cf_monitoring = No` by default
-3. After validation, set `cf_monitoring = Yes`
-4. Automated sync adds device to Zabbix
+2. Set `cf_monitoring = No` by default (device synced but disabled in Zabbix)
+3. Validate device connectivity and SNMP
+4. After validation, set `cf_monitoring = Yes` (device enabled in Zabbix)
+5. Automated sync updates device status in Zabbix
 
 ### 5. Documentation
 

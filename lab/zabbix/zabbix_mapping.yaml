@@ -242,11 +242,14 @@ sync:
       - active
 
     # Custom field filter for monitoring
-    # Only sync devices where custom field cf_monitoring = Yes
-    # Set to null/empty to disable this filter
+    # Sync devices where custom field cf_monitoring = Yes or No
+    # - cf_monitoring = "Yes" → Host enabled in Zabbix (active monitoring)
+    # - cf_monitoring = "No" → Host disabled in Zabbix (no monitoring, but synced)
+    # - cf_monitoring not set or other value → Device NOT synced
+    # Set to null/empty to disable this filter and sync all devices
     custom_field_monitoring:
       field_name: "cf_monitoring"
-      field_value: "Yes"
+      field_values: ["Yes", "No"]  # Accept both Yes and No
 
     # Exclude devices with these tags
     excluded_tags:

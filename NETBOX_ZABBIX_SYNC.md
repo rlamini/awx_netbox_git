@@ -154,7 +154,7 @@ Each device in NetBox has:
 | **platform.name** | NX-OS | Template selection |
 | **device_type.model** | Nexus 9508 | Host inventory field |
 | **status** | active | Only sync active devices |
-| **custom_fields.cf_monitoring** | Yes | Filter for monitoring (required) |
+| **custom_fields.cf_monitoring** | Yes/No | Control monitoring status |
 | **tags** | production, critical | Additional host groups |
 
 ### Device Synchronization Requirements
@@ -162,17 +162,26 @@ Each device in NetBox has:
 For a device to be synchronized to Zabbix, it must meet ALL of these criteria:
 
 1. ✅ **Status**: Must be `active`
-2. ✅ **Custom Field**: `cf_monitoring` must be set to `Yes`
+2. ✅ **Custom Field**: `cf_monitoring` must be set to `Yes` or `No` (devices without this field are NOT synced)
 3. ✅ **Primary IP**: Must have a primary IPv4 address assigned
 4. ✅ **Not Excluded**: Must not have excluded tags (e.g., `no-monitoring`)
 
-**Why the custom field filter?**
+**Monitoring Control with cf_monitoring:**
 
-The `cf_monitoring` custom field provides granular control over which devices are monitored:
+The `cf_monitoring` custom field provides granular control over device monitoring:
+
+| cf_monitoring | Behavior |
+|---------------|----------|
+| **Yes** | ✅ Device synced to Zabbix and **enabled** (actively monitored) |
+| **No** | ⚠️ Device synced to Zabbix but **disabled** (not monitored, but tracked) |
+| **Not set** | ❌ Device NOT synced to Zabbix |
+
+**Benefits:**
 - Prevents accidental monitoring of test/development devices
-- Allows selective monitoring enablement
-- Provides explicit opt-in for monitoring
+- Allows devices to exist in Zabbix without generating alerts (cf_monitoring=No)
+- Provides explicit control over monitoring status
 - Useful for gradual rollout (enable monitoring site by site)
+- Maintains inventory of all infrastructure (synced but disabled)
 
 ### Mapping Rules
 

@@ -209,11 +209,14 @@ class NetBoxZabbixSync:
         custom_field_config = self.mapping.get('sync', {}).get('filters', {}).get('custom_field_monitoring')
         if custom_field_config:
             field_name = custom_field_config.get('field_name')
-            field_value = custom_field_config.get('field_value')
-            if field_name and field_value:
-                # NetBox API custom field filter format: cf_<field_name>=value
-                filters[f'cf_{field_name}'] = field_value
-                self.logger.info(f"Filtering by custom field: {field_name} = {field_value}")
+            # Support both single value (old config) and multiple values (new config)
+            field_values = custom_field_config.get('field_values') or [custom_field_config.get('field_value')]
+            field_values = [v for v in field_values if v]  # Remove None/empty values
+
+            if field_name and field_values:
+                # NetBox API doesn't support OR filters easily, so we'll filter post-fetch
+                # Just log what we're looking for
+                self.logger.info(f"Filtering by custom field: {field_name} in {field_values}")
 
         # Filter by site if specified
         if site_name:
@@ -240,17 +243,20 @@ class NetBoxZabbixSync:
         # Additional validation: check custom field if configured (double-check)
         if custom_field_config:
             field_name = custom_field_config.get('field_name')
-            field_value = custom_field_config.get('field_value')
-            if field_name and field_value:
-                # Filter devices that don't have the custom field or have wrong value
+            # Support both single value (old config) and multiple values (new config)
+            field_values = custom_field_config.get('field_values') or [custom_field_config.get('field_value')]
+            field_values = [v for v in field_values if v]  # Remove None/empty values
+
+            if field_name and field_values:
+                # Filter devices that don't have the custom field or have value not in allowed list
                 original_count = len(devices)
                 devices = [
                     d for d in devices
-                    if d.custom_fields.get(field_name) == field_value
+                    if d.custom_fields.get(field_name) in field_values
                 ]
                 filtered_count = original_count - len(devices)
                 if filtered_count > 0:
-                    self.logger.info(f"Filtered out {filtered_count} devices without {field_name}={field_value}")
+                    self.logger.info(f"Filtered out {filtered_count} devices without {field_name} in {field_values}")
 
         self.stats['devices_found'] = len(devices)
         self.logger.info(f"Found {len(devices)} devices to sync")
@@ -467,10 +473,18 @@ class NetBoxZabbixSync:
             # Check if host exists
             existing_hosts = [] if self.dry_run else self.zabbix.host.get(filter={'host': device.name})
 
+            # Determine host status based on cf_monitoring custom field
+            # cf_monitoring = "Yes" → status = 0 (enabled/monitored)
+            # cf_monitoring = "No" → status = 1 (disabled/not monitored)
+            cf_monitoring = device.custom_fields.get('cf_monitoring', 'Yes')
+            host_status = 0 if cf_monitoring == 'Yes' else 1
+            status_text = "enabled" if host_status == 0 else "disabled"
+
             # Prepare host data
             host_data = {
                 'host': device.name,
                 'name': device.name,
+                'status': host_status,
                 'groups': group_ids,
                 'templates': [{'templateid': template_id}] if template_id else [],
                 'interfaces': [{
@@ -495,10 +509,10 @@ class NetBoxZabbixSync:
 
             if self.dry_run:
                 if existing_hosts:
-                    self.logger.info(f"[DRY-RUN] Would UPDATE host: {device.name} (IP: {ip_address}, Template: {template_name}, Groups: {len(group_names)})")
+                    self.logger.info(f"[DRY-RUN] Would UPDATE host: {device.name} (IP: {ip_address}, Template: {template_name}, Groups: {len(group_names)}, Status: {status_text})")
                     self.stats['devices_updated'] += 1
                 else:
-                    self.logger.info(f"[DRY-RUN] Would CREATE host: {device.name} (IP: {ip_address}, Template: {template_name}, Groups: {len(group_names)})")
+                    self.logger.info(f"[DRY-RUN] Would CREATE host: {device.name} (IP: {ip_address}, Template: {template_name}, Groups: {len(group_names)}, Status: {status_text})")
                     self.stats['devices_created'] += 1
                 return True
 
@@ -507,12 +521,12 @@ class NetBoxZabbixSync:
                 # Update existing host
                 host_data['hostid'] = existing_hosts[0]['hostid']
                 self.zabbix.host.update(host_data)
-                self.logger.info(f"✅ Updated host: {device.name}")
+                self.logger.info(f"✅ Updated host: {device.name} (cf_monitoring={cf_monitoring}, status={status_text})")
                 self.stats['devices_updated'] += 1
             else:
                 # Create new host
                 self.zabbix.host.create(host_data)
-                self.logger.info(f"✅ Created host: {device.name}")
+                self.logger.info(f"✅ Created host: {device.name} (cf_monitoring={cf_monitoring}, status={status_text})")
                 self.stats['devices_created'] += 1
 
             return True
