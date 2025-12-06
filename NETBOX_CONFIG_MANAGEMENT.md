@@ -69,6 +69,289 @@ Priority Order (1 = Lowest, 8 = Highest):
 - Duplicate keys at the same level: **higher priority wins**
 - Arrays are **replaced**, not merged
 
+### Config Context Assignment (Affectation)
+
+Config contexts can be assigned to devices using multiple criteria. Each context can have one or more assignment rules:
+
+#### Assignment Methods
+
+| Assignment Type | Field Name | Description | Example | When to Use |
+|----------------|------------|-------------|---------|-------------|
+| **Global** | (none) | Applied to ALL devices | Logging, AAA servers | Universal settings for entire infrastructure |
+| **Site** | `sites` | All devices in specific site(s) | EMEA-DC-ONPREM | Site-specific NTP, DNS, timezone |
+| **Role** | `roles` | All devices with specific role(s) | Core Switch, Access Switch | Role-specific VLANs, routing, features |
+| **Platform** | `platforms` | All devices running specific OS | NX-OS, IOS-XE, IOS-XR | Platform-specific commands, features |
+| **Device Type** | `device_types` | All devices of specific model(s) | Nexus 9508, Catalyst 9300-48P | Model-specific settings, interfaces |
+| **Manufacturer** | `manufacturers` | All devices from vendor | Cisco Systems, Arista | Vendor-specific defaults |
+| **Tag** | `tags` | All devices with specific tag(s) | production, dmz | Custom groupings |
+| **Device** | `devices` | Specific individual device(s) | EMEA-DC-ONPREM-CORE-SW01 | Device-specific overrides |
+
+#### Assignment Rules and Logic
+
+**Multiple Assignments (OR logic):**
+- A context can be assigned to multiple sites, roles, platforms, etc.
+- Example: `sites: ["EMEA-DC-ONPREM", "APAC-DC-ONPREM"]` applies to devices in EITHER site
+
+**Multiple Criteria (AND logic):**
+- A context can have multiple assignment types
+- Example: A context with `sites: ["EMEA-DC-ONPREM"]` AND `roles: ["Core Switch"]` applies ONLY to Core Switches in EMEA-DC-ONPREM
+
+**No Assignment (Global):**
+- A context with NO assignments applies to ALL devices
+
+#### Assignment Examples
+
+**Example 1: Global Context (No Assignment)**
+```json
+{
+  "name": "Global Configuration",
+  "weight": 1000,
+  "sites": [],
+  "roles": [],
+  "platforms": [],
+  "device_types": [],
+  "devices": []
+}
+```
+→ **Applies to**: ALL devices in NetBox
+
+**Example 2: Site-Specific Context**
+```json
+{
+  "name": "EMEA-DC-ONPREM Site",
+  "weight": 3000,
+  "sites": ["EMEA-DC-ONPREM"],
+  "roles": [],
+  "platforms": [],
+  "device_types": [],
+  "devices": []
+}
+```
+→ **Applies to**: All devices in site "EMEA-DC-ONPREM" only
+
+**Example 3: Platform-Specific Context**
+```json
+{
+  "name": "Cisco NX-OS Platform",
+  "weight": 2000,
+  "sites": [],
+  "roles": [],
+  "platforms": ["NX-OS"],
+  "device_types": [],
+  "devices": []
+}
+```
+→ **Applies to**: All devices with platform "NX-OS" (regardless of site)
+
+**Example 4: Role-Specific Context**
+```json
+{
+  "name": "Core Switch Role",
+  "weight": 4000,
+  "sites": [],
+  "roles": ["Core Switch"],
+  "platforms": [],
+  "device_types": [],
+  "devices": []
+}
+```
+→ **Applies to**: All devices with role "Core Switch" (regardless of site or platform)
+
+**Example 5: Multiple Sites (OR Logic)**
+```json
+{
+  "name": "ONPREM Sites Configuration",
+  "weight": 3000,
+  "sites": ["EMEA-DC-ONPREM", "APAC-DC-ONPREM", "AMER-DC-ONPREM"],
+  "roles": [],
+  "platforms": [],
+  "device_types": [],
+  "devices": []
+}
+```
+→ **Applies to**: Devices in EMEA-DC-ONPREM OR APAC-DC-ONPREM OR AMER-DC-ONPREM
+
+**Example 6: Combined Assignment (AND Logic)**
+```json
+{
+  "name": "EMEA Core Switches",
+  "weight": 5000,
+  "sites": ["EMEA-DC-ONPREM"],
+  "roles": ["Core Switch"],
+  "platforms": ["NX-OS"],
+  "device_types": [],
+  "devices": []
+}
+```
+→ **Applies to**: Devices that are:
+- IN site "EMEA-DC-ONPREM" **AND**
+- WITH role "Core Switch" **AND**
+- RUNNING platform "NX-OS"
+
+(This would match: EMEA-DC-ONPREM-CORE-SW01 and EMEA-DC-ONPREM-CORE-SW02)
+
+**Example 7: Device-Specific Override**
+```json
+{
+  "name": "CORE-SW01 Custom Config",
+  "weight": 8000,
+  "sites": [],
+  "roles": [],
+  "platforms": [],
+  "device_types": [],
+  "devices": ["EMEA-DC-ONPREM-CORE-SW01"]
+}
+```
+→ **Applies to**: Only device "EMEA-DC-ONPREM-CORE-SW01"
+
+**Example 8: Device Type Specific**
+```json
+{
+  "name": "Nexus 9508 Configuration",
+  "weight": 4500,
+  "sites": [],
+  "roles": [],
+  "platforms": [],
+  "device_types": ["nexus-9508"],
+  "devices": []
+}
+```
+→ **Applies to**: All devices with device_type "Nexus 9508" (slug: nexus-9508)
+
+#### Assignment Matrix for EMEA-DC-ONPREM
+
+Here's how our 11 contexts are assigned:
+
+| Context Name | Weight | Site | Role | Platform | Device Type | Device | Applies To |
+|--------------|--------|------|------|----------|-------------|--------|------------|
+| Global Configuration | 1000 | - | - | - | - | - | ALL devices |
+| Cisco NX-OS Platform | 2000 | - | - | NX-OS | - | - | All NX-OS devices |
+| Cisco IOS-XE Platform | 2000 | - | - | IOS-XE | - | - | All IOS-XE devices |
+| Cisco IOS-XR Platform | 2000 | - | - | IOS-XR | - | - | All IOS-XR devices |
+| Cisco IOS Platform | 2000 | - | - | IOS | - | - | All IOS devices |
+| EMEA-DC-ONPREM Site | 3000 | EMEA-DC-ONPREM | - | - | - | - | All EMEA-DC-ONPREM devices |
+| Core Switch Role | 4000 | - | Core Switch | - | - | - | All Core Switches |
+| Distribution Switch Role | 4000 | - | Distribution Switch | - | - | - | All Distribution Switches |
+| Access Switch Role | 4000 | - | Access Switch | - | - | - | All Access Switches |
+| Router Role | 4000 | - | Router | - | - | - | All Routers |
+| OOB Router Role | 4000 | - | OOB Router | - | - | - | All OOB Routers |
+
+#### Context Resolution for Specific Devices
+
+**Device: EMEA-DC-ONPREM-CORE-SW01** (Nexus 9508, Core Switch, NX-OS)
+
+Contexts applied (in merge order):
+1. ✅ Global Configuration (weight 1000) - No assignment = ALL devices
+2. ✅ Cisco NX-OS Platform (weight 2000) - Platform = NX-OS
+3. ✅ EMEA-DC-ONPREM Site (weight 3000) - Site = EMEA-DC-ONPREM
+4. ✅ Core Switch Role (weight 4000) - Role = Core Switch
+
+**Device: EMEA-DC-ONPREM-ACC-STG-01** (Catalyst 9300-48P, Access Switch, IOS-XE)
+
+Contexts applied (in merge order):
+1. ✅ Global Configuration (weight 1000) - No assignment = ALL devices
+2. ✅ Cisco IOS-XE Platform (weight 2000) - Platform = IOS-XE
+3. ✅ EMEA-DC-ONPREM Site (weight 3000) - Site = EMEA-DC-ONPREM
+4. ✅ Access Switch Role (weight 4000) - Role = Access Switch
+
+**Device: EMEA-DC-ONPREM-RTR-EDGE-01** (ASR 9001, Router, IOS-XR)
+
+Contexts applied (in merge order):
+1. ✅ Global Configuration (weight 1000) - No assignment = ALL devices
+2. ✅ Cisco IOS-XR Platform (weight 2000) - Platform = IOS-XR
+3. ✅ EMEA-DC-ONPREM Site (weight 3000) - Site = EMEA-DC-ONPREM
+4. ✅ Router Role (weight 4000) - Role = Router
+
+**Device: EMEA-DC-ONPREM-OOB-RTR01** (ISR 4431, OOB Router, IOS)
+
+Contexts applied (in merge order):
+1. ✅ Global Configuration (weight 1000) - No assignment = ALL devices
+2. ✅ Cisco IOS Platform (weight 2000) - Platform = IOS
+3. ✅ EMEA-DC-ONPREM Site (weight 3000) - Site = EMEA-DC-ONPREM
+4. ✅ OOB Router Role (weight 4000) - Role = OOB Router
+
+#### How to Assign Contexts in NetBox
+
+**Method 1: NetBox UI**
+
+1. Navigate to **Customization → Config Contexts**
+2. Click **Add** or edit existing context
+3. Fill in **Assignment** section:
+   - **Sites**: Select one or more sites (dropdown)
+   - **Roles**: Select one or more roles (dropdown)
+   - **Platforms**: Select one or more platforms (dropdown)
+   - **Device Types**: Select one or more device types (dropdown)
+   - **Devices**: Select specific devices (dropdown)
+   - **Tags**: Select tags (dropdown)
+4. Set **Weight** (priority)
+5. Paste JSON data
+6. Save
+
+**Method 2: NetBox API**
+
+```python
+import requests
+import json
+
+NETBOX_URL = "https://netbox.example.com"
+TOKEN = "your-api-token"
+
+headers = {
+    "Authorization": f"Token {TOKEN}",
+    "Content-Type": "application/json"
+}
+
+# Get IDs for assignments
+site_response = requests.get(
+    f"{NETBOX_URL}/api/dcim/sites/?name=EMEA-DC-ONPREM",
+    headers=headers
+)
+site_id = site_response.json()['results'][0]['id']
+
+# Load context data
+with open('lab/config-contexts/emea_dc_onprem_context.json') as f:
+    context_data = json.load(f)
+
+# Create context with site assignment
+data = {
+    "name": "EMEA-DC-ONPREM Site",
+    "weight": 3000,
+    "description": "EMEA DC ONPREM site-specific configuration",
+    "is_active": True,
+    "data": context_data,
+    "sites": [site_id],  # Assignment to site
+    "roles": [],
+    "platforms": [],
+    "device_types": [],
+    "tags": []
+}
+
+response = requests.post(
+    f"{NETBOX_URL}/api/extras/config-contexts/",
+    headers=headers,
+    json=data
+)
+
+print(f"Created context: {response.json()['name']}")
+```
+
+**Method 3: CSV Import**
+
+CSV format with assignment columns:
+
+```csv
+name,weight,description,is_active,data,sites,roles,platforms,device_types
+Global Configuration,1000,Global settings,True,"{...}","","","",""
+EMEA-DC-ONPREM Site,3000,Site config,True,"{...}","EMEA-DC-ONPREM","","",""
+Core Switch Role,4000,Core role,True,"{...}","","Core Switch","",""
+Cisco NX-OS Platform,2000,NX-OS defaults,True,"{...}","","","NX-OS",""
+```
+
+**Important Notes:**
+- Multiple values in CSV: Use comma-separated list in quotes: `"site1,site2,site3"`
+- Empty assignment = Global context
+- IDs vs Names: API requires IDs, CSV import can use names
+
 ### Config Context Structure
 
 Config contexts use **JSON format**:

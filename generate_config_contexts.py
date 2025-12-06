@@ -176,9 +176,17 @@ def generate_config_contexts():
 
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
         fieldnames = ['name', 'weight', 'description', 'is_active', 'data',
-                      'sites', 'roles', 'platforms', 'device_types']
+                      'sites', 'roles', 'platforms', 'device_types', 'devices', 'tags']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
+
+        # Add missing fields to contexts
+        for ctx in contexts:
+            if 'devices' not in ctx:
+                ctx['devices'] = ''
+            if 'tags' not in ctx:
+                ctx['tags'] = ''
+
         writer.writerows(contexts)
 
     print(f'✅ Generated {len(contexts)} config contexts')
