@@ -1,0 +1,332 @@
+# NetBox to Zabbix Template Mapping Configuration
+# This file defines how NetBox devices map to Zabbix templates and host groups
+
+# =============================================================================
+# TEMPLATE MAPPING
+# =============================================================================
+# Priority order (highest to lowest):
+# 1. device_type_mapping (most specific)
+# 2. platform_role_mapping (platform + role combination)
+# 3. platform_mapping (platform only)
+# 4. role_mapping (role only)
+# 5. manufacturer_mapping (manufacturer default)
+# 6. default_template (fallback)
+
+templates:
+  # -------------------------------------------------------------------------
+  # Device Type Specific Mapping (Highest Priority)
+  # -------------------------------------------------------------------------
+  # Map specific device models to Zabbix templates
+  device_type_mapping:
+    # Cisco Nexus Switches
+    "Nexus 9508": "Template Cisco Nexus 9000"
+    "Nexus 93180YC-FX": "Template Cisco Nexus 9000"
+
+    # Cisco Catalyst Switches
+    "Catalyst 9300-48P": "Template Cisco Catalyst IOS-XE"
+    "Catalyst 3850-48P": "Template Cisco Catalyst IOS-XE"
+    "Catalyst 3650-48P": "Template Cisco Catalyst IOS-XE"
+
+    # Cisco Routers
+    "ASR 9001": "Template Cisco IOS-XR"
+    "ASR 9006": "Template Cisco IOS-XR"
+    "ISR 4431": "Template Cisco IOS"
+    "ISR 4351": "Template Cisco IOS"
+
+    # Arista Switches
+    "DCS-7280SR-48C6": "Template Arista EOS"
+    "DCS-7050SX3-48YC12": "Template Arista EOS"
+
+    # Palo Alto Firewalls
+    "PA-5450": "Template Palo Alto PAN-OS"
+    "PA-3260": "Template Palo Alto PAN-OS"
+
+    # F5 Load Balancers
+    "BIG-IP i10800": "Template F5 BIG-IP"
+    "BIG-IP i5800": "Template F5 BIG-IP"
+
+  # -------------------------------------------------------------------------
+  # Platform + Role Combination Mapping
+  # -------------------------------------------------------------------------
+  # Map platform and role combinations to specific templates
+  platform_role_mapping:
+    # Cisco NX-OS by role
+    "NX-OS+Core Switch": "Template Cisco Nexus Core"
+    "NX-OS+Distribution Switch": "Template Cisco Nexus Distribution"
+
+    # Cisco IOS-XE by role
+    "IOS-XE+Access Switch": "Template Cisco Catalyst Access"
+    "IOS-XE+Distribution Switch": "Template Cisco Catalyst Distribution"
+
+    # Arista EOS by role
+    "EOS+Spine Switch": "Template Arista Spine"
+    "EOS+Leaf Switch": "Template Arista Leaf"
+
+  # -------------------------------------------------------------------------
+  # Platform Mapping
+  # -------------------------------------------------------------------------
+  # Map NetBox platforms to Zabbix templates
+  platform_mapping:
+    # Cisco Platforms
+    "NX-OS": "Template Cisco NX-OS"
+    "IOS-XE": "Template Cisco IOS-XE"
+    "IOS-XR": "Template Cisco IOS-XR"
+    "IOS": "Template Cisco IOS"
+
+    # Arista Platform
+    "EOS": "Template Arista EOS"
+
+    # Palo Alto Platform
+    "PAN-OS": "Template Palo Alto PAN-OS"
+
+    # F5 Platform
+    "TMOS": "Template F5 BIG-IP"
+
+    # Juniper Platforms
+    "Junos": "Template Juniper Junos"
+
+  # -------------------------------------------------------------------------
+  # Role Mapping
+  # -------------------------------------------------------------------------
+  # Map NetBox device roles to Zabbix templates (generic)
+  role_mapping:
+    "Core Switch": "Template Network Core Switch"
+    "Distribution Switch": "Template Network Distribution Switch"
+    "Access Switch": "Template Network Access Switch"
+    "Router": "Template Network Router"
+    "Firewall": "Template Network Firewall"
+    "Load Balancer": "Template Network Load Balancer"
+    "Server": "Template Linux Server"
+    "Storage": "Template Storage Device"
+    "OOB Router": "Template Network OOB Device"
+
+  # -------------------------------------------------------------------------
+  # Manufacturer Mapping (Fallback)
+  # -------------------------------------------------------------------------
+  # Map manufacturers to generic vendor templates
+  manufacturer_mapping:
+    "Cisco Systems": "Template Cisco Generic SNMP"
+    "Arista Networks": "Template Arista Generic SNMP"
+    "Palo Alto Networks": "Template Palo Alto Generic SNMP"
+    "F5 Networks": "Template F5 Generic SNMP"
+    "Juniper Networks": "Template Juniper Generic SNMP"
+    "Dell Technologies": "Template Dell Generic SNMP"
+    "Hewlett Packard Enterprise": "Template HPE Generic SNMP"
+
+  # -------------------------------------------------------------------------
+  # Default Template (Final Fallback)
+  # -------------------------------------------------------------------------
+  default_template: "Template Net Device SNMP"
+
+# =============================================================================
+# HOST GROUP MAPPING
+# =============================================================================
+host_groups:
+  # -------------------------------------------------------------------------
+  # Global Host Group
+  # -------------------------------------------------------------------------
+  # All devices are added to this group
+  global_group: "All Devices"
+
+  # -------------------------------------------------------------------------
+  # Site-Based Host Groups
+  # -------------------------------------------------------------------------
+  # Prefix for site-based groups: "Site: {site_name}"
+  site_prefix: "Site"
+
+  # Create site groups automatically: true/false
+  auto_create_site_groups: true
+
+  # -------------------------------------------------------------------------
+  # Role-Based Host Groups
+  # -------------------------------------------------------------------------
+  # Prefix for role-based groups: "Role: {role_name}"
+  role_prefix: "Role"
+
+  # Create role groups automatically: true/false
+  auto_create_role_groups: true
+
+  # -------------------------------------------------------------------------
+  # Platform-Based Host Groups
+  # -------------------------------------------------------------------------
+  # Prefix for platform-based groups: "Platform: {platform_name}"
+  platform_prefix: "Platform"
+
+  # Create platform groups automatically: true/false
+  auto_create_platform_groups: true
+
+  # -------------------------------------------------------------------------
+  # Tag-Based Host Groups
+  # -------------------------------------------------------------------------
+  # Prefix for tag-based groups: "Tag: {tag_name}"
+  tag_prefix: "Tag"
+
+  # Create tag groups automatically: true/false
+  auto_create_tag_groups: true
+
+  # Only create groups for these specific tags (empty = all tags)
+  allowed_tags:
+    - production
+    - critical
+    - staging
+    - development
+
+# =============================================================================
+# MONITORING CONFIGURATION
+# =============================================================================
+monitoring:
+  # -------------------------------------------------------------------------
+  # SNMP Configuration
+  # -------------------------------------------------------------------------
+  snmp:
+    # Default SNMP version: 2 or 3
+    version: 2
+
+    # SNMP v2c community string
+    community: "public"
+
+    # SNMP port
+    port: 161
+
+    # Bulk requests: true/false
+    bulk: true
+
+  # -------------------------------------------------------------------------
+  # Interface Configuration
+  # -------------------------------------------------------------------------
+  interface:
+    # Default interface type: snmp, agent, jmx, ipmi
+    default_type: "snmp"
+
+    # Use primary IP from NetBox: true/false
+    use_primary_ip: true
+
+    # Default DNS name (if no primary IP)
+    # {name} will be replaced with device name
+    dns_template: "{name}.acme.com"
+
+  # -------------------------------------------------------------------------
+  # Zabbix Agent Configuration (if using agent instead of SNMP)
+  # -------------------------------------------------------------------------
+  agent:
+    # Agent port
+    port: 10050
+
+    # Use IP or DNS: ip, dns
+    use_ip: "ip"
+
+  # -------------------------------------------------------------------------
+  # Host Macros
+  # -------------------------------------------------------------------------
+  # These macros are set on each host
+  macros:
+    # SNMP community macro
+    "{$SNMP_COMMUNITY}": "public"
+
+    # Additional macros can be defined here
+    # They can use NetBox variables: {site}, {role}, {platform}, etc.
+    # Example:
+    # "{$LOCATION}": "{site}"
+    # "{$DEVICE_ROLE}": "{role}"
+
+# =============================================================================
+# SYNC BEHAVIOR
+# =============================================================================
+sync:
+  # -------------------------------------------------------------------------
+  # Device Filters
+  # -------------------------------------------------------------------------
+  filters:
+    # Only sync devices with these statuses
+    allowed_statuses:
+      - active
+      - staged
+
+    # Exclude devices with these tags
+    excluded_tags:
+      - no-monitoring
+      - decommissioned
+
+    # Only sync devices from these sites (empty = all sites)
+    # Example: ["EMEA-DC-ONPREM", "APAC-DC-ONPREM"]
+    allowed_sites: []
+
+    # Exclude devices from these sites
+    excluded_sites: []
+
+    # Only sync devices with these roles (empty = all roles)
+    allowed_roles: []
+
+    # Exclude devices with these roles
+    excluded_roles:
+      - Console Server
+
+  # -------------------------------------------------------------------------
+  # Update Behavior
+  # -------------------------------------------------------------------------
+  update:
+    # Update existing hosts in Zabbix: true/false
+    update_existing: true
+
+    # Update host groups on existing hosts: true/false
+    update_groups: true
+
+    # Update templates on existing hosts: true/false
+    update_templates: true
+
+    # Update IP addresses on existing hosts: true/false
+    update_ip: true
+
+    # Remove hosts from Zabbix if deleted in NetBox: true/false
+    remove_deleted: false
+
+  # -------------------------------------------------------------------------
+  # Logging
+  # -------------------------------------------------------------------------
+  logging:
+    # Log level: DEBUG, INFO, WARNING, ERROR
+    level: "INFO"
+
+    # Log file path (empty = stdout only)
+    file: "/var/log/netbox_zabbix_sync.log"
+
+    # Log format
+    format: "%(asctime)s - %(levelname)s - %(message)s"
+
+# =============================================================================
+# PLATFORM-SPECIFIC SETTINGS
+# =============================================================================
+# Override monitoring settings per platform
+platform_overrides:
+  # Cisco NX-OS specific
+  "NX-OS":
+    snmp:
+      community: "nxos_community"
+    macros:
+      "{$SNMP_COMMUNITY}": "nxos_community"
+
+  # Cisco IOS-XR specific
+  "IOS-XR":
+    snmp:
+      community: "iosxr_community"
+    macros:
+      "{$SNMP_COMMUNITY}": "iosxr_community"
+
+  # Palo Alto specific
+  "PAN-OS":
+    snmp:
+      community: "panos_community"
+    macros:
+      "{$SNMP_COMMUNITY}": "panos_community"
+
+# =============================================================================
+# CUSTOM FIELDS MAPPING
+# =============================================================================
+# Map NetBox custom fields to Zabbix host inventory fields
+custom_fields:
+  # NetBox custom field → Zabbix inventory field
+  "serial_number": "serialno_a"
+  "asset_tag": "asset_tag"
+  "purchase_date": "date_hw_purchase"
+  "warranty_expiration": "date_hw_expiry"
+  "support_contract": "contract_number"

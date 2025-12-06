@@ -1,0 +1,48 @@
+# NetBox to Zabbix Sync Configuration Example
+# Copy this file to config.yaml and update with your values
+
+# =============================================================================
+# NetBox Configuration
+# =============================================================================
+netbox:
+  # NetBox URL (include https://)
+  url: "https://netbox.acme.com"
+
+  # NetBox API token
+  # Generate in NetBox: User → API Tokens → Add
+  # Permissions required: dcim.view_device, dcim.view_site, dcim.view_devicerole
+  token: "your-netbox-api-token-here"
+
+  # Verify SSL certificate
+  verify_ssl: true
+
+# =============================================================================
+# Zabbix Configuration
+# =============================================================================
+zabbix:
+  # Zabbix URL (include https://)
+  # Will automatically append /api_jsonrpc.php
+  url: "https://zabbix.acme.com"
+
+  # Zabbix admin username
+  user: "admin"
+
+  # Zabbix admin password
+  password: "zabbix"
+
+  # Verify SSL certificate
+  verify_ssl: true
+
+# =============================================================================
+# Monitoring Configuration
+# =============================================================================
+monitoring:
+  # Default SNMP community string
+  # This can be overridden per-platform in zabbix_mapping.yaml
+  snmp_community: "public"
+
+  # SNMP port (default: 161)
+  snmp_port: 161
+
+  # Default interface type: snmp, agent, jmx, ipmi
+  default_interface_type: "snmp"
