@@ -1,0 +1,79 @@
+name,manufacturer,device_type,role,site,location,rack,position,face,status,description
+EMEA-DC-CLOUD-ESX-A01,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R01,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-CLOUD-ESX-A02,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R01,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-CLOUD-ESX-A03,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R02,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-CLOUD-ESX-A04,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R02,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-CLOUD-ESX-A05,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R03,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-CLOUD-ESX-A06,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R03,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-CLOUD-ESX-B01,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R01,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+EMEA-DC-CLOUD-ESX-B02,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R01,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+EMEA-DC-CLOUD-ESX-B03,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R02,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+EMEA-DC-CLOUD-ESX-B04,Dell,PowerEdge R750,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R02,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+EMEA-DC-CLOUD-ESX-MGT01,Cisco,UCS C240 M6,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R04,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+EMEA-DC-CLOUD-ESX-MGT02,Cisco,UCS C240 M6,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R05,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+EMEA-DC-CLOUD-ESX-MGT03,Cisco,UCS C240 M6,Server,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R06,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+EMEA-DC-ONPREM-ESX-A01,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R01,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-ONPREM-ESX-A02,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R01,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-ONPREM-ESX-A03,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R02,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-ONPREM-ESX-A04,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R02,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-ONPREM-ESX-A05,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R03,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-ONPREM-ESX-A06,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R03,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+EMEA-DC-ONPREM-ESX-B01,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R01,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+EMEA-DC-ONPREM-ESX-B02,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R01,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+EMEA-DC-ONPREM-ESX-B03,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R02,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+EMEA-DC-ONPREM-ESX-B04,Dell,PowerEdge R750,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R02,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+EMEA-DC-ONPREM-ESX-MGT01,Cisco,UCS C240 M6,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R04,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+EMEA-DC-ONPREM-ESX-MGT02,Cisco,UCS C240 M6,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R05,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+EMEA-DC-ONPREM-ESX-MGT03,Cisco,UCS C240 M6,Server,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R06,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+APAC-DC-CLOUD-ESX-A01,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R01,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-CLOUD-ESX-A02,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R01,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-CLOUD-ESX-A03,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R02,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-CLOUD-ESX-A04,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R02,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-CLOUD-ESX-A05,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R03,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-CLOUD-ESX-A06,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R03,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-CLOUD-ESX-B01,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R01,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+APAC-DC-CLOUD-ESX-B02,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R01,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+APAC-DC-CLOUD-ESX-B03,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R02,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+APAC-DC-CLOUD-ESX-B04,Dell,PowerEdge R750,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R02,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+APAC-DC-CLOUD-ESX-MGT01,Cisco,UCS C240 M6,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R04,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+APAC-DC-CLOUD-ESX-MGT02,Cisco,UCS C240 M6,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R05,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+APAC-DC-CLOUD-ESX-MGT03,Cisco,UCS C240 M6,Server,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R06,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+APAC-DC-ONPREM-ESX-A01,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R01,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-ONPREM-ESX-A02,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R01,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-ONPREM-ESX-A03,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R02,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-ONPREM-ESX-A04,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R02,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-ONPREM-ESX-A05,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R03,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-ONPREM-ESX-A06,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R03,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+APAC-DC-ONPREM-ESX-B01,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R01,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+APAC-DC-ONPREM-ESX-B02,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R01,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+APAC-DC-ONPREM-ESX-B03,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R02,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+APAC-DC-ONPREM-ESX-B04,Dell,PowerEdge R750,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R02,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+APAC-DC-ONPREM-ESX-MGT01,Cisco,UCS C240 M6,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R04,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+APAC-DC-ONPREM-ESX-MGT02,Cisco,UCS C240 M6,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R05,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+APAC-DC-ONPREM-ESX-MGT03,Cisco,UCS C240 M6,Server,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R06,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+AMER-DC-CLOUD-ESX-A01,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R01,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-CLOUD-ESX-A02,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R01,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-CLOUD-ESX-A03,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R02,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-CLOUD-ESX-A04,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R02,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-CLOUD-ESX-A05,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R03,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-CLOUD-ESX-A06,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R03,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-CLOUD-ESX-B01,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R01,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+AMER-DC-CLOUD-ESX-B02,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R01,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+AMER-DC-CLOUD-ESX-B03,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R02,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+AMER-DC-CLOUD-ESX-B04,Dell,PowerEdge R750,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R02,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+AMER-DC-CLOUD-ESX-MGT01,Cisco,UCS C240 M6,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R04,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+AMER-DC-CLOUD-ESX-MGT02,Cisco,UCS C240 M6,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R05,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+AMER-DC-CLOUD-ESX-MGT03,Cisco,UCS C240 M6,Server,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R06,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+AMER-DC-ONPREM-ESX-A01,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R01,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-ONPREM-ESX-A02,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R01,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-ONPREM-ESX-A03,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R02,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-ONPREM-ESX-A04,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R02,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-ONPREM-ESX-A05,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R03,39,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-ONPREM-ESX-A06,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R03,37,front,active,VMware ESXi host - Compute cluster (Server Hall A)
+AMER-DC-ONPREM-ESX-B01,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R01,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+AMER-DC-ONPREM-ESX-B02,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R01,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+AMER-DC-ONPREM-ESX-B03,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R02,39,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+AMER-DC-ONPREM-ESX-B04,Dell,PowerEdge R750,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R02,37,front,active,VMware ESXi host - Storage/vSAN cluster (Server Hall B)
+AMER-DC-ONPREM-ESX-MGT01,Cisco,UCS C240 M6,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R04,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+AMER-DC-ONPREM-ESX-MGT02,Cisco,UCS C240 M6,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R05,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"
+AMER-DC-ONPREM-ESX-MGT03,Cisco,UCS C240 M6,Server,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R06,39,front,active,"VMware ESXi host - Management cluster (vCenter, NSX, etc.)"

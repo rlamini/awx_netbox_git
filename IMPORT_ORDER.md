@@ -144,6 +144,60 @@ File: lab/power/netbox_dc_power_cables.csv
 
 ---
 
+## Virtualization Import Sequence
+
+### 16. **ESXi Device Types**
+```
+Devices → Device Types → Import
+File: lab/virtualization/netbox_esxi_device_types.csv
+```
+**Contains**: 3 ESXi server device types
+- Dell PowerEdge R750 (2U) - Compute/Storage
+- Dell PowerEdge R650 (1U) - Compute
+- Cisco UCS C240 M6 (2U) - Management
+
+### 17. **ESXi Host Devices**
+```
+Devices → Devices → Import
+File: lab/virtualization/netbox_dc_esxi_hosts.csv
+```
+**Contains**: 78 ESXi hosts (13 per datacenter)
+- 6 Compute hosts (Server Hall A)
+- 4 Storage hosts (Server Hall B)
+- 3 Management hosts (Server Hall A)
+
+**Note**: Requires sites, locations, racks, and device types to exist
+
+### 18. **Cluster Types**
+```
+Virtualization → Cluster Types → Import
+File: lab/virtualization/netbox_cluster_types.csv
+```
+**Contains**: 1 cluster type (VMware vSphere)
+
+### 19. **Cluster Groups**
+```
+Virtualization → Cluster Groups → Import
+File: lab/virtualization/netbox_cluster_groups.csv
+```
+**Contains**: 2 cluster groups
+- Production (Compute + Storage clusters)
+- Management (Management cluster)
+
+### 20. **vSphere Clusters**
+```
+Virtualization → Clusters → Import
+File: lab/virtualization/netbox_vmware_clusters.csv
+```
+**Contains**: 18 vSphere clusters (3 per datacenter)
+- COMPUTE-CLUSTER (6 ESXi hosts)
+- STORAGE-CLUSTER (4 ESXi hosts with vSAN)
+- MGMT-CLUSTER (3 ESXi hosts)
+
+**Note**: After import, manually assign ESXi devices to clusters in NetBox UI
+
+---
+
 ## Verification Checklist
 
 After importing, verify in NetBox:
@@ -163,6 +217,14 @@ After importing, verify in NetBox:
 ✅ **Power Ports**: Each device has 2 power ports (PSU1 and PSU2)
 ✅ **Power Cables**: 468 power cables (redundant connections)
 ✅ **Redundancy**: Check any device - PSU1→PDU-A, PSU2→PDU-B
+
+### Virtualization Verification
+✅ **ESXi Device Types**: 3 server types (Dell R750, R650, Cisco UCS)
+✅ **ESXi Hosts**: 78 hosts total (13 per datacenter)
+✅ **Cluster Types**: VMware vSphere cluster type exists
+✅ **Cluster Groups**: Production and Management groups exist
+✅ **Clusters**: 18 clusters (3 per datacenter)
+✅ **Host Assignment**: Verify ESXi hosts assigned to correct clusters
 
 ---
 
@@ -200,6 +262,16 @@ After importing, verify in NetBox:
 | netbox_dc_power_ports.csv | 468 | Power ports (dual PSU per device) |
 | netbox_dc_power_cables.csv | 468 | Power cables (redundant connections) |
 
-**Total**: 22,254 objects for complete datacenter DCIM infrastructure
+### Virtualization Files
+| File | Records | Purpose |
+|------|---------|---------|
+| netbox_esxi_device_types.csv | 3 | ESXi server device types |
+| netbox_dc_esxi_hosts.csv | 78 | Physical ESXi host devices |
+| netbox_cluster_types.csv | 1 | VMware vSphere cluster type |
+| netbox_cluster_groups.csv | 2 | Production and Management groups |
+| netbox_vmware_clusters.csv | 18 | vSphere clusters (3 per site) |
+
+**Total**: 22,356 objects for complete datacenter infrastructure
 - Network/Cabling: 15,016 objects
 - Power Infrastructure: 7,238 objects
+- Virtualization: 102 objects
