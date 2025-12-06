@@ -1,0 +1,7 @@
+name,rd,description,tenant,enforce_unique
+EMEA-AZURE-PROD-VNET,65001:100,Azure Production VNet - EMEA (eu-west-1),,True
+EMEA-AZURE-MGMT-VNET,65001:200,Azure Management VNet - EMEA (eu-west-1),,True
+APAC-GCP-PROD-VPC,65002:100,GCP Production VPC - APAC (asia-southeast1),,True
+APAC-GCP-MGMT-VPC,65002:200,GCP Management VPC - APAC (asia-southeast1),,True
+AMER-AWS-PROD-VPC,65003:100,AWS Production VPC - AMER (us-east-1),,True
+AMER-AWS-MGMT-VPC,65003:200,AWS Management VPC - AMER (us-east-1),,True

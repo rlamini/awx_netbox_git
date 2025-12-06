@@ -6,8 +6,9 @@ Places ESXi hosts in server hall racks across all datacenters.
 
 import csv
 
-# Sites
-sites = ['EMEA-DC-CLOUD', 'EMEA-DC-ONPREM', 'APAC-DC-CLOUD', 'APAC-DC-ONPREM', 'AMER-DC-CLOUD', 'AMER-DC-ONPREM']
+# Sites - Only ONPREM sites have physical ESXi hosts
+# CLOUD sites use managed cloud services (Azure, GCP, AWS)
+sites = ['EMEA-DC-ONPREM', 'APAC-DC-ONPREM', 'AMER-DC-ONPREM']
 
 esxi_hosts = []
 
@@ -82,8 +83,9 @@ for site in sites:
         })
 
 print(f"\n✅ Generated {len(esxi_hosts)} ESXi hosts")
-print(f"   - 6 sites × 13 hosts = 78 ESXi hosts total")
+print(f"   - 3 ONPREM sites × 13 hosts = 39 ESXi hosts total")
 print(f"   - Per site: 6 Compute + 4 Storage + 3 Management")
+print(f"   - CLOUD sites (EMEA-Azure, APAC-GCP, AMER-AWS) use managed cloud services")
 
 # Write ESXi hosts CSV
 esxi_file = 'lab/virtualization/netbox_dc_esxi_hosts.csv'

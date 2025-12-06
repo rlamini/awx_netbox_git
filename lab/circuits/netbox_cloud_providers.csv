@@ -1,0 +1,6 @@
+name,slug,asn,description
+Microsoft Azure,microsoft-azure,12076,Microsoft Azure ExpressRoute
+Google Cloud Platform,google-cloud-platform,15169,Google Cloud Platform
+Amazon Web Services,amazon-web-services,16509,Amazon Web Services Direct Connect
+Equinix,equinix,24115,Equinix - Global Interconnection Platform
+Megaport,megaport,133937,Megaport - Network as a Service

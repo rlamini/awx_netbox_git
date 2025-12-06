@@ -6,8 +6,9 @@ Creates Compute, Storage, and Management clusters for each datacenter.
 
 import csv
 
-# Sites
-sites = ['EMEA-DC-CLOUD', 'EMEA-DC-ONPREM', 'APAC-DC-CLOUD', 'APAC-DC-ONPREM', 'AMER-DC-CLOUD', 'AMER-DC-ONPREM']
+# Sites - Only ONPREM sites have VMware vSphere clusters
+# CLOUD sites use managed cloud services (Azure, GCP, AWS)
+sites = ['EMEA-DC-ONPREM', 'APAC-DC-ONPREM', 'AMER-DC-ONPREM']
 
 # Cluster Types
 cluster_types = [
@@ -75,8 +76,9 @@ for site in sites:
 print(f"\n✅ Generated {len(cluster_types)} cluster type")
 print(f"✅ Generated {len(cluster_groups)} cluster groups")
 print(f"✅ Generated {len(clusters)} clusters")
-print(f"   - 6 sites × 3 clusters = 18 clusters total")
+print(f"   - 3 ONPREM sites × 3 clusters = 9 clusters total")
 print(f"   - Per site: 1 Compute + 1 Storage + 1 Management")
+print(f"   - CLOUD sites use managed cloud services (no vSphere clusters)")
 
 # Write cluster types CSV
 cluster_types_file = 'lab/virtualization/netbox_cluster_types.csv'

@@ -1,0 +1,36 @@
+[
+  {
+    "name": "APAC-GCP-VPN-TUNNEL-1",
+    "site_a": "APAC-DC-ONPREM",
+    "site_z": "APAC-DC-CLOUD",
+    "status": "active",
+    "type": "IPSec",
+    "encryption": "AES-256-GCM",
+    "authentication": "SHA256",
+    "ike_version": "IKEv2",
+    "pfs_group": "DH Group 14",
+    "peer_a_ip": "203.0.113.10",
+    "peer_z_ip": "198.51.100.20",
+    "local_subnet": "10.50.0.0/16",
+    "remote_subnet": "10.200.0.0/16",
+    "description": "Primary IPSec tunnel - APAC OnPrem to GCP",
+    "comments": "HA VPN tunnel 1. Routes traffic between APAC-DC-ONPREM and GCP VPC."
+  },
+  {
+    "name": "APAC-GCP-VPN-TUNNEL-2",
+    "site_a": "APAC-DC-ONPREM",
+    "site_z": "APAC-DC-CLOUD",
+    "status": "active",
+    "type": "IPSec",
+    "encryption": "AES-256-GCM",
+    "authentication": "SHA256",
+    "ike_version": "IKEv2",
+    "pfs_group": "DH Group 14",
+    "peer_a_ip": "203.0.113.11",
+    "peer_z_ip": "198.51.100.21",
+    "local_subnet": "10.50.0.0/16",
+    "remote_subnet": "10.200.0.0/16",
+    "description": "Secondary IPSec tunnel - APAC OnPrem to GCP (redundant)",
+    "comments": "HA VPN tunnel 2. Provides redundancy for tunnel 1."
+  }
+]

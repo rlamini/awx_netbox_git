@@ -1,0 +1,4 @@
+manufacturer,model,slug,u_height,is_full_depth,description
+Microsoft,Azure ExpressRoute Gateway,azure-expressroute-gateway,0,False,Azure ExpressRoute Virtual Network Gateway
+Amazon,AWS Direct Connect Gateway,aws-directconnect-gateway,0,False,AWS Direct Connect Gateway (Virtual)
+Google,GCP Cloud VPN Gateway,gcp-cloud-vpn-gateway,0,False,GCP Cloud VPN Gateway (HA VPN)

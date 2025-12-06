@@ -1,0 +1,6 @@
+name,manufacturer,device_type,role,site,location,rack,position,face,status,description,comments
+EMEA-AZURE-ER-GW-01,Microsoft,Azure ExpressRoute Gateway,Cloud Gateway,EMEA-DC-CLOUD,,,,,active,Azure ExpressRoute Gateway - eu-west-1,Virtual gateway for ExpressRoute connectivity. Connects EMEA-DC-ONPREM to Azure VNets.
+AMER-AWS-DX-GW-01,Amazon,AWS Direct Connect Gateway,Cloud Gateway,AMER-DC-CLOUD,,,,,active,AWS Direct Connect Gateway - us-east-1,Virtual gateway for Direct Connect. Connects AMER-DC-ONPREM to AWS VPCs.
+APAC-GCP-VPN-GW-01,Google,GCP Cloud VPN Gateway,Cloud Gateway,APAC-DC-CLOUD,,,,,active,GCP Cloud VPN Gateway 1 - asia-southeast1,HA VPN Gateway interface 1. Terminates IPSec tunnel 1 from APAC-DC-ONPREM.
+APAC-GCP-VPN-GW-02,Google,GCP Cloud VPN Gateway,Cloud Gateway,APAC-DC-CLOUD,,,,,active,GCP Cloud VPN Gateway 2 - asia-southeast1,HA VPN Gateway interface 2. Terminates IPSec tunnel 2 from APAC-DC-ONPREM (redundant).
+APAC-ONPREM-VPN-FW-01,Palo Alto Networks,PA-5220,Firewall,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R01,35,front,active,VPN Firewall - IPSec endpoint for GCP,Terminates IPSec VPN tunnels to GCP Cloud VPN Gateway.

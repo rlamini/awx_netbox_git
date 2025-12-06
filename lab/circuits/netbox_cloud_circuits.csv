@@ -1,0 +1,3 @@
+cid,provider,type,status,install_date,commit_rate,description,comments
+EXPRESSROUTE-EMEA-001,Microsoft Azure,ExpressRoute,active,2024-01-15,1000,Azure ExpressRoute - EMEA OnPrem to Azure eu-west-1,ExpressRoute circuit via Equinix Amsterdam. Primary connection for EMEA-DC-ONPREM to Azure.
+DIRECTCONNECT-AMER-001,Amazon Web Services,Direct Connect,active,2024-02-01,10000,AWS Direct Connect - AMER OnPrem to AWS us-east-1,Direct Connect via Equinix Ashburn. Primary connection for AMER-DC-ONPREM to AWS.
