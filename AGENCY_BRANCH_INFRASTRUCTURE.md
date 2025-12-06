@@ -226,6 +226,38 @@ Each agency has **dual internet circuits** for redundancy:
 - **5G Circuits**: 292 (100 Mbps each)
 - **Total**: 584 circuits
 
+### Circuit to Device Connections
+
+Each circuit is connected to a specific WAN interface on the primary Meraki MX (MX-01):
+
+**ADSL Circuit → MX-01 WAN1**
+```
+Circuit: ADSL-{REGION}-{NUMBER}
+   ↓ (Circuit Termination)
+Device: {AGENCY}-MX-01
+Interface: WAN1 (1000base-t)
+```
+
+**5G Circuit → MX-01 WAN2**
+```
+Circuit: 5G-{REGION}-{NUMBER}
+   ↓ (Circuit Termination)
+Device: {AGENCY}-MX-01
+Interface: WAN2 (1000base-t)
+```
+
+**WAN Interfaces per MX:**
+Each Meraki MX device has 2 WAN interfaces:
+- **WAN1** (Internet 1): Connected to ADSL circuit (primary)
+- **WAN2** (Internet 2): Connected to 5G circuit (backup)
+
+**Total WAN Interfaces:**
+- 292 agencies × 2 MX × 2 WAN = **1,168 WAN interfaces**
+- ADSL connections: 292 (to MX-01 WAN1)
+- 5G connections: 292 (to MX-01 WAN2)
+
+**Note:** MX-02 (secondary in HA pair) also has WAN1/WAN2 interfaces but shares the same circuits through HA synchronization. Only MX-01 circuit terminations are tracked in NetBox to avoid duplication.
+
 ---
 
 ## Meraki Auto VPN

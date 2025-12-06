@@ -1,0 +1,1169 @@
+device,name,type,enabled,description,mode,mtu
+FR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DE-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DE-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DE-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DE-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DE-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DE-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DE-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DE-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GB-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GB-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GB-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GB-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GB-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GB-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GB-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GB-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NL-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NL-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NL-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NL-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NL-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NL-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NL-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NL-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BE-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BE-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BE-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BE-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BE-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BE-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BE-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BE-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LU-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LU-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LU-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LU-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LU-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LU-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LU-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LU-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CH-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CH-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CH-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CH-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CH-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CH-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CH-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CH-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AT-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AT-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AT-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AT-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AT-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AT-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AT-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AT-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IE-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IE-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IE-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IE-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IE-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IE-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IE-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IE-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MC-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MC-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MC-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MC-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MC-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MC-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MC-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MC-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ES-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ES-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ES-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ES-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ES-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ES-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ES-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ES-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PT-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PT-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PT-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PT-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PT-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PT-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PT-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PT-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IT-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IT-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IT-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IT-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IT-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IT-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IT-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IT-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MT-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MT-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MT-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MT-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MT-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MT-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MT-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MT-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CY-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CY-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CY-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CY-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CY-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CY-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CY-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CY-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AD-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AD-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AD-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AD-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AD-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AD-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AD-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AD-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SM-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SM-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SM-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SM-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SM-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SM-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SM-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SM-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SE-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SE-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SE-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SE-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SE-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SE-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SE-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SE-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NO-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NO-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NO-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NO-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NO-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NO-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NO-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NO-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DK-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DK-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DK-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DK-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DK-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DK-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DK-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DK-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FI-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FI-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FI-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FI-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FI-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FI-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FI-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FI-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IS-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IS-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IS-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IS-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IS-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IS-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IS-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IS-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PL-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PL-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PL-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PL-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PL-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PL-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PL-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PL-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CZ-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CZ-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CZ-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CZ-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CZ-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CZ-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CZ-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CZ-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HU-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HU-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HU-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HU-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HU-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HU-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HU-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HU-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+RO-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+RO-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+RO-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+RO-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+RO-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+RO-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+RO-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+RO-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BG-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BG-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BG-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BG-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BG-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BG-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BG-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BG-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SK-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SK-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SK-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SK-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SK-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SK-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SK-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SK-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SI-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SI-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SI-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SI-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SI-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SI-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SI-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SI-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+RS-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+RS-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+RS-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+RS-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+RS-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+RS-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+RS-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+RS-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UA-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UA-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UA-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UA-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UA-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UA-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UA-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UA-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LT-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LT-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LT-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LT-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LT-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LT-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LT-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LT-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LV-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LV-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LV-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LV-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LV-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LV-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LV-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LV-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EE-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EE-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EE-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EE-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EE-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EE-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EE-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EE-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AE-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AE-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AE-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AE-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AE-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AE-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AE-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AE-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SA-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SA-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SA-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SA-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SA-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SA-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SA-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SA-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+QA-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+QA-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+QA-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+QA-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+QA-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+QA-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+QA-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+QA-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KW-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KW-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KW-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KW-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KW-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KW-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KW-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KW-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BH-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BH-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BH-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BH-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BH-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BH-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BH-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BH-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+OM-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+OM-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+OM-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+OM-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+OM-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+OM-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+OM-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+OM-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IL-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IL-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IL-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IL-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IL-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IL-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IL-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IL-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JO-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JO-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JO-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JO-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JO-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JO-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JO-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JO-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LB-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LB-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LB-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LB-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LB-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LB-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LB-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LB-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ZA-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ZA-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ZA-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ZA-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ZA-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ZA-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ZA-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ZA-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EG-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EG-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EG-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EG-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EG-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EG-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EG-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EG-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MA-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MA-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MA-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MA-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MA-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MA-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MA-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MA-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NG-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NG-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NG-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NG-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NG-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NG-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NG-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NG-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KE-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KE-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KE-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KE-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KE-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KE-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KE-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KE-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GH-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GH-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GH-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GH-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GH-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GH-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GH-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GH-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TN-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TN-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TN-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TN-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TN-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TN-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TN-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TN-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SN-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SN-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SN-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SN-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SN-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SN-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SN-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SN-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CI-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CI-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CI-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CI-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CI-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CI-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CI-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CI-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MU-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MU-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MU-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MU-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MU-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MU-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MU-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MU-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CN-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CN-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CN-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CN-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CN-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CN-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CN-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CN-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JP-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JP-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JP-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JP-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JP-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JP-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JP-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JP-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TW-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TW-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TW-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TW-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TW-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TW-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TW-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TW-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HK-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HK-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HK-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HK-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HK-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HK-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HK-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HK-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MO-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MO-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MO-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MO-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MO-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MO-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MO-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MO-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MN-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MN-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MN-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MN-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MN-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MN-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MN-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MN-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SG-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SG-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SG-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SG-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SG-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SG-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SG-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SG-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MY-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MY-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MY-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MY-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MY-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MY-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MY-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MY-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TH-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TH-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TH-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TH-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TH-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TH-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TH-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TH-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ID-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ID-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ID-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ID-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ID-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ID-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+ID-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+ID-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VN-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VN-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VN-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VN-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VN-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VN-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VN-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VN-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PH-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PH-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PH-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PH-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PH-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PH-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PH-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PH-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MM-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MM-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MM-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MM-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MM-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MM-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MM-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MM-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KH-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KH-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KH-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KH-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KH-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KH-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KH-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KH-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LA-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LA-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LA-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LA-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LA-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LA-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LA-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LA-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BN-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BN-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BN-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BN-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BN-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BN-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BN-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BN-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TL-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TL-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TL-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TL-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TL-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TL-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TL-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TL-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IN-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IN-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IN-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IN-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IN-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IN-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+IN-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+IN-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PK-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PK-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PK-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PK-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PK-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PK-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PK-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PK-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BD-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BD-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BD-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BD-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BD-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BD-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BD-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BD-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LK-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LK-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LK-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LK-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LK-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LK-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LK-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LK-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NP-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NP-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NP-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NP-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NP-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NP-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NP-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NP-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BT-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BT-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BT-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BT-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BT-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BT-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BT-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BT-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MV-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MV-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MV-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MV-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MV-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MV-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MV-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MV-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AF-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AF-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AF-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AF-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AF-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AF-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AF-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AF-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AU-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AU-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AU-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AU-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AU-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AU-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AU-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AU-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NZ-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NZ-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NZ-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NZ-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NZ-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NZ-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NZ-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NZ-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PG-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PG-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PG-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PG-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PG-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PG-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PG-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PG-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FJ-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FJ-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FJ-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FJ-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FJ-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FJ-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FJ-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FJ-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+WS-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+WS-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+WS-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+WS-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+WS-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+WS-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+WS-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+WS-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TO-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TO-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TO-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TO-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TO-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TO-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TO-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TO-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VU-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VU-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VU-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VU-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VU-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VU-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VU-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VU-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SB-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SB-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SB-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SB-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SB-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SB-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SB-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SB-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NC-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NC-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NC-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NC-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NC-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NC-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NC-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NC-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PF-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PF-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PF-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PF-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PF-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PF-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PF-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PF-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GU-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GU-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GU-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GU-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GU-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GU-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GU-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GU-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PW-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PW-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PW-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PW-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PW-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PW-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PW-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PW-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FM-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FM-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FM-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FM-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FM-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FM-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+FM-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+FM-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MH-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MH-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MH-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MH-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MH-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MH-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MH-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MH-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KI-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KI-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KI-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KI-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KI-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KI-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KI-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KI-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TV-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TV-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TV-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TV-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TV-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TV-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TV-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TV-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KZ-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KZ-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KZ-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KZ-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KZ-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KZ-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KZ-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KZ-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UZ-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UZ-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UZ-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UZ-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UZ-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UZ-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UZ-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UZ-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TM-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TM-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TM-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TM-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TM-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TM-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TM-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TM-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KG-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KG-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KG-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KG-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KG-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KG-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KG-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KG-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TJ-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TJ-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TJ-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TJ-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TJ-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TJ-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TJ-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TJ-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+US-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+US-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+US-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+US-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+US-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+US-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+US-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+US-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CA-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CA-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CA-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CA-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CA-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CA-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CA-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CA-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MX-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MX-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MX-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MX-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MX-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MX-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+MX-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+MX-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GT-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GT-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GT-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GT-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GT-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GT-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GT-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GT-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BZ-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BZ-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BZ-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BZ-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BZ-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BZ-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BZ-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BZ-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HN-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HN-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HN-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HN-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HN-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HN-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HN-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HN-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SV-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SV-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SV-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SV-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SV-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SV-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SV-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SV-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NI-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NI-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NI-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NI-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NI-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NI-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+NI-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+NI-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PA-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PA-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PA-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PA-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PA-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PA-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PA-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PA-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CU-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CU-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CU-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CU-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CU-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CU-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CU-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CU-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JM-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JM-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JM-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JM-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JM-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JM-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+JM-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+JM-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HT-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HT-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HT-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HT-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HT-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HT-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+HT-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+HT-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DO-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DO-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DO-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DO-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DO-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DO-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DO-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DO-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BS-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BS-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BS-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BS-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BS-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BS-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BS-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BS-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TT-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TT-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TT-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TT-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TT-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TT-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+TT-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+TT-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BB-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BB-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BB-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BB-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BB-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BB-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BB-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BB-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LC-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LC-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LC-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LC-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LC-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LC-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+LC-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+LC-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GD-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GD-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GD-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GD-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GD-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GD-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GD-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GD-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VC-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VC-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VC-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VC-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VC-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VC-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VC-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VC-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AG-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AG-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AG-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AG-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AG-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AG-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AG-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AG-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DM-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DM-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DM-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DM-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DM-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DM-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+DM-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+DM-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KN-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KN-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KN-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KN-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KN-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KN-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KN-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KN-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AW-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AW-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AW-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AW-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AW-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AW-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AW-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AW-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CW-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CW-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CW-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CW-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CW-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CW-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CW-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CW-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KY-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KY-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KY-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KY-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KY-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KY-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+KY-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+KY-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VG-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VG-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VG-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VG-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VG-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VG-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VG-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VG-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VI-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VI-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VI-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VI-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VI-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VI-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VI-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VI-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+AR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+AR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CO-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CO-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CO-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CO-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CO-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CO-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CO-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CO-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PE-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PE-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PE-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PE-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PE-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PE-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PE-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PE-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VE-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VE-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VE-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VE-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VE-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VE-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+VE-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+VE-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CL-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CL-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CL-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CL-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CL-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CL-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+CL-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+CL-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EC-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EC-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EC-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EC-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EC-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EC-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+EC-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+EC-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BO-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BO-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BO-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BO-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BO-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BO-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+BO-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+BO-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PY-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PY-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PY-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PY-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PY-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PY-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+PY-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+PY-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UY-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UY-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UY-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UY-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UY-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UY-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+UY-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+UY-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GY-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GY-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GY-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GY-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GY-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GY-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GY-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GY-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SR-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SR-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SR-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SR-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SR-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SR-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+SR-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+SR-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GF-Agency1-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GF-Agency1-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GF-Agency1-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GF-Agency1-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GF-Agency2-MX-01,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GF-Agency2-MX-01,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500
+GF-Agency2-MX-02,WAN1,1000base-t,True,WAN1 (Internet 1) - ADSL circuit,,1500
+GF-Agency2-MX-02,WAN2,1000base-t,True,WAN2 (Internet 2) - 5G backup circuit,,1500

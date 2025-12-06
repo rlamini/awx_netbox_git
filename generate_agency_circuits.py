@@ -80,14 +80,16 @@ for idx, agency in enumerate(agencies, start=1):
         'comments': f'Primary internet connectivity. VPN to {agency["hub"]}.'
     })
 
-    # ADSL Termination (A-side: Agency, Z-side: Provider)
+    # ADSL Termination (A-side: Agency, connected to MX-01 WAN1)
     circuit_terminations.append({
         'circuit': adsl_cid,
         'term_side': 'A',
         'site': site_name,
+        'device': f'{site_name}-MX-01',
+        'interface': 'WAN1',
         'port_speed': '50',
         'upstream_speed': '50',
-        'description': f'{site_name} ADSL endpoint'
+        'description': f'{site_name} ADSL endpoint (MX-01 WAN1)'
     })
 
     # 5G Circuit (Backup)
@@ -103,14 +105,16 @@ for idx, agency in enumerate(agencies, start=1):
         'comments': f'Backup connectivity (failover). VPN to {agency["hub"]}.'
     })
 
-    # 5G Termination (A-side: Agency)
+    # 5G Termination (A-side: Agency, connected to MX-01 WAN2)
     circuit_terminations.append({
         'circuit': fiveg_cid,
         'term_side': 'A',
         'site': site_name,
+        'device': f'{site_name}-MX-01',
+        'interface': 'WAN2',
         'port_speed': '100',
         'upstream_speed': '100',
-        'description': f'{site_name} 5G endpoint'
+        'description': f'{site_name} 5G endpoint (MX-01 WAN2)'
     })
 
 print(f"\n✅ Generated {len(circuits)} circuits")
@@ -132,8 +136,8 @@ print(f"✅ Circuits written to {circuits_file}")
 # Write circuit terminations CSV
 terminations_file = 'lab/agencies/netbox_agency_circuit_terminations.csv'
 with open(terminations_file, 'w', newline='') as f:
-    fieldnames = ['circuit', 'term_side', 'site', 'port_speed',
-                  'upstream_speed', 'description']
+    fieldnames = ['circuit', 'term_side', 'site', 'device', 'interface',
+                  'port_speed', 'upstream_speed', 'description']
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(circuit_terminations)
