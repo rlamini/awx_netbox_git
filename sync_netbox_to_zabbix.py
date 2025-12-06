@@ -205,6 +205,16 @@ class NetBoxZabbixSync:
         if allowed_statuses:
             filters['status'] = allowed_statuses
 
+        # Filter by custom field for monitoring
+        custom_field_config = self.mapping.get('sync', {}).get('filters', {}).get('custom_field_monitoring')
+        if custom_field_config:
+            field_name = custom_field_config.get('field_name')
+            field_value = custom_field_config.get('field_value')
+            if field_name and field_value:
+                # NetBox API custom field filter format: cf_<field_name>=value
+                filters[f'cf_{field_name}'] = field_value
+                self.logger.info(f"Filtering by custom field: {field_name} = {field_value}")
+
         # Filter by site if specified
         if site_name:
             filters['site'] = site_name
@@ -226,6 +236,21 @@ class NetBoxZabbixSync:
         excluded_tags = self.mapping.get('sync', {}).get('filters', {}).get('excluded_tags', [])
         if excluded_tags:
             devices = [d for d in devices if not any(tag.name in excluded_tags for tag in d.tags)]
+
+        # Additional validation: check custom field if configured (double-check)
+        if custom_field_config:
+            field_name = custom_field_config.get('field_name')
+            field_value = custom_field_config.get('field_value')
+            if field_name and field_value:
+                # Filter devices that don't have the custom field or have wrong value
+                original_count = len(devices)
+                devices = [
+                    d for d in devices
+                    if d.custom_fields.get(field_name) == field_value
+                ]
+                filtered_count = original_count - len(devices)
+                if filtered_count > 0:
+                    self.logger.info(f"Filtered out {filtered_count} devices without {field_name}={field_value}")
 
         self.stats['devices_found'] = len(devices)
         self.logger.info(f"Found {len(devices)} devices to sync")

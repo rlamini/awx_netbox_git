@@ -154,7 +154,25 @@ Each device in NetBox has:
 | **platform.name** | NX-OS | Template selection |
 | **device_type.model** | Nexus 9508 | Host inventory field |
 | **status** | active | Only sync active devices |
+| **custom_fields.cf_monitoring** | Yes | Filter for monitoring (required) |
 | **tags** | production, critical | Additional host groups |
+
+### Device Synchronization Requirements
+
+For a device to be synchronized to Zabbix, it must meet ALL of these criteria:
+
+1. ✅ **Status**: Must be `active`
+2. ✅ **Custom Field**: `cf_monitoring` must be set to `Yes`
+3. ✅ **Primary IP**: Must have a primary IPv4 address assigned
+4. ✅ **Not Excluded**: Must not have excluded tags (e.g., `no-monitoring`)
+
+**Why the custom field filter?**
+
+The `cf_monitoring` custom field provides granular control over which devices are monitored:
+- Prevents accidental monitoring of test/development devices
+- Allows selective monitoring enablement
+- Provides explicit opt-in for monitoring
+- Useful for gradual rollout (enable monitoring site by site)
 
 ### Mapping Rules
 

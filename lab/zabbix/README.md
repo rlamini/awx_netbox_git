@@ -137,7 +137,13 @@ sync:
     # Only sync active devices
     allowed_statuses:
       - active
-      - staged
+
+    # Custom field filter - IMPORTANT!
+    # Only sync devices where custom field cf_monitoring = Yes
+    # This ensures only monitored devices are synced to Zabbix
+    custom_field_monitoring:
+      field_name: "cf_monitoring"
+      field_value: "Yes"
 
     # Exclude devices with these tags
     excluded_tags:
@@ -147,6 +153,19 @@ sync:
     # Exclude specific sites
     excluded_sites:
       - TEST-SITE
+```
+
+**Custom Field Requirement:**
+
+By default, only devices with `cf_monitoring = "Yes"` are synchronized to Zabbix. This prevents accidental monitoring of non-production or test devices.
+
+To sync a device to Zabbix:
+1. Device status must be **active**
+2. Custom field **cf_monitoring** must be set to **Yes**
+
+To disable the custom field filter, set it to null in `zabbix_mapping.yaml`:
+```yaml
+custom_field_monitoring: null
 ```
 
 ### Update Behavior

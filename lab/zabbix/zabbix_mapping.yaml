@@ -240,7 +240,13 @@ sync:
     # Only sync devices with these statuses
     allowed_statuses:
       - active
-      - staged
+
+    # Custom field filter for monitoring
+    # Only sync devices where custom field cf_monitoring = Yes
+    # Set to null/empty to disable this filter
+    custom_field_monitoring:
+      field_name: "cf_monitoring"
+      field_value: "Yes"
 
     # Exclude devices with these tags
     excluded_tags:
