@@ -1,0 +1,13 @@
+name,slug,asn,description
+Orange Business Services,orange-business,5511,Orange Business Services - EMEA ADSL/Fiber provider
+BT Business,bt-business,2856,BT Business - UK/EMEA ADSL/Fiber provider
+Deutsche Telekom,deutsche-telekom,3320,Deutsche Telekom - Germany ADSL/Fiber provider
+Vodafone Business,vodafone-business,1273,Vodafone Business - EMEA 5G backup provider
+Singtel,singtel,7473,Singapore Telecommunications - APAC ADSL/Fiber provider
+Telstra Business,telstra-business,1221,Telstra Business - Australia/APAC ADSL/Fiber provider
+NTT Communications,ntt-communications,2914,NTT Communications - Japan/APAC provider
+3 Business,3-business,25135,3 Business - APAC 5G backup provider
+Verizon Business,verizon-business,701,Verizon Business - AMER ADSL/Fiber provider
+AT&T Business,att-business,7018,AT&T Business - AMER ADSL/Fiber provider
+CenturyLink,centurylink,209,CenturyLink/Lumen - AMER DSL/Fiber provider
+T-Mobile Business,t-mobile-business,21928,T-Mobile Business - AMER 5G backup provider

@@ -1,0 +1,4 @@
+manufacturer,model,slug,u_height,is_full_depth,description
+Cisco Meraki,MX68,meraki-mx68,1,False,Meraki MX68 SD-WAN Security Appliance (450 Mbps)
+Cisco Meraki,MS120-8,meraki-ms120-8,1,False,Meraki MS120-8 Cloud Managed Switch (8× 1GbE ports)
+Cisco Meraki,MR36,meraki-mr36,0,False,Meraki MR36 WiFi 6 Access Point (2×2:2 MU-MIMO)

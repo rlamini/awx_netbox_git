@@ -1,0 +1,7 @@
+name,manufacturer,device_type,role,site,location,rack,position,face,status,description,comments
+EMEA-DC-ONPREM-MERAKI-HUB-MX-01,Cisco Meraki,MX250,Firewall,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R04,10,front,active,Meraki MX250 SD-WAN Hub - Primary,VPN hub for all EMEA agencies. Primary in HA pair.
+EMEA-DC-ONPREM-MERAKI-HUB-MX-02,Cisco Meraki,MX250,Firewall,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R04,9,front,active,Meraki MX250 SD-WAN Hub - Secondary,VPN hub failover for EMEA agencies. Secondary in HA pair.
+APAC-DC-ONPREM-MERAKI-HUB-MX-01,Cisco Meraki,MX250,Firewall,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R04,10,front,active,Meraki MX250 SD-WAN Hub - Primary,VPN hub for all APAC agencies. Primary in HA pair.
+APAC-DC-ONPREM-MERAKI-HUB-MX-02,Cisco Meraki,MX250,Firewall,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R04,9,front,active,Meraki MX250 SD-WAN Hub - Secondary,VPN hub failover for APAC agencies. Secondary in HA pair.
+AMER-DC-ONPREM-MERAKI-HUB-MX-01,Cisco Meraki,MX250,Firewall,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R04,10,front,active,Meraki MX250 SD-WAN Hub - Primary,VPN hub for all AMER agencies. Primary in HA pair.
+AMER-DC-ONPREM-MERAKI-HUB-MX-02,Cisco Meraki,MX250,Firewall,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R04,9,front,active,Meraki MX250 SD-WAN Hub - Secondary,VPN hub failover for AMER agencies. Secondary in HA pair.
