@@ -1,0 +1,250 @@
+{# Cisco IOS-XE Base Configuration Template #}
+{# Compatible with: Catalyst 9000, 3850, 3650 series #}
+!
+! ========================================
+! DEVICE INFORMATION
+! ========================================
+! Device: {{ device.name }}
+! Model: {{ device.device_type.model }}
+! Site: {{ device.site.name }}
+! Role: {{ device.role.name }}
+! Platform: Cisco IOS-XE
+! Generated: {{ now()|default('Manual') }}
+!
+! ========================================
+! GLOBAL CONFIGURATION
+! ========================================
+!
+service timestamps debug datetime msec localtime show-timezone
+service timestamps log datetime msec localtime show-timezone
+{% if security.service_password_encryption|default(true) %}
+service password-encryption
+{% endif %}
+service compress-config
+!
+hostname {{ device.name }}
+!
+boot-start-marker
+boot-end-marker
+!
+{% if security.tcp_keepalives|default(true) %}
+service tcp-keepalives-in
+service tcp-keepalives-out
+{% endif %}
+!
+no ip domain lookup
+ip domain name {{ dns.domain|default('local') }}
+!
+! ========================================
+! VTP CONFIGURATION
+! ========================================
+!
+vtp mode transparent
+!
+! ========================================
+! SPANNING TREE CONFIGURATION
+! ========================================
+!
+{% if spanning_tree is defined %}
+spanning-tree mode {{ spanning_tree.mode|default('rapid-pvst') }}
+spanning-tree extend system-id
+{% if spanning_tree.portfast_default %}
+spanning-tree portfast default
+{% endif %}
+{% if spanning_tree.portfast %}
+spanning-tree portfast bpduguard default
+{% endif %}
+!
+{% endif %}
+! ========================================
+! VLAN CONFIGURATION
+! ========================================
+!
+{% if vlans is defined %}
+vlan {{ vlans.management|default(100) }}
+ name MANAGEMENT
+!
+vlan 1
+ name DEFAULT
+!
+{% if vlans.data_vlan is defined %}
+vlan {{ vlans.data_vlan }}
+ name DATA
+!
+{% endif %}
+{% if vlans.voice_vlan is defined %}
+vlan {{ vlans.voice_vlan }}
+ name VOICE
+!
+{% endif %}
+{% endif %}
+! ========================================
+! INTERFACE CONFIGURATION
+! ========================================
+!
+{% if vlans is defined %}
+interface Vlan{{ vlans.management|default(100) }}
+ description MANAGEMENT VLAN
+{% if device.primary_ip4 is defined %}
+ ip address {{ device.primary_ip4.address }}
+{% endif %}
+ no shutdown
+!
+{% endif %}
+interface Loopback0
+ description LOOPBACK - ROUTER ID
+{% if device.primary_ip4 is defined %}
+ ip address {{ device.primary_ip4.address.ip }} 255.255.255.255
+{% endif %}
+ no shutdown
+!
+{# Default interface template for access switches #}
+{% if role.tier|default('') == 'access' %}
+!
+! ========================================
+! ACCESS PORT TEMPLATE (Example)
+! ========================================
+!
+! Apply to access ports:
+! interface range GigabitEthernet1/0/1-48
+!  description ACCESS PORT
+!  switchport mode access
+{% if vlans.data_vlan is defined %}
+!  switchport access vlan {{ vlans.data_vlan }}
+{% endif %}
+{% if vlans.voice_vlan is defined %}
+!  switchport voice vlan {{ vlans.voice_vlan }}
+{% endif %}
+!  spanning-tree portfast
+!  spanning-tree bpduguard enable
+!  no shutdown
+!
+{% endif %}
+! ========================================
+! NTP CONFIGURATION
+! ========================================
+!
+{% if ntp is defined %}
+{% for server in ntp.servers %}
+ntp server {{ server }}
+{% endfor %}
+!
+clock timezone {{ site.timezone|default('UTC') }} 0 0
+!
+{% endif %}
+! ========================================
+! DNS CONFIGURATION
+! ========================================
+!
+{% if dns is defined %}
+{% for server in dns.servers %}
+ip name-server {{ server }}
+{% endfor %}
+!
+{% endif %}
+! ========================================
+! SNMP CONFIGURATION
+! ========================================
+!
+{% if snmp is defined %}
+snmp-server contact {{ snmp.contact|default('netops@acme.com') }}
+snmp-server location {{ snmp.location|default(device.site.name) }}
+snmp-server community {{ snmp.community_ro|default('public') }} RO
+{% if snmp.trap_servers is defined %}
+{% for trap_server in snmp.trap_servers %}
+snmp-server host {{ trap_server }} version 2c {{ snmp.community_rw|default('private') }}
+{% endfor %}
+{% endif %}
+snmp-server enable traps snmp linkdown linkup
+snmp-server enable traps config
+!
+{% endif %}
+! ========================================
+! LOGGING CONFIGURATION
+! ========================================
+!
+{% if logging is defined %}
+logging buffered {{ logging.severity|default('informational') }}
+{% for syslog_server in logging.syslog_servers %}
+logging host {{ syslog_server }}
+{% endfor %}
+logging trap {{ logging.severity|default('informational') }}
+logging facility {{ logging.facility|default('local7') }}
+!
+{% endif %}
+! ========================================
+! AAA CONFIGURATION
+! ========================================
+!
+{% if aaa is defined %}
+aaa new-model
+!
+{% for tacacs_server in aaa.tacacs_servers %}
+tacacs server {{ loop.index }}
+ address ipv4 {{ tacacs_server }}
+ key 7 {{ aaa.tacacs_key|default('SECRET') }}
+{% endfor %}
+!
+aaa group server tacacs+ TACACS-GROUP
+{% for tacacs_server in aaa.tacacs_servers %}
+ server name {{ loop.index }}
+{% endfor %}
+!
+aaa authentication login default group TACACS-GROUP local
+aaa authentication enable default group TACACS-GROUP enable
+aaa authorization exec default group TACACS-GROUP local
+aaa authorization commands 15 default group TACACS-GROUP local
+aaa accounting exec default start-stop group TACACS-GROUP
+aaa accounting commands 15 default start-stop group TACACS-GROUP
+!
+{% endif %}
+! ========================================
+! SSH & MANAGEMENT ACCESS
+! ========================================
+!
+{% if management is defined %}
+crypto key generate rsa modulus 2048
+ip ssh version {{ management.ssh_version|default(2) }}
+ip ssh time-out 60
+ip ssh authentication-retries 3
+!
+{% if management.enable_secret_level is defined %}
+enable secret level {{ management.enable_secret_level }} ENABLE_SECRET
+{% endif %}
+!
+line con 0
+ exec-timeout 30 0
+ logging synchronous
+ login authentication default
+!
+line vty 0 15
+ exec-timeout 30 0
+ logging synchronous
+ transport input ssh
+ login authentication default
+ authorization commands 15 default
+ accounting commands 15 default
+!
+{% endif %}
+! ========================================
+! BANNER CONFIGURATION
+! ========================================
+!
+banner motd ^
+******************************************
+* {{ device.name }}
+* {{ device.site.name }} - {{ device.role.name }}
+*
+* {{ global.organization|default('Organization') }}
+* Contact: {{ global.contact_email|default('netops@example.com') }}
+*
+* UNAUTHORIZED ACCESS PROHIBITED
+* All access is logged and monitored
+******************************************
+^
+!
+! ========================================
+! END OF CONFIGURATION
+! ========================================
+!
+end

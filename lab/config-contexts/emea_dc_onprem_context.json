@@ -1,0 +1,38 @@
+{
+  "site": {
+    "name": "EMEA-DC-ONPREM",
+    "region": "EMEA",
+    "location": "Paris, France",
+    "timezone": "Europe/Paris",
+    "domain": "emea.onprem.acme.com"
+  },
+  "ntp": {
+    "servers": [
+      "10.10.1.1",
+      "10.10.1.2"
+    ],
+    "source_interface": "Loopback0"
+  },
+  "dns": {
+    "servers": [
+      "10.10.2.1",
+      "10.10.2.2"
+    ],
+    "domain": "emea.onprem.acme.com"
+  },
+  "snmp": {
+    "community_ro": "SNMP_RO_COMMUNITY",
+    "community_rw": "SNMP_RW_COMMUNITY",
+    "location": "EMEA DC ONPREM - Paris FR",
+    "contact": "netops-emea@acme.com",
+    "trap_servers": [
+      "10.10.3.1",
+      "10.10.3.2"
+    ]
+  },
+  "management": {
+    "vlan": 100,
+    "subnet": "10.10.100.0/24",
+    "gateway": "10.10.100.254"
+  }
+}

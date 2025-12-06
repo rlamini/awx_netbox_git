@@ -1,0 +1,18 @@
+{
+  "platform": {
+    "os": "IOS-XE",
+    "vendor": "Cisco Systems"
+  },
+  "spanning_tree": {
+    "mode": "rapid-pvst",
+    "portfast_default": true
+  },
+  "management": {
+    "ssh_version": 2,
+    "enable_secret_level": 15
+  },
+  "security": {
+    "service_password_encryption": true,
+    "tcp_keepalives": true
+  }
+}

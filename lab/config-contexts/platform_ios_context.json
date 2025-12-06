@@ -1,0 +1,14 @@
+{
+  "platform": {
+    "os": "IOS",
+    "vendor": "Cisco Systems"
+  },
+  "management": {
+    "ssh_version": 2,
+    "enable_secret_level": 15
+  },
+  "security": {
+    "service_password_encryption": true,
+    "tcp_keepalives": true
+  }
+}

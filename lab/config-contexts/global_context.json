@@ -1,0 +1,22 @@
+{
+  "global": {
+    "organization": "ACME Corporation",
+    "managed_by": "NetOps Team",
+    "contact_email": "netops@acme.com"
+  },
+  "logging": {
+    "syslog_servers": [
+      "10.255.1.10",
+      "10.255.1.11"
+    ],
+    "severity": "informational",
+    "facility": "local7"
+  },
+  "aaa": {
+    "tacacs_servers": [
+      "10.255.1.20",
+      "10.255.1.21"
+    ],
+    "tacacs_key": "TACACS_SECRET_KEY"
+  }
+}

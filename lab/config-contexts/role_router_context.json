@@ -1,0 +1,25 @@
+{
+  "role": {
+    "name": "Router",
+    "tier": "edge"
+  },
+  "routing": {
+    "protocols": [
+      "ospf",
+      "bgp"
+    ],
+    "ospf": {
+      "process_id": 1,
+      "area": "0.0.0.0",
+      "network_type": "point-to-point"
+    },
+    "bgp": {
+      "as_number": 65001,
+      "router_id": "auto"
+    }
+  },
+  "security": {
+    "acls_enabled": true,
+    "zone_firewall": false
+  }
+}

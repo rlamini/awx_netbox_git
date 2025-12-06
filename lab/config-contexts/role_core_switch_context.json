@@ -1,0 +1,28 @@
+{
+  "role": {
+    "name": "Core Switch",
+    "tier": "core",
+    "redundancy": "hsrp"
+  },
+  "hsrp": {
+    "version": 2,
+    "group_id": 1,
+    "priority_primary": 110,
+    "priority_secondary": 100,
+    "preempt": true
+  },
+  "vlans": {
+    "management": 100,
+    "native": 1,
+    "allowed": "1,100,200-299"
+  },
+  "routing": {
+    "ospf": {
+      "process_id": 1,
+      "area": "0.0.0.0"
+    }
+  },
+  "interfaces": {
+    "mtu": 9216
+  }
+}

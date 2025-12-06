@@ -1,0 +1,20 @@
+{
+  "platform": {
+    "os": "IOS-XR",
+    "vendor": "Cisco Systems"
+  },
+  "management": {
+    "ssh_version": "v2",
+    "netconf": {
+      "enabled": true,
+      "port": 830
+    }
+  },
+  "routing": {
+    "protocols": [
+      "ospf",
+      "bgp"
+    ],
+    "mpls_enabled": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "role": {
+    "name": "Distribution Switch",
+    "tier": "distribution"
+  },
+  "vlans": {
+    "management": 100,
+    "native": 1,
+    "server_vlans": "200-299",
+    "storage_vlans": "300-349"
+  },
+  "spanning_tree": {
+    "priority": 8192,
+    "root_guard": true
+  },
+  "interfaces": {
+    "mtu": 9216
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "role": {
+    "name": "OOB Router",
+    "tier": "management",
+    "purpose": "out-of-band-management"
+  },
+  "management": {
+    "console_access": true,
+    "serial_access": true
+  },
+  "security": {
+    "acls_enabled": true,
+    "strict_access_control": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "role": {
+    "name": "Access Switch",
+    "tier": "access"
+  },
+  "vlans": {
+    "management": 100,
+    "native": 1,
+    "data_vlan": 200,
+    "voice_vlan": 210
+  },
+  "spanning_tree": {
+    "portfast": true,
+    "bpduguard": true
+  },
+  "poe": {
+    "enabled": true,
+    "power_budget": "740W"
+  },
+  "port_security": {
+    "enabled": false,
+    "max_mac": 2
+  }
+}

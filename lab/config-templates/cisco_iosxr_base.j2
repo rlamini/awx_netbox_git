@@ -1,0 +1,202 @@
+{# Cisco IOS-XR Base Configuration Template #}
+{# Compatible with: ASR 9000, NCS series #}
+!
+! ========================================
+! DEVICE INFORMATION
+! ========================================
+! Device: {{ device.name }}
+! Model: {{ device.device_type.model }}
+! Site: {{ device.site.name }}
+! Role: {{ device.role.name }}
+! Platform: Cisco IOS-XR
+! Generated: {{ now()|default('Manual') }}
+!
+! ========================================
+! GLOBAL CONFIGURATION
+! ========================================
+!
+hostname {{ device.name }}
+!
+clock timezone {{ site.timezone|default('UTC') }} 0
+!
+domain name {{ dns.domain|default('local') }}
+!
+! ========================================
+! INTERFACE CONFIGURATION
+! ========================================
+!
+interface Loopback0
+ description LOOPBACK - ROUTER ID / BGP
+{% if device.primary_ip4 is defined %}
+ ipv4 address {{ device.primary_ip4.address }}
+{% endif %}
+ no shutdown
+!
+interface MgmtEth0/RP0/CPU0/0
+ description OOB MANAGEMENT INTERFACE
+ vrf management
+{% if device.primary_ip4 is defined %}
+ ipv4 address {{ device.primary_ip4.address }}
+{% endif %}
+ no shutdown
+!
+! ========================================
+! NTP CONFIGURATION
+! ========================================
+!
+{% if ntp is defined %}
+ntp
+{% for server in ntp.servers %}
+ server {{ server }}
+{% endfor %}
+ source Loopback0
+ update-calendar
+!
+{% endif %}
+! ========================================
+! DNS CONFIGURATION
+! ========================================
+!
+{% if dns is defined %}
+domain vrf default name {{ dns.domain|default('local') }}
+{% for server in dns.servers %}
+domain vrf default name-server {{ server }}
+{% endfor %}
+!
+{% endif %}
+! ========================================
+! SNMP CONFIGURATION
+! ========================================
+!
+{% if snmp is defined %}
+snmp-server community {{ snmp.community_ro|default('public') }} RO
+snmp-server location {{ snmp.location|default(device.site.name) }}
+snmp-server contact {{ snmp.contact|default('netops@acme.com') }}
+{% if snmp.trap_servers is defined %}
+{% for trap_server in snmp.trap_servers %}
+snmp-server host {{ trap_server }} traps version 2c {{ snmp.community_rw|default('private') }}
+{% endfor %}
+{% endif %}
+snmp-server traps config
+snmp-server traps ospf state-change
+snmp-server traps bgp
+!
+{% endif %}
+! ========================================
+! LOGGING CONFIGURATION
+! ========================================
+!
+{% if logging is defined %}
+logging console {{ logging.severity|default('informational') }}
+logging monitor {{ logging.severity|default('informational') }}
+logging buffered {{ logging.severity|default('informational') }}
+logging facility {{ logging.facility|default('local7') }}
+{% for syslog_server in logging.syslog_servers %}
+logging {{ syslog_server }} vrf management severity {{ logging.severity|default('informational') }}
+{% endfor %}
+!
+{% endif %}
+! ========================================
+! AAA CONFIGURATION
+! ========================================
+!
+{% if aaa is defined %}
+tacacs-server host {{ aaa.tacacs_servers[0] }} port 49
+ address ipv4 {{ aaa.tacacs_servers[0] }}
+ key 7 {{ aaa.tacacs_key|default('SECRET') }}
+!
+{% if aaa.tacacs_servers|length > 1 %}
+tacacs-server host {{ aaa.tacacs_servers[1] }} port 49
+ address ipv4 {{ aaa.tacacs_servers[1] }}
+ key 7 {{ aaa.tacacs_key|default('SECRET') }}
+!
+{% endif %}
+aaa group server tacacs+ TACACS-GROUP
+{% for tacacs_server in aaa.tacacs_servers %}
+ server {{ tacacs_server }}
+{% endfor %}
+!
+aaa authentication login default group TACACS-GROUP local
+aaa authorization exec default group TACACS-GROUP local
+aaa authorization commands default group TACACS-GROUP local
+aaa accounting exec default start-stop group TACACS-GROUP
+aaa accounting commands default start-stop group TACACS-GROUP
+!
+{% endif %}
+! ========================================
+! ROUTING CONFIGURATION
+! ========================================
+!
+{% if routing is defined %}
+{% if routing.ospf is defined %}
+router ospf {{ routing.ospf.process_id|default(1) }}
+{% if device.primary_ip4 is defined %}
+ router-id {{ device.primary_ip4.address.ip }}
+{% endif %}
+ log adjacency changes
+ area {{ routing.ospf.area|default('0.0.0.0') }}
+  !
+ !
+!
+{% endif %}
+{% if routing.bgp is defined %}
+router bgp {{ routing.bgp.as_number|default(65001) }}
+ bgp router-id {{ device.primary_ip4.address.ip|default('1.1.1.1') }}
+ bgp log neighbor changes detail
+ !
+!
+{% endif %}
+{% endif %}
+! ========================================
+! NETCONF CONFIGURATION
+! ========================================
+!
+{% if management.netconf.enabled|default(false) %}
+netconf-yang agent
+ ssh
+!
+ssh server v2
+ssh server vrf management
+ssh server netconf vrf management
+!
+{% endif %}
+! ========================================
+! SSH & MANAGEMENT ACCESS
+! ========================================
+!
+{% if management is defined %}
+ssh server v2
+ssh server vrf management
+!
+line console
+ exec-timeout 30 0
+ session-timeout 30
+!
+line default
+ exec-timeout 30 0
+ session-timeout 30
+ transport input ssh
+!
+{% endif %}
+! ========================================
+! BANNER CONFIGURATION
+! ========================================
+!
+banner motd ^
+******************************************
+* {{ device.name }}
+* {{ device.site.name }} - {{ device.role.name }}
+*
+* {{ global.organization|default('Organization') }}
+* Contact: {{ global.contact_email|default('netops@example.com') }}
+*
+* UNAUTHORIZED ACCESS PROHIBITED
+* All access is logged and monitored
+******************************************
+^
+!
+! ========================================
+! END OF CONFIGURATION
+! ========================================
+!
+end

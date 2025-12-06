@@ -1,0 +1,241 @@
+{# Cisco NX-OS Base Configuration Template #}
+{# Compatible with: Nexus 9000, 7000, 5000 series #}
+!
+! ========================================
+! DEVICE INFORMATION
+! ========================================
+! Device: {{ device.name }}
+! Model: {{ device.device_type.model }}
+! Site: {{ device.site.name }}
+! Role: {{ device.role.name }}
+! Platform: Cisco NX-OS
+! Generated: {{ now()|default('Manual') }}
+!
+! ========================================
+! GLOBAL CONFIGURATION
+! ========================================
+!
+hostname {{ device.name }}
+!
+clock timezone {{ site.timezone|default('UTC') }} 0 0
+!
+{% if features.required is defined %}
+! ========================================
+! FEATURE ACTIVATION
+! ========================================
+!
+{% for feature in features.required %}
+feature {{ feature }}
+{% endfor %}
+!
+{% endif %}
+! ========================================
+! VTP CONFIGURATION
+! ========================================
+!
+{% if vtp is defined %}
+vtp mode {{ vtp.mode|default('transparent') }}
+{% endif %}
+!
+! ========================================
+! SPANNING TREE CONFIGURATION
+! ========================================
+!
+{% if spanning_tree is defined %}
+spanning-tree mode {{ spanning_tree.mode|default('rapid-pvst') }}
+spanning-tree vlan 1-4094 priority {{ spanning_tree.priority|default(32768) }}
+{% if role.tier|default('') == 'core' %}
+spanning-tree pathcost method long
+{% endif %}
+{% endif %}
+!
+! ========================================
+! VLAN CONFIGURATION
+! ========================================
+!
+{% if vlans is defined %}
+vlan {{ vlans.management|default(100) }}
+  name MANAGEMENT
+!
+vlan 1
+  name DEFAULT
+!
+{% if vlans.allowed is defined %}
+{# Additional VLANs based on allowed list #}
+{% endif %}
+{% endif %}
+! ========================================
+! INTERFACE CONFIGURATION
+! ========================================
+!
+interface mgmt0
+  description OOB MANAGEMENT INTERFACE
+  vrf member management
+{% if device.primary_ip4 is defined %}
+  ip address {{ device.primary_ip4.address }}
+{% endif %}
+  no shutdown
+!
+interface loopback0
+  description LOOPBACK - ROUTER ID / BGP
+{% if device.primary_ip4 is defined %}
+  ip address {{ device.primary_ip4.address.ip }}/32
+{% endif %}
+  no shutdown
+!
+{% if vlans is defined %}
+interface Vlan{{ vlans.management|default(100) }}
+  description MANAGEMENT VLAN
+  no shutdown
+!
+{% endif %}
+! ========================================
+! NTP CONFIGURATION
+! ========================================
+!
+{% if ntp is defined %}
+{% for server in ntp.servers %}
+ntp server {{ server }} use-vrf management
+{% endfor %}
+{% if ntp.source_interface is defined %}
+ntp source-interface {{ ntp.source_interface }}
+{% endif %}
+!
+{% endif %}
+! ========================================
+! DNS CONFIGURATION
+! ========================================
+!
+{% if dns is defined %}
+ip domain-name {{ dns.domain|default('local') }}
+{% for server in dns.servers %}
+ip name-server {{ server }} use-vrf management
+{% endfor %}
+!
+{% endif %}
+! ========================================
+! SNMP CONFIGURATION
+! ========================================
+!
+{% if snmp is defined %}
+snmp-server contact {{ snmp.contact|default('netops@acme.com') }}
+snmp-server location {{ snmp.location|default(device.site.name) }}
+snmp-server community {{ snmp.community_ro|default('public') }} ro
+{% if snmp.trap_servers is defined %}
+{% for trap_server in snmp.trap_servers %}
+snmp-server host {{ trap_server }} traps version 2c {{ snmp.community_rw|default('private') }}
+{% endfor %}
+{% endif %}
+!
+{% endif %}
+! ========================================
+! LOGGING CONFIGURATION
+! ========================================
+!
+{% if logging is defined %}
+logging timestamp milliseconds
+logging monitor {{ logging.severity|default('informational') }}
+logging logfile messages {{ logging.severity|default('informational') }} size 16384
+{% for syslog_server in logging.syslog_servers %}
+logging server {{ syslog_server }} {{ logging.severity|default('informational') }} use-vrf management facility {{ logging.facility|default('local7') }}
+{% endfor %}
+!
+{% endif %}
+! ========================================
+! AAA CONFIGURATION
+! ========================================
+!
+{% if aaa is defined %}
+feature tacacs+
+!
+{% for tacacs_server in aaa.tacacs_servers %}
+tacacs-server host {{ tacacs_server }} key 7 {{ aaa.tacacs_key|default('SECRET') }}
+{% endfor %}
+!
+aaa group server tacacs+ TACACS-GROUP
+{% for tacacs_server in aaa.tacacs_servers %}
+  server {{ tacacs_server }}
+{% endfor %}
+  use-vrf management
+!
+aaa authentication login default group TACACS-GROUP local
+aaa authentication login console group TACACS-GROUP local
+aaa authorization config-commands default group TACACS-GROUP local
+aaa authorization commands default group TACACS-GROUP local
+aaa accounting default group TACACS-GROUP
+!
+{% endif %}
+! ========================================
+! ROUTING CONFIGURATION
+! ========================================
+!
+{% if routing is defined %}
+{% if routing.ospf is defined %}
+router ospf {{ routing.ospf.process_id|default(1) }}
+{% if device.primary_ip4 is defined %}
+  router-id {{ device.primary_ip4.address.ip }}
+{% endif %}
+  log-adjacency-changes
+!
+{% endif %}
+{% if routing.bgp is defined %}
+feature bgp
+router bgp {{ routing.bgp.as_number|default(65001) }}
+{% if device.primary_ip4 is defined %}
+  router-id {{ device.primary_ip4.address.ip }}
+{% endif %}
+  log-neighbor-changes
+!
+{% endif %}
+{% endif %}
+! ========================================
+! HSRP CONFIGURATION (Core/Distribution)
+! ========================================
+!
+{% if hsrp is defined %}
+feature hsrp
+!
+{# HSRP config will be applied per-interface in actual deployment #}
+{% endif %}
+! ========================================
+! SSH & MANAGEMENT ACCESS
+! ========================================
+!
+{% if management is defined %}
+ssh key rsa 2048 force
+ip ssh version {{ management.ssh_version|default(2) }}
+{% if management.enable_scp %}
+feature scp-server
+{% endif %}
+!
+line console
+  exec-timeout 30
+!
+line vty
+  exec-timeout 30
+  session-limit 5
+  transport input ssh
+!
+{% endif %}
+! ========================================
+! BANNER CONFIGURATION
+! ========================================
+!
+banner motd ^
+******************************************
+* {{ device.name }}
+* {{ device.site.name }} - {{ device.role.name }}
+*
+* {{ global.organization|default('Organization') }}
+* Contact: {{ global.contact_email|default('netops@example.com') }}
+*
+* UNAUTHORIZED ACCESS PROHIBITED
+* All access is logged and monitored
+******************************************
+^
+!
+! ========================================
+! END OF CONFIGURATION
+! ========================================
+!
+end
