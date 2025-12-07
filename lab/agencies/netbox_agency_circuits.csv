@@ -9,23 +9,23 @@ ADSL-EMEA-0007,Orange Business Services,ADSL,active,2024-01-01,50,ADSL circuit f
 5G-EMEA-0007,Vodafone Business,5G,active,2024-01-01,100,5G backup circuit for NL-Agency1,Backup connectivity (failover). VPN to EMEA-DC-ONPREM.
 ADSL-EMEA-0009,Orange Business Services,ADSL,active,2024-01-01,50,ADSL circuit for BE-Agency1,Primary internet connectivity. VPN to EMEA-DC-ONPREM.
 5G-EMEA-0009,Vodafone Business,5G,active,2024-01-01,100,5G backup circuit for BE-Agency1,Backup connectivity (failover). VPN to EMEA-DC-ONPREM.
-ADSL-APAC-0113,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for CN-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
-5G-APAC-0113,3 Business,5G,active,2024-01-01,100,5G backup circuit for CN-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
-ADSL-APAC-0115,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for JP-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
-5G-APAC-0115,3 Business,5G,active,2024-01-01,100,5G backup circuit for JP-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
-ADSL-APAC-0117,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for KR-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
-5G-APAC-0117,3 Business,5G,active,2024-01-01,100,5G backup circuit for KR-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
-ADSL-APAC-0127,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for SG-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
-5G-APAC-0127,3 Business,5G,active,2024-01-01,100,5G backup circuit for SG-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
-ADSL-APAC-0165,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for AU-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
-5G-APAC-0165,3 Business,5G,active,2024-01-01,100,5G backup circuit for AU-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
-ADSL-AMER-0209,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for US-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
-5G-AMER-0209,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for US-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
-ADSL-AMER-0211,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for CA-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
-5G-AMER-0211,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for CA-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
-ADSL-AMER-0213,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for MX-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
-5G-AMER-0213,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for MX-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
-ADSL-AMER-0267,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for BR-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
-5G-AMER-0267,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for BR-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
-ADSL-AMER-0269,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for AR-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
-5G-AMER-0269,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for AR-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
+ADSL-APAC-0001,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for CN-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
+5G-APAC-0001,3 Business,5G,active,2024-01-01,100,5G backup circuit for CN-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
+ADSL-APAC-0003,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for JP-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
+5G-APAC-0003,3 Business,5G,active,2024-01-01,100,5G backup circuit for JP-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
+ADSL-APAC-0005,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for KR-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
+5G-APAC-0005,3 Business,5G,active,2024-01-01,100,5G backup circuit for KR-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
+ADSL-APAC-0007,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for SG-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
+5G-APAC-0007,3 Business,5G,active,2024-01-01,100,5G backup circuit for SG-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
+ADSL-APAC-0009,Singtel,ADSL,active,2024-01-01,50,ADSL circuit for AU-Agency1,Primary internet connectivity. VPN to APAC-DC-ONPREM.
+5G-APAC-0009,3 Business,5G,active,2024-01-01,100,5G backup circuit for AU-Agency1,Backup connectivity (failover). VPN to APAC-DC-ONPREM.
+ADSL-AMER-0001,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for US-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
+5G-AMER-0001,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for US-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
+ADSL-AMER-0003,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for CA-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
+5G-AMER-0003,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for CA-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
+ADSL-AMER-0005,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for MX-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
+5G-AMER-0005,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for MX-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
+ADSL-AMER-0007,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for BR-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
+5G-AMER-0007,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for BR-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
+ADSL-AMER-0009,Verizon Business,ADSL,active,2024-01-01,50,ADSL circuit for AR-Agency1,Primary internet connectivity. VPN to AMER-DC-ONPREM.
+5G-AMER-0009,T-Mobile Business,5G,active,2024-01-01,100,5G backup circuit for AR-Agency1,Backup connectivity (failover). VPN to AMER-DC-ONPREM.
