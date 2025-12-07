@@ -1,3 +1,5 @@
 circuit,term_side,site,port_speed,upstream_speed,description
 EXPRESSROUTE-EMEA-001,A,EMEA-DC-ONPREM,1000,1000,EMEA OnPrem ExpressRoute endpoint
+EXPRESSROUTE-EMEA-001,Z,EMEA-DC-CLOUD,1000,1000,Azure ExpressRoute Gateway (eu-west-1)
 DIRECTCONNECT-AMER-001,A,AMER-DC-ONPREM,10000,10000,AMER OnPrem Direct Connect endpoint
+DIRECTCONNECT-AMER-001,Z,AMER-DC-CLOUD,10000,10000,AWS Direct Connect Gateway (us-east-1)

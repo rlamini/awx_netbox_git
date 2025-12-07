@@ -1,1 +1,5 @@
 prefix,vrf,site,status,role,description
+10.100.0.0/16,EMEA-AZURE-PROD-VNET,EMEA-DC-CLOUD,active,,Azure Production VNet - EMEA
+10.101.254.0/24,EMEA-AZURE-MGMT-VNET,EMEA-DC-CLOUD,active,,GatewaySubnet (ExpressRoute)
+10.200.0.0/16,APAC-GCP-PROD-VPC,APAC-DC-CLOUD,active,,GCP Production VPC - APAC (VPN)
+10.300.0.0/16,AMER-AWS-PROD-VPC,AMER-DC-CLOUD,active,,AWS Production VPC - AMER (Direct Connect)
