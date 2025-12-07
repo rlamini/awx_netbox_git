@@ -1,32 +1,4 @@
 name,manufacturer,device_type,role,site,location,rack,position,face,status,description
-EMEA-DC-CLOUD-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R01,20,front,active,Fiber patch panel for network interconnects
-EMEA-DC-CLOUD-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R02,5,front,active,Fiber patch panel for network interconnects
-EMEA-DC-CLOUD-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R03,15,front,active,Fiber patch panel for network interconnects
-EMEA-DC-CLOUD-NET-R04-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Network Core,EMEA-DC-CLOUD-NET-R04,15,front,active,Fiber patch panel for network interconnects
-EMEA-DC-CLOUD-SRV-A-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R01,39,front,active,Fiber patch panel for spine switch
-EMEA-DC-CLOUD-SRV-A-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R02,39,front,active,Fiber patch panel for spine switch
-EMEA-DC-CLOUD-SRV-A-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R03,39,front,active,Fiber patch panel for leaf switch
-EMEA-DC-CLOUD-SRV-A-R04-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R04,39,front,active,Fiber patch panel for leaf switch
-EMEA-DC-CLOUD-SRV-A-R01-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R01,25,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-A-R02-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R02,25,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-A-R03-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R03,25,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-A-R04-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R04,25,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-A-R05-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R05,40,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-A-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall A,EMEA-DC-CLOUD-SRV-A-R06,40,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-B-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R01,39,front,active,Fiber patch panel for spine switch
-EMEA-DC-CLOUD-SRV-B-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R02,39,front,active,Fiber patch panel for spine switch
-EMEA-DC-CLOUD-SRV-B-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R03,39,front,active,Fiber patch panel for leaf switch
-EMEA-DC-CLOUD-SRV-B-R04-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R04,39,front,active,Fiber patch panel for leaf switch
-EMEA-DC-CLOUD-SRV-B-R01-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R01,25,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-B-R02-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R02,25,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-B-R03-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R03,25,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-B-R04-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R04,25,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-B-R05-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R05,40,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-SRV-B-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Server Hall B,EMEA-DC-CLOUD-SRV-B-R06,40,front,active,Fiber patch panel for server connections
-EMEA-DC-CLOUD-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R01,39,front,active,Fiber patch panel for storage connections
-EMEA-DC-CLOUD-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R02,39,front,active,Fiber patch panel for storage connections
-EMEA-DC-CLOUD-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Storage Room,EMEA-DC-CLOUD-STG-R03,39,front,active,Fiber patch panel for storage connections
-EMEA-DC-CLOUD-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,EMEA-DC-CLOUD,EMEA-DC-CLOUD-Meet-Me Room,EMEA-DC-CLOUD-MMR-R01,10,front,active,Copper patch panel for management
 EMEA-DC-ONPREM-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R01,20,front,active,Fiber patch panel for network interconnects
 EMEA-DC-ONPREM-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R02,5,front,active,Fiber patch panel for network interconnects
 EMEA-DC-ONPREM-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R03,15,front,active,Fiber patch panel for network interconnects
@@ -55,34 +27,6 @@ EMEA-DC-ONPREM-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-
 EMEA-DC-ONPREM-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R02,39,front,active,Fiber patch panel for storage connections
 EMEA-DC-ONPREM-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R03,39,front,active,Fiber patch panel for storage connections
 EMEA-DC-ONPREM-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me Room,EMEA-DC-ONPREM-MMR-R01,10,front,active,Copper patch panel for management
-APAC-DC-CLOUD-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R01,20,front,active,Fiber patch panel for network interconnects
-APAC-DC-CLOUD-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R02,5,front,active,Fiber patch panel for network interconnects
-APAC-DC-CLOUD-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R03,15,front,active,Fiber patch panel for network interconnects
-APAC-DC-CLOUD-NET-R04-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Network Core,APAC-DC-CLOUD-NET-R04,15,front,active,Fiber patch panel for network interconnects
-APAC-DC-CLOUD-SRV-A-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R01,39,front,active,Fiber patch panel for spine switch
-APAC-DC-CLOUD-SRV-A-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R02,39,front,active,Fiber patch panel for spine switch
-APAC-DC-CLOUD-SRV-A-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R03,39,front,active,Fiber patch panel for leaf switch
-APAC-DC-CLOUD-SRV-A-R04-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R04,39,front,active,Fiber patch panel for leaf switch
-APAC-DC-CLOUD-SRV-A-R01-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R01,25,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-A-R02-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R02,25,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-A-R03-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R03,25,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-A-R04-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R04,25,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-A-R05-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R05,40,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-A-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall A,APAC-DC-CLOUD-SRV-A-R06,40,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-B-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R01,39,front,active,Fiber patch panel for spine switch
-APAC-DC-CLOUD-SRV-B-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R02,39,front,active,Fiber patch panel for spine switch
-APAC-DC-CLOUD-SRV-B-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R03,39,front,active,Fiber patch panel for leaf switch
-APAC-DC-CLOUD-SRV-B-R04-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R04,39,front,active,Fiber patch panel for leaf switch
-APAC-DC-CLOUD-SRV-B-R01-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R01,25,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-B-R02-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R02,25,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-B-R03-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R03,25,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-B-R04-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R04,25,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-B-R05-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R05,40,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-SRV-B-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Server Hall B,APAC-DC-CLOUD-SRV-B-R06,40,front,active,Fiber patch panel for server connections
-APAC-DC-CLOUD-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R01,39,front,active,Fiber patch panel for storage connections
-APAC-DC-CLOUD-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R02,39,front,active,Fiber patch panel for storage connections
-APAC-DC-CLOUD-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Storage Room,APAC-DC-CLOUD-STG-R03,39,front,active,Fiber patch panel for storage connections
-APAC-DC-CLOUD-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,APAC-DC-CLOUD,APAC-DC-CLOUD-Meet-Me Room,APAC-DC-CLOUD-MMR-R01,10,front,active,Copper patch panel for management
 APAC-DC-ONPREM-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R01,20,front,active,Fiber patch panel for network interconnects
 APAC-DC-ONPREM-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R02,5,front,active,Fiber patch panel for network interconnects
 APAC-DC-ONPREM-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R03,15,front,active,Fiber patch panel for network interconnects
@@ -111,34 +55,6 @@ APAC-DC-ONPREM-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-
 APAC-DC-ONPREM-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R02,39,front,active,Fiber patch panel for storage connections
 APAC-DC-ONPREM-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R03,39,front,active,Fiber patch panel for storage connections
 APAC-DC-ONPREM-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me Room,APAC-DC-ONPREM-MMR-R01,10,front,active,Copper patch panel for management
-AMER-DC-CLOUD-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R01,20,front,active,Fiber patch panel for network interconnects
-AMER-DC-CLOUD-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R02,5,front,active,Fiber patch panel for network interconnects
-AMER-DC-CLOUD-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R03,15,front,active,Fiber patch panel for network interconnects
-AMER-DC-CLOUD-NET-R04-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Network Core,AMER-DC-CLOUD-NET-R04,15,front,active,Fiber patch panel for network interconnects
-AMER-DC-CLOUD-SRV-A-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R01,39,front,active,Fiber patch panel for spine switch
-AMER-DC-CLOUD-SRV-A-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R02,39,front,active,Fiber patch panel for spine switch
-AMER-DC-CLOUD-SRV-A-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R03,39,front,active,Fiber patch panel for leaf switch
-AMER-DC-CLOUD-SRV-A-R04-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R04,39,front,active,Fiber patch panel for leaf switch
-AMER-DC-CLOUD-SRV-A-R01-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R01,25,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-A-R02-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R02,25,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-A-R03-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R03,25,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-A-R04-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R04,25,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-A-R05-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R05,40,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-A-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall A,AMER-DC-CLOUD-SRV-A-R06,40,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-B-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R01,39,front,active,Fiber patch panel for spine switch
-AMER-DC-CLOUD-SRV-B-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R02,39,front,active,Fiber patch panel for spine switch
-AMER-DC-CLOUD-SRV-B-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R03,39,front,active,Fiber patch panel for leaf switch
-AMER-DC-CLOUD-SRV-B-R04-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R04,39,front,active,Fiber patch panel for leaf switch
-AMER-DC-CLOUD-SRV-B-R01-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R01,25,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-B-R02-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R02,25,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-B-R03-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R03,25,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-B-R04-FPP02,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R04,25,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-B-R05-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R05,40,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-SRV-B-R06-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Server Hall B,AMER-DC-CLOUD-SRV-B-R06,40,front,active,Fiber patch panel for server connections
-AMER-DC-CLOUD-STG-R01-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R01,39,front,active,Fiber patch panel for storage connections
-AMER-DC-CLOUD-STG-R02-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R02,39,front,active,Fiber patch panel for storage connections
-AMER-DC-CLOUD-STG-R03-FPP01,Generic,Fiber Patch Panel 24-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Storage Room,AMER-DC-CLOUD-STG-R03,39,front,active,Fiber patch panel for storage connections
-AMER-DC-CLOUD-MMR-R01-CPP01,Generic,Copper Patch Panel 48-Port,Patch Panel,AMER-DC-CLOUD,AMER-DC-CLOUD-Meet-Me Room,AMER-DC-CLOUD-MMR-R01,10,front,active,Copper patch panel for management
 AMER-DC-ONPREM-NET-R01-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R01,20,front,active,Fiber patch panel for network interconnects
 AMER-DC-ONPREM-NET-R02-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R02,5,front,active,Fiber patch panel for network interconnects
 AMER-DC-ONPREM-NET-R03-FPP01,Generic,Fiber Patch Panel 48-Port,Patch Panel,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R03,15,front,active,Fiber patch panel for network interconnects
