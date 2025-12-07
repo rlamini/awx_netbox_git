@@ -1,0 +1,211 @@
+device,name,type,enabled,description
+FR-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+FR-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+FR-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+FR-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+FR-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+FR-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+FR-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+FR-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+FR-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+FR-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+FR-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+FR-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+FR-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+FR-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+DE-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+DE-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+DE-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+DE-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+DE-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+DE-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+DE-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+DE-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+DE-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+DE-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+DE-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+DE-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+DE-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+DE-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+GB-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+GB-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+GB-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+GB-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+GB-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+GB-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+GB-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+GB-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+GB-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+GB-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+GB-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+GB-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+GB-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+GB-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+NL-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+NL-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+NL-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+NL-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+NL-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+NL-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+NL-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+NL-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+NL-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+NL-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+NL-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+NL-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+NL-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+NL-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+BE-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+BE-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+BE-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+BE-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+BE-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+BE-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+BE-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+BE-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+BE-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+BE-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+BE-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+BE-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+BE-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+BE-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+US-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+US-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+US-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+US-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+US-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+US-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+US-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+US-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+US-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+US-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+US-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+US-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+US-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+US-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+CA-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+CA-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+CA-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+CA-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+CA-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+CA-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+CA-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+CA-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+CA-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+CA-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+CA-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+CA-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+CA-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+CA-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+MX-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+MX-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+MX-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+MX-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+MX-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+MX-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+MX-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+MX-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+MX-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+MX-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+MX-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+MX-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+MX-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+MX-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+BR-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+BR-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+BR-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+BR-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+BR-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+BR-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+BR-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+BR-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+BR-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+BR-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+BR-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+BR-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+BR-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+BR-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+AR-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+AR-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+AR-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+AR-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+AR-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+AR-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+AR-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+AR-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+AR-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+AR-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+AR-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+AR-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+AR-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+AR-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+CN-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+CN-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+CN-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+CN-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+CN-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+CN-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+CN-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+CN-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+CN-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+CN-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+CN-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+CN-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+CN-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+CN-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+JP-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+JP-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+JP-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+JP-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+JP-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+JP-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+JP-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+JP-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+JP-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+JP-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+JP-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+JP-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+JP-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+JP-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+KR-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+KR-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+KR-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+KR-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+KR-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+KR-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+KR-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+KR-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+KR-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+KR-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+KR-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+KR-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+KR-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+KR-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+SG-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+SG-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+SG-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+SG-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+SG-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+SG-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+SG-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+SG-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+SG-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+SG-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+SG-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+SG-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+SG-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+SG-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
+AU-Agency1-MX-01,Port 1,1000base-t,True,LAN uplink to SW-01
+AU-Agency1-MX-01,Port 2,1000base-t,True,LAN uplink to SW-02
+AU-Agency1-MX-01,Port 8,1000base-t,True,HA heartbeat to MX-02
+AU-Agency1-MX-02,Port 1,1000base-t,True,LAN uplink to SW-01
+AU-Agency1-MX-02,Port 2,1000base-t,True,LAN uplink to SW-02
+AU-Agency1-MX-02,Port 8,1000base-t,True,HA heartbeat to MX-01
+AU-Agency1-SW-01,Port 1,1000base-t,True,Uplink to AP-01
+AU-Agency1-SW-01,Port 2,1000base-t,True,Uplink to AP-02
+AU-Agency1-SW-01,Port 7,1000base-t,True,Uplink to MX-01
+AU-Agency1-SW-01,Port 8,1000base-t,True,Uplink to MX-02
+AU-Agency1-SW-02,Port 1,1000base-t,True,Uplink to AP-01
+AU-Agency1-SW-02,Port 2,1000base-t,True,Uplink to AP-02
+AU-Agency1-SW-02,Port 7,1000base-t,True,Uplink to MX-01
+AU-Agency1-SW-02,Port 8,1000base-t,True,Uplink to MX-02
