@@ -1,10 +1,10 @@
-name,type,group,site,description,comments
-EMEA-DC-ONPREM-COMPUTE-CLUSTER,VMware vSphere,Production,EMEA-DC-ONPREM,Production compute cluster - Server Hall A (6 ESXi hosts),Hosts: EMEA-DC-ONPREM-ESX-A01 through EMEA-DC-ONPREM-ESX-A06
-EMEA-DC-ONPREM-STORAGE-CLUSTER,VMware vSphere,Production,EMEA-DC-ONPREM,vSAN storage cluster - Server Hall B (4 ESXi hosts),Hosts: EMEA-DC-ONPREM-ESX-B01 through EMEA-DC-ONPREM-ESX-B04. vSAN enabled for storage.
-EMEA-DC-ONPREM-MGMT-CLUSTER,VMware vSphere,Management,EMEA-DC-ONPREM,"Management cluster - vCenter, NSX, monitoring (3 ESXi hosts)","Hosts: EMEA-DC-ONPREM-ESX-MGT01 through EMEA-DC-ONPREM-ESX-MGT03. Runs vCenter, NSX Manager, vROps."
-APAC-DC-ONPREM-COMPUTE-CLUSTER,VMware vSphere,Production,APAC-DC-ONPREM,Production compute cluster - Server Hall A (6 ESXi hosts),Hosts: APAC-DC-ONPREM-ESX-A01 through APAC-DC-ONPREM-ESX-A06
-APAC-DC-ONPREM-STORAGE-CLUSTER,VMware vSphere,Production,APAC-DC-ONPREM,vSAN storage cluster - Server Hall B (4 ESXi hosts),Hosts: APAC-DC-ONPREM-ESX-B01 through APAC-DC-ONPREM-ESX-B04. vSAN enabled for storage.
-APAC-DC-ONPREM-MGMT-CLUSTER,VMware vSphere,Management,APAC-DC-ONPREM,"Management cluster - vCenter, NSX, monitoring (3 ESXi hosts)","Hosts: APAC-DC-ONPREM-ESX-MGT01 through APAC-DC-ONPREM-ESX-MGT03. Runs vCenter, NSX Manager, vROps."
-AMER-DC-ONPREM-COMPUTE-CLUSTER,VMware vSphere,Production,AMER-DC-ONPREM,Production compute cluster - Server Hall A (6 ESXi hosts),Hosts: AMER-DC-ONPREM-ESX-A01 through AMER-DC-ONPREM-ESX-A06
-AMER-DC-ONPREM-STORAGE-CLUSTER,VMware vSphere,Production,AMER-DC-ONPREM,vSAN storage cluster - Server Hall B (4 ESXi hosts),Hosts: AMER-DC-ONPREM-ESX-B01 through AMER-DC-ONPREM-ESX-B04. vSAN enabled for storage.
-AMER-DC-ONPREM-MGMT-CLUSTER,VMware vSphere,Management,AMER-DC-ONPREM,"Management cluster - vCenter, NSX, monitoring (3 ESXi hosts)","Hosts: AMER-DC-ONPREM-ESX-MGT01 through AMER-DC-ONPREM-ESX-MGT03. Runs vCenter, NSX Manager, vROps."
+name,type,status,group,site,description,comments
+EMEA-DC-ONPREM-COMPUTE-CLUSTER,VMware vSphere,active,Production,EMEA-DC-ONPREM,Production compute cluster - Server Hall A (6 ESXi hosts),Hosts: EMEA-DC-ONPREM-ESX-A01 through EMEA-DC-ONPREM-ESX-A06
+EMEA-DC-ONPREM-STORAGE-CLUSTER,VMware vSphere,active,Production,EMEA-DC-ONPREM,vSAN storage cluster - Server Hall B (4 ESXi hosts),Hosts: EMEA-DC-ONPREM-ESX-B01 through EMEA-DC-ONPREM-ESX-B04. vSAN enabled for storage.
+EMEA-DC-ONPREM-MGMT-CLUSTER,VMware vSphere,active,Management,EMEA-DC-ONPREM,"Management cluster - vCenter, NSX, monitoring (3 ESXi hosts)","Hosts: EMEA-DC-ONPREM-ESX-MGT01 through EMEA-DC-ONPREM-ESX-MGT03. Runs vCenter, NSX Manager, vROps."
+APAC-DC-ONPREM-COMPUTE-CLUSTER,VMware vSphere,active,Production,APAC-DC-ONPREM,Production compute cluster - Server Hall A (6 ESXi hosts),Hosts: APAC-DC-ONPREM-ESX-A01 through APAC-DC-ONPREM-ESX-A06
+APAC-DC-ONPREM-STORAGE-CLUSTER,VMware vSphere,active,Production,APAC-DC-ONPREM,vSAN storage cluster - Server Hall B (4 ESXi hosts),Hosts: APAC-DC-ONPREM-ESX-B01 through APAC-DC-ONPREM-ESX-B04. vSAN enabled for storage.
+APAC-DC-ONPREM-MGMT-CLUSTER,VMware vSphere,active,Management,APAC-DC-ONPREM,"Management cluster - vCenter, NSX, monitoring (3 ESXi hosts)","Hosts: APAC-DC-ONPREM-ESX-MGT01 through APAC-DC-ONPREM-ESX-MGT03. Runs vCenter, NSX Manager, vROps."
+AMER-DC-ONPREM-COMPUTE-CLUSTER,VMware vSphere,active,Production,AMER-DC-ONPREM,Production compute cluster - Server Hall A (6 ESXi hosts),Hosts: AMER-DC-ONPREM-ESX-A01 through AMER-DC-ONPREM-ESX-A06
+AMER-DC-ONPREM-STORAGE-CLUSTER,VMware vSphere,active,Production,AMER-DC-ONPREM,vSAN storage cluster - Server Hall B (4 ESXi hosts),Hosts: AMER-DC-ONPREM-ESX-B01 through AMER-DC-ONPREM-ESX-B04. vSAN enabled for storage.
+AMER-DC-ONPREM-MGMT-CLUSTER,VMware vSphere,active,Management,AMER-DC-ONPREM,"Management cluster - vCenter, NSX, monitoring (3 ESXi hosts)","Hosts: AMER-DC-ONPREM-ESX-MGT01 through AMER-DC-ONPREM-ESX-MGT03. Runs vCenter, NSX Manager, vROps."
