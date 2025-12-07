@@ -31,6 +31,28 @@ This integration automatically synchronizes network devices from NetBox (Source 
 - ✅ **Host Groups**: Devices are organized by site, role, and platform
 - ✅ **Reduced Manual Work**: No more manual host creation in Zabbix
 
+### Synchronization Methods
+
+This integration supports **two synchronization methods**:
+
+#### Method 1: Scheduled Sync (Traditional)
+- **Description**: Run sync script periodically (cron, systemd timer, AWX)
+- **Frequency**: Every 6 hours, daily, weekly, etc.
+- **Best For**: Initial setup, bulk operations, backup sync
+- **Script**: `sync_netbox_to_zabbix.py`
+
+#### Method 2: Event-Driven Sync (Webhooks) ⭐ **RECOMMENDED**
+- **Description**: NetBox webhooks trigger immediate sync on device changes
+- **Latency**: Real-time (seconds)
+- **Best For**: Day-to-day operations, immediate sync
+- **Components**: `netbox_webhook_handler.py` + NetBox webhooks
+
+**Recommendation**: Use **both methods** together:
+- Event-driven for real-time updates
+- Scheduled sync as daily/weekly backup
+
+See **NETBOX_WEBHOOK_SETUP.md** for webhook configuration.
+
 ### How It Works
 
 ```

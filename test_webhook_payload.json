@@ -1,0 +1,50 @@
+{
+  "event": "created",
+  "timestamp": "2025-12-07T10:30:15.123456Z",
+  "model": "device",
+  "username": "admin",
+  "request_id": "test-webhook-123",
+  "data": {
+    "id": 999,
+    "url": "https://netbox.acme.com/api/dcim/devices/999/",
+    "name": "TEST-DEVICE-01",
+    "display": "TEST-DEVICE-01",
+    "device_type": {
+      "id": 1,
+      "manufacturer": {
+        "name": "Cisco Systems",
+        "slug": "cisco"
+      },
+      "model": "Nexus 9300",
+      "slug": "nexus-9300"
+    },
+    "device_role": {
+      "id": 1,
+      "name": "Access Switch",
+      "slug": "access-switch"
+    },
+    "platform": {
+      "id": 1,
+      "name": "Cisco NX-OS",
+      "slug": "nxos"
+    },
+    "site": {
+      "id": 1,
+      "name": "EMEA-DC-ONPREM",
+      "slug": "emea-dc-onprem"
+    },
+    "status": {
+      "value": "active",
+      "label": "Active"
+    },
+    "primary_ip4": {
+      "id": 1,
+      "address": "10.10.100.99/24",
+      "display": "10.10.100.99/24"
+    },
+    "custom_fields": {
+      "cf_monitoring": "Yes"
+    },
+    "tags": []
+  }
+}

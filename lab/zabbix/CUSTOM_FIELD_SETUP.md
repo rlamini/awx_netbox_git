@@ -33,8 +33,8 @@ The NetBox to Zabbix sync script uses a custom field called `cf_monitoring` to c
    - **Label**: `Monitoring Enabled`
    - **Object Type**: `dcim > device`
    - **Type**: `Selection`
-   - **Required**: `☐` (optional - unchecked)
-   - **Description**: `Enable Zabbix monitoring for this device`
+   - **Required**: `☑` (required - checked)
+   - **Description**: `Control Zabbix monitoring for this device (required field)`
 
    **Choices:**
    ```
@@ -70,8 +70,8 @@ data = {
     "label": "Monitoring Enabled",
     "type": "select",
     "content_types": ["dcim.device"],
-    "required": False,
-    "description": "Enable Zabbix monitoring for this device",
+    "required": True,  # Field is required
+    "description": "Control Zabbix monitoring for this device (required field)",
     "choices": ["Yes", "No"],
     "default": "No",
     "weight": 100
@@ -303,7 +303,10 @@ Set default to `No` to prevent accidental monitoring of new devices.
 
 ### 2. Required Field
 
-Make the field **optional** (not required) so existing devices without the field can still be managed.
+Make the field **required** to ensure all devices have explicit monitoring control. This:
+- Prevents devices from being created without monitoring configuration
+- Ensures consistent configuration across all devices
+- Works well with webhooks for automatic Zabbix sync
 
 ### 3. Gradual Rollout
 

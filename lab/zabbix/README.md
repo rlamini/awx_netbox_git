@@ -2,11 +2,34 @@
 
 This directory contains configuration files for synchronizing NetBox devices to Zabbix monitoring.
 
+## Synchronization Methods
+
+There are **two methods** to sync NetBox devices to Zabbix:
+
+### Method 1: Scheduled Sync (This Guide)
+- Run `sync_netbox_to_zabbix.py` on a schedule (cron, systemd timer, AWX)
+- Good for: Initial setup, bulk operations, backup sync
+
+### Method 2: Event-Driven Sync via Webhooks ⭐ **RECOMMENDED**
+- NetBox webhooks trigger immediate sync when devices are created/updated
+- Real-time synchronization (seconds)
+- Good for: Day-to-day operations, immediate monitoring
+
+**See NETBOX_WEBHOOK_SETUP.md for webhook configuration guide.**
+
+**Recommendation**: Use both methods together for best results.
+
 ## Files
 
+### Scheduled Sync (Method 1)
 - **zabbix_mapping.yaml** - Template and host group mapping configuration
 - **../../sync_netbox_to_zabbix.py** - Main synchronization script
 - **../../config.yaml.example** - Example configuration file
+
+### Event-Driven Sync (Method 2)
+- **../../netbox_webhook_handler.py** - Webhook handler for real-time sync
+- **../../test_webhook_payload.json** - Example webhook payload for testing
+- **../../NETBOX_WEBHOOK_SETUP.md** - Complete webhook setup guide
 
 ## Quick Start
 
@@ -357,7 +380,9 @@ DRY RUN MODE - No changes will be made to Zabbix
 ## Documentation
 
 For complete documentation, see:
-- **NETBOX_ZABBIX_SYNC.md** - Full integration guide
+- **NETBOX_ZABBIX_SYNC.md** - Full integration guide (both methods)
+- **NETBOX_WEBHOOK_SETUP.md** - Event-driven sync with webhooks (Method 2)
+- **CUSTOM_FIELD_SETUP.md** - Custom field setup guide
 - **zabbix_mapping.yaml** - Mapping configuration with comments
 - **config.yaml.example** - Configuration example
 
