@@ -1,13 +1,28 @@
 device,name,type,enabled,description
-EMEA-DC-ONPREM-MERAKI-HUB-MX-01,WAN1,1000base-t,True,WAN interface for VPN tunnels
+EMEA-DC-ONPREM-MERAKI-HUB-MX-01,WAN1,1000base-t,True,Physical WAN interface
 EMEA-DC-ONPREM-MERAKI-HUB-MX-01,LAN1,1000base-t,True,LAN interface to core network
-EMEA-DC-ONPREM-MERAKI-HUB-MX-02,WAN1,1000base-t,True,WAN interface for VPN tunnels
+EMEA-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-FR-Agency1,virtual,True,VPN tunnel to FR-Agency1
+EMEA-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-DE-Agency1,virtual,True,VPN tunnel to DE-Agency1
+EMEA-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-GB-Agency1,virtual,True,VPN tunnel to GB-Agency1
+EMEA-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-NL-Agency1,virtual,True,VPN tunnel to NL-Agency1
+EMEA-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-BE-Agency1,virtual,True,VPN tunnel to BE-Agency1
+EMEA-DC-ONPREM-MERAKI-HUB-MX-02,WAN1,1000base-t,True,Physical WAN interface
 EMEA-DC-ONPREM-MERAKI-HUB-MX-02,LAN1,1000base-t,True,LAN interface to core network
-APAC-DC-ONPREM-MERAKI-HUB-MX-01,WAN1,1000base-t,True,WAN interface for VPN tunnels
+APAC-DC-ONPREM-MERAKI-HUB-MX-01,WAN1,1000base-t,True,Physical WAN interface
 APAC-DC-ONPREM-MERAKI-HUB-MX-01,LAN1,1000base-t,True,LAN interface to core network
-APAC-DC-ONPREM-MERAKI-HUB-MX-02,WAN1,1000base-t,True,WAN interface for VPN tunnels
+APAC-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-CN-Agency1,virtual,True,VPN tunnel to CN-Agency1
+APAC-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-JP-Agency1,virtual,True,VPN tunnel to JP-Agency1
+APAC-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-KR-Agency1,virtual,True,VPN tunnel to KR-Agency1
+APAC-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-SG-Agency1,virtual,True,VPN tunnel to SG-Agency1
+APAC-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-AU-Agency1,virtual,True,VPN tunnel to AU-Agency1
+APAC-DC-ONPREM-MERAKI-HUB-MX-02,WAN1,1000base-t,True,Physical WAN interface
 APAC-DC-ONPREM-MERAKI-HUB-MX-02,LAN1,1000base-t,True,LAN interface to core network
-AMER-DC-ONPREM-MERAKI-HUB-MX-01,WAN1,1000base-t,True,WAN interface for VPN tunnels
+AMER-DC-ONPREM-MERAKI-HUB-MX-01,WAN1,1000base-t,True,Physical WAN interface
 AMER-DC-ONPREM-MERAKI-HUB-MX-01,LAN1,1000base-t,True,LAN interface to core network
-AMER-DC-ONPREM-MERAKI-HUB-MX-02,WAN1,1000base-t,True,WAN interface for VPN tunnels
+AMER-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-US-Agency1,virtual,True,VPN tunnel to US-Agency1
+AMER-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-CA-Agency1,virtual,True,VPN tunnel to CA-Agency1
+AMER-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-MX-Agency1,virtual,True,VPN tunnel to MX-Agency1
+AMER-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-BR-Agency1,virtual,True,VPN tunnel to BR-Agency1
+AMER-DC-ONPREM-MERAKI-HUB-MX-01,Tunnel-AR-Agency1,virtual,True,VPN tunnel to AR-Agency1
+AMER-DC-ONPREM-MERAKI-HUB-MX-02,WAN1,1000base-t,True,Physical WAN interface
 AMER-DC-ONPREM-MERAKI-HUB-MX-02,LAN1,1000base-t,True,LAN interface to core network
