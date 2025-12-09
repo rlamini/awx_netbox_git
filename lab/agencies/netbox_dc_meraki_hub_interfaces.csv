@@ -1,0 +1,13 @@
+device,name,type,enabled,description
+EMEA-DC-ONPREM-MERAKI-HUB-MX-01,WAN1,1000base-t,True,WAN interface for VPN tunnels
+EMEA-DC-ONPREM-MERAKI-HUB-MX-01,LAN1,1000base-t,True,LAN interface to core network
+EMEA-DC-ONPREM-MERAKI-HUB-MX-02,WAN1,1000base-t,True,WAN interface for VPN tunnels
+EMEA-DC-ONPREM-MERAKI-HUB-MX-02,LAN1,1000base-t,True,LAN interface to core network
+APAC-DC-ONPREM-MERAKI-HUB-MX-01,WAN1,1000base-t,True,WAN interface for VPN tunnels
+APAC-DC-ONPREM-MERAKI-HUB-MX-01,LAN1,1000base-t,True,LAN interface to core network
+APAC-DC-ONPREM-MERAKI-HUB-MX-02,WAN1,1000base-t,True,WAN interface for VPN tunnels
+APAC-DC-ONPREM-MERAKI-HUB-MX-02,LAN1,1000base-t,True,LAN interface to core network
+AMER-DC-ONPREM-MERAKI-HUB-MX-01,WAN1,1000base-t,True,WAN interface for VPN tunnels
+AMER-DC-ONPREM-MERAKI-HUB-MX-01,LAN1,1000base-t,True,LAN interface to core network
+AMER-DC-ONPREM-MERAKI-HUB-MX-02,WAN1,1000base-t,True,WAN interface for VPN tunnels
+AMER-DC-ONPREM-MERAKI-HUB-MX-02,LAN1,1000base-t,True,LAN interface to core network
