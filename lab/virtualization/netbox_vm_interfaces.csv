@@ -1,0 +1,127 @@
+virtual_machine,name,enabled,description
+EMEA-vCenter-01,eth0,True,vCenter Management Network
+EMEA-NSX-Manager-01,eth0,True,NSX Manager Management Network
+EMEA-NSX-Manager-02,eth0,True,NSX Manager Management Network
+EMEA-NSX-Manager-03,eth0,True,NSX Manager Management Network
+EMEA-vROps-01,eth0,True,vROps Management Network
+EMEA-vRLI-01,eth0,True,vRLI Management Network
+EMEA-Backup-Server-01,eth0,True,Backup Management Network
+EMEA-Backup-Server-01,eth1,True,Backup Data Network
+EMEA-Jump-Host-01,eth0,True,Jump Host Network
+EMEA-Ansible-Tower-01,eth0,True,Ansible Management Network
+EMEA-Web-App-01,eth0,True,Web Server Frontend Network
+EMEA-Web-App-02,eth0,True,Web Server Frontend Network
+EMEA-Web-App-03,eth0,True,Web Server Frontend Network
+EMEA-App-Server-01,eth0,True,App Server Management Network
+EMEA-App-Server-01,eth1,True,App Server Backend Network
+EMEA-App-Server-02,eth0,True,App Server Management Network
+EMEA-App-Server-02,eth1,True,App Server Backend Network
+EMEA-App-Server-03,eth0,True,App Server Management Network
+EMEA-App-Server-03,eth1,True,App Server Backend Network
+EMEA-DB-Server-01,eth0,True,Database Management Network
+EMEA-DB-Server-01,eth1,True,Database Replication Network
+EMEA-DB-Server-02,eth0,True,Database Management Network
+EMEA-DB-Server-02,eth1,True,Database Replication Network
+EMEA-Redis-01,eth0,True,Redis Cluster Network
+EMEA-Redis-02,eth0,True,Redis Cluster Network
+EMEA-Kafka-01,eth0,True,Kafka Management Network
+EMEA-Kafka-01,eth1,True,Kafka Replication Network
+EMEA-Kafka-02,eth0,True,Kafka Management Network
+EMEA-Kafka-02,eth1,True,Kafka Replication Network
+EMEA-ELK-ES-01,eth0,True,Elasticsearch Management Network
+EMEA-ELK-ES-01,eth1,True,Elasticsearch Cluster Network
+EMEA-ELK-ES-02,eth0,True,Elasticsearch Management Network
+EMEA-ELK-ES-02,eth1,True,Elasticsearch Cluster Network
+EMEA-Docker-Host-01,eth0,True,Docker Host Management Network
+EMEA-Docker-Host-01,eth1,True,Docker Container Network
+EMEA-Docker-Host-02,eth0,True,Docker Host Management Network
+EMEA-Docker-Host-02,eth1,True,Docker Container Network
+EMEA-vSAN-Witness,eth0,True,vSAN Witness Network
+EMEA-File-Server-01,eth0,True,File Server Management Network
+EMEA-File-Server-01,eth1,True,File Server Storage Network
+EMEA-NFS-Server-01,eth0,True,NFS Server Management Network
+EMEA-NFS-Server-01,eth1,True,NFS Storage Network
+APAC-vCenter-01,eth0,True,vCenter Management Network
+APAC-NSX-Manager-01,eth0,True,NSX Manager Management Network
+APAC-NSX-Manager-02,eth0,True,NSX Manager Management Network
+APAC-NSX-Manager-03,eth0,True,NSX Manager Management Network
+APAC-vROps-01,eth0,True,vROps Management Network
+APAC-vRLI-01,eth0,True,vRLI Management Network
+APAC-Backup-Server-01,eth0,True,Backup Management Network
+APAC-Backup-Server-01,eth1,True,Backup Data Network
+APAC-Jump-Host-01,eth0,True,Jump Host Network
+APAC-Ansible-Tower-01,eth0,True,Ansible Management Network
+APAC-Web-App-01,eth0,True,Web Server Frontend Network
+APAC-Web-App-02,eth0,True,Web Server Frontend Network
+APAC-Web-App-03,eth0,True,Web Server Frontend Network
+APAC-App-Server-01,eth0,True,App Server Management Network
+APAC-App-Server-01,eth1,True,App Server Backend Network
+APAC-App-Server-02,eth0,True,App Server Management Network
+APAC-App-Server-02,eth1,True,App Server Backend Network
+APAC-App-Server-03,eth0,True,App Server Management Network
+APAC-App-Server-03,eth1,True,App Server Backend Network
+APAC-DB-Server-01,eth0,True,Database Management Network
+APAC-DB-Server-01,eth1,True,Database Replication Network
+APAC-DB-Server-02,eth0,True,Database Management Network
+APAC-DB-Server-02,eth1,True,Database Replication Network
+APAC-Redis-01,eth0,True,Redis Cluster Network
+APAC-Redis-02,eth0,True,Redis Cluster Network
+APAC-Kafka-01,eth0,True,Kafka Management Network
+APAC-Kafka-01,eth1,True,Kafka Replication Network
+APAC-Kafka-02,eth0,True,Kafka Management Network
+APAC-Kafka-02,eth1,True,Kafka Replication Network
+APAC-ELK-ES-01,eth0,True,Elasticsearch Management Network
+APAC-ELK-ES-01,eth1,True,Elasticsearch Cluster Network
+APAC-ELK-ES-02,eth0,True,Elasticsearch Management Network
+APAC-ELK-ES-02,eth1,True,Elasticsearch Cluster Network
+APAC-Docker-Host-01,eth0,True,Docker Host Management Network
+APAC-Docker-Host-01,eth1,True,Docker Container Network
+APAC-Docker-Host-02,eth0,True,Docker Host Management Network
+APAC-Docker-Host-02,eth1,True,Docker Container Network
+APAC-vSAN-Witness,eth0,True,vSAN Witness Network
+APAC-File-Server-01,eth0,True,File Server Management Network
+APAC-File-Server-01,eth1,True,File Server Storage Network
+APAC-NFS-Server-01,eth0,True,NFS Server Management Network
+APAC-NFS-Server-01,eth1,True,NFS Storage Network
+AMER-vCenter-01,eth0,True,vCenter Management Network
+AMER-NSX-Manager-01,eth0,True,NSX Manager Management Network
+AMER-NSX-Manager-02,eth0,True,NSX Manager Management Network
+AMER-NSX-Manager-03,eth0,True,NSX Manager Management Network
+AMER-vROps-01,eth0,True,vROps Management Network
+AMER-vRLI-01,eth0,True,vRLI Management Network
+AMER-Backup-Server-01,eth0,True,Backup Management Network
+AMER-Backup-Server-01,eth1,True,Backup Data Network
+AMER-Jump-Host-01,eth0,True,Jump Host Network
+AMER-Ansible-Tower-01,eth0,True,Ansible Management Network
+AMER-Web-App-01,eth0,True,Web Server Frontend Network
+AMER-Web-App-02,eth0,True,Web Server Frontend Network
+AMER-Web-App-03,eth0,True,Web Server Frontend Network
+AMER-App-Server-01,eth0,True,App Server Management Network
+AMER-App-Server-01,eth1,True,App Server Backend Network
+AMER-App-Server-02,eth0,True,App Server Management Network
+AMER-App-Server-02,eth1,True,App Server Backend Network
+AMER-App-Server-03,eth0,True,App Server Management Network
+AMER-App-Server-03,eth1,True,App Server Backend Network
+AMER-DB-Server-01,eth0,True,Database Management Network
+AMER-DB-Server-01,eth1,True,Database Replication Network
+AMER-DB-Server-02,eth0,True,Database Management Network
+AMER-DB-Server-02,eth1,True,Database Replication Network
+AMER-Redis-01,eth0,True,Redis Cluster Network
+AMER-Redis-02,eth0,True,Redis Cluster Network
+AMER-Kafka-01,eth0,True,Kafka Management Network
+AMER-Kafka-01,eth1,True,Kafka Replication Network
+AMER-Kafka-02,eth0,True,Kafka Management Network
+AMER-Kafka-02,eth1,True,Kafka Replication Network
+AMER-ELK-ES-01,eth0,True,Elasticsearch Management Network
+AMER-ELK-ES-01,eth1,True,Elasticsearch Cluster Network
+AMER-ELK-ES-02,eth0,True,Elasticsearch Management Network
+AMER-ELK-ES-02,eth1,True,Elasticsearch Cluster Network
+AMER-Docker-Host-01,eth0,True,Docker Host Management Network
+AMER-Docker-Host-01,eth1,True,Docker Container Network
+AMER-Docker-Host-02,eth0,True,Docker Host Management Network
+AMER-Docker-Host-02,eth1,True,Docker Container Network
+AMER-vSAN-Witness,eth0,True,vSAN Witness Network
+AMER-File-Server-01,eth0,True,File Server Management Network
+AMER-File-Server-01,eth1,True,File Server Storage Network
+AMER-NFS-Server-01,eth0,True,NFS Server Management Network
+AMER-NFS-Server-01,eth1,True,NFS Storage Network
