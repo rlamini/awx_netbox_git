@@ -1,0 +1,5 @@
+name,slug,description
+VMware Photon OS,vmware-photon-os,VMware Photon OS - Minimal Linux container host
+Ubuntu 22.04 LTS,ubuntu-22-04-lts,Ubuntu 22.04 LTS (Jammy Jellyfish)
+Rocky Linux 9,rocky-linux-9,Rocky Linux 9 - RHEL-compatible Linux distribution
+Windows Server 2022,windows-server-2022,Microsoft Windows Server 2022 Datacenter

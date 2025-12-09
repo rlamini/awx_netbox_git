@@ -1,85 +1,85 @@
-name,status,cluster,role,device,vcpus,memory,disk,description,comments
-EMEA-vCenter-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,vCenter Server,,8,32768,500,vCenter Server for EMEA region,VMware vCenter Server 8.0
-EMEA-NSX-Manager-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,NSX Manager,,6,24576,300,NSX Manager Node 1,NSX-T 4.0 Manager Node 1
-EMEA-NSX-Manager-02,active,EMEA-DC-ONPREM-MGMT-CLUSTER,NSX Manager,,6,24576,300,NSX Manager Node 2,NSX-T 4.0 Manager Node 2
-EMEA-NSX-Manager-03,active,EMEA-DC-ONPREM-MGMT-CLUSTER,NSX Manager,,6,24576,300,NSX Manager Node 3,NSX-T 4.0 Manager Node 3
-EMEA-vROps-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Monitoring,,8,32768,500,vRealize Operations Manager,vROps 8.10
-EMEA-vRLI-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Logging,,8,16384,500,vRealize Log Insight,Log aggregation and analytics
-EMEA-Backup-Server-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Backup,,4,16384,1000,Veeam Backup Server,Backup & Replication
-EMEA-Jump-Host-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Jump Host,,2,8192,100,Windows Jump Host,Administrative access server
-EMEA-Ansible-Tower-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Automation,,4,16384,200,AWX/Ansible Tower,Automation and orchestration
-EMEA-Web-App-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Web Server,,4,8192,100,NGINX Web Server 1,Production web tier
-EMEA-Web-App-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Web Server,,4,8192,100,NGINX Web Server 2,Production web tier
-EMEA-Web-App-03,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Web Server,,4,8192,100,NGINX Web Server 3,Production web tier
-EMEA-App-Server-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Application Server,,8,16384,200,Java Application Server 1,Tomcat application tier
-EMEA-App-Server-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Application Server,,8,16384,200,Java Application Server 2,Tomcat application tier
-EMEA-App-Server-03,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Application Server,,8,16384,200,Java Application Server 3,Tomcat application tier
-EMEA-DB-Server-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Database Server,,16,65536,1000,PostgreSQL Primary,Production database primary
-EMEA-DB-Server-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Database Server,,16,65536,1000,PostgreSQL Standby,Production database standby
-EMEA-Redis-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,,4,16384,100,Redis Cache Node 1,In-memory cache cluster
-EMEA-Redis-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,,4,16384,100,Redis Cache Node 2,In-memory cache cluster
-EMEA-Kafka-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,,8,32768,500,Kafka Broker 1,Event streaming platform
-EMEA-Kafka-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,,8,32768,500,Kafka Broker 2,Event streaming platform
-EMEA-ELK-ES-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,,8,32768,1000,Elasticsearch Node 1,Log search and analytics
-EMEA-ELK-ES-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,,8,32768,1000,Elasticsearch Node 2,Log search and analytics
-EMEA-Docker-Host-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Container Host,,16,65536,500,Docker Host 1,Container runtime host
-EMEA-Docker-Host-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Container Host,,16,65536,500,Docker Host 2,Container runtime host
-EMEA-vSAN-Witness,active,EMEA-DC-ONPREM-STORAGE-CLUSTER,vSAN Witness,,2,8192,10,vSAN Witness Appliance,vSAN stretched cluster witness
-EMEA-File-Server-01,active,EMEA-DC-ONPREM-STORAGE-CLUSTER,File Server,,4,16384,5000,Windows File Server,SMB/CIFS file shares
-EMEA-NFS-Server-01,active,EMEA-DC-ONPREM-STORAGE-CLUSTER,NFS Server,,4,8192,5000,Linux NFS Server,NFS exports for applications
-APAC-vCenter-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,vCenter Server,,8,32768,500,vCenter Server for APAC region,VMware vCenter Server 8.0
-APAC-NSX-Manager-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,NSX Manager,,6,24576,300,NSX Manager Node 1,NSX-T 4.0 Manager Node 1
-APAC-NSX-Manager-02,active,APAC-DC-ONPREM-MGMT-CLUSTER,NSX Manager,,6,24576,300,NSX Manager Node 2,NSX-T 4.0 Manager Node 2
-APAC-NSX-Manager-03,active,APAC-DC-ONPREM-MGMT-CLUSTER,NSX Manager,,6,24576,300,NSX Manager Node 3,NSX-T 4.0 Manager Node 3
-APAC-vROps-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Monitoring,,8,32768,500,vRealize Operations Manager,vROps 8.10
-APAC-vRLI-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Logging,,8,16384,500,vRealize Log Insight,Log aggregation and analytics
-APAC-Backup-Server-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Backup,,4,16384,1000,Veeam Backup Server,Backup & Replication
-APAC-Jump-Host-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Jump Host,,2,8192,100,Windows Jump Host,Administrative access server
-APAC-Ansible-Tower-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Automation,,4,16384,200,AWX/Ansible Tower,Automation and orchestration
-APAC-Web-App-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Web Server,,4,8192,100,NGINX Web Server 1,Production web tier
-APAC-Web-App-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Web Server,,4,8192,100,NGINX Web Server 2,Production web tier
-APAC-Web-App-03,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Web Server,,4,8192,100,NGINX Web Server 3,Production web tier
-APAC-App-Server-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Application Server,,8,16384,200,Java Application Server 1,Tomcat application tier
-APAC-App-Server-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Application Server,,8,16384,200,Java Application Server 2,Tomcat application tier
-APAC-App-Server-03,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Application Server,,8,16384,200,Java Application Server 3,Tomcat application tier
-APAC-DB-Server-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Database Server,,16,65536,1000,PostgreSQL Primary,Production database primary
-APAC-DB-Server-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Database Server,,16,65536,1000,PostgreSQL Standby,Production database standby
-APAC-Redis-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,,4,16384,100,Redis Cache Node 1,In-memory cache cluster
-APAC-Redis-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,,4,16384,100,Redis Cache Node 2,In-memory cache cluster
-APAC-Kafka-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,,8,32768,500,Kafka Broker 1,Event streaming platform
-APAC-Kafka-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,,8,32768,500,Kafka Broker 2,Event streaming platform
-APAC-ELK-ES-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,,8,32768,1000,Elasticsearch Node 1,Log search and analytics
-APAC-ELK-ES-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,,8,32768,1000,Elasticsearch Node 2,Log search and analytics
-APAC-Docker-Host-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Container Host,,16,65536,500,Docker Host 1,Container runtime host
-APAC-Docker-Host-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Container Host,,16,65536,500,Docker Host 2,Container runtime host
-APAC-vSAN-Witness,active,APAC-DC-ONPREM-STORAGE-CLUSTER,vSAN Witness,,2,8192,10,vSAN Witness Appliance,vSAN stretched cluster witness
-APAC-File-Server-01,active,APAC-DC-ONPREM-STORAGE-CLUSTER,File Server,,4,16384,5000,Windows File Server,SMB/CIFS file shares
-APAC-NFS-Server-01,active,APAC-DC-ONPREM-STORAGE-CLUSTER,NFS Server,,4,8192,5000,Linux NFS Server,NFS exports for applications
-AMER-vCenter-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,vCenter Server,,8,32768,500,vCenter Server for AMER region,VMware vCenter Server 8.0
-AMER-NSX-Manager-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,NSX Manager,,6,24576,300,NSX Manager Node 1,NSX-T 4.0 Manager Node 1
-AMER-NSX-Manager-02,active,AMER-DC-ONPREM-MGMT-CLUSTER,NSX Manager,,6,24576,300,NSX Manager Node 2,NSX-T 4.0 Manager Node 2
-AMER-NSX-Manager-03,active,AMER-DC-ONPREM-MGMT-CLUSTER,NSX Manager,,6,24576,300,NSX Manager Node 3,NSX-T 4.0 Manager Node 3
-AMER-vROps-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Monitoring,,8,32768,500,vRealize Operations Manager,vROps 8.10
-AMER-vRLI-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Logging,,8,16384,500,vRealize Log Insight,Log aggregation and analytics
-AMER-Backup-Server-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Backup,,4,16384,1000,Veeam Backup Server,Backup & Replication
-AMER-Jump-Host-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Jump Host,,2,8192,100,Windows Jump Host,Administrative access server
-AMER-Ansible-Tower-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Automation,,4,16384,200,AWX/Ansible Tower,Automation and orchestration
-AMER-Web-App-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Web Server,,4,8192,100,NGINX Web Server 1,Production web tier
-AMER-Web-App-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Web Server,,4,8192,100,NGINX Web Server 2,Production web tier
-AMER-Web-App-03,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Web Server,,4,8192,100,NGINX Web Server 3,Production web tier
-AMER-App-Server-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Application Server,,8,16384,200,Java Application Server 1,Tomcat application tier
-AMER-App-Server-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Application Server,,8,16384,200,Java Application Server 2,Tomcat application tier
-AMER-App-Server-03,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Application Server,,8,16384,200,Java Application Server 3,Tomcat application tier
-AMER-DB-Server-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Database Server,,16,65536,1000,PostgreSQL Primary,Production database primary
-AMER-DB-Server-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Database Server,,16,65536,1000,PostgreSQL Standby,Production database standby
-AMER-Redis-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,,4,16384,100,Redis Cache Node 1,In-memory cache cluster
-AMER-Redis-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,,4,16384,100,Redis Cache Node 2,In-memory cache cluster
-AMER-Kafka-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,,8,32768,500,Kafka Broker 1,Event streaming platform
-AMER-Kafka-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,,8,32768,500,Kafka Broker 2,Event streaming platform
-AMER-ELK-ES-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,,8,32768,1000,Elasticsearch Node 1,Log search and analytics
-AMER-ELK-ES-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,,8,32768,1000,Elasticsearch Node 2,Log search and analytics
-AMER-Docker-Host-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Container Host,,16,65536,500,Docker Host 1,Container runtime host
-AMER-Docker-Host-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Container Host,,16,65536,500,Docker Host 2,Container runtime host
-AMER-vSAN-Witness,active,AMER-DC-ONPREM-STORAGE-CLUSTER,vSAN Witness,,2,8192,10,vSAN Witness Appliance,vSAN stretched cluster witness
-AMER-File-Server-01,active,AMER-DC-ONPREM-STORAGE-CLUSTER,File Server,,4,16384,5000,Windows File Server,SMB/CIFS file shares
-AMER-NFS-Server-01,active,AMER-DC-ONPREM-STORAGE-CLUSTER,NFS Server,,4,8192,5000,Linux NFS Server,NFS exports for applications
+name,status,cluster,role,platform,vcpus,memory,disk,description,comments
+EMEA-vCenter-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,vCenter Server,VMware Photon OS,8,32768,500,vCenter Server for EMEA region,VMware vCenter Server 8.0
+EMEA-NSX-Manager-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,NSX Manager,VMware Photon OS,6,24576,300,NSX Manager Node 1,NSX-T 4.0 Manager Node 1
+EMEA-NSX-Manager-02,active,EMEA-DC-ONPREM-MGMT-CLUSTER,NSX Manager,VMware Photon OS,6,24576,300,NSX Manager Node 2,NSX-T 4.0 Manager Node 2
+EMEA-NSX-Manager-03,active,EMEA-DC-ONPREM-MGMT-CLUSTER,NSX Manager,VMware Photon OS,6,24576,300,NSX Manager Node 3,NSX-T 4.0 Manager Node 3
+EMEA-vROps-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Monitoring,VMware Photon OS,8,32768,500,vRealize Operations Manager,vROps 8.10
+EMEA-vRLI-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Logging,VMware Photon OS,8,16384,500,vRealize Log Insight,Log aggregation and analytics
+EMEA-Backup-Server-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Backup,Windows Server 2022,4,16384,1000,Veeam Backup Server,Backup & Replication
+EMEA-Jump-Host-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Jump Host,Windows Server 2022,2,8192,100,Windows Jump Host,Administrative access server
+EMEA-Ansible-Tower-01,active,EMEA-DC-ONPREM-MGMT-CLUSTER,Automation,Rocky Linux 9,4,16384,200,AWX/Ansible Tower,Automation and orchestration
+EMEA-Web-App-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Web Server,Ubuntu 22.04 LTS,4,8192,100,NGINX Web Server 1,Production web tier
+EMEA-Web-App-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Web Server,Ubuntu 22.04 LTS,4,8192,100,NGINX Web Server 2,Production web tier
+EMEA-Web-App-03,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Web Server,Ubuntu 22.04 LTS,4,8192,100,NGINX Web Server 3,Production web tier
+EMEA-App-Server-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Application Server,Rocky Linux 9,8,16384,200,Java Application Server 1,Tomcat application tier
+EMEA-App-Server-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Application Server,Rocky Linux 9,8,16384,200,Java Application Server 2,Tomcat application tier
+EMEA-App-Server-03,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Application Server,Rocky Linux 9,8,16384,200,Java Application Server 3,Tomcat application tier
+EMEA-DB-Server-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Database Server,Ubuntu 22.04 LTS,16,65536,1000,PostgreSQL Primary,Production database primary
+EMEA-DB-Server-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Database Server,Ubuntu 22.04 LTS,16,65536,1000,PostgreSQL Standby,Production database standby
+EMEA-Redis-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,Ubuntu 22.04 LTS,4,16384,100,Redis Cache Node 1,In-memory cache cluster
+EMEA-Redis-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,Ubuntu 22.04 LTS,4,16384,100,Redis Cache Node 2,In-memory cache cluster
+EMEA-Kafka-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,Ubuntu 22.04 LTS,8,32768,500,Kafka Broker 1,Event streaming platform
+EMEA-Kafka-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,Ubuntu 22.04 LTS,8,32768,500,Kafka Broker 2,Event streaming platform
+EMEA-ELK-ES-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,Ubuntu 22.04 LTS,8,32768,1000,Elasticsearch Node 1,Log search and analytics
+EMEA-ELK-ES-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,Ubuntu 22.04 LTS,8,32768,1000,Elasticsearch Node 2,Log search and analytics
+EMEA-Docker-Host-01,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Container Host,Ubuntu 22.04 LTS,16,65536,500,Docker Host 1,Container runtime host
+EMEA-Docker-Host-02,active,EMEA-DC-ONPREM-COMPUTE-CLUSTER,Container Host,Ubuntu 22.04 LTS,16,65536,500,Docker Host 2,Container runtime host
+EMEA-vSAN-Witness,active,EMEA-DC-ONPREM-STORAGE-CLUSTER,vSAN Witness,VMware Photon OS,2,8192,10,vSAN Witness Appliance,vSAN stretched cluster witness
+EMEA-File-Server-01,active,EMEA-DC-ONPREM-STORAGE-CLUSTER,File Server,Windows Server 2022,4,16384,5000,Windows File Server,SMB/CIFS file shares
+EMEA-NFS-Server-01,active,EMEA-DC-ONPREM-STORAGE-CLUSTER,NFS Server,Ubuntu 22.04 LTS,4,8192,5000,Linux NFS Server,NFS exports for applications
+APAC-vCenter-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,vCenter Server,VMware Photon OS,8,32768,500,vCenter Server for APAC region,VMware vCenter Server 8.0
+APAC-NSX-Manager-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,NSX Manager,VMware Photon OS,6,24576,300,NSX Manager Node 1,NSX-T 4.0 Manager Node 1
+APAC-NSX-Manager-02,active,APAC-DC-ONPREM-MGMT-CLUSTER,NSX Manager,VMware Photon OS,6,24576,300,NSX Manager Node 2,NSX-T 4.0 Manager Node 2
+APAC-NSX-Manager-03,active,APAC-DC-ONPREM-MGMT-CLUSTER,NSX Manager,VMware Photon OS,6,24576,300,NSX Manager Node 3,NSX-T 4.0 Manager Node 3
+APAC-vROps-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Monitoring,VMware Photon OS,8,32768,500,vRealize Operations Manager,vROps 8.10
+APAC-vRLI-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Logging,VMware Photon OS,8,16384,500,vRealize Log Insight,Log aggregation and analytics
+APAC-Backup-Server-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Backup,Windows Server 2022,4,16384,1000,Veeam Backup Server,Backup & Replication
+APAC-Jump-Host-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Jump Host,Windows Server 2022,2,8192,100,Windows Jump Host,Administrative access server
+APAC-Ansible-Tower-01,active,APAC-DC-ONPREM-MGMT-CLUSTER,Automation,Rocky Linux 9,4,16384,200,AWX/Ansible Tower,Automation and orchestration
+APAC-Web-App-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Web Server,Ubuntu 22.04 LTS,4,8192,100,NGINX Web Server 1,Production web tier
+APAC-Web-App-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Web Server,Ubuntu 22.04 LTS,4,8192,100,NGINX Web Server 2,Production web tier
+APAC-Web-App-03,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Web Server,Ubuntu 22.04 LTS,4,8192,100,NGINX Web Server 3,Production web tier
+APAC-App-Server-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Application Server,Rocky Linux 9,8,16384,200,Java Application Server 1,Tomcat application tier
+APAC-App-Server-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Application Server,Rocky Linux 9,8,16384,200,Java Application Server 2,Tomcat application tier
+APAC-App-Server-03,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Application Server,Rocky Linux 9,8,16384,200,Java Application Server 3,Tomcat application tier
+APAC-DB-Server-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Database Server,Ubuntu 22.04 LTS,16,65536,1000,PostgreSQL Primary,Production database primary
+APAC-DB-Server-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Database Server,Ubuntu 22.04 LTS,16,65536,1000,PostgreSQL Standby,Production database standby
+APAC-Redis-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,Ubuntu 22.04 LTS,4,16384,100,Redis Cache Node 1,In-memory cache cluster
+APAC-Redis-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,Ubuntu 22.04 LTS,4,16384,100,Redis Cache Node 2,In-memory cache cluster
+APAC-Kafka-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,Ubuntu 22.04 LTS,8,32768,500,Kafka Broker 1,Event streaming platform
+APAC-Kafka-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,Ubuntu 22.04 LTS,8,32768,500,Kafka Broker 2,Event streaming platform
+APAC-ELK-ES-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,Ubuntu 22.04 LTS,8,32768,1000,Elasticsearch Node 1,Log search and analytics
+APAC-ELK-ES-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,Ubuntu 22.04 LTS,8,32768,1000,Elasticsearch Node 2,Log search and analytics
+APAC-Docker-Host-01,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Container Host,Ubuntu 22.04 LTS,16,65536,500,Docker Host 1,Container runtime host
+APAC-Docker-Host-02,active,APAC-DC-ONPREM-COMPUTE-CLUSTER,Container Host,Ubuntu 22.04 LTS,16,65536,500,Docker Host 2,Container runtime host
+APAC-vSAN-Witness,active,APAC-DC-ONPREM-STORAGE-CLUSTER,vSAN Witness,VMware Photon OS,2,8192,10,vSAN Witness Appliance,vSAN stretched cluster witness
+APAC-File-Server-01,active,APAC-DC-ONPREM-STORAGE-CLUSTER,File Server,Windows Server 2022,4,16384,5000,Windows File Server,SMB/CIFS file shares
+APAC-NFS-Server-01,active,APAC-DC-ONPREM-STORAGE-CLUSTER,NFS Server,Ubuntu 22.04 LTS,4,8192,5000,Linux NFS Server,NFS exports for applications
+AMER-vCenter-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,vCenter Server,VMware Photon OS,8,32768,500,vCenter Server for AMER region,VMware vCenter Server 8.0
+AMER-NSX-Manager-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,NSX Manager,VMware Photon OS,6,24576,300,NSX Manager Node 1,NSX-T 4.0 Manager Node 1
+AMER-NSX-Manager-02,active,AMER-DC-ONPREM-MGMT-CLUSTER,NSX Manager,VMware Photon OS,6,24576,300,NSX Manager Node 2,NSX-T 4.0 Manager Node 2
+AMER-NSX-Manager-03,active,AMER-DC-ONPREM-MGMT-CLUSTER,NSX Manager,VMware Photon OS,6,24576,300,NSX Manager Node 3,NSX-T 4.0 Manager Node 3
+AMER-vROps-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Monitoring,VMware Photon OS,8,32768,500,vRealize Operations Manager,vROps 8.10
+AMER-vRLI-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Logging,VMware Photon OS,8,16384,500,vRealize Log Insight,Log aggregation and analytics
+AMER-Backup-Server-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Backup,Windows Server 2022,4,16384,1000,Veeam Backup Server,Backup & Replication
+AMER-Jump-Host-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Jump Host,Windows Server 2022,2,8192,100,Windows Jump Host,Administrative access server
+AMER-Ansible-Tower-01,active,AMER-DC-ONPREM-MGMT-CLUSTER,Automation,Rocky Linux 9,4,16384,200,AWX/Ansible Tower,Automation and orchestration
+AMER-Web-App-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Web Server,Ubuntu 22.04 LTS,4,8192,100,NGINX Web Server 1,Production web tier
+AMER-Web-App-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Web Server,Ubuntu 22.04 LTS,4,8192,100,NGINX Web Server 2,Production web tier
+AMER-Web-App-03,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Web Server,Ubuntu 22.04 LTS,4,8192,100,NGINX Web Server 3,Production web tier
+AMER-App-Server-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Application Server,Rocky Linux 9,8,16384,200,Java Application Server 1,Tomcat application tier
+AMER-App-Server-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Application Server,Rocky Linux 9,8,16384,200,Java Application Server 2,Tomcat application tier
+AMER-App-Server-03,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Application Server,Rocky Linux 9,8,16384,200,Java Application Server 3,Tomcat application tier
+AMER-DB-Server-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Database Server,Ubuntu 22.04 LTS,16,65536,1000,PostgreSQL Primary,Production database primary
+AMER-DB-Server-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Database Server,Ubuntu 22.04 LTS,16,65536,1000,PostgreSQL Standby,Production database standby
+AMER-Redis-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,Ubuntu 22.04 LTS,4,16384,100,Redis Cache Node 1,In-memory cache cluster
+AMER-Redis-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Cache Server,Ubuntu 22.04 LTS,4,16384,100,Redis Cache Node 2,In-memory cache cluster
+AMER-Kafka-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,Ubuntu 22.04 LTS,8,32768,500,Kafka Broker 1,Event streaming platform
+AMER-Kafka-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Message Broker,Ubuntu 22.04 LTS,8,32768,500,Kafka Broker 2,Event streaming platform
+AMER-ELK-ES-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,Ubuntu 22.04 LTS,8,32768,1000,Elasticsearch Node 1,Log search and analytics
+AMER-ELK-ES-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Search Engine,Ubuntu 22.04 LTS,8,32768,1000,Elasticsearch Node 2,Log search and analytics
+AMER-Docker-Host-01,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Container Host,Ubuntu 22.04 LTS,16,65536,500,Docker Host 1,Container runtime host
+AMER-Docker-Host-02,active,AMER-DC-ONPREM-COMPUTE-CLUSTER,Container Host,Ubuntu 22.04 LTS,16,65536,500,Docker Host 2,Container runtime host
+AMER-vSAN-Witness,active,AMER-DC-ONPREM-STORAGE-CLUSTER,vSAN Witness,VMware Photon OS,2,8192,10,vSAN Witness Appliance,vSAN stretched cluster witness
+AMER-File-Server-01,active,AMER-DC-ONPREM-STORAGE-CLUSTER,File Server,Windows Server 2022,4,16384,5000,Windows File Server,SMB/CIFS file shares
+AMER-NFS-Server-01,active,AMER-DC-ONPREM-STORAGE-CLUSTER,NFS Server,Ubuntu 22.04 LTS,4,8192,5000,Linux NFS Server,NFS exports for applications
