@@ -1,0 +1,196 @@
+device,name,type,enabled,mgmt_only,description
+EMEA-DC-ONPREM-ESX-A01,iDRAC,1000base-t,True,True,iDRAC Management interface
+EMEA-DC-ONPREM-ESX-A01,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+EMEA-DC-ONPREM-ESX-A01,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+EMEA-DC-ONPREM-ESX-A01,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+EMEA-DC-ONPREM-ESX-A01,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+EMEA-DC-ONPREM-ESX-A02,iDRAC,1000base-t,True,True,iDRAC Management interface
+EMEA-DC-ONPREM-ESX-A02,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+EMEA-DC-ONPREM-ESX-A02,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+EMEA-DC-ONPREM-ESX-A02,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+EMEA-DC-ONPREM-ESX-A02,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+EMEA-DC-ONPREM-ESX-A03,iDRAC,1000base-t,True,True,iDRAC Management interface
+EMEA-DC-ONPREM-ESX-A03,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+EMEA-DC-ONPREM-ESX-A03,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+EMEA-DC-ONPREM-ESX-A03,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+EMEA-DC-ONPREM-ESX-A03,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+EMEA-DC-ONPREM-ESX-A04,iDRAC,1000base-t,True,True,iDRAC Management interface
+EMEA-DC-ONPREM-ESX-A04,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+EMEA-DC-ONPREM-ESX-A04,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+EMEA-DC-ONPREM-ESX-A04,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+EMEA-DC-ONPREM-ESX-A04,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+EMEA-DC-ONPREM-ESX-A05,iLO,1000base-t,True,True,iLO Management interface
+EMEA-DC-ONPREM-ESX-A05,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 1
+EMEA-DC-ONPREM-ESX-A05,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 2
+EMEA-DC-ONPREM-ESX-A05,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 1
+EMEA-DC-ONPREM-ESX-A05,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 2
+EMEA-DC-ONPREM-ESX-A06,iLO,1000base-t,True,True,iLO Management interface
+EMEA-DC-ONPREM-ESX-A06,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 1
+EMEA-DC-ONPREM-ESX-A06,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 2
+EMEA-DC-ONPREM-ESX-A06,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 1
+EMEA-DC-ONPREM-ESX-A06,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 2
+EMEA-DC-ONPREM-ESX-B01,iDRAC,1000base-t,True,True,iDRAC Management interface
+EMEA-DC-ONPREM-ESX-B01,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+EMEA-DC-ONPREM-ESX-B01,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+EMEA-DC-ONPREM-ESX-B01,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+EMEA-DC-ONPREM-ESX-B01,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+EMEA-DC-ONPREM-ESX-B02,iDRAC,1000base-t,True,True,iDRAC Management interface
+EMEA-DC-ONPREM-ESX-B02,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+EMEA-DC-ONPREM-ESX-B02,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+EMEA-DC-ONPREM-ESX-B02,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+EMEA-DC-ONPREM-ESX-B02,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+EMEA-DC-ONPREM-ESX-B03,iDRAC,1000base-t,True,True,iDRAC Management interface
+EMEA-DC-ONPREM-ESX-B03,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+EMEA-DC-ONPREM-ESX-B03,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+EMEA-DC-ONPREM-ESX-B03,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+EMEA-DC-ONPREM-ESX-B03,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+EMEA-DC-ONPREM-ESX-B04,iDRAC,1000base-t,True,True,iDRAC Management interface
+EMEA-DC-ONPREM-ESX-B04,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+EMEA-DC-ONPREM-ESX-B04,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+EMEA-DC-ONPREM-ESX-B04,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+EMEA-DC-ONPREM-ESX-B04,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+APAC-DC-ONPREM-ESX-A01,iDRAC,1000base-t,True,True,iDRAC Management interface
+APAC-DC-ONPREM-ESX-A01,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+APAC-DC-ONPREM-ESX-A01,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+APAC-DC-ONPREM-ESX-A01,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+APAC-DC-ONPREM-ESX-A01,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+APAC-DC-ONPREM-ESX-A02,iDRAC,1000base-t,True,True,iDRAC Management interface
+APAC-DC-ONPREM-ESX-A02,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+APAC-DC-ONPREM-ESX-A02,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+APAC-DC-ONPREM-ESX-A02,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+APAC-DC-ONPREM-ESX-A02,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+APAC-DC-ONPREM-ESX-A03,iDRAC,1000base-t,True,True,iDRAC Management interface
+APAC-DC-ONPREM-ESX-A03,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+APAC-DC-ONPREM-ESX-A03,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+APAC-DC-ONPREM-ESX-A03,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+APAC-DC-ONPREM-ESX-A03,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+APAC-DC-ONPREM-ESX-A04,iDRAC,1000base-t,True,True,iDRAC Management interface
+APAC-DC-ONPREM-ESX-A04,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+APAC-DC-ONPREM-ESX-A04,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+APAC-DC-ONPREM-ESX-A04,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+APAC-DC-ONPREM-ESX-A04,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+APAC-DC-ONPREM-ESX-A05,iLO,1000base-t,True,True,iLO Management interface
+APAC-DC-ONPREM-ESX-A05,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 1
+APAC-DC-ONPREM-ESX-A05,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 2
+APAC-DC-ONPREM-ESX-A05,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 1
+APAC-DC-ONPREM-ESX-A05,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 2
+APAC-DC-ONPREM-ESX-A06,iLO,1000base-t,True,True,iLO Management interface
+APAC-DC-ONPREM-ESX-A06,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 1
+APAC-DC-ONPREM-ESX-A06,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 2
+APAC-DC-ONPREM-ESX-A06,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 1
+APAC-DC-ONPREM-ESX-A06,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 2
+APAC-DC-ONPREM-ESX-B01,iDRAC,1000base-t,True,True,iDRAC Management interface
+APAC-DC-ONPREM-ESX-B01,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+APAC-DC-ONPREM-ESX-B01,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+APAC-DC-ONPREM-ESX-B01,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+APAC-DC-ONPREM-ESX-B01,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+APAC-DC-ONPREM-ESX-B02,iDRAC,1000base-t,True,True,iDRAC Management interface
+APAC-DC-ONPREM-ESX-B02,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+APAC-DC-ONPREM-ESX-B02,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+APAC-DC-ONPREM-ESX-B02,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+APAC-DC-ONPREM-ESX-B02,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+APAC-DC-ONPREM-ESX-B03,iDRAC,1000base-t,True,True,iDRAC Management interface
+APAC-DC-ONPREM-ESX-B03,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+APAC-DC-ONPREM-ESX-B03,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+APAC-DC-ONPREM-ESX-B03,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+APAC-DC-ONPREM-ESX-B03,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+APAC-DC-ONPREM-ESX-B04,iDRAC,1000base-t,True,True,iDRAC Management interface
+APAC-DC-ONPREM-ESX-B04,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+APAC-DC-ONPREM-ESX-B04,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+APAC-DC-ONPREM-ESX-B04,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+APAC-DC-ONPREM-ESX-B04,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+AMER-DC-ONPREM-ESX-A01,iDRAC,1000base-t,True,True,iDRAC Management interface
+AMER-DC-ONPREM-ESX-A01,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+AMER-DC-ONPREM-ESX-A01,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+AMER-DC-ONPREM-ESX-A01,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+AMER-DC-ONPREM-ESX-A01,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+AMER-DC-ONPREM-ESX-A02,iDRAC,1000base-t,True,True,iDRAC Management interface
+AMER-DC-ONPREM-ESX-A02,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+AMER-DC-ONPREM-ESX-A02,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+AMER-DC-ONPREM-ESX-A02,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+AMER-DC-ONPREM-ESX-A02,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+AMER-DC-ONPREM-ESX-A03,iDRAC,1000base-t,True,True,iDRAC Management interface
+AMER-DC-ONPREM-ESX-A03,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+AMER-DC-ONPREM-ESX-A03,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+AMER-DC-ONPREM-ESX-A03,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+AMER-DC-ONPREM-ESX-A03,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+AMER-DC-ONPREM-ESX-A04,iDRAC,1000base-t,True,True,iDRAC Management interface
+AMER-DC-ONPREM-ESX-A04,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+AMER-DC-ONPREM-ESX-A04,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+AMER-DC-ONPREM-ESX-A04,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+AMER-DC-ONPREM-ESX-A04,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+AMER-DC-ONPREM-ESX-A05,iLO,1000base-t,True,True,iLO Management interface
+AMER-DC-ONPREM-ESX-A05,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 1
+AMER-DC-ONPREM-ESX-A05,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 2
+AMER-DC-ONPREM-ESX-A05,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 1
+AMER-DC-ONPREM-ESX-A05,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 2
+AMER-DC-ONPREM-ESX-A06,iLO,1000base-t,True,True,iLO Management interface
+AMER-DC-ONPREM-ESX-A06,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 1
+AMER-DC-ONPREM-ESX-A06,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 FlexibleLOM Port 2
+AMER-DC-ONPREM-ESX-A06,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 1
+AMER-DC-ONPREM-ESX-A06,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Mezz Port 2
+AMER-DC-ONPREM-ESX-B01,iDRAC,1000base-t,True,True,iDRAC Management interface
+AMER-DC-ONPREM-ESX-B01,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+AMER-DC-ONPREM-ESX-B01,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+AMER-DC-ONPREM-ESX-B01,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+AMER-DC-ONPREM-ESX-B01,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+AMER-DC-ONPREM-ESX-B02,iDRAC,1000base-t,True,True,iDRAC Management interface
+AMER-DC-ONPREM-ESX-B02,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+AMER-DC-ONPREM-ESX-B02,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+AMER-DC-ONPREM-ESX-B02,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+AMER-DC-ONPREM-ESX-B02,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+AMER-DC-ONPREM-ESX-B03,iDRAC,1000base-t,True,True,iDRAC Management interface
+AMER-DC-ONPREM-ESX-B03,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+AMER-DC-ONPREM-ESX-B03,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+AMER-DC-ONPREM-ESX-B03,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+AMER-DC-ONPREM-ESX-B03,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+AMER-DC-ONPREM-ESX-B04,iDRAC,1000base-t,True,True,iDRAC Management interface
+AMER-DC-ONPREM-ESX-B04,NIC1-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 1
+AMER-DC-ONPREM-ESX-B04,NIC1-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC1 Port 2
+AMER-DC-ONPREM-ESX-B04,NIC2-Port1,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 1
+AMER-DC-ONPREM-ESX-B04,NIC2-Port2,25gbase-x-sfp28,True,False,25G SFP28 NIC2 Port 2
+EMEA-DC-ONPREM-ESX-MGT01,CIMC,1000base-t,True,True,Cisco CIMC Management interface
+EMEA-DC-ONPREM-ESX-MGT01,NIC1-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 1
+EMEA-DC-ONPREM-ESX-MGT01,NIC1-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 2
+EMEA-DC-ONPREM-ESX-MGT01,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 3
+EMEA-DC-ONPREM-ESX-MGT01,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 4
+EMEA-DC-ONPREM-ESX-MGT02,CIMC,1000base-t,True,True,Cisco CIMC Management interface
+EMEA-DC-ONPREM-ESX-MGT02,NIC1-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 1
+EMEA-DC-ONPREM-ESX-MGT02,NIC1-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 2
+EMEA-DC-ONPREM-ESX-MGT02,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 3
+EMEA-DC-ONPREM-ESX-MGT02,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 4
+EMEA-DC-ONPREM-ESX-MGT03,CIMC,1000base-t,True,True,Cisco CIMC Management interface
+EMEA-DC-ONPREM-ESX-MGT03,NIC1-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 1
+EMEA-DC-ONPREM-ESX-MGT03,NIC1-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 2
+EMEA-DC-ONPREM-ESX-MGT03,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 3
+EMEA-DC-ONPREM-ESX-MGT03,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 4
+APAC-DC-ONPREM-ESX-MGT01,CIMC,1000base-t,True,True,Cisco CIMC Management interface
+APAC-DC-ONPREM-ESX-MGT01,NIC1-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 1
+APAC-DC-ONPREM-ESX-MGT01,NIC1-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 2
+APAC-DC-ONPREM-ESX-MGT01,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 3
+APAC-DC-ONPREM-ESX-MGT01,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 4
+APAC-DC-ONPREM-ESX-MGT02,CIMC,1000base-t,True,True,Cisco CIMC Management interface
+APAC-DC-ONPREM-ESX-MGT02,NIC1-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 1
+APAC-DC-ONPREM-ESX-MGT02,NIC1-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 2
+APAC-DC-ONPREM-ESX-MGT02,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 3
+APAC-DC-ONPREM-ESX-MGT02,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 4
+APAC-DC-ONPREM-ESX-MGT03,CIMC,1000base-t,True,True,Cisco CIMC Management interface
+APAC-DC-ONPREM-ESX-MGT03,NIC1-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 1
+APAC-DC-ONPREM-ESX-MGT03,NIC1-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 2
+APAC-DC-ONPREM-ESX-MGT03,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 3
+APAC-DC-ONPREM-ESX-MGT03,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 4
+AMER-DC-ONPREM-ESX-MGT01,CIMC,1000base-t,True,True,Cisco CIMC Management interface
+AMER-DC-ONPREM-ESX-MGT01,NIC1-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 1
+AMER-DC-ONPREM-ESX-MGT01,NIC1-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 2
+AMER-DC-ONPREM-ESX-MGT01,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 3
+AMER-DC-ONPREM-ESX-MGT01,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 4
+AMER-DC-ONPREM-ESX-MGT02,CIMC,1000base-t,True,True,Cisco CIMC Management interface
+AMER-DC-ONPREM-ESX-MGT02,NIC1-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 1
+AMER-DC-ONPREM-ESX-MGT02,NIC1-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 2
+AMER-DC-ONPREM-ESX-MGT02,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 3
+AMER-DC-ONPREM-ESX-MGT02,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 4
+AMER-DC-ONPREM-ESX-MGT03,CIMC,1000base-t,True,True,Cisco CIMC Management interface
+AMER-DC-ONPREM-ESX-MGT03,NIC1-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 1
+AMER-DC-ONPREM-ESX-MGT03,NIC1-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 2
+AMER-DC-ONPREM-ESX-MGT03,NIC2-Port1,10gbase-x-sfpp,True,False,10G SFP+ Port 3
+AMER-DC-ONPREM-ESX-MGT03,NIC2-Port2,10gbase-x-sfpp,True,False,10G SFP+ Port 4
