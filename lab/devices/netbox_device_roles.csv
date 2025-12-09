@@ -13,3 +13,20 @@ OOB Router,oob-router,009688,False,OOB Router device role
 NAC,nac,cddc39,False,NAC device role
 PDU,pdu,9e9e9e,False,PDU device role
 Patch Panel,patch-panel,607d8b,False,Patch Panel device role
+vCenter Server,vcenter-server,9c27b0,True,VMware vCenter Server role
+NSX Manager,nsx-manager,2196f3,True,VMware NSX Manager role
+Monitoring,monitoring,4caf50,True,Monitoring and metrics platform (vROps)
+Logging,logging,ff9800,True,Log aggregation and analytics platform
+Backup,backup,795548,True,Backup and recovery server
+Jump Host,jump-host,00bcd4,True,Administrative jump host / bastion
+Automation,automation,673ab7,True,Automation and orchestration platform (Ansible/AWX)
+Web Server,web-server,2196f3,True,Web server / frontend tier
+Application Server,application-server,009688,True,Application server / business logic tier
+Database Server,database-server,f44336,True,Database server / data tier
+Cache Server,cache-server,e91e63,True,In-memory cache server (Redis)
+Message Broker,message-broker,ffeb3b,True,Message broker / event streaming (Kafka)
+Search Engine,search-engine,ff9800,True,Search and analytics engine (Elasticsearch)
+Container Host,container-host,3f51b5,True,Container host / Docker runtime
+vSAN Witness,vsan-witness,9e9e9e,True,vSAN witness appliance
+File Server,file-server,8d6e63,True,File server / shared storage
+NFS Server,nfs-server,795548,True,NFS server / network file storage
