@@ -1,0 +1,130 @@
+virtual_machine,name,size,description
+EMEA-vCenter-01,vCenter-OS-Data,500,vCenter OS and data disk
+EMEA-NSX-Manager-01,NSX-OS-Data,300,NSX Manager OS and data disk
+EMEA-NSX-Manager-02,NSX-OS-Data,300,NSX Manager OS and data disk
+EMEA-NSX-Manager-03,NSX-OS-Data,300,NSX Manager OS and data disk
+EMEA-vROps-01,vROps-OS-Data,500,vROps OS and data disk
+EMEA-vRLI-01,vRLI-OS-Data,500,vRLI OS and data disk
+EMEA-Backup-Server-01,OS-Disk,100,Operating system disk
+EMEA-Backup-Server-01,Backup-Data,900,Backup storage volume
+EMEA-Jump-Host-01,OS-Disk,100,Operating system disk
+EMEA-Ansible-Tower-01,OS-Disk,100,Operating system disk
+EMEA-Ansible-Tower-01,Ansible-Data,100,Ansible projects and inventory
+EMEA-Web-App-01,OS-Disk,100,Operating system and web content
+EMEA-Web-App-02,OS-Disk,100,Operating system and web content
+EMEA-Web-App-03,OS-Disk,100,Operating system and web content
+EMEA-App-Server-01,OS-Disk,100,Operating system disk
+EMEA-App-Server-01,App-Data,100,Application binaries and data
+EMEA-App-Server-02,OS-Disk,100,Operating system disk
+EMEA-App-Server-02,App-Data,100,Application binaries and data
+EMEA-App-Server-03,OS-Disk,100,Operating system disk
+EMEA-App-Server-03,App-Data,100,Application binaries and data
+EMEA-DB-Server-01,OS-Disk,100,Operating system disk
+EMEA-DB-Server-01,DB-Data,900,Database data files and logs
+EMEA-DB-Server-02,OS-Disk,100,Operating system disk
+EMEA-DB-Server-02,DB-Data,900,Database data files and logs
+EMEA-Redis-01,OS-Data,100,Redis OS and data
+EMEA-Redis-02,OS-Data,100,Redis OS and data
+EMEA-Kafka-01,OS-Disk,100,Operating system disk
+EMEA-Kafka-01,Kafka-Data,400,Kafka logs and topics
+EMEA-Kafka-02,OS-Disk,100,Operating system disk
+EMEA-Kafka-02,Kafka-Data,400,Kafka logs and topics
+EMEA-ELK-ES-01,OS-Disk,100,Operating system disk
+EMEA-ELK-ES-01,ES-Data,900,Elasticsearch indices and data
+EMEA-ELK-ES-02,OS-Disk,100,Operating system disk
+EMEA-ELK-ES-02,ES-Data,900,Elasticsearch indices and data
+EMEA-Docker-Host-01,OS-Disk,100,Operating system disk
+EMEA-Docker-Host-01,Docker-Data,400,Docker images and volumes
+EMEA-Docker-Host-02,OS-Disk,100,Operating system disk
+EMEA-Docker-Host-02,Docker-Data,400,Docker images and volumes
+EMEA-vSAN-Witness,Witness-Disk,10,vSAN witness cache disk
+EMEA-File-Server-01,OS-Disk,100,Operating system disk
+EMEA-File-Server-01,File-Storage,4900,File server storage volume
+EMEA-NFS-Server-01,OS-Disk,100,Operating system disk
+EMEA-NFS-Server-01,NFS-Storage,4900,NFS export storage volume
+APAC-vCenter-01,vCenter-OS-Data,500,vCenter OS and data disk
+APAC-NSX-Manager-01,NSX-OS-Data,300,NSX Manager OS and data disk
+APAC-NSX-Manager-02,NSX-OS-Data,300,NSX Manager OS and data disk
+APAC-NSX-Manager-03,NSX-OS-Data,300,NSX Manager OS and data disk
+APAC-vROps-01,vROps-OS-Data,500,vROps OS and data disk
+APAC-vRLI-01,vRLI-OS-Data,500,vRLI OS and data disk
+APAC-Backup-Server-01,OS-Disk,100,Operating system disk
+APAC-Backup-Server-01,Backup-Data,900,Backup storage volume
+APAC-Jump-Host-01,OS-Disk,100,Operating system disk
+APAC-Ansible-Tower-01,OS-Disk,100,Operating system disk
+APAC-Ansible-Tower-01,Ansible-Data,100,Ansible projects and inventory
+APAC-Web-App-01,OS-Disk,100,Operating system and web content
+APAC-Web-App-02,OS-Disk,100,Operating system and web content
+APAC-Web-App-03,OS-Disk,100,Operating system and web content
+APAC-App-Server-01,OS-Disk,100,Operating system disk
+APAC-App-Server-01,App-Data,100,Application binaries and data
+APAC-App-Server-02,OS-Disk,100,Operating system disk
+APAC-App-Server-02,App-Data,100,Application binaries and data
+APAC-App-Server-03,OS-Disk,100,Operating system disk
+APAC-App-Server-03,App-Data,100,Application binaries and data
+APAC-DB-Server-01,OS-Disk,100,Operating system disk
+APAC-DB-Server-01,DB-Data,900,Database data files and logs
+APAC-DB-Server-02,OS-Disk,100,Operating system disk
+APAC-DB-Server-02,DB-Data,900,Database data files and logs
+APAC-Redis-01,OS-Data,100,Redis OS and data
+APAC-Redis-02,OS-Data,100,Redis OS and data
+APAC-Kafka-01,OS-Disk,100,Operating system disk
+APAC-Kafka-01,Kafka-Data,400,Kafka logs and topics
+APAC-Kafka-02,OS-Disk,100,Operating system disk
+APAC-Kafka-02,Kafka-Data,400,Kafka logs and topics
+APAC-ELK-ES-01,OS-Disk,100,Operating system disk
+APAC-ELK-ES-01,ES-Data,900,Elasticsearch indices and data
+APAC-ELK-ES-02,OS-Disk,100,Operating system disk
+APAC-ELK-ES-02,ES-Data,900,Elasticsearch indices and data
+APAC-Docker-Host-01,OS-Disk,100,Operating system disk
+APAC-Docker-Host-01,Docker-Data,400,Docker images and volumes
+APAC-Docker-Host-02,OS-Disk,100,Operating system disk
+APAC-Docker-Host-02,Docker-Data,400,Docker images and volumes
+APAC-vSAN-Witness,Witness-Disk,10,vSAN witness cache disk
+APAC-File-Server-01,OS-Disk,100,Operating system disk
+APAC-File-Server-01,File-Storage,4900,File server storage volume
+APAC-NFS-Server-01,OS-Disk,100,Operating system disk
+APAC-NFS-Server-01,NFS-Storage,4900,NFS export storage volume
+AMER-vCenter-01,vCenter-OS-Data,500,vCenter OS and data disk
+AMER-NSX-Manager-01,NSX-OS-Data,300,NSX Manager OS and data disk
+AMER-NSX-Manager-02,NSX-OS-Data,300,NSX Manager OS and data disk
+AMER-NSX-Manager-03,NSX-OS-Data,300,NSX Manager OS and data disk
+AMER-vROps-01,vROps-OS-Data,500,vROps OS and data disk
+AMER-vRLI-01,vRLI-OS-Data,500,vRLI OS and data disk
+AMER-Backup-Server-01,OS-Disk,100,Operating system disk
+AMER-Backup-Server-01,Backup-Data,900,Backup storage volume
+AMER-Jump-Host-01,OS-Disk,100,Operating system disk
+AMER-Ansible-Tower-01,OS-Disk,100,Operating system disk
+AMER-Ansible-Tower-01,Ansible-Data,100,Ansible projects and inventory
+AMER-Web-App-01,OS-Disk,100,Operating system and web content
+AMER-Web-App-02,OS-Disk,100,Operating system and web content
+AMER-Web-App-03,OS-Disk,100,Operating system and web content
+AMER-App-Server-01,OS-Disk,100,Operating system disk
+AMER-App-Server-01,App-Data,100,Application binaries and data
+AMER-App-Server-02,OS-Disk,100,Operating system disk
+AMER-App-Server-02,App-Data,100,Application binaries and data
+AMER-App-Server-03,OS-Disk,100,Operating system disk
+AMER-App-Server-03,App-Data,100,Application binaries and data
+AMER-DB-Server-01,OS-Disk,100,Operating system disk
+AMER-DB-Server-01,DB-Data,900,Database data files and logs
+AMER-DB-Server-02,OS-Disk,100,Operating system disk
+AMER-DB-Server-02,DB-Data,900,Database data files and logs
+AMER-Redis-01,OS-Data,100,Redis OS and data
+AMER-Redis-02,OS-Data,100,Redis OS and data
+AMER-Kafka-01,OS-Disk,100,Operating system disk
+AMER-Kafka-01,Kafka-Data,400,Kafka logs and topics
+AMER-Kafka-02,OS-Disk,100,Operating system disk
+AMER-Kafka-02,Kafka-Data,400,Kafka logs and topics
+AMER-ELK-ES-01,OS-Disk,100,Operating system disk
+AMER-ELK-ES-01,ES-Data,900,Elasticsearch indices and data
+AMER-ELK-ES-02,OS-Disk,100,Operating system disk
+AMER-ELK-ES-02,ES-Data,900,Elasticsearch indices and data
+AMER-Docker-Host-01,OS-Disk,100,Operating system disk
+AMER-Docker-Host-01,Docker-Data,400,Docker images and volumes
+AMER-Docker-Host-02,OS-Disk,100,Operating system disk
+AMER-Docker-Host-02,Docker-Data,400,Docker images and volumes
+AMER-vSAN-Witness,Witness-Disk,10,vSAN witness cache disk
+AMER-File-Server-01,OS-Disk,100,Operating system disk
+AMER-File-Server-01,File-Storage,4900,File server storage volume
+AMER-NFS-Server-01,OS-Disk,100,Operating system disk
+AMER-NFS-Server-01,NFS-Storage,4900,NFS export storage volume
