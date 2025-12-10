@@ -1,31 +1,31 @@
-name,power_panel,status,type,supply,phase,voltage,amperage,max_utilization,description
-EMEA-DC-ONPREM-Network-Core-FEED-A,EMEA-DC-ONPREM-Network-Core-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Network Core Panel A
-EMEA-DC-ONPREM-Network-Core-FEED-B,EMEA-DC-ONPREM-Network-Core-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Network Core Panel B
-EMEA-DC-ONPREM-Server-Hall-A-FEED-A,EMEA-DC-ONPREM-Server-Hall-A-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall A Panel A
-EMEA-DC-ONPREM-Server-Hall-A-FEED-B,EMEA-DC-ONPREM-Server-Hall-A-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall A Panel B
-EMEA-DC-ONPREM-Server-Hall-B-FEED-A,EMEA-DC-ONPREM-Server-Hall-B-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall B Panel A
-EMEA-DC-ONPREM-Server-Hall-B-FEED-B,EMEA-DC-ONPREM-Server-Hall-B-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall B Panel B
-EMEA-DC-ONPREM-Storage-Room-FEED-A,EMEA-DC-ONPREM-Storage-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Storage Room Panel A
-EMEA-DC-ONPREM-Storage-Room-FEED-B,EMEA-DC-ONPREM-Storage-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Storage Room Panel B
-EMEA-DC-ONPREM-Meet-Me-Room-FEED-A,EMEA-DC-ONPREM-Meet-Me-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Meet-Me Room Panel A
-EMEA-DC-ONPREM-Meet-Me-Room-FEED-B,EMEA-DC-ONPREM-Meet-Me-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Meet-Me Room Panel B
-APAC-DC-ONPREM-Network-Core-FEED-A,APAC-DC-ONPREM-Network-Core-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Network Core Panel A
-APAC-DC-ONPREM-Network-Core-FEED-B,APAC-DC-ONPREM-Network-Core-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Network Core Panel B
-APAC-DC-ONPREM-Server-Hall-A-FEED-A,APAC-DC-ONPREM-Server-Hall-A-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall A Panel A
-APAC-DC-ONPREM-Server-Hall-A-FEED-B,APAC-DC-ONPREM-Server-Hall-A-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall A Panel B
-APAC-DC-ONPREM-Server-Hall-B-FEED-A,APAC-DC-ONPREM-Server-Hall-B-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall B Panel A
-APAC-DC-ONPREM-Server-Hall-B-FEED-B,APAC-DC-ONPREM-Server-Hall-B-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall B Panel B
-APAC-DC-ONPREM-Storage-Room-FEED-A,APAC-DC-ONPREM-Storage-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Storage Room Panel A
-APAC-DC-ONPREM-Storage-Room-FEED-B,APAC-DC-ONPREM-Storage-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Storage Room Panel B
-APAC-DC-ONPREM-Meet-Me-Room-FEED-A,APAC-DC-ONPREM-Meet-Me-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Meet-Me Room Panel A
-APAC-DC-ONPREM-Meet-Me-Room-FEED-B,APAC-DC-ONPREM-Meet-Me-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Meet-Me Room Panel B
-AMER-DC-ONPREM-Network-Core-FEED-A,AMER-DC-ONPREM-Network-Core-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Network Core Panel A
-AMER-DC-ONPREM-Network-Core-FEED-B,AMER-DC-ONPREM-Network-Core-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Network Core Panel B
-AMER-DC-ONPREM-Server-Hall-A-FEED-A,AMER-DC-ONPREM-Server-Hall-A-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall A Panel A
-AMER-DC-ONPREM-Server-Hall-A-FEED-B,AMER-DC-ONPREM-Server-Hall-A-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall A Panel B
-AMER-DC-ONPREM-Server-Hall-B-FEED-A,AMER-DC-ONPREM-Server-Hall-B-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall B Panel A
-AMER-DC-ONPREM-Server-Hall-B-FEED-B,AMER-DC-ONPREM-Server-Hall-B-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall B Panel B
-AMER-DC-ONPREM-Storage-Room-FEED-A,AMER-DC-ONPREM-Storage-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Storage Room Panel A
-AMER-DC-ONPREM-Storage-Room-FEED-B,AMER-DC-ONPREM-Storage-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Storage Room Panel B
-AMER-DC-ONPREM-Meet-Me-Room-FEED-A,AMER-DC-ONPREM-Meet-Me-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Meet-Me Room Panel A
-AMER-DC-ONPREM-Meet-Me-Room-FEED-B,AMER-DC-ONPREM-Meet-Me-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Meet-Me Room Panel B
+site,name,power_panel,status,type,supply,phase,voltage,amperage,max_utilization,description
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network-Core-FEED-A,EMEA-DC-ONPREM-Network-Core-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Network Core Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network-Core-FEED-B,EMEA-DC-ONPREM-Network-Core-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Network Core Panel B
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server-Hall-A-FEED-A,EMEA-DC-ONPREM-Server-Hall-A-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall A Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server-Hall-A-FEED-B,EMEA-DC-ONPREM-Server-Hall-A-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall A Panel B
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server-Hall-B-FEED-A,EMEA-DC-ONPREM-Server-Hall-B-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall B Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server-Hall-B-FEED-B,EMEA-DC-ONPREM-Server-Hall-B-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall B Panel B
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage-Room-FEED-A,EMEA-DC-ONPREM-Storage-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Storage Room Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage-Room-FEED-B,EMEA-DC-ONPREM-Storage-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Storage Room Panel B
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me-Room-FEED-A,EMEA-DC-ONPREM-Meet-Me-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Meet-Me Room Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me-Room-FEED-B,EMEA-DC-ONPREM-Meet-Me-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Meet-Me Room Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Network-Core-FEED-A,APAC-DC-ONPREM-Network-Core-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Network Core Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Network-Core-FEED-B,APAC-DC-ONPREM-Network-Core-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Network Core Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Server-Hall-A-FEED-A,APAC-DC-ONPREM-Server-Hall-A-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall A Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Server-Hall-A-FEED-B,APAC-DC-ONPREM-Server-Hall-A-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall A Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Server-Hall-B-FEED-A,APAC-DC-ONPREM-Server-Hall-B-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall B Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Server-Hall-B-FEED-B,APAC-DC-ONPREM-Server-Hall-B-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall B Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Storage-Room-FEED-A,APAC-DC-ONPREM-Storage-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Storage Room Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Storage-Room-FEED-B,APAC-DC-ONPREM-Storage-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Storage Room Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me-Room-FEED-A,APAC-DC-ONPREM-Meet-Me-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Meet-Me Room Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me-Room-FEED-B,APAC-DC-ONPREM-Meet-Me-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Meet-Me Room Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Network-Core-FEED-A,AMER-DC-ONPREM-Network-Core-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Network Core Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Network-Core-FEED-B,AMER-DC-ONPREM-Network-Core-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Network Core Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Server-Hall-A-FEED-A,AMER-DC-ONPREM-Server-Hall-A-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall A Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Server-Hall-A-FEED-B,AMER-DC-ONPREM-Server-Hall-A-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall A Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Server-Hall-B-FEED-A,AMER-DC-ONPREM-Server-Hall-B-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall B Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Server-Hall-B-FEED-B,AMER-DC-ONPREM-Server-Hall-B-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall B Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Storage-Room-FEED-A,AMER-DC-ONPREM-Storage-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Storage Room Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Storage-Room-FEED-B,AMER-DC-ONPREM-Storage-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Storage Room Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me-Room-FEED-A,AMER-DC-ONPREM-Meet-Me-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Meet-Me Room Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me-Room-FEED-B,AMER-DC-ONPREM-Meet-Me-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Meet-Me Room Panel B
