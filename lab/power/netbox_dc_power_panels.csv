@@ -1,0 +1,31 @@
+name,site,location,description
+EMEA-DC-ONPREM-Network-Core-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,Primary power panel A-feed for Network Core
+EMEA-DC-ONPREM-Network-Core-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network Core,Secondary power panel B-feed for Network Core
+EMEA-DC-ONPREM-Server-Hall-A-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,Primary power panel A-feed for Server Hall A
+EMEA-DC-ONPREM-Server-Hall-A-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall A,Secondary power panel B-feed for Server Hall A
+EMEA-DC-ONPREM-Server-Hall-B-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,Primary power panel A-feed for Server Hall B
+EMEA-DC-ONPREM-Server-Hall-B-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server Hall B,Secondary power panel B-feed for Server Hall B
+EMEA-DC-ONPREM-Storage-Room-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,Primary power panel A-feed for Storage Room
+EMEA-DC-ONPREM-Storage-Room-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage Room,Secondary power panel B-feed for Storage Room
+EMEA-DC-ONPREM-Meet-Me-Room-PANEL-A,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me Room,Primary power panel A-feed for Meet-Me Room
+EMEA-DC-ONPREM-Meet-Me-Room-PANEL-B,EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me Room,Secondary power panel B-feed for Meet-Me Room
+APAC-DC-ONPREM-Network-Core-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,Primary power panel A-feed for Network Core
+APAC-DC-ONPREM-Network-Core-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-Network Core,Secondary power panel B-feed for Network Core
+APAC-DC-ONPREM-Server-Hall-A-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,Primary power panel A-feed for Server Hall A
+APAC-DC-ONPREM-Server-Hall-A-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall A,Secondary power panel B-feed for Server Hall A
+APAC-DC-ONPREM-Server-Hall-B-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,Primary power panel A-feed for Server Hall B
+APAC-DC-ONPREM-Server-Hall-B-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-Server Hall B,Secondary power panel B-feed for Server Hall B
+APAC-DC-ONPREM-Storage-Room-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,Primary power panel A-feed for Storage Room
+APAC-DC-ONPREM-Storage-Room-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-Storage Room,Secondary power panel B-feed for Storage Room
+APAC-DC-ONPREM-Meet-Me-Room-PANEL-A,APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me Room,Primary power panel A-feed for Meet-Me Room
+APAC-DC-ONPREM-Meet-Me-Room-PANEL-B,APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me Room,Secondary power panel B-feed for Meet-Me Room
+AMER-DC-ONPREM-Network-Core-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,Primary power panel A-feed for Network Core
+AMER-DC-ONPREM-Network-Core-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-Network Core,Secondary power panel B-feed for Network Core
+AMER-DC-ONPREM-Server-Hall-A-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,Primary power panel A-feed for Server Hall A
+AMER-DC-ONPREM-Server-Hall-A-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall A,Secondary power panel B-feed for Server Hall A
+AMER-DC-ONPREM-Server-Hall-B-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,Primary power panel A-feed for Server Hall B
+AMER-DC-ONPREM-Server-Hall-B-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-Server Hall B,Secondary power panel B-feed for Server Hall B
+AMER-DC-ONPREM-Storage-Room-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,Primary power panel A-feed for Storage Room
+AMER-DC-ONPREM-Storage-Room-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-Storage Room,Secondary power panel B-feed for Storage Room
+AMER-DC-ONPREM-Meet-Me-Room-PANEL-A,AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me Room,Primary power panel A-feed for Meet-Me Room
+AMER-DC-ONPREM-Meet-Me-Room-PANEL-B,AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me Room,Secondary power panel B-feed for Meet-Me Room

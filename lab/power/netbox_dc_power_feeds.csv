@@ -1,127 +1,31 @@
-site,name,status,type,supply,phase,voltage,amperage,max_utilization,location,rack,description
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-NET-R01-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R01,Power feed to EMEA-DC-ONPREM-NET-R01-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-NET-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R01,Power feed to EMEA-DC-ONPREM-NET-R01-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-NET-R02-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R02,Power feed to EMEA-DC-ONPREM-NET-R02-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-NET-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R02,Power feed to EMEA-DC-ONPREM-NET-R02-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-NET-R03-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R03,Power feed to EMEA-DC-ONPREM-NET-R03-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-NET-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R03,Power feed to EMEA-DC-ONPREM-NET-R03-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-NET-R04-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R04,Power feed to EMEA-DC-ONPREM-NET-R04-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-NET-R04-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Network Core,EMEA-DC-ONPREM-NET-R04,Power feed to EMEA-DC-ONPREM-NET-R04-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R01-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R01,Power feed to EMEA-DC-ONPREM-SRV-A-R01-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R01,Power feed to EMEA-DC-ONPREM-SRV-A-R01-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R02-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R02,Power feed to EMEA-DC-ONPREM-SRV-A-R02-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R02,Power feed to EMEA-DC-ONPREM-SRV-A-R02-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R03-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R03,Power feed to EMEA-DC-ONPREM-SRV-A-R03-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R03,Power feed to EMEA-DC-ONPREM-SRV-A-R03-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R04-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R04,Power feed to EMEA-DC-ONPREM-SRV-A-R04-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R04-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R04,Power feed to EMEA-DC-ONPREM-SRV-A-R04-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R05-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R05,Power feed to EMEA-DC-ONPREM-SRV-A-R05-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R05-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R05,Power feed to EMEA-DC-ONPREM-SRV-A-R05-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R06-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R06,Power feed to EMEA-DC-ONPREM-SRV-A-R06-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-A-R06-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall A,EMEA-DC-ONPREM-SRV-A-R06,Power feed to EMEA-DC-ONPREM-SRV-A-R06-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R01-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R01,Power feed to EMEA-DC-ONPREM-SRV-B-R01-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R01,Power feed to EMEA-DC-ONPREM-SRV-B-R01-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R02-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R02,Power feed to EMEA-DC-ONPREM-SRV-B-R02-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R02,Power feed to EMEA-DC-ONPREM-SRV-B-R02-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R03-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R03,Power feed to EMEA-DC-ONPREM-SRV-B-R03-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R03,Power feed to EMEA-DC-ONPREM-SRV-B-R03-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R04-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R04,Power feed to EMEA-DC-ONPREM-SRV-B-R04-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R04-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R04,Power feed to EMEA-DC-ONPREM-SRV-B-R04-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R05-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R05,Power feed to EMEA-DC-ONPREM-SRV-B-R05-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R05-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R05,Power feed to EMEA-DC-ONPREM-SRV-B-R05-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R06-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R06,Power feed to EMEA-DC-ONPREM-SRV-B-R06-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-SRV-B-R06-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,EMEA-DC-ONPREM-Server Hall B,EMEA-DC-ONPREM-SRV-B-R06,Power feed to EMEA-DC-ONPREM-SRV-B-R06-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-STG-R01-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R01,Power feed to EMEA-DC-ONPREM-STG-R01-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-STG-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R01,Power feed to EMEA-DC-ONPREM-STG-R01-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-STG-R02-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R02,Power feed to EMEA-DC-ONPREM-STG-R02-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-STG-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R02,Power feed to EMEA-DC-ONPREM-STG-R02-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-STG-R03-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R03,Power feed to EMEA-DC-ONPREM-STG-R03-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-STG-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Storage Room,EMEA-DC-ONPREM-STG-R03,Power feed to EMEA-DC-ONPREM-STG-R03-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-MMR-R01-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Meet-Me Room,EMEA-DC-ONPREM-MMR-R01,Power feed to EMEA-DC-ONPREM-MMR-R01-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-MMR-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Meet-Me Room,EMEA-DC-ONPREM-MMR-R01,Power feed to EMEA-DC-ONPREM-MMR-R01-PDU-B Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-MMR-R02-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Meet-Me Room,EMEA-DC-ONPREM-MMR-R02,Power feed to EMEA-DC-ONPREM-MMR-R02-PDU-A Power-In inlet
-EMEA-DC-ONPREM,EMEA-DC-ONPREM-MMR-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,EMEA-DC-ONPREM-Meet-Me Room,EMEA-DC-ONPREM-MMR-R02,Power feed to EMEA-DC-ONPREM-MMR-R02-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-NET-R01-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R01,Power feed to APAC-DC-ONPREM-NET-R01-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-NET-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R01,Power feed to APAC-DC-ONPREM-NET-R01-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-NET-R02-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R02,Power feed to APAC-DC-ONPREM-NET-R02-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-NET-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R02,Power feed to APAC-DC-ONPREM-NET-R02-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-NET-R03-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R03,Power feed to APAC-DC-ONPREM-NET-R03-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-NET-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R03,Power feed to APAC-DC-ONPREM-NET-R03-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-NET-R04-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R04,Power feed to APAC-DC-ONPREM-NET-R04-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-NET-R04-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,APAC-DC-ONPREM-Network Core,APAC-DC-ONPREM-NET-R04,Power feed to APAC-DC-ONPREM-NET-R04-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R01-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R01,Power feed to APAC-DC-ONPREM-SRV-A-R01-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R01,Power feed to APAC-DC-ONPREM-SRV-A-R01-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R02-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R02,Power feed to APAC-DC-ONPREM-SRV-A-R02-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R02,Power feed to APAC-DC-ONPREM-SRV-A-R02-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R03-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R03,Power feed to APAC-DC-ONPREM-SRV-A-R03-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R03,Power feed to APAC-DC-ONPREM-SRV-A-R03-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R04-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R04,Power feed to APAC-DC-ONPREM-SRV-A-R04-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R04-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R04,Power feed to APAC-DC-ONPREM-SRV-A-R04-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R05-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R05,Power feed to APAC-DC-ONPREM-SRV-A-R05-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R05-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R05,Power feed to APAC-DC-ONPREM-SRV-A-R05-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R06-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R06,Power feed to APAC-DC-ONPREM-SRV-A-R06-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-A-R06-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall A,APAC-DC-ONPREM-SRV-A-R06,Power feed to APAC-DC-ONPREM-SRV-A-R06-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R01-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R01,Power feed to APAC-DC-ONPREM-SRV-B-R01-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R01,Power feed to APAC-DC-ONPREM-SRV-B-R01-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R02-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R02,Power feed to APAC-DC-ONPREM-SRV-B-R02-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R02,Power feed to APAC-DC-ONPREM-SRV-B-R02-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R03-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R03,Power feed to APAC-DC-ONPREM-SRV-B-R03-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R03,Power feed to APAC-DC-ONPREM-SRV-B-R03-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R04-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R04,Power feed to APAC-DC-ONPREM-SRV-B-R04-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R04-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R04,Power feed to APAC-DC-ONPREM-SRV-B-R04-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R05-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R05,Power feed to APAC-DC-ONPREM-SRV-B-R05-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R05-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R05,Power feed to APAC-DC-ONPREM-SRV-B-R05-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R06-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R06,Power feed to APAC-DC-ONPREM-SRV-B-R06-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-SRV-B-R06-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,APAC-DC-ONPREM-Server Hall B,APAC-DC-ONPREM-SRV-B-R06,Power feed to APAC-DC-ONPREM-SRV-B-R06-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-STG-R01-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R01,Power feed to APAC-DC-ONPREM-STG-R01-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-STG-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R01,Power feed to APAC-DC-ONPREM-STG-R01-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-STG-R02-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R02,Power feed to APAC-DC-ONPREM-STG-R02-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-STG-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R02,Power feed to APAC-DC-ONPREM-STG-R02-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-STG-R03-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R03,Power feed to APAC-DC-ONPREM-STG-R03-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-STG-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,APAC-DC-ONPREM-Storage Room,APAC-DC-ONPREM-STG-R03,Power feed to APAC-DC-ONPREM-STG-R03-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-MMR-R01-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,APAC-DC-ONPREM-Meet-Me Room,APAC-DC-ONPREM-MMR-R01,Power feed to APAC-DC-ONPREM-MMR-R01-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-MMR-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,APAC-DC-ONPREM-Meet-Me Room,APAC-DC-ONPREM-MMR-R01,Power feed to APAC-DC-ONPREM-MMR-R01-PDU-B Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-MMR-R02-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,APAC-DC-ONPREM-Meet-Me Room,APAC-DC-ONPREM-MMR-R02,Power feed to APAC-DC-ONPREM-MMR-R02-PDU-A Power-In inlet
-APAC-DC-ONPREM,APAC-DC-ONPREM-MMR-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,APAC-DC-ONPREM-Meet-Me Room,APAC-DC-ONPREM-MMR-R02,Power feed to APAC-DC-ONPREM-MMR-R02-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-NET-R01-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R01,Power feed to AMER-DC-ONPREM-NET-R01-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-NET-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R01,Power feed to AMER-DC-ONPREM-NET-R01-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-NET-R02-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R02,Power feed to AMER-DC-ONPREM-NET-R02-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-NET-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R02,Power feed to AMER-DC-ONPREM-NET-R02-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-NET-R03-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R03,Power feed to AMER-DC-ONPREM-NET-R03-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-NET-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R03,Power feed to AMER-DC-ONPREM-NET-R03-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-NET-R04-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R04,Power feed to AMER-DC-ONPREM-NET-R04-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-NET-R04-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,AMER-DC-ONPREM-Network Core,AMER-DC-ONPREM-NET-R04,Power feed to AMER-DC-ONPREM-NET-R04-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R01-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R01,Power feed to AMER-DC-ONPREM-SRV-A-R01-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R01,Power feed to AMER-DC-ONPREM-SRV-A-R01-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R02-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R02,Power feed to AMER-DC-ONPREM-SRV-A-R02-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R02,Power feed to AMER-DC-ONPREM-SRV-A-R02-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R03-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R03,Power feed to AMER-DC-ONPREM-SRV-A-R03-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R03,Power feed to AMER-DC-ONPREM-SRV-A-R03-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R04-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R04,Power feed to AMER-DC-ONPREM-SRV-A-R04-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R04-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R04,Power feed to AMER-DC-ONPREM-SRV-A-R04-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R05-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R05,Power feed to AMER-DC-ONPREM-SRV-A-R05-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R05-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R05,Power feed to AMER-DC-ONPREM-SRV-A-R05-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R06-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R06,Power feed to AMER-DC-ONPREM-SRV-A-R06-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-A-R06-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall A,AMER-DC-ONPREM-SRV-A-R06,Power feed to AMER-DC-ONPREM-SRV-A-R06-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R01-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R01,Power feed to AMER-DC-ONPREM-SRV-B-R01-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R01,Power feed to AMER-DC-ONPREM-SRV-B-R01-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R02-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R02,Power feed to AMER-DC-ONPREM-SRV-B-R02-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R02,Power feed to AMER-DC-ONPREM-SRV-B-R02-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R03-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R03,Power feed to AMER-DC-ONPREM-SRV-B-R03-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R03,Power feed to AMER-DC-ONPREM-SRV-B-R03-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R04-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R04,Power feed to AMER-DC-ONPREM-SRV-B-R04-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R04-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R04,Power feed to AMER-DC-ONPREM-SRV-B-R04-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R05-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R05,Power feed to AMER-DC-ONPREM-SRV-B-R05-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R05-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R05,Power feed to AMER-DC-ONPREM-SRV-B-R05-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R06-PDU-A-FEED,active,primary,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R06,Power feed to AMER-DC-ONPREM-SRV-B-R06-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-SRV-B-R06-PDU-B-FEED,active,redundant,ac,three-phase,208,400,80,AMER-DC-ONPREM-Server Hall B,AMER-DC-ONPREM-SRV-B-R06,Power feed to AMER-DC-ONPREM-SRV-B-R06-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-STG-R01-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R01,Power feed to AMER-DC-ONPREM-STG-R01-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-STG-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R01,Power feed to AMER-DC-ONPREM-STG-R01-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-STG-R02-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R02,Power feed to AMER-DC-ONPREM-STG-R02-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-STG-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R02,Power feed to AMER-DC-ONPREM-STG-R02-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-STG-R03-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R03,Power feed to AMER-DC-ONPREM-STG-R03-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-STG-R03-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,AMER-DC-ONPREM-Storage Room,AMER-DC-ONPREM-STG-R03,Power feed to AMER-DC-ONPREM-STG-R03-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-MMR-R01-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,AMER-DC-ONPREM-Meet-Me Room,AMER-DC-ONPREM-MMR-R01,Power feed to AMER-DC-ONPREM-MMR-R01-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-MMR-R01-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,AMER-DC-ONPREM-Meet-Me Room,AMER-DC-ONPREM-MMR-R01,Power feed to AMER-DC-ONPREM-MMR-R01-PDU-B Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-MMR-R02-PDU-A-FEED,active,primary,ac,three-phase,208,200,80,AMER-DC-ONPREM-Meet-Me Room,AMER-DC-ONPREM-MMR-R02,Power feed to AMER-DC-ONPREM-MMR-R02-PDU-A Power-In inlet
-AMER-DC-ONPREM,AMER-DC-ONPREM-MMR-R02-PDU-B-FEED,active,redundant,ac,three-phase,208,200,80,AMER-DC-ONPREM-Meet-Me Room,AMER-DC-ONPREM-MMR-R02,Power feed to AMER-DC-ONPREM-MMR-R02-PDU-B Power-In inlet
+site,name,power_panel,status,type,supply,phase,voltage,amperage,max_utilization,description
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network-Core-FEED-A,EMEA-DC-ONPREM-Network-Core-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Network Core Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Network-Core-FEED-B,EMEA-DC-ONPREM-Network-Core-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Network Core Panel B
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server-Hall-A-FEED-A,EMEA-DC-ONPREM-Server-Hall-A-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall A Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server-Hall-A-FEED-B,EMEA-DC-ONPREM-Server-Hall-A-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall A Panel B
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server-Hall-B-FEED-A,EMEA-DC-ONPREM-Server-Hall-B-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall B Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Server-Hall-B-FEED-B,EMEA-DC-ONPREM-Server-Hall-B-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall B Panel B
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage-Room-FEED-A,EMEA-DC-ONPREM-Storage-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Storage Room Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Storage-Room-FEED-B,EMEA-DC-ONPREM-Storage-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Storage Room Panel B
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me-Room-FEED-A,EMEA-DC-ONPREM-Meet-Me-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Meet-Me Room Panel A
+EMEA-DC-ONPREM,EMEA-DC-ONPREM-Meet-Me-Room-FEED-B,EMEA-DC-ONPREM-Meet-Me-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Meet-Me Room Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Network-Core-FEED-A,APAC-DC-ONPREM-Network-Core-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Network Core Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Network-Core-FEED-B,APAC-DC-ONPREM-Network-Core-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Network Core Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Server-Hall-A-FEED-A,APAC-DC-ONPREM-Server-Hall-A-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall A Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Server-Hall-A-FEED-B,APAC-DC-ONPREM-Server-Hall-A-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall A Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Server-Hall-B-FEED-A,APAC-DC-ONPREM-Server-Hall-B-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall B Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Server-Hall-B-FEED-B,APAC-DC-ONPREM-Server-Hall-B-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall B Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Storage-Room-FEED-A,APAC-DC-ONPREM-Storage-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Storage Room Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Storage-Room-FEED-B,APAC-DC-ONPREM-Storage-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Storage Room Panel B
+APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me-Room-FEED-A,APAC-DC-ONPREM-Meet-Me-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Meet-Me Room Panel A
+APAC-DC-ONPREM,APAC-DC-ONPREM-Meet-Me-Room-FEED-B,APAC-DC-ONPREM-Meet-Me-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Meet-Me Room Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Network-Core-FEED-A,AMER-DC-ONPREM-Network-Core-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Network Core Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Network-Core-FEED-B,AMER-DC-ONPREM-Network-Core-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Network Core Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Server-Hall-A-FEED-A,AMER-DC-ONPREM-Server-Hall-A-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall A Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Server-Hall-A-FEED-B,AMER-DC-ONPREM-Server-Hall-A-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall A Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Server-Hall-B-FEED-A,AMER-DC-ONPREM-Server-Hall-B-PANEL-A,active,primary,ac,three-phase,208,400,80,Primary feed to Server Hall B Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Server-Hall-B-FEED-B,AMER-DC-ONPREM-Server-Hall-B-PANEL-B,active,redundant,ac,three-phase,208,400,80,Redundant feed to Server Hall B Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Storage-Room-FEED-A,AMER-DC-ONPREM-Storage-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Storage Room Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Storage-Room-FEED-B,AMER-DC-ONPREM-Storage-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Storage Room Panel B
+AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me-Room-FEED-A,AMER-DC-ONPREM-Meet-Me-Room-PANEL-A,active,primary,ac,three-phase,208,200,80,Primary feed to Meet-Me Room Panel A
+AMER-DC-ONPREM,AMER-DC-ONPREM-Meet-Me-Room-FEED-B,AMER-DC-ONPREM-Meet-Me-Room-PANEL-B,active,redundant,ac,three-phase,208,200,80,Redundant feed to Meet-Me Room Panel B
