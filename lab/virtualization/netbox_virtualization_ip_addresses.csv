@@ -253,8 +253,6 @@ address,status,device,virtual_machine,interface,dns_name,description
 10.102.40.23/24,active,AMER-DC-ONPREM-ESX-MGT03,,vmk2,,AMER ESX-MGT03 vSAN
 10.100.60.40/24,active,,EMEA-Redis-01,eth0,emea-redis-01.lab.local,EMEA Redis 01
 10.100.60.41/24,active,,EMEA-Redis-02,eth0,emea-redis-02.lab.local,EMEA Redis 02
-10.100.70.40/24,active,,EMEA-Redis-01,eth1,,EMEA Redis 01 Cluster
-10.100.70.41/24,active,,EMEA-Redis-02,eth1,,EMEA Redis 02 Cluster
 10.100.60.50/24,active,,EMEA-Kafka-01,eth0,emea-kafka-01.lab.local,EMEA Kafka 01 Management
 10.100.70.50/24,active,,EMEA-Kafka-01,eth1,,EMEA Kafka 01 Replication
 10.100.60.51/24,active,,EMEA-Kafka-02,eth0,emea-kafka-02.lab.local,EMEA Kafka 02 Management
@@ -265,8 +263,6 @@ address,status,device,virtual_machine,interface,dns_name,description
 10.100.70.61/24,active,,EMEA-ELK-ES-02,eth1,,EMEA Elasticsearch 02 Cluster
 10.101.60.40/24,active,,APAC-Redis-01,eth0,apac-redis-01.lab.local,APAC Redis 01
 10.101.60.41/24,active,,APAC-Redis-02,eth0,apac-redis-02.lab.local,APAC Redis 02
-10.101.70.40/24,active,,APAC-Redis-01,eth1,,APAC Redis 01 Cluster
-10.101.70.41/24,active,,APAC-Redis-02,eth1,,APAC Redis 02 Cluster
 10.101.60.50/24,active,,APAC-Kafka-01,eth0,apac-kafka-01.lab.local,APAC Kafka 01 Management
 10.101.70.50/24,active,,APAC-Kafka-01,eth1,,APAC Kafka 01 Replication
 10.101.60.51/24,active,,APAC-Kafka-02,eth0,apac-kafka-02.lab.local,APAC Kafka 02 Management
@@ -277,8 +273,6 @@ address,status,device,virtual_machine,interface,dns_name,description
 10.101.70.61/24,active,,APAC-ELK-ES-02,eth1,,APAC Elasticsearch 02 Cluster
 10.102.60.40/24,active,,AMER-Redis-01,eth0,amer-redis-01.lab.local,AMER Redis 01
 10.102.60.41/24,active,,AMER-Redis-02,eth0,amer-redis-02.lab.local,AMER Redis 02
-10.102.70.40/24,active,,AMER-Redis-01,eth1,,AMER Redis 01 Cluster
-10.102.70.41/24,active,,AMER-Redis-02,eth1,,AMER Redis 02 Cluster
 10.102.60.50/24,active,,AMER-Kafka-01,eth0,amer-kafka-01.lab.local,AMER Kafka 01 Management
 10.102.70.50/24,active,,AMER-Kafka-01,eth1,,AMER Kafka 01 Replication
 10.102.60.51/24,active,,AMER-Kafka-02,eth0,amer-kafka-02.lab.local,AMER Kafka 02 Management
