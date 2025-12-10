@@ -1,5 +1,4 @@
 prefix,rir,description
-10.100.0.0/14,RFC1918,Global Virtualization Platform - All Regions (EMEA/APAC/AMER)
 10.100.0.0/16,RFC1918,EMEA Region - EMEA-DC-ONPREM Data Center
 10.101.0.0/16,RFC1918,APAC Region - APAC-DC-ONPREM Data Center
 10.102.0.0/16,RFC1918,AMER Region - AMER-DC-ONPREM Data Center
