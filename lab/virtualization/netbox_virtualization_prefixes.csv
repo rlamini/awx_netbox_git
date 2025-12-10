@@ -1,25 +1,25 @@
-prefix,status,vlan_site,vlan,site,scope_type,scope_id,description,is_pool
-10.100.10.0/24,active,EMEA-DC-ONPREM,10,EMEA-DC-ONPREM,dcim.site,EMEA-DC-ONPREM,EMEA OOB Management Network - ESXi iDRAC/iLO/CIMC,False
-10.100.20.0/24,reserved,EMEA-DC-ONPREM,20,EMEA-DC-ONPREM,dcim.site,EMEA-DC-ONPREM,EMEA ESXi Management Network - vmk0 interfaces,False
-10.100.30.0/24,reserved,EMEA-DC-ONPREM,30,EMEA-DC-ONPREM,dcim.site,EMEA-DC-ONPREM,EMEA vMotion Network - vmk1 live migration (MTU 9000),False
-10.100.40.0/24,reserved,EMEA-DC-ONPREM,40,EMEA-DC-ONPREM,dcim.site,EMEA-DC-ONPREM,EMEA vSAN Storage Network - vmk2 storage (MTU 9000),False
-10.100.50.0/24,active,EMEA-DC-ONPREM,50,EMEA-DC-ONPREM,dcim.site,EMEA-DC-ONPREM,EMEA Infrastructure VMs - vCenter NSX vROps vRLI,False
-10.100.60.0/24,active,EMEA-DC-ONPREM,60,EMEA-DC-ONPREM,dcim.site,EMEA-DC-ONPREM,EMEA Application VMs - Web App DB Cache servers,False
-10.100.70.0/24,active,EMEA-DC-ONPREM,70,EMEA-DC-ONPREM,dcim.site,EMEA-DC-ONPREM,EMEA Backend/Data Network - Replication cluster (MTU 9000),False
-10.100.80.0/24,active,EMEA-DC-ONPREM,80,EMEA-DC-ONPREM,dcim.site,EMEA-DC-ONPREM,EMEA Storage Network - NFS file server (MTU 9000),False
-10.101.10.0/24,active,APAC-DC-ONPREM,10,APAC-DC-ONPREM,dcim.site,APAC-DC-ONPREM,APAC OOB Management Network - ESXi iDRAC/iLO/CIMC,False
-10.101.20.0/24,reserved,APAC-DC-ONPREM,20,APAC-DC-ONPREM,dcim.site,APAC-DC-ONPREM,APAC ESXi Management Network - vmk0 interfaces,False
-10.101.30.0/24,reserved,APAC-DC-ONPREM,30,APAC-DC-ONPREM,dcim.site,APAC-DC-ONPREM,APAC vMotion Network - vmk1 live migration (MTU 9000),False
-10.101.40.0/24,reserved,APAC-DC-ONPREM,40,APAC-DC-ONPREM,dcim.site,APAC-DC-ONPREM,APAC vSAN Storage Network - vmk2 storage (MTU 9000),False
-10.101.50.0/24,active,APAC-DC-ONPREM,50,APAC-DC-ONPREM,dcim.site,APAC-DC-ONPREM,APAC Infrastructure VMs - vCenter NSX vROps vRLI,False
-10.101.60.0/24,active,APAC-DC-ONPREM,60,APAC-DC-ONPREM,dcim.site,APAC-DC-ONPREM,APAC Application VMs - Web App DB Cache servers,False
-10.101.70.0/24,active,APAC-DC-ONPREM,70,APAC-DC-ONPREM,dcim.site,APAC-DC-ONPREM,APAC Backend/Data Network - Replication cluster (MTU 9000),False
-10.101.80.0/24,active,APAC-DC-ONPREM,80,APAC-DC-ONPREM,dcim.site,APAC-DC-ONPREM,APAC Storage Network - NFS file server (MTU 9000),False
-10.102.10.0/24,active,AMER-DC-ONPREM,10,AMER-DC-ONPREM,dcim.site,AMER-DC-ONPREM,AMER OOB Management Network - ESXi iDRAC/iLO/CIMC,False
-10.102.20.0/24,reserved,AMER-DC-ONPREM,20,AMER-DC-ONPREM,dcim.site,AMER-DC-ONPREM,AMER ESXi Management Network - vmk0 interfaces,False
-10.102.30.0/24,reserved,AMER-DC-ONPREM,30,AMER-DC-ONPREM,dcim.site,AMER-DC-ONPREM,AMER vMotion Network - vmk1 live migration (MTU 9000),False
-10.102.40.0/24,reserved,AMER-DC-ONPREM,40,AMER-DC-ONPREM,dcim.site,AMER-DC-ONPREM,AMER vSAN Storage Network - vmk2 storage (MTU 9000),False
-10.102.50.0/24,active,AMER-DC-ONPREM,50,AMER-DC-ONPREM,dcim.site,AMER-DC-ONPREM,AMER Infrastructure VMs - vCenter NSX vROps vRLI,False
-10.102.60.0/24,active,AMER-DC-ONPREM,60,AMER-DC-ONPREM,dcim.site,AMER-DC-ONPREM,AMER Application VMs - Web App DB Cache servers,False
-10.102.70.0/24,active,AMER-DC-ONPREM,70,AMER-DC-ONPREM,dcim.site,AMER-DC-ONPREM,AMER Backend/Data Network - Replication cluster (MTU 9000),False
-10.102.80.0/24,active,AMER-DC-ONPREM,80,AMER-DC-ONPREM,dcim.site,AMER-DC-ONPREM,AMER Storage Network - NFS file server (MTU 9000),False
+prefix,status,vlan_site,vlan,scope_type,scope_id,description,is_pool
+10.100.10.0/24,active,EMEA-DC-ONPREM,10,dcim.site,17,EMEA OOB Management Network - ESXi iDRAC/iLO/CIMC,False
+10.100.20.0/24,reserved,EMEA-DC-ONPREM,20,dcim.site,17,EMEA ESXi Management Network - vmk0 interfaces,False
+10.100.30.0/24,reserved,EMEA-DC-ONPREM,30,dcim.site,17,EMEA vMotion Network - vmk1 live migration (MTU 9000),False
+10.100.40.0/24,reserved,EMEA-DC-ONPREM,40,dcim.site,17,EMEA vSAN Storage Network - vmk2 storage (MTU 9000),False
+10.100.50.0/24,active,EMEA-DC-ONPREM,50,dcim.site,17,EMEA Infrastructure VMs - vCenter NSX vROps vRLI,False
+10.100.60.0/24,active,EMEA-DC-ONPREM,60,dcim.site,17,EMEA Application VMs - Web App DB Cache servers,False
+10.100.70.0/24,active,EMEA-DC-ONPREM,70,dcim.site,17,EMEA Backend/Data Network - Replication cluster (MTU 9000),False
+10.100.80.0/24,active,EMEA-DC-ONPREM,80,dcim.site,17,EMEA Storage Network - NFS file server (MTU 9000),False
+10.101.10.0/24,active,APAC-DC-ONPREM,10,dcim.site,19,APAC OOB Management Network - ESXi iDRAC/iLO/CIMC,False
+10.101.20.0/24,reserved,APAC-DC-ONPREM,20,dcim.site,19,APAC ESXi Management Network - vmk0 interfaces,False
+10.101.30.0/24,reserved,APAC-DC-ONPREM,30,dcim.site,19,APAC vMotion Network - vmk1 live migration (MTU 9000),False
+10.101.40.0/24,reserved,APAC-DC-ONPREM,40,dcim.site,19,APAC vSAN Storage Network - vmk2 storage (MTU 9000),False
+10.101.50.0/24,active,APAC-DC-ONPREM,50,dcim.site,19,APAC Infrastructure VMs - vCenter NSX vROps vRLI,False
+10.101.60.0/24,active,APAC-DC-ONPREM,60,dcim.site,19,APAC Application VMs - Web App DB Cache servers,False
+10.101.70.0/24,active,APAC-DC-ONPREM,70,dcim.site,19,APAC Backend/Data Network - Replication cluster (MTU 9000),False
+10.101.80.0/24,active,APAC-DC-ONPREM,80,dcim.site,19,APAC Storage Network - NFS file server (MTU 9000),False
+10.102.10.0/24,active,AMER-DC-ONPREM,10,dcim.site,21,AMER OOB Management Network - ESXi iDRAC/iLO/CIMC,False
+10.102.20.0/24,reserved,AMER-DC-ONPREM,20,dcim.site,21,AMER ESXi Management Network - vmk0 interfaces,False
+10.102.30.0/24,reserved,AMER-DC-ONPREM,30,dcim.site,21,AMER vMotion Network - vmk1 live migration (MTU 9000),False
+10.102.40.0/24,reserved,AMER-DC-ONPREM,40,dcim.site,21,AMER vSAN Storage Network - vmk2 storage (MTU 9000),False
+10.102.50.0/24,active,AMER-DC-ONPREM,50,dcim.site,21,AMER Infrastructure VMs - vCenter NSX vROps vRLI,False
+10.102.60.0/24,active,AMER-DC-ONPREM,60,dcim.site,21,AMER Application VMs - Web App DB Cache servers,False
+10.102.70.0/24,active,AMER-DC-ONPREM,70,dcim.site,21,AMER Backend/Data Network - Replication cluster (MTU 9000),False
+10.102.80.0/24,active,AMER-DC-ONPREM,80,dcim.site,21,AMER Storage Network - NFS file server (MTU 9000),False
