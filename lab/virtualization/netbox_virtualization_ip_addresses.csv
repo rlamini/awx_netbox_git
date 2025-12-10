@@ -35,32 +35,10 @@ address,status,device,virtual_machine,interface,dns_name,description
 10.100.70.31/24,active,,EMEA-DB-Server-01,eth1,,EMEA DB Server 01 Replication
 10.100.60.31/24,active,,EMEA-DB-Server-02,eth0,emea-db-02.lab.local,EMEA DB Server 02 Management
 10.100.70.32/24,active,,EMEA-DB-Server-02,eth1,,EMEA DB Server 02 Replication
-10.100.60.32/24,active,,EMEA-DB-Server-03,eth0,emea-db-03.lab.local,EMEA DB Server 03 Management
-10.100.70.33/24,active,,EMEA-DB-Server-03,eth1,,EMEA DB Server 03 Replication
-10.100.60.40/24,active,,EMEA-Cache-Server-01,eth0,emea-cache-01.lab.local,EMEA Redis Cache 01 Management
-10.100.70.40/24,active,,EMEA-Cache-Server-01,eth1,,EMEA Redis Cache 01 Cluster
-10.100.60.41/24,active,,EMEA-Cache-Server-02,eth0,emea-cache-02.lab.local,EMEA Redis Cache 02 Management
-10.100.70.41/24,active,,EMEA-Cache-Server-02,eth1,,EMEA Redis Cache 02 Cluster
-10.100.60.42/24,active,,EMEA-Cache-Server-03,eth0,emea-cache-03.lab.local,EMEA Redis Cache 03 Management
-10.100.70.42/24,active,,EMEA-Cache-Server-03,eth1,,EMEA Redis Cache 03 Cluster
-10.100.60.50/24,active,,EMEA-Kafka-Broker-01,eth0,emea-kafka-01.lab.local,EMEA Kafka Broker 01 Management
-10.100.70.50/24,active,,EMEA-Kafka-Broker-01,eth1,,EMEA Kafka Broker 01 Data
-10.100.60.51/24,active,,EMEA-Kafka-Broker-02,eth0,emea-kafka-02.lab.local,EMEA Kafka Broker 02 Management
-10.100.70.51/24,active,,EMEA-Kafka-Broker-02,eth1,,EMEA Kafka Broker 02 Data
-10.100.60.52/24,active,,EMEA-Kafka-Broker-03,eth0,emea-kafka-03.lab.local,EMEA Kafka Broker 03 Management
-10.100.70.52/24,active,,EMEA-Kafka-Broker-03,eth1,,EMEA Kafka Broker 03 Data
-10.100.60.60/24,active,,EMEA-Elasticsearch-01,eth0,emea-elastic-01.lab.local,EMEA Elasticsearch 01 Management
-10.100.70.60/24,active,,EMEA-Elasticsearch-01,eth1,,EMEA Elasticsearch 01 Cluster
-10.100.60.61/24,active,,EMEA-Elasticsearch-02,eth0,emea-elastic-02.lab.local,EMEA Elasticsearch 02 Management
-10.100.70.61/24,active,,EMEA-Elasticsearch-02,eth1,,EMEA Elasticsearch 02 Cluster
-10.100.60.62/24,active,,EMEA-Elasticsearch-03,eth0,emea-elastic-03.lab.local,EMEA Elasticsearch 03 Management
-10.100.70.62/24,active,,EMEA-Elasticsearch-03,eth1,,EMEA Elasticsearch 03 Cluster
 10.100.60.70/24,active,,EMEA-Docker-Host-01,eth0,emea-docker-01.lab.local,EMEA Docker Host 01 Management
 10.100.70.70/24,active,,EMEA-Docker-Host-01,eth1,,EMEA Docker Host 01 Container Network
 10.100.60.71/24,active,,EMEA-Docker-Host-02,eth0,emea-docker-02.lab.local,EMEA Docker Host 02 Management
 10.100.70.71/24,active,,EMEA-Docker-Host-02,eth1,,EMEA Docker Host 02 Container Network
-10.100.60.72/24,active,,EMEA-Docker-Host-03,eth0,emea-docker-03.lab.local,EMEA Docker Host 03 Management
-10.100.70.72/24,active,,EMEA-Docker-Host-03,eth1,,EMEA Docker Host 03 Container Network
 10.100.50.80/24,active,,EMEA-vSAN-Witness,eth0,emea-vsan-witness.lab.local,EMEA vSAN Witness
 10.100.50.90/24,active,,EMEA-File-Server-01,eth0,emea-fileserver-01.lab.local,EMEA File Server Management
 10.100.80.90/24,active,,EMEA-File-Server-01,eth1,,EMEA File Server Storage Network
@@ -102,32 +80,10 @@ address,status,device,virtual_machine,interface,dns_name,description
 10.101.70.31/24,active,,APAC-DB-Server-01,eth1,,APAC DB Server 01 Replication
 10.101.60.31/24,active,,APAC-DB-Server-02,eth0,apac-db-02.lab.local,APAC DB Server 02 Management
 10.101.70.32/24,active,,APAC-DB-Server-02,eth1,,APAC DB Server 02 Replication
-10.101.60.32/24,active,,APAC-DB-Server-03,eth0,apac-db-03.lab.local,APAC DB Server 03 Management
-10.101.70.33/24,active,,APAC-DB-Server-03,eth1,,APAC DB Server 03 Replication
-10.101.60.40/24,active,,APAC-Cache-Server-01,eth0,apac-cache-01.lab.local,APAC Redis Cache 01 Management
-10.101.70.40/24,active,,APAC-Cache-Server-01,eth1,,APAC Redis Cache 01 Cluster
-10.101.60.41/24,active,,APAC-Cache-Server-02,eth0,apac-cache-02.lab.local,APAC Redis Cache 02 Management
-10.101.70.41/24,active,,APAC-Cache-Server-02,eth1,,APAC Redis Cache 02 Cluster
-10.101.60.42/24,active,,APAC-Cache-Server-03,eth0,apac-cache-03.lab.local,APAC Redis Cache 03 Management
-10.101.70.42/24,active,,APAC-Cache-Server-03,eth1,,APAC Redis Cache 03 Cluster
-10.101.60.50/24,active,,APAC-Kafka-Broker-01,eth0,apac-kafka-01.lab.local,APAC Kafka Broker 01 Management
-10.101.70.50/24,active,,APAC-Kafka-Broker-01,eth1,,APAC Kafka Broker 01 Data
-10.101.60.51/24,active,,APAC-Kafka-Broker-02,eth0,apac-kafka-02.lab.local,APAC Kafka Broker 02 Management
-10.101.70.51/24,active,,APAC-Kafka-Broker-02,eth1,,APAC Kafka Broker 02 Data
-10.101.60.52/24,active,,APAC-Kafka-Broker-03,eth0,apac-kafka-03.lab.local,APAC Kafka Broker 03 Management
-10.101.70.52/24,active,,APAC-Kafka-Broker-03,eth1,,APAC Kafka Broker 03 Data
-10.101.60.60/24,active,,APAC-Elasticsearch-01,eth0,apac-elastic-01.lab.local,APAC Elasticsearch 01 Management
-10.101.70.60/24,active,,APAC-Elasticsearch-01,eth1,,APAC Elasticsearch 01 Cluster
-10.101.60.61/24,active,,APAC-Elasticsearch-02,eth0,apac-elastic-02.lab.local,APAC Elasticsearch 02 Management
-10.101.70.61/24,active,,APAC-Elasticsearch-02,eth1,,APAC Elasticsearch 02 Cluster
-10.101.60.62/24,active,,APAC-Elasticsearch-03,eth0,apac-elastic-03.lab.local,APAC Elasticsearch 03 Management
-10.101.70.62/24,active,,APAC-Elasticsearch-03,eth1,,APAC Elasticsearch 03 Cluster
 10.101.60.70/24,active,,APAC-Docker-Host-01,eth0,apac-docker-01.lab.local,APAC Docker Host 01 Management
 10.101.70.70/24,active,,APAC-Docker-Host-01,eth1,,APAC Docker Host 01 Container Network
 10.101.60.71/24,active,,APAC-Docker-Host-02,eth0,apac-docker-02.lab.local,APAC Docker Host 02 Management
 10.101.70.71/24,active,,APAC-Docker-Host-02,eth1,,APAC Docker Host 02 Container Network
-10.101.60.72/24,active,,APAC-Docker-Host-03,eth0,apac-docker-03.lab.local,APAC Docker Host 03 Management
-10.101.70.72/24,active,,APAC-Docker-Host-03,eth1,,APAC Docker Host 03 Container Network
 10.101.50.80/24,active,,APAC-vSAN-Witness,eth0,apac-vsan-witness.lab.local,APAC vSAN Witness
 10.101.50.90/24,active,,APAC-File-Server-01,eth0,apac-fileserver-01.lab.local,APAC File Server Management
 10.101.80.90/24,active,,APAC-File-Server-01,eth1,,APAC File Server Storage Network
@@ -169,32 +125,10 @@ address,status,device,virtual_machine,interface,dns_name,description
 10.102.70.31/24,active,,AMER-DB-Server-01,eth1,,AMER DB Server 01 Replication
 10.102.60.31/24,active,,AMER-DB-Server-02,eth0,amer-db-02.lab.local,AMER DB Server 02 Management
 10.102.70.32/24,active,,AMER-DB-Server-02,eth1,,AMER DB Server 02 Replication
-10.102.60.32/24,active,,AMER-DB-Server-03,eth0,amer-db-03.lab.local,AMER DB Server 03 Management
-10.102.70.33/24,active,,AMER-DB-Server-03,eth1,,AMER DB Server 03 Replication
-10.102.60.40/24,active,,AMER-Cache-Server-01,eth0,amer-cache-01.lab.local,AMER Redis Cache 01 Management
-10.102.70.40/24,active,,AMER-Cache-Server-01,eth1,,AMER Redis Cache 01 Cluster
-10.102.60.41/24,active,,AMER-Cache-Server-02,eth0,amer-cache-02.lab.local,AMER Redis Cache 02 Management
-10.102.70.41/24,active,,AMER-Cache-Server-02,eth1,,AMER Redis Cache 02 Cluster
-10.102.60.42/24,active,,AMER-Cache-Server-03,eth0,amer-cache-03.lab.local,AMER Redis Cache 03 Management
-10.102.70.42/24,active,,AMER-Cache-Server-03,eth1,,AMER Redis Cache 03 Cluster
-10.102.60.50/24,active,,AMER-Kafka-Broker-01,eth0,amer-kafka-01.lab.local,AMER Kafka Broker 01 Management
-10.102.70.50/24,active,,AMER-Kafka-Broker-01,eth1,,AMER Kafka Broker 01 Data
-10.102.60.51/24,active,,AMER-Kafka-Broker-02,eth0,amer-kafka-02.lab.local,AMER Kafka Broker 02 Management
-10.102.70.51/24,active,,AMER-Kafka-Broker-02,eth1,,AMER Kafka Broker 02 Data
-10.102.60.52/24,active,,AMER-Kafka-Broker-03,eth0,amer-kafka-03.lab.local,AMER Kafka Broker 03 Management
-10.102.70.52/24,active,,AMER-Kafka-Broker-03,eth1,,AMER Kafka Broker 03 Data
-10.102.60.60/24,active,,AMER-Elasticsearch-01,eth0,amer-elastic-01.lab.local,AMER Elasticsearch 01 Management
-10.102.70.60/24,active,,AMER-Elasticsearch-01,eth1,,AMER Elasticsearch 01 Cluster
-10.102.60.61/24,active,,AMER-Elasticsearch-02,eth0,amer-elastic-02.lab.local,AMER Elasticsearch 02 Management
-10.102.70.61/24,active,,AMER-Elasticsearch-02,eth1,,AMER Elasticsearch 02 Cluster
-10.102.60.62/24,active,,AMER-Elasticsearch-03,eth0,amer-elastic-03.lab.local,AMER Elasticsearch 03 Management
-10.102.70.62/24,active,,AMER-Elasticsearch-03,eth1,,AMER Elasticsearch 03 Cluster
 10.102.60.70/24,active,,AMER-Docker-Host-01,eth0,amer-docker-01.lab.local,AMER Docker Host 01 Management
 10.102.70.70/24,active,,AMER-Docker-Host-01,eth1,,AMER Docker Host 01 Container Network
 10.102.60.71/24,active,,AMER-Docker-Host-02,eth0,amer-docker-02.lab.local,AMER Docker Host 02 Management
 10.102.70.71/24,active,,AMER-Docker-Host-02,eth1,,AMER Docker Host 02 Container Network
-10.102.60.72/24,active,,AMER-Docker-Host-03,eth0,amer-docker-03.lab.local,AMER Docker Host 03 Management
-10.102.70.72/24,active,,AMER-Docker-Host-03,eth1,,AMER Docker Host 03 Container Network
 10.102.50.80/24,active,,AMER-vSAN-Witness,eth0,amer-vsan-witness.lab.local,AMER vSAN Witness
 10.102.50.90/24,active,,AMER-File-Server-01,eth0,amer-fileserver-01.lab.local,AMER File Server Management
 10.102.80.90/24,active,,AMER-File-Server-01,eth1,,AMER File Server Storage Network
@@ -317,3 +251,39 @@ address,status,device,virtual_machine,interface,dns_name,description
 10.102.20.23/24,active,AMER-DC-ONPREM-ESX-MGT03,,vmk0,amer-esx-mgt03.lab.local,AMER ESX-MGT03 Management
 10.102.30.23/24,active,AMER-DC-ONPREM-ESX-MGT03,,vmk1,,AMER ESX-MGT03 vMotion
 10.102.40.23/24,active,AMER-DC-ONPREM-ESX-MGT03,,vmk2,,AMER ESX-MGT03 vSAN
+10.100.60.40/24,active,,EMEA-Redis-01,eth0,emea-redis-01.lab.local,EMEA Redis 01
+10.100.60.41/24,active,,EMEA-Redis-02,eth0,emea-redis-02.lab.local,EMEA Redis 02
+10.100.70.40/24,active,,EMEA-Redis-01,eth1,,EMEA Redis 01 Cluster
+10.100.70.41/24,active,,EMEA-Redis-02,eth1,,EMEA Redis 02 Cluster
+10.100.60.50/24,active,,EMEA-Kafka-01,eth0,emea-kafka-01.lab.local,EMEA Kafka 01 Management
+10.100.70.50/24,active,,EMEA-Kafka-01,eth1,,EMEA Kafka 01 Replication
+10.100.60.51/24,active,,EMEA-Kafka-02,eth0,emea-kafka-02.lab.local,EMEA Kafka 02 Management
+10.100.70.51/24,active,,EMEA-Kafka-02,eth1,,EMEA Kafka 02 Replication
+10.100.60.60/24,active,,EMEA-ELK-ES-01,eth0,emea-elk-es-01.lab.local,EMEA Elasticsearch 01 Management
+10.100.70.60/24,active,,EMEA-ELK-ES-01,eth1,,EMEA Elasticsearch 01 Cluster
+10.100.60.61/24,active,,EMEA-ELK-ES-02,eth0,emea-elk-es-02.lab.local,EMEA Elasticsearch 02 Management
+10.100.70.61/24,active,,EMEA-ELK-ES-02,eth1,,EMEA Elasticsearch 02 Cluster
+10.101.60.40/24,active,,APAC-Redis-01,eth0,apac-redis-01.lab.local,APAC Redis 01
+10.101.60.41/24,active,,APAC-Redis-02,eth0,apac-redis-02.lab.local,APAC Redis 02
+10.101.70.40/24,active,,APAC-Redis-01,eth1,,APAC Redis 01 Cluster
+10.101.70.41/24,active,,APAC-Redis-02,eth1,,APAC Redis 02 Cluster
+10.101.60.50/24,active,,APAC-Kafka-01,eth0,apac-kafka-01.lab.local,APAC Kafka 01 Management
+10.101.70.50/24,active,,APAC-Kafka-01,eth1,,APAC Kafka 01 Replication
+10.101.60.51/24,active,,APAC-Kafka-02,eth0,apac-kafka-02.lab.local,APAC Kafka 02 Management
+10.101.70.51/24,active,,APAC-Kafka-02,eth1,,APAC Kafka 02 Replication
+10.101.60.60/24,active,,APAC-ELK-ES-01,eth0,apac-elk-es-01.lab.local,APAC Elasticsearch 01 Management
+10.101.70.60/24,active,,APAC-ELK-ES-01,eth1,,APAC Elasticsearch 01 Cluster
+10.101.60.61/24,active,,APAC-ELK-ES-02,eth0,apac-elk-es-02.lab.local,APAC Elasticsearch 02 Management
+10.101.70.61/24,active,,APAC-ELK-ES-02,eth1,,APAC Elasticsearch 02 Cluster
+10.102.60.40/24,active,,AMER-Redis-01,eth0,amer-redis-01.lab.local,AMER Redis 01
+10.102.60.41/24,active,,AMER-Redis-02,eth0,amer-redis-02.lab.local,AMER Redis 02
+10.102.70.40/24,active,,AMER-Redis-01,eth1,,AMER Redis 01 Cluster
+10.102.70.41/24,active,,AMER-Redis-02,eth1,,AMER Redis 02 Cluster
+10.102.60.50/24,active,,AMER-Kafka-01,eth0,amer-kafka-01.lab.local,AMER Kafka 01 Management
+10.102.70.50/24,active,,AMER-Kafka-01,eth1,,AMER Kafka 01 Replication
+10.102.60.51/24,active,,AMER-Kafka-02,eth0,amer-kafka-02.lab.local,AMER Kafka 02 Management
+10.102.70.51/24,active,,AMER-Kafka-02,eth1,,AMER Kafka 02 Replication
+10.102.60.60/24,active,,AMER-ELK-ES-01,eth0,amer-elk-es-01.lab.local,AMER Elasticsearch 01 Management
+10.102.70.60/24,active,,AMER-ELK-ES-01,eth1,,AMER Elasticsearch 01 Cluster
+10.102.60.61/24,active,,AMER-ELK-ES-02,eth0,amer-elk-es-02.lab.local,AMER Elasticsearch 02 Management
+10.102.70.61/24,active,,AMER-ELK-ES-02,eth1,,AMER Elasticsearch 02 Cluster
