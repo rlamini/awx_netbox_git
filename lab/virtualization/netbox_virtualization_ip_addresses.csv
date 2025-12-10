@@ -1,0 +1,202 @@
+address,status,dns_name,description,assigned_object_type,assigned_object
+10.100.10.11/24,active,emea-esx-a01-idrac.lab.local,EMEA ESX-A01 iDRAC,dcim.interface,EMEA-DC-ONPREM-ESX-A01:iDRAC
+10.100.10.12/24,active,emea-esx-a02-idrac.lab.local,EMEA ESX-A02 iDRAC,dcim.interface,EMEA-DC-ONPREM-ESX-A02:iDRAC
+10.100.10.13/24,active,emea-esx-a03-idrac.lab.local,EMEA ESX-A03 iDRAC,dcim.interface,EMEA-DC-ONPREM-ESX-A03:iDRAC
+10.100.10.14/24,active,emea-esx-a04-idrac.lab.local,EMEA ESX-A04 iDRAC,dcim.interface,EMEA-DC-ONPREM-ESX-A04:iDRAC
+10.100.10.15/24,active,emea-esx-a05-ilo.lab.local,EMEA ESX-A05 iLO,dcim.interface,EMEA-DC-ONPREM-ESX-A05:iLO
+10.100.10.16/24,active,emea-esx-a06-ilo.lab.local,EMEA ESX-A06 iLO,dcim.interface,EMEA-DC-ONPREM-ESX-A06:iLO
+10.100.10.17/24,active,emea-esx-b01-idrac.lab.local,EMEA ESX-B01 iDRAC,dcim.interface,EMEA-DC-ONPREM-ESX-B01:iDRAC
+10.100.10.18/24,active,emea-esx-b02-idrac.lab.local,EMEA ESX-B02 iDRAC,dcim.interface,EMEA-DC-ONPREM-ESX-B02:iDRAC
+10.100.10.19/24,active,emea-esx-b03-idrac.lab.local,EMEA ESX-B03 iDRAC,dcim.interface,EMEA-DC-ONPREM-ESX-B03:iDRAC
+10.100.10.20/24,active,emea-esx-b04-idrac.lab.local,EMEA ESX-B04 iDRAC,dcim.interface,EMEA-DC-ONPREM-ESX-B04:iDRAC
+10.100.10.21/24,active,emea-esx-mgt01-cimc.lab.local,EMEA ESX-MGT01 CIMC,dcim.interface,EMEA-DC-ONPREM-ESX-MGT01:CIMC
+10.100.10.22/24,active,emea-esx-mgt02-cimc.lab.local,EMEA ESX-MGT02 CIMC,dcim.interface,EMEA-DC-ONPREM-ESX-MGT02:CIMC
+10.100.10.23/24,active,emea-esx-mgt03-cimc.lab.local,EMEA ESX-MGT03 CIMC,dcim.interface,EMEA-DC-ONPREM-ESX-MGT03:CIMC
+10.100.50.10/24,active,emea-vcenter-01.lab.local,EMEA vCenter Server,virtualization.vminterface,EMEA-vCenter-01:eth0
+10.100.50.11/24,active,emea-nsx-mgr-01.lab.local,EMEA NSX Manager 01,virtualization.vminterface,EMEA-NSX-Manager-01:eth0
+10.100.50.12/24,active,emea-nsx-mgr-02.lab.local,EMEA NSX Manager 02,virtualization.vminterface,EMEA-NSX-Manager-02:eth0
+10.100.50.13/24,active,emea-nsx-mgr-03.lab.local,EMEA NSX Manager 03,virtualization.vminterface,EMEA-NSX-Manager-03:eth0
+10.100.50.20/24,active,emea-vrops-01.lab.local,EMEA vRealize Operations,virtualization.vminterface,EMEA-vROps-01:eth0
+10.100.50.21/24,active,emea-vrli-01.lab.local,EMEA vRealize Log Insight,virtualization.vminterface,EMEA-vRLI-01:eth0
+10.100.50.30/24,active,emea-backup-01.lab.local,EMEA Backup Server Management,virtualization.vminterface,EMEA-Backup-Server-01:eth0
+10.100.70.30/24,active,,EMEA Backup Server Data Network,virtualization.vminterface,EMEA-Backup-Server-01:eth1
+10.100.50.40/24,active,emea-jumphost-01.lab.local,EMEA Jump Host,virtualization.vminterface,EMEA-Jump-Host-01:eth0
+10.100.50.50/24,active,emea-ansible-01.lab.local,EMEA Ansible Tower,virtualization.vminterface,EMEA-Ansible-Tower-01:eth0
+10.100.60.10/24,active,emea-web-01.lab.local,EMEA Web Server 01,virtualization.vminterface,EMEA-Web-App-01:eth0
+10.100.60.11/24,active,emea-web-02.lab.local,EMEA Web Server 02,virtualization.vminterface,EMEA-Web-App-02:eth0
+10.100.60.12/24,active,emea-web-03.lab.local,EMEA Web Server 03,virtualization.vminterface,EMEA-Web-App-03:eth0
+10.100.60.20/24,active,emea-app-01.lab.local,EMEA App Server 01 Management,virtualization.vminterface,EMEA-App-Server-01:eth0
+10.100.70.20/24,active,,EMEA App Server 01 Backend,virtualization.vminterface,EMEA-App-Server-01:eth1
+10.100.60.21/24,active,emea-app-02.lab.local,EMEA App Server 02 Management,virtualization.vminterface,EMEA-App-Server-02:eth0
+10.100.70.21/24,active,,EMEA App Server 02 Backend,virtualization.vminterface,EMEA-App-Server-02:eth1
+10.100.60.22/24,active,emea-app-03.lab.local,EMEA App Server 03 Management,virtualization.vminterface,EMEA-App-Server-03:eth0
+10.100.70.22/24,active,,EMEA App Server 03 Backend,virtualization.vminterface,EMEA-App-Server-03:eth1
+10.100.60.30/24,active,emea-db-01.lab.local,EMEA DB Server 01 Management,virtualization.vminterface,EMEA-DB-Server-01:eth0
+10.100.70.31/24,active,,EMEA DB Server 01 Replication,virtualization.vminterface,EMEA-DB-Server-01:eth1
+10.100.60.31/24,active,emea-db-02.lab.local,EMEA DB Server 02 Management,virtualization.vminterface,EMEA-DB-Server-02:eth0
+10.100.70.32/24,active,,EMEA DB Server 02 Replication,virtualization.vminterface,EMEA-DB-Server-02:eth1
+10.100.60.32/24,active,emea-db-03.lab.local,EMEA DB Server 03 Management,virtualization.vminterface,EMEA-DB-Server-03:eth0
+10.100.70.33/24,active,,EMEA DB Server 03 Replication,virtualization.vminterface,EMEA-DB-Server-03:eth1
+10.100.60.40/24,active,emea-cache-01.lab.local,EMEA Redis Cache 01 Management,virtualization.vminterface,EMEA-Cache-Server-01:eth0
+10.100.70.40/24,active,,EMEA Redis Cache 01 Cluster,virtualization.vminterface,EMEA-Cache-Server-01:eth1
+10.100.60.41/24,active,emea-cache-02.lab.local,EMEA Redis Cache 02 Management,virtualization.vminterface,EMEA-Cache-Server-02:eth0
+10.100.70.41/24,active,,EMEA Redis Cache 02 Cluster,virtualization.vminterface,EMEA-Cache-Server-02:eth1
+10.100.60.42/24,active,emea-cache-03.lab.local,EMEA Redis Cache 03 Management,virtualization.vminterface,EMEA-Cache-Server-03:eth0
+10.100.70.42/24,active,,EMEA Redis Cache 03 Cluster,virtualization.vminterface,EMEA-Cache-Server-03:eth1
+10.100.60.50/24,active,emea-kafka-01.lab.local,EMEA Kafka Broker 01 Management,virtualization.vminterface,EMEA-Kafka-Broker-01:eth0
+10.100.70.50/24,active,,EMEA Kafka Broker 01 Data,virtualization.vminterface,EMEA-Kafka-Broker-01:eth1
+10.100.60.51/24,active,emea-kafka-02.lab.local,EMEA Kafka Broker 02 Management,virtualization.vminterface,EMEA-Kafka-Broker-02:eth0
+10.100.70.51/24,active,,EMEA Kafka Broker 02 Data,virtualization.vminterface,EMEA-Kafka-Broker-02:eth1
+10.100.60.52/24,active,emea-kafka-03.lab.local,EMEA Kafka Broker 03 Management,virtualization.vminterface,EMEA-Kafka-Broker-03:eth0
+10.100.70.52/24,active,,EMEA Kafka Broker 03 Data,virtualization.vminterface,EMEA-Kafka-Broker-03:eth1
+10.100.60.60/24,active,emea-elastic-01.lab.local,EMEA Elasticsearch 01 Management,virtualization.vminterface,EMEA-Elasticsearch-01:eth0
+10.100.70.60/24,active,,EMEA Elasticsearch 01 Cluster,virtualization.vminterface,EMEA-Elasticsearch-01:eth1
+10.100.60.61/24,active,emea-elastic-02.lab.local,EMEA Elasticsearch 02 Management,virtualization.vminterface,EMEA-Elasticsearch-02:eth0
+10.100.70.61/24,active,,EMEA Elasticsearch 02 Cluster,virtualization.vminterface,EMEA-Elasticsearch-02:eth1
+10.100.60.62/24,active,emea-elastic-03.lab.local,EMEA Elasticsearch 03 Management,virtualization.vminterface,EMEA-Elasticsearch-03:eth0
+10.100.70.62/24,active,,EMEA Elasticsearch 03 Cluster,virtualization.vminterface,EMEA-Elasticsearch-03:eth1
+10.100.60.70/24,active,emea-docker-01.lab.local,EMEA Docker Host 01 Management,virtualization.vminterface,EMEA-Docker-Host-01:eth0
+10.100.70.70/24,active,,EMEA Docker Host 01 Container Network,virtualization.vminterface,EMEA-Docker-Host-01:eth1
+10.100.60.71/24,active,emea-docker-02.lab.local,EMEA Docker Host 02 Management,virtualization.vminterface,EMEA-Docker-Host-02:eth0
+10.100.70.71/24,active,,EMEA Docker Host 02 Container Network,virtualization.vminterface,EMEA-Docker-Host-02:eth1
+10.100.60.72/24,active,emea-docker-03.lab.local,EMEA Docker Host 03 Management,virtualization.vminterface,EMEA-Docker-Host-03:eth0
+10.100.70.72/24,active,,EMEA Docker Host 03 Container Network,virtualization.vminterface,EMEA-Docker-Host-03:eth1
+10.100.50.80/24,active,emea-vsan-witness.lab.local,EMEA vSAN Witness,virtualization.vminterface,EMEA-vSAN-Witness:eth0
+10.100.50.90/24,active,emea-fileserver-01.lab.local,EMEA File Server Management,virtualization.vminterface,EMEA-File-Server-01:eth0
+10.100.80.90/24,active,,EMEA File Server Storage Network,virtualization.vminterface,EMEA-File-Server-01:eth1
+10.100.50.91/24,active,emea-nfs-01.lab.local,EMEA NFS Server Management,virtualization.vminterface,EMEA-NFS-Server-01:eth0
+10.100.80.91/24,active,,EMEA NFS Server Storage Network,virtualization.vminterface,EMEA-NFS-Server-01:eth1
+10.101.10.11/24,active,apac-esx-a01-idrac.lab.local,APAC ESX-A01 iDRAC,dcim.interface,APAC-DC-ONPREM-ESX-A01:iDRAC
+10.101.10.12/24,active,apac-esx-a02-idrac.lab.local,APAC ESX-A02 iDRAC,dcim.interface,APAC-DC-ONPREM-ESX-A02:iDRAC
+10.101.10.13/24,active,apac-esx-a03-idrac.lab.local,APAC ESX-A03 iDRAC,dcim.interface,APAC-DC-ONPREM-ESX-A03:iDRAC
+10.101.10.14/24,active,apac-esx-a04-idrac.lab.local,APAC ESX-A04 iDRAC,dcim.interface,APAC-DC-ONPREM-ESX-A04:iDRAC
+10.101.10.15/24,active,apac-esx-a05-ilo.lab.local,APAC ESX-A05 iLO,dcim.interface,APAC-DC-ONPREM-ESX-A05:iLO
+10.101.10.16/24,active,apac-esx-a06-ilo.lab.local,APAC ESX-A06 iLO,dcim.interface,APAC-DC-ONPREM-ESX-A06:iLO
+10.101.10.17/24,active,apac-esx-b01-idrac.lab.local,APAC ESX-B01 iDRAC,dcim.interface,APAC-DC-ONPREM-ESX-B01:iDRAC
+10.101.10.18/24,active,apac-esx-b02-idrac.lab.local,APAC ESX-B02 iDRAC,dcim.interface,APAC-DC-ONPREM-ESX-B02:iDRAC
+10.101.10.19/24,active,apac-esx-b03-idrac.lab.local,APAC ESX-B03 iDRAC,dcim.interface,APAC-DC-ONPREM-ESX-B03:iDRAC
+10.101.10.20/24,active,apac-esx-b04-idrac.lab.local,APAC ESX-B04 iDRAC,dcim.interface,APAC-DC-ONPREM-ESX-B04:iDRAC
+10.101.10.21/24,active,apac-esx-mgt01-cimc.lab.local,APAC ESX-MGT01 CIMC,dcim.interface,APAC-DC-ONPREM-ESX-MGT01:CIMC
+10.101.10.22/24,active,apac-esx-mgt02-cimc.lab.local,APAC ESX-MGT02 CIMC,dcim.interface,APAC-DC-ONPREM-ESX-MGT02:CIMC
+10.101.10.23/24,active,apac-esx-mgt03-cimc.lab.local,APAC ESX-MGT03 CIMC,dcim.interface,APAC-DC-ONPREM-ESX-MGT03:CIMC
+10.101.50.10/24,active,apac-vcenter-01.lab.local,APAC vCenter Server,virtualization.vminterface,APAC-vCenter-01:eth0
+10.101.50.11/24,active,apac-nsx-mgr-01.lab.local,APAC NSX Manager 01,virtualization.vminterface,APAC-NSX-Manager-01:eth0
+10.101.50.12/24,active,apac-nsx-mgr-02.lab.local,APAC NSX Manager 02,virtualization.vminterface,APAC-NSX-Manager-02:eth0
+10.101.50.13/24,active,apac-nsx-mgr-03.lab.local,APAC NSX Manager 03,virtualization.vminterface,APAC-NSX-Manager-03:eth0
+10.101.50.20/24,active,apac-vrops-01.lab.local,APAC vRealize Operations,virtualization.vminterface,APAC-vROps-01:eth0
+10.101.50.21/24,active,apac-vrli-01.lab.local,APAC vRealize Log Insight,virtualization.vminterface,APAC-vRLI-01:eth0
+10.101.50.30/24,active,apac-backup-01.lab.local,APAC Backup Server Management,virtualization.vminterface,APAC-Backup-Server-01:eth0
+10.101.70.30/24,active,,APAC Backup Server Data Network,virtualization.vminterface,APAC-Backup-Server-01:eth1
+10.101.50.40/24,active,apac-jumphost-01.lab.local,APAC Jump Host,virtualization.vminterface,APAC-Jump-Host-01:eth0
+10.101.50.50/24,active,apac-ansible-01.lab.local,APAC Ansible Tower,virtualization.vminterface,APAC-Ansible-Tower-01:eth0
+10.101.60.10/24,active,apac-web-01.lab.local,APAC Web Server 01,virtualization.vminterface,APAC-Web-App-01:eth0
+10.101.60.11/24,active,apac-web-02.lab.local,APAC Web Server 02,virtualization.vminterface,APAC-Web-App-02:eth0
+10.101.60.12/24,active,apac-web-03.lab.local,APAC Web Server 03,virtualization.vminterface,APAC-Web-App-03:eth0
+10.101.60.20/24,active,apac-app-01.lab.local,APAC App Server 01 Management,virtualization.vminterface,APAC-App-Server-01:eth0
+10.101.70.20/24,active,,APAC App Server 01 Backend,virtualization.vminterface,APAC-App-Server-01:eth1
+10.101.60.21/24,active,apac-app-02.lab.local,APAC App Server 02 Management,virtualization.vminterface,APAC-App-Server-02:eth0
+10.101.70.21/24,active,,APAC App Server 02 Backend,virtualization.vminterface,APAC-App-Server-02:eth1
+10.101.60.22/24,active,apac-app-03.lab.local,APAC App Server 03 Management,virtualization.vminterface,APAC-App-Server-03:eth0
+10.101.70.22/24,active,,APAC App Server 03 Backend,virtualization.vminterface,APAC-App-Server-03:eth1
+10.101.60.30/24,active,apac-db-01.lab.local,APAC DB Server 01 Management,virtualization.vminterface,APAC-DB-Server-01:eth0
+10.101.70.31/24,active,,APAC DB Server 01 Replication,virtualization.vminterface,APAC-DB-Server-01:eth1
+10.101.60.31/24,active,apac-db-02.lab.local,APAC DB Server 02 Management,virtualization.vminterface,APAC-DB-Server-02:eth0
+10.101.70.32/24,active,,APAC DB Server 02 Replication,virtualization.vminterface,APAC-DB-Server-02:eth1
+10.101.60.32/24,active,apac-db-03.lab.local,APAC DB Server 03 Management,virtualization.vminterface,APAC-DB-Server-03:eth0
+10.101.70.33/24,active,,APAC DB Server 03 Replication,virtualization.vminterface,APAC-DB-Server-03:eth1
+10.101.60.40/24,active,apac-cache-01.lab.local,APAC Redis Cache 01 Management,virtualization.vminterface,APAC-Cache-Server-01:eth0
+10.101.70.40/24,active,,APAC Redis Cache 01 Cluster,virtualization.vminterface,APAC-Cache-Server-01:eth1
+10.101.60.41/24,active,apac-cache-02.lab.local,APAC Redis Cache 02 Management,virtualization.vminterface,APAC-Cache-Server-02:eth0
+10.101.70.41/24,active,,APAC Redis Cache 02 Cluster,virtualization.vminterface,APAC-Cache-Server-02:eth1
+10.101.60.42/24,active,apac-cache-03.lab.local,APAC Redis Cache 03 Management,virtualization.vminterface,APAC-Cache-Server-03:eth0
+10.101.70.42/24,active,,APAC Redis Cache 03 Cluster,virtualization.vminterface,APAC-Cache-Server-03:eth1
+10.101.60.50/24,active,apac-kafka-01.lab.local,APAC Kafka Broker 01 Management,virtualization.vminterface,APAC-Kafka-Broker-01:eth0
+10.101.70.50/24,active,,APAC Kafka Broker 01 Data,virtualization.vminterface,APAC-Kafka-Broker-01:eth1
+10.101.60.51/24,active,apac-kafka-02.lab.local,APAC Kafka Broker 02 Management,virtualization.vminterface,APAC-Kafka-Broker-02:eth0
+10.101.70.51/24,active,,APAC Kafka Broker 02 Data,virtualization.vminterface,APAC-Kafka-Broker-02:eth1
+10.101.60.52/24,active,apac-kafka-03.lab.local,APAC Kafka Broker 03 Management,virtualization.vminterface,APAC-Kafka-Broker-03:eth0
+10.101.70.52/24,active,,APAC Kafka Broker 03 Data,virtualization.vminterface,APAC-Kafka-Broker-03:eth1
+10.101.60.60/24,active,apac-elastic-01.lab.local,APAC Elasticsearch 01 Management,virtualization.vminterface,APAC-Elasticsearch-01:eth0
+10.101.70.60/24,active,,APAC Elasticsearch 01 Cluster,virtualization.vminterface,APAC-Elasticsearch-01:eth1
+10.101.60.61/24,active,apac-elastic-02.lab.local,APAC Elasticsearch 02 Management,virtualization.vminterface,APAC-Elasticsearch-02:eth0
+10.101.70.61/24,active,,APAC Elasticsearch 02 Cluster,virtualization.vminterface,APAC-Elasticsearch-02:eth1
+10.101.60.62/24,active,apac-elastic-03.lab.local,APAC Elasticsearch 03 Management,virtualization.vminterface,APAC-Elasticsearch-03:eth0
+10.101.70.62/24,active,,APAC Elasticsearch 03 Cluster,virtualization.vminterface,APAC-Elasticsearch-03:eth1
+10.101.60.70/24,active,apac-docker-01.lab.local,APAC Docker Host 01 Management,virtualization.vminterface,APAC-Docker-Host-01:eth0
+10.101.70.70/24,active,,APAC Docker Host 01 Container Network,virtualization.vminterface,APAC-Docker-Host-01:eth1
+10.101.60.71/24,active,apac-docker-02.lab.local,APAC Docker Host 02 Management,virtualization.vminterface,APAC-Docker-Host-02:eth0
+10.101.70.71/24,active,,APAC Docker Host 02 Container Network,virtualization.vminterface,APAC-Docker-Host-02:eth1
+10.101.60.72/24,active,apac-docker-03.lab.local,APAC Docker Host 03 Management,virtualization.vminterface,APAC-Docker-Host-03:eth0
+10.101.70.72/24,active,,APAC Docker Host 03 Container Network,virtualization.vminterface,APAC-Docker-Host-03:eth1
+10.101.50.80/24,active,apac-vsan-witness.lab.local,APAC vSAN Witness,virtualization.vminterface,APAC-vSAN-Witness:eth0
+10.101.50.90/24,active,apac-fileserver-01.lab.local,APAC File Server Management,virtualization.vminterface,APAC-File-Server-01:eth0
+10.101.80.90/24,active,,APAC File Server Storage Network,virtualization.vminterface,APAC-File-Server-01:eth1
+10.101.50.91/24,active,apac-nfs-01.lab.local,APAC NFS Server Management,virtualization.vminterface,APAC-NFS-Server-01:eth0
+10.101.80.91/24,active,,APAC NFS Server Storage Network,virtualization.vminterface,APAC-NFS-Server-01:eth1
+10.102.10.11/24,active,amer-esx-a01-idrac.lab.local,AMER ESX-A01 iDRAC,dcim.interface,AMER-DC-ONPREM-ESX-A01:iDRAC
+10.102.10.12/24,active,amer-esx-a02-idrac.lab.local,AMER ESX-A02 iDRAC,dcim.interface,AMER-DC-ONPREM-ESX-A02:iDRAC
+10.102.10.13/24,active,amer-esx-a03-idrac.lab.local,AMER ESX-A03 iDRAC,dcim.interface,AMER-DC-ONPREM-ESX-A03:iDRAC
+10.102.10.14/24,active,amer-esx-a04-idrac.lab.local,AMER ESX-A04 iDRAC,dcim.interface,AMER-DC-ONPREM-ESX-A04:iDRAC
+10.102.10.15/24,active,amer-esx-a05-ilo.lab.local,AMER ESX-A05 iLO,dcim.interface,AMER-DC-ONPREM-ESX-A05:iLO
+10.102.10.16/24,active,amer-esx-a06-ilo.lab.local,AMER ESX-A06 iLO,dcim.interface,AMER-DC-ONPREM-ESX-A06:iLO
+10.102.10.17/24,active,amer-esx-b01-idrac.lab.local,AMER ESX-B01 iDRAC,dcim.interface,AMER-DC-ONPREM-ESX-B01:iDRAC
+10.102.10.18/24,active,amer-esx-b02-idrac.lab.local,AMER ESX-B02 iDRAC,dcim.interface,AMER-DC-ONPREM-ESX-B02:iDRAC
+10.102.10.19/24,active,amer-esx-b03-idrac.lab.local,AMER ESX-B03 iDRAC,dcim.interface,AMER-DC-ONPREM-ESX-B03:iDRAC
+10.102.10.20/24,active,amer-esx-b04-idrac.lab.local,AMER ESX-B04 iDRAC,dcim.interface,AMER-DC-ONPREM-ESX-B04:iDRAC
+10.102.10.21/24,active,amer-esx-mgt01-cimc.lab.local,AMER ESX-MGT01 CIMC,dcim.interface,AMER-DC-ONPREM-ESX-MGT01:CIMC
+10.102.10.22/24,active,amer-esx-mgt02-cimc.lab.local,AMER ESX-MGT02 CIMC,dcim.interface,AMER-DC-ONPREM-ESX-MGT02:CIMC
+10.102.10.23/24,active,amer-esx-mgt03-cimc.lab.local,AMER ESX-MGT03 CIMC,dcim.interface,AMER-DC-ONPREM-ESX-MGT03:CIMC
+10.102.50.10/24,active,amer-vcenter-01.lab.local,AMER vCenter Server,virtualization.vminterface,AMER-vCenter-01:eth0
+10.102.50.11/24,active,amer-nsx-mgr-01.lab.local,AMER NSX Manager 01,virtualization.vminterface,AMER-NSX-Manager-01:eth0
+10.102.50.12/24,active,amer-nsx-mgr-02.lab.local,AMER NSX Manager 02,virtualization.vminterface,AMER-NSX-Manager-02:eth0
+10.102.50.13/24,active,amer-nsx-mgr-03.lab.local,AMER NSX Manager 03,virtualization.vminterface,AMER-NSX-Manager-03:eth0
+10.102.50.20/24,active,amer-vrops-01.lab.local,AMER vRealize Operations,virtualization.vminterface,AMER-vROps-01:eth0
+10.102.50.21/24,active,amer-vrli-01.lab.local,AMER vRealize Log Insight,virtualization.vminterface,AMER-vRLI-01:eth0
+10.102.50.30/24,active,amer-backup-01.lab.local,AMER Backup Server Management,virtualization.vminterface,AMER-Backup-Server-01:eth0
+10.102.70.30/24,active,,AMER Backup Server Data Network,virtualization.vminterface,AMER-Backup-Server-01:eth1
+10.102.50.40/24,active,amer-jumphost-01.lab.local,AMER Jump Host,virtualization.vminterface,AMER-Jump-Host-01:eth0
+10.102.50.50/24,active,amer-ansible-01.lab.local,AMER Ansible Tower,virtualization.vminterface,AMER-Ansible-Tower-01:eth0
+10.102.60.10/24,active,amer-web-01.lab.local,AMER Web Server 01,virtualization.vminterface,AMER-Web-App-01:eth0
+10.102.60.11/24,active,amer-web-02.lab.local,AMER Web Server 02,virtualization.vminterface,AMER-Web-App-02:eth0
+10.102.60.12/24,active,amer-web-03.lab.local,AMER Web Server 03,virtualization.vminterface,AMER-Web-App-03:eth0
+10.102.60.20/24,active,amer-app-01.lab.local,AMER App Server 01 Management,virtualization.vminterface,AMER-App-Server-01:eth0
+10.102.70.20/24,active,,AMER App Server 01 Backend,virtualization.vminterface,AMER-App-Server-01:eth1
+10.102.60.21/24,active,amer-app-02.lab.local,AMER App Server 02 Management,virtualization.vminterface,AMER-App-Server-02:eth0
+10.102.70.21/24,active,,AMER App Server 02 Backend,virtualization.vminterface,AMER-App-Server-02:eth1
+10.102.60.22/24,active,amer-app-03.lab.local,AMER App Server 03 Management,virtualization.vminterface,AMER-App-Server-03:eth0
+10.102.70.22/24,active,,AMER App Server 03 Backend,virtualization.vminterface,AMER-App-Server-03:eth1
+10.102.60.30/24,active,amer-db-01.lab.local,AMER DB Server 01 Management,virtualization.vminterface,AMER-DB-Server-01:eth0
+10.102.70.31/24,active,,AMER DB Server 01 Replication,virtualization.vminterface,AMER-DB-Server-01:eth1
+10.102.60.31/24,active,amer-db-02.lab.local,AMER DB Server 02 Management,virtualization.vminterface,AMER-DB-Server-02:eth0
+10.102.70.32/24,active,,AMER DB Server 02 Replication,virtualization.vminterface,AMER-DB-Server-02:eth1
+10.102.60.32/24,active,amer-db-03.lab.local,AMER DB Server 03 Management,virtualization.vminterface,AMER-DB-Server-03:eth0
+10.102.70.33/24,active,,AMER DB Server 03 Replication,virtualization.vminterface,AMER-DB-Server-03:eth1
+10.102.60.40/24,active,amer-cache-01.lab.local,AMER Redis Cache 01 Management,virtualization.vminterface,AMER-Cache-Server-01:eth0
+10.102.70.40/24,active,,AMER Redis Cache 01 Cluster,virtualization.vminterface,AMER-Cache-Server-01:eth1
+10.102.60.41/24,active,amer-cache-02.lab.local,AMER Redis Cache 02 Management,virtualization.vminterface,AMER-Cache-Server-02:eth0
+10.102.70.41/24,active,,AMER Redis Cache 02 Cluster,virtualization.vminterface,AMER-Cache-Server-02:eth1
+10.102.60.42/24,active,amer-cache-03.lab.local,AMER Redis Cache 03 Management,virtualization.vminterface,AMER-Cache-Server-03:eth0
+10.102.70.42/24,active,,AMER Redis Cache 03 Cluster,virtualization.vminterface,AMER-Cache-Server-03:eth1
+10.102.60.50/24,active,amer-kafka-01.lab.local,AMER Kafka Broker 01 Management,virtualization.vminterface,AMER-Kafka-Broker-01:eth0
+10.102.70.50/24,active,,AMER Kafka Broker 01 Data,virtualization.vminterface,AMER-Kafka-Broker-01:eth1
+10.102.60.51/24,active,amer-kafka-02.lab.local,AMER Kafka Broker 02 Management,virtualization.vminterface,AMER-Kafka-Broker-02:eth0
+10.102.70.51/24,active,,AMER Kafka Broker 02 Data,virtualization.vminterface,AMER-Kafka-Broker-02:eth1
+10.102.60.52/24,active,amer-kafka-03.lab.local,AMER Kafka Broker 03 Management,virtualization.vminterface,AMER-Kafka-Broker-03:eth0
+10.102.70.52/24,active,,AMER Kafka Broker 03 Data,virtualization.vminterface,AMER-Kafka-Broker-03:eth1
+10.102.60.60/24,active,amer-elastic-01.lab.local,AMER Elasticsearch 01 Management,virtualization.vminterface,AMER-Elasticsearch-01:eth0
+10.102.70.60/24,active,,AMER Elasticsearch 01 Cluster,virtualization.vminterface,AMER-Elasticsearch-01:eth1
+10.102.60.61/24,active,amer-elastic-02.lab.local,AMER Elasticsearch 02 Management,virtualization.vminterface,AMER-Elasticsearch-02:eth0
+10.102.70.61/24,active,,AMER Elasticsearch 02 Cluster,virtualization.vminterface,AMER-Elasticsearch-02:eth1
+10.102.60.62/24,active,amer-elastic-03.lab.local,AMER Elasticsearch 03 Management,virtualization.vminterface,AMER-Elasticsearch-03:eth0
+10.102.70.62/24,active,,AMER Elasticsearch 03 Cluster,virtualization.vminterface,AMER-Elasticsearch-03:eth1
+10.102.60.70/24,active,amer-docker-01.lab.local,AMER Docker Host 01 Management,virtualization.vminterface,AMER-Docker-Host-01:eth0
+10.102.70.70/24,active,,AMER Docker Host 01 Container Network,virtualization.vminterface,AMER-Docker-Host-01:eth1
+10.102.60.71/24,active,amer-docker-02.lab.local,AMER Docker Host 02 Management,virtualization.vminterface,AMER-Docker-Host-02:eth0
+10.102.70.71/24,active,,AMER Docker Host 02 Container Network,virtualization.vminterface,AMER-Docker-Host-02:eth1
+10.102.60.72/24,active,amer-docker-03.lab.local,AMER Docker Host 03 Management,virtualization.vminterface,AMER-Docker-Host-03:eth0
+10.102.70.72/24,active,,AMER Docker Host 03 Container Network,virtualization.vminterface,AMER-Docker-Host-03:eth1
+10.102.50.80/24,active,amer-vsan-witness.lab.local,AMER vSAN Witness,virtualization.vminterface,AMER-vSAN-Witness:eth0
+10.102.50.90/24,active,amer-fileserver-01.lab.local,AMER File Server Management,virtualization.vminterface,AMER-File-Server-01:eth0
+10.102.80.90/24,active,,AMER File Server Storage Network,virtualization.vminterface,AMER-File-Server-01:eth1
+10.102.50.91/24,active,amer-nfs-01.lab.local,AMER NFS Server Management,virtualization.vminterface,AMER-NFS-Server-01:eth0
+10.102.80.91/24,active,,AMER NFS Server Storage Network,virtualization.vminterface,AMER-NFS-Server-01:eth1
