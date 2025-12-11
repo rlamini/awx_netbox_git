@@ -1,0 +1,273 @@
+!
+! Cisco IOS-XE Advanced Configuration Template
+! Device: {{ device.name }}
+! Role: {{ device.device_role.name }}
+! Site: {{ device.site.name }}
+! Generated: {{ now() }}
+!
+{% set region = device.site.name.split('-')[0] | lower %}
+
+!
+! ============================================================================
+! GLOBAL SECURITY FEATURES
+! ============================================================================
+!
+{% if config_context.security.dhcp_snooping.enabled %}
+! DHCP Snooping Configuration
+ip dhcp snooping
+ip dhcp snooping vlan {{ config_context.security.dhcp_snooping.vlan_list }}
+{% if config_context.security.dhcp_snooping.information_option %}
+ip dhcp snooping information option
+{% endif %}
+{% if config_context.security.dhcp_snooping.verify_mac %}
+ip dhcp snooping verify mac-address
+{% endif %}
+ip dhcp snooping database {{ config_context.security.dhcp_snooping.database.agent }}
+ip dhcp snooping database write-delay {{ config_context.security.dhcp_snooping.database.write_delay }}
+{% endif %}
+
+!
+{% if config_context.security.arp_inspection.enabled %}
+! Dynamic ARP Inspection Configuration
+ip arp inspection vlan {{ config_context.security.arp_inspection.vlan_list }}
+{% if config_context.security.arp_inspection.validate.src_mac %}
+ip arp inspection validate src-mac
+{% endif %}
+{% if config_context.security.arp_inspection.validate.dst_mac %}
+ip arp inspection validate dst-mac
+{% endif %}
+{% if config_context.security.arp_inspection.validate.ip %}
+ip arp inspection validate ip
+{% endif %}
+ip arp inspection log-buffer entries {{ config_context.security.arp_inspection.log_buffer.entries }}
+ip arp inspection log-buffer logs {{ config_context.security.arp_inspection.log_buffer.interval }} interval {{ config_context.security.arp_inspection.log_buffer.interval }}
+{% endif %}
+
+!
+{% if config_context.security.port_security.enabled %}
+! Port Security Global Configuration
+errdisable recovery cause psecure-violation
+errdisable recovery interval {{ config_context.security.port_security.recovery.interval }}
+{% endif %}
+
+!
+{% if config_context.security.dot1x.enabled %}
+! 802.1X Global Configuration
+aaa new-model
+!
+! RADIUS Configuration for 802.1X
+{% set radius_servers = config_context.aaa.radius.dot1x.get(region, config_context.aaa.radius.dot1x.emea) %}
+{% for server in radius_servers %}
+radius server DOT1X-{{ loop.index }}
+ address ipv4 {{ server }} auth-port 1812 acct-port 1813
+ timeout {{ config_context.aaa.radius.timeout }}
+ retransmit {{ config_context.aaa.radius.retransmit }}
+ key {{ config_context.security.dot1x.radius.key }}
+!
+{% endfor %}
+!
+aaa group server radius DOT1X-GROUP
+{% for server in radius_servers %}
+ server name DOT1X-{{ loop.index }}
+{% endfor %}
+!
+aaa authentication dot1x default group DOT1X-GROUP
+aaa authorization network default group DOT1X-GROUP
+!
+! 802.1X System Configuration
+dot1x system-auth-control
+!
+! 802.1X Guest and Critical VLANs
+vlan {{ config_context.security.dot1x.guest_vlan }}
+ name DOT1X-GUEST-VLAN
+!
+vlan {{ config_context.security.dot1x.auth_fail_vlan }}
+ name DOT1X-AUTH-FAIL-VLAN
+!
+vlan {{ config_context.security.dot1x.critical_vlan }}
+ name DOT1X-CRITICAL-VLAN
+!
+{% endif %}
+
+!
+! ============================================================================
+! INTERFACE CONFIGURATION
+! ============================================================================
+!
+{% for interface in device.interfaces.all() %}
+{% if not interface.mgmt_only and interface.enabled %}
+{% set iface_name = interface.name %}
+{% set iface_desc = interface.description | default('') %}
+{% set iface_type = interface.type.value %}
+
+! Interface {{ iface_name }}
+interface {{ iface_name }}
+ description {{ iface_desc }}
+
+{% if interface.mode and interface.mode.value == 'access' %}
+ {# ACCESS PORT CONFIGURATION #}
+ switchport mode access
+{% if interface.untagged_vlan %}
+ switchport access vlan {{ interface.untagged_vlan.vid }}
+{% endif %}
+{% if interface.tagged_vlans.count() > 0 and 'voice' in iface_desc | lower %}
+ {# Voice VLAN if mentioned in description #}
+ switchport voice vlan {{ config_context.vlans.voice_vlan | default(210) }}
+{% endif %}
+
+ {# Spanning Tree #}
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+
+ {# Storm Control #}
+ storm-control broadcast level 10.00
+ storm-control multicast level 10.00
+ storm-control unicast level 10.00
+ storm-control action trap
+
+{% if config_context.security.dhcp_snooping.enabled %}
+ {# DHCP Snooping - Access ports are NOT trusted #}
+ ! DHCP Snooping: Untrusted (default)
+ ip dhcp snooping limit rate {{ config_context.security.dhcp_snooping.rate_limit }}
+{% endif %}
+
+{% if config_context.security.arp_inspection.enabled %}
+ {# ARP Inspection - Access ports are NOT trusted #}
+ ! ARP Inspection: Untrusted (default)
+{% endif %}
+
+{% if config_context.security.port_security.enabled %}
+ {# Port Security for Access Ports #}
+ switchport port-security
+ switchport port-security maximum {{ config_context.security.port_security.default.maximum }}
+ switchport port-security violation {{ config_context.security.port_security.default.violation }}
+ switchport port-security aging time {{ config_context.security.port_security.default.aging_time }}
+ switchport port-security aging type {{ config_context.security.port_security.default.aging_type }}
+{% if config_context.security.port_security.sticky_mac %}
+ switchport port-security mac-address sticky
+{% endif %}
+{% endif %}
+
+{% if config_context.security.dot1x.enabled %}
+ {# 802.1X for Access Ports #}
+ authentication port-control auto
+ authentication periodic
+ authentication timer reauthenticate {{ config_context.security.dot1x.default_port_config.reauth_period }}
+ dot1x pae authenticator
+ dot1x timeout quiet-period {{ config_context.security.dot1x.default_port_config.timeout.quiet_period }}
+ dot1x timeout tx-period {{ config_context.security.dot1x.default_port_config.timeout.tx_period }}
+ dot1x timeout supp-timeout {{ config_context.security.dot1x.default_port_config.timeout.supp_timeout }}
+ dot1x timeout server-timeout {{ config_context.security.dot1x.default_port_config.timeout.server_timeout }}
+ dot1x max-reauth-req {{ config_context.security.dot1x.default_port_config.max_reauth_req }}
+ authentication host-mode {{ config_context.security.dot1x.default_port_config.host_mode }}
+ authentication violation {{ config_context.security.dot1x.default_port_config.violation_mode }}
+ authentication guest-vlan {{ config_context.security.dot1x.guest_vlan }}
+ authentication event fail action authorize vlan {{ config_context.security.dot1x.auth_fail_vlan }}
+ authentication event server dead action authorize vlan {{ config_context.security.dot1x.critical_vlan }}
+{% endif %}
+
+{% elif interface.mode and interface.mode.value == 'tagged' %}
+ {# TRUNK PORT CONFIGURATION #}
+ switchport mode trunk
+{% if interface.untagged_vlan %}
+ switchport trunk native vlan {{ interface.untagged_vlan.vid }}
+{% else %}
+ switchport trunk native vlan 1
+{% endif %}
+{% if interface.tagged_vlans.count() > 0 %}
+ switchport trunk allowed vlan {{ interface.tagged_vlans.all() | map(attribute='vid') | join(',') }}
+{% else %}
+ switchport trunk allowed vlan all
+{% endif %}
+
+ {# Spanning Tree for Trunk #}
+{% if 'uplink' in iface_desc | lower or 'core' in iface_desc | lower or 'distribution' in iface_desc | lower %}
+ spanning-tree guard root
+{% else %}
+ spanning-tree portfast trunk
+{% endif %}
+
+ {# Storm Control #}
+ storm-control broadcast level 20.00
+ storm-control multicast level 20.00
+ storm-control action trap
+
+{% if config_context.security.dhcp_snooping.enabled %}
+{% if 'uplink' in iface_desc | lower or 'core' in iface_desc | lower or 'distribution' in iface_desc | lower %}
+ {# DHCP Snooping - Uplink/Trunk ports are TRUSTED #}
+ ip dhcp snooping trust
+{% else %}
+ {# DHCP Snooping - Server/ESXi trunks are NOT trusted #}
+ ! DHCP Snooping: Untrusted
+ ip dhcp snooping limit rate {{ config_context.security.dhcp_snooping.rate_limit }}
+{% endif %}
+{% endif %}
+
+{% if config_context.security.arp_inspection.enabled %}
+{% if 'uplink' in iface_desc | lower or 'core' in iface_desc | lower or 'distribution' in iface_desc | lower %}
+ {# ARP Inspection - Uplink/Trunk ports are TRUSTED #}
+ ip arp inspection trust
+{% else %}
+ {# ARP Inspection - Server/ESXi trunks are NOT trusted #}
+ ! ARP Inspection: Untrusted
+{% endif %}
+{% endif %}
+
+{% endif %}
+
+{% if interface.mtu %}
+ mtu {{ interface.mtu }}
+{% endif %}
+ no shutdown
+!
+{% endif %}
+{% endfor %}
+
+!
+! ============================================================================
+! SVI CONFIGURATION (if device has VLANs with IPs)
+! ============================================================================
+!
+{% for vlan in device.site.vlans.all() %}
+{% if vlan.vid >= 100 %}
+{% set svi_ips = device.ip_addresses.filter(assigned_object_type='dcim.interface', assigned_object__name='Vlan' + vlan.vid | string) %}
+{% if svi_ips.count() > 0 %}
+interface Vlan{{ vlan.vid }}
+ description {{ vlan.name }}
+{% for ip in svi_ips %}
+ ip address {{ ip.address.ip }} {{ ip.address.netmask }}
+{% endfor %}
+{% if config_context.services.dhcp_servers %}
+{% set dhcp_servers = config_context.services.dhcp_servers.get(region, []) %}
+{% for server in dhcp_servers %}
+ ip helper-address {{ server }}
+{% endfor %}
+{% endif %}
+ no shutdown
+!
+{% endif %}
+{% endif %}
+{% endfor %}
+
+!
+! ============================================================================
+! MONITORING AND LOGGING
+! ============================================================================
+!
+! SNMP Configuration
+snmp-server community {{ config_context.snmp.community_ro }} RO
+snmp-server community {{ config_context.snmp.community_rw }} RW
+snmp-server location {{ device.site.name }} - {{ device.location.name }}
+snmp-server contact {{ config_context.snmp.contact }}
+{% for trap_server in config_context.snmp.trap_servers %}
+snmp-server host {{ trap_server }} version 2c {{ config_context.snmp.community_ro }}
+{% endfor %}
+!
+! Logging Configuration
+{% for syslog_server in config_context.logging.syslog_servers %}
+logging host {{ syslog_server }}
+{% endfor %}
+logging trap {{ config_context.logging.severity }}
+logging facility {{ config_context.logging.facility }}
+!
+end
