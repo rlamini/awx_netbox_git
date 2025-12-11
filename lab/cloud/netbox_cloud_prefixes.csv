@@ -1,7 +1,7 @@
-prefix,vrf,site,status,role,description
-10.200.0.0/16,EMEA-AZURE-PROD-VNET,EMEA-DC-CLOUD,active,,Azure Production VNet - EMEA
-10.201.0.0/24,EMEA-AZURE-MGMT-VNET,EMEA-DC-CLOUD,active,,Azure Management VNet - EMEA (GatewaySubnet)
-10.210.0.0/16,APAC-GCP-PROD-VPC,APAC-DC-CLOUD,active,,GCP Production VPC - APAC (VPN)
-10.211.0.0/24,APAC-GCP-MGMT-VPC,APAC-DC-CLOUD,active,,GCP Management VPC - APAC
-10.220.0.0/16,AMER-AWS-PROD-VPC,AMER-DC-CLOUD,active,,AWS Production VPC - AMER (Direct Connect)
-10.221.0.0/24,AMER-AWS-MGMT-VPC,AMER-DC-CLOUD,active,,AWS Management VPC - AMER
+prefix,status,vrf,vlan_site,vlan,description,is_pool
+10.200.0.0/16,active,EMEA-AZURE-PROD-VNET,,,Azure Production VNet - EMEA (ExpressRoute),False
+10.201.0.0/24,active,EMEA-AZURE-MGMT-VNET,,,Azure Management VNet - EMEA (GatewaySubnet for ExpressRoute),False
+10.210.0.0/16,active,APAC-GCP-PROD-VPC,,,GCP Production VPC - APAC (VPN tunnels),False
+10.211.0.0/24,active,APAC-GCP-MGMT-VPC,,,GCP Management VPC - APAC (Cloud VPN Gateways),False
+10.220.0.0/16,active,AMER-AWS-PROD-VPC,,,AWS Production VPC - AMER (Direct Connect),False
+10.221.0.0/24,active,AMER-AWS-MGMT-VPC,,,AWS Management VPC - AMER (Direct Connect Gateway),False
