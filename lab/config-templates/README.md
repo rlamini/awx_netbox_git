@@ -15,16 +15,18 @@ Basic device configuration with standard management features.
 | `cisco_ios_base.j2` | IOS | ISR routers - basic config |
 
 ### Advanced Security Templates ⭐ NEW
-Enhanced configuration with enterprise security features.
+**Complete** configuration templates with base features + enterprise security.
 
 | Template | Platform | Description |
 |----------|----------|-------------|
-| `cisco_iosxe_advanced.j2` | IOS-XE | Catalyst switches - advanced security |
-| `cisco_nxos_advanced.j2` | NX-OS | Nexus switches - advanced security |
+| `cisco_iosxe_advanced.j2` | IOS-XE | Catalyst switches - complete config with advanced security |
+| `cisco_nxos_advanced.j2` | NX-OS | Nexus switches - complete config with advanced security |
+
+**Note**: Advanced templates are standalone and include ALL base configuration sections (services, management, protocols) PLUS advanced Layer 2 security features. You do not need to use base templates when using advanced templates.
 
 ## Advanced Security Features
 
-The advanced templates include comprehensive Layer 2 security features:
+The advanced templates include comprehensive Layer 2 security features in addition to all base configuration:
 
 ### 1. DHCP Snooping
 - **Purpose**: Prevents rogue DHCP servers

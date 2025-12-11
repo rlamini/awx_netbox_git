@@ -1,12 +1,51 @@
 !
-! Cisco IOS-XE Advanced Configuration Template
+! Cisco IOS-XE Advanced Configuration Template (Complete)
 ! Device: {{ device.name }}
 ! Role: {{ device.device_role.name }}
 ! Site: {{ device.site.name }}
 ! Generated: {{ now() }}
 !
+! This template includes:
+! - Complete base configuration (services, management, protocols)
+! - Advanced Layer 2 security (DHCP snooping, ARP inspection, port security, 802.1X)
+! - Intelligent interface configuration with automatic security policy application
+!
 {% set region = device.site.name.split('-')[0] | lower %}
 
+!
+! ============================================================================
+! GLOBAL CONFIGURATION
+! ============================================================================
+!
+service timestamps debug datetime msec localtime show-timezone
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+service compress-config
+!
+hostname {{ device.name }}
+!
+boot-start-marker
+boot-end-marker
+!
+service tcp-keepalives-in
+service tcp-keepalives-out
+!
+no ip domain lookup
+ip domain name {{ config_context.dns.domain | default('local') }}
+!
+! ============================================================================
+! VTP CONFIGURATION
+! ============================================================================
+!
+vtp mode transparent
+!
+! ============================================================================
+! SPANNING TREE BASE CONFIGURATION
+! ============================================================================
+!
+spanning-tree mode rapid-pvst
+spanning-tree extend system-id
+spanning-tree portfast bpduguard default
 !
 ! ============================================================================
 ! GLOBAL SECURITY FEATURES
@@ -88,6 +127,17 @@ vlan {{ config_context.security.dot1x.critical_vlan }}
  name DOT1X-CRITICAL-VLAN
 !
 {% endif %}
+
+!
+! ============================================================================
+! VLAN CONFIGURATION
+! ============================================================================
+!
+{% for vlan in device.site.vlans.all() %}
+vlan {{ vlan.vid }}
+ name {{ vlan.name }}
+!
+{% endfor %}
 
 !
 ! ============================================================================
@@ -251,10 +301,37 @@ interface Vlan{{ vlan.vid }}
 
 !
 ! ============================================================================
-! MONITORING AND LOGGING
+! NTP CONFIGURATION
 ! ============================================================================
 !
-! SNMP Configuration
+{% if config_context.ntp %}
+{% for server in config_context.ntp.servers %}
+ntp server {{ server }}
+{% endfor %}
+!
+clock timezone {{ config_context.site.timezone | default('UTC') }} 0 0
+!
+{% endif %}
+
+!
+! ============================================================================
+! DNS CONFIGURATION
+! ============================================================================
+!
+{% if config_context.dns %}
+{% set dns_servers = config_context.services.dns_servers.get(region, []) %}
+{% for server in dns_servers %}
+ip name-server {{ server }}
+{% endfor %}
+!
+{% endif %}
+
+!
+! ============================================================================
+! SNMP CONFIGURATION
+! ============================================================================
+!
+{% if config_context.snmp %}
 snmp-server community {{ config_context.snmp.community_ro }} RO
 snmp-server community {{ config_context.snmp.community_rw }} RW
 snmp-server location {{ device.site.name }} - {{ device.location.name }}
@@ -262,12 +339,106 @@ snmp-server contact {{ config_context.snmp.contact }}
 {% for trap_server in config_context.snmp.trap_servers %}
 snmp-server host {{ trap_server }} version 2c {{ config_context.snmp.community_ro }}
 {% endfor %}
+snmp-server enable traps snmp linkdown linkup
+snmp-server enable traps config
 !
-! Logging Configuration
+{% endif %}
+
+!
+! ============================================================================
+! LOGGING CONFIGURATION
+! ============================================================================
+!
+{% if config_context.logging %}
+logging buffered {{ config_context.logging.severity | default('informational') }}
 {% for syslog_server in config_context.logging.syslog_servers %}
 logging host {{ syslog_server }}
 {% endfor %}
 logging trap {{ config_context.logging.severity }}
 logging facility {{ config_context.logging.facility }}
+!
+{% endif %}
+
+!
+! ============================================================================
+! AAA/TACACS+ CONFIGURATION
+! ============================================================================
+!
+{% if config_context.aaa %}
+{% if not config_context.security.dot1x.enabled %}
+aaa new-model
+!
+{% endif %}
+! TACACS+ Servers for Management Access
+{% set tacacs_servers = config_context.aaa.tacacs.servers.get(region, []) %}
+{% for server in tacacs_servers %}
+tacacs server TACACS-{{ loop.index }}
+ address ipv4 {{ server }}
+ key {{ config_context.aaa.tacacs.key }}
+ timeout {{ config_context.aaa.tacacs.timeout }}
+!
+{% endfor %}
+!
+aaa group server tacacs+ TACACS-GROUP
+{% for server in tacacs_servers %}
+ server name TACACS-{{ loop.index }}
+{% endfor %}
+!
+aaa authentication login default group TACACS-GROUP local
+aaa authentication enable default group TACACS-GROUP enable
+aaa authorization exec default group TACACS-GROUP local
+aaa authorization commands 15 default group TACACS-GROUP local
+aaa accounting exec default start-stop group TACACS-GROUP
+aaa accounting commands 15 default start-stop group TACACS-GROUP
+!
+{% endif %}
+
+!
+! ============================================================================
+! SSH & MANAGEMENT ACCESS
+! ============================================================================
+!
+crypto key generate rsa modulus 2048
+ip ssh version 2
+ip ssh time-out 60
+ip ssh authentication-retries 3
+!
+enable secret ENABLE_SECRET_HERE
+!
+line con 0
+ exec-timeout 30 0
+ logging synchronous
+ login authentication default
+!
+line vty 0 15
+ exec-timeout 30 0
+ logging synchronous
+ transport input ssh
+ login authentication default
+ authorization commands 15 default
+ accounting commands 15 default
+!
+
+!
+! ============================================================================
+! BANNER CONFIGURATION
+! ============================================================================
+!
+banner motd ^
+******************************************
+* {{ device.name }}
+* {{ device.site.name }} - {{ device.device_role.name }}
+*
+* {{ config_context.global.organization | default('Organization') }}
+* Contact: {{ config_context.global.contact_email | default('netops@example.com') }}
+*
+* UNAUTHORIZED ACCESS PROHIBITED
+* All access is logged and monitored
+******************************************
+^
+!
+! ============================================================================
+! END OF CONFIGURATION
+! ============================================================================
 !
 end

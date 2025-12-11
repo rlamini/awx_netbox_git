@@ -1,11 +1,26 @@
 !
-! Cisco NX-OS Advanced Configuration Template
+! Cisco NX-OS Advanced Configuration Template (Complete)
 ! Device: {{ device.name }}
 ! Role: {{ device.device_role.name }}
 ! Site: {{ device.site.name }}
 ! Generated: {{ now() }}
 !
+! This template includes:
+! - Complete base configuration (features, management, protocols)
+! - Advanced Layer 2 security (DHCP snooping, ARP inspection, port security, 802.1X)
+! - Intelligent interface configuration with automatic security policy application
+!
 {% set region = device.site.name.split('-')[0] | lower %}
+
+!
+! ============================================================================
+! GLOBAL CONFIGURATION
+! ============================================================================
+!
+hostname {{ device.name }}
+!
+clock timezone {{ config_context.site.timezone | default('UTC') }} 0 0
+!
 
 !
 ! ============================================================================
@@ -17,9 +32,27 @@ feature interface-vlan
 feature lacp
 feature lldp
 feature ssh
+feature tacacs+
 {% if config_context.security.dot1x.enabled %}
 feature dot1x
 {% endif %}
+
+!
+! ============================================================================
+! VTP CONFIGURATION
+! ============================================================================
+!
+vtp mode transparent
+!
+
+!
+! ============================================================================
+! SPANNING TREE BASE CONFIGURATION
+! ============================================================================
+!
+spanning-tree mode rapid-pvst
+spanning-tree vlan 1-4094 priority 32768
+!
 
 !
 ! ============================================================================
@@ -108,6 +141,21 @@ vlan {{ config_context.security.dot1x.critical_vlan }}
 ! ============================================================================
 ! INTERFACE CONFIGURATION
 ! ============================================================================
+!
+interface mgmt0
+  description OOB MANAGEMENT INTERFACE
+  vrf member management
+{% if device.primary_ip4 is defined %}
+  ip address {{ device.primary_ip4.address }}
+{% endif %}
+  no shutdown
+!
+interface loopback0
+  description LOOPBACK - ROUTER ID / BGP
+{% if device.primary_ip4 is defined %}
+  ip address {{ device.primary_ip4.address.ip }}/32
+{% endif %}
+  no shutdown
 !
 {% for interface in device.interfaces.all() %}
 {% if not interface.mgmt_only and interface.enabled %}
@@ -242,10 +290,36 @@ interface Vlan{{ vlan.vid }}
 
 !
 ! ============================================================================
-! MONITORING AND LOGGING
+! NTP CONFIGURATION
 ! ============================================================================
 !
-! SNMP Configuration
+{% if config_context.ntp %}
+{% for server in config_context.ntp.servers %}
+ntp server {{ server }} use-vrf management
+{% endfor %}
+!
+{% endif %}
+
+!
+! ============================================================================
+! DNS CONFIGURATION
+! ============================================================================
+!
+{% if config_context.dns %}
+ip domain-name {{ config_context.dns.domain | default('local') }}
+{% set dns_servers = config_context.services.dns_servers.get(region, []) %}
+{% for server in dns_servers %}
+ip name-server {{ server }} use-vrf management
+{% endfor %}
+!
+{% endif %}
+
+!
+! ============================================================================
+! SNMP CONFIGURATION
+! ============================================================================
+!
+{% if config_context.snmp %}
 snmp-server community {{ config_context.snmp.community_ro }} group network-operator
 snmp-server community {{ config_context.snmp.community_rw }} group network-admin
 snmp-server location {{ device.site.name }} - {{ device.location.name }}
@@ -254,9 +328,86 @@ snmp-server contact {{ config_context.snmp.contact }}
 snmp-server host {{ trap_server }} traps version 2c {{ config_context.snmp.community_ro }}
 {% endfor %}
 !
-! Logging Configuration
+{% endif %}
+
+!
+! ============================================================================
+! LOGGING CONFIGURATION
+! ============================================================================
+!
+{% if config_context.logging %}
+logging timestamp milliseconds
+logging monitor {{ config_context.logging.severity | default('informational') }}
+logging logfile messages {{ config_context.logging.severity | default('informational') }} size 16384
 {% for syslog_server in config_context.logging.syslog_servers %}
-logging server {{ syslog_server }} {{ config_context.logging.severity }} facility {{ config_context.logging.facility }}
+logging server {{ syslog_server }} {{ config_context.logging.severity }} facility {{ config_context.logging.facility }} use-vrf management
 {% endfor %}
+!
+{% endif %}
+
+!
+! ============================================================================
+! AAA/TACACS+ CONFIGURATION
+! ============================================================================
+!
+{% if config_context.aaa %}
+! TACACS+ Servers for Management Access
+{% set tacacs_servers = config_context.aaa.tacacs.servers.get(region, []) %}
+{% for server in tacacs_servers %}
+tacacs-server host {{ server }} key 7 {{ config_context.aaa.tacacs.key }}
+{% endfor %}
+!
+aaa group server tacacs+ TACACS-GROUP
+{% for server in tacacs_servers %}
+  server {{ server }}
+{% endfor %}
+  use-vrf management
+!
+aaa authentication login default group TACACS-GROUP local
+aaa authentication login console group TACACS-GROUP local
+aaa authorization config-commands default group TACACS-GROUP local
+aaa authorization commands default group TACACS-GROUP local
+aaa accounting default group TACACS-GROUP
+!
+{% endif %}
+
+!
+! ============================================================================
+! SSH & MANAGEMENT ACCESS
+! ============================================================================
+!
+ssh key rsa 2048 force
+ip ssh version 2
+!
+line console
+  exec-timeout 30
+!
+line vty
+  exec-timeout 30
+  session-limit 5
+  transport input ssh
+!
+
+!
+! ============================================================================
+! BANNER CONFIGURATION
+! ============================================================================
+!
+banner motd ^
+******************************************
+* {{ device.name }}
+* {{ device.site.name }} - {{ device.device_role.name }}
+*
+* {{ config_context.global.organization | default('Organization') }}
+* Contact: {{ config_context.global.contact_email | default('netops@example.com') }}
+*
+* UNAUTHORIZED ACCESS PROHIBITED
+* All access is logged and monitored
+******************************************
+^
+!
+! ============================================================================
+! END OF CONFIGURATION
+! ============================================================================
 !
 end
