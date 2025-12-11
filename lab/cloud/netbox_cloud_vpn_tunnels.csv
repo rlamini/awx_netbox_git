@@ -1,3 +1,3 @@
-name,site_a,site_z,status,type,encryption,authentication,ike_version,pfs_group,peer_a_ip,peer_z_ip,local_subnet,remote_subnet,description,comments
-APAC-GCP-VPN-TUNNEL-1,APAC-DC-ONPREM,APAC-DC-CLOUD,active,IPSec,AES-256-GCM,SHA256,IKEv2,DH Group 14,203.0.113.10,198.51.100.20,10.101.0.0/16,10.210.0.0/16,Primary IPSec tunnel - APAC OnPrem to GCP,HA VPN tunnel 1. Routes traffic between APAC-DC-ONPREM and GCP VPC.
-APAC-GCP-VPN-TUNNEL-2,APAC-DC-ONPREM,APAC-DC-CLOUD,active,IPSec,AES-256-GCM,SHA256,IKEv2,DH Group 14,203.0.113.11,198.51.100.21,10.101.0.0/16,10.210.0.0/16,Secondary IPSec tunnel - APAC OnPrem to GCP (redundant),HA VPN tunnel 2. Provides redundancy for tunnel 1.
+name,status,encapsulation,description,comments,tags
+APAC-GCP-VPN-TUNNEL-1,active,ipsec-tunnel,Primary IPSec tunnel - APAC OnPrem to GCP,HA VPN tunnel 1. Routes traffic between APAC-DC-ONPREM and GCP VPC. AES-256-GCM encryption with SHA256 authentication. IKEv2 with DH Group 14.,"apac,gcp,vpn"
+APAC-GCP-VPN-TUNNEL-2,active,ipsec-tunnel,Secondary IPSec tunnel - APAC OnPrem to GCP (redundant),HA VPN tunnel 2. Provides redundancy for tunnel 1. AES-256-GCM encryption with SHA256 authentication. IKEv2 with DH Group 14.,"apac,gcp,vpn"
