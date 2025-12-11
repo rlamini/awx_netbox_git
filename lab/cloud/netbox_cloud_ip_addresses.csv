@@ -1,0 +1,7 @@
+address,vrf,status,role,dns_name,description,interface
+10.201.0.1/24,EMEA-AZURE-MGMT-VNET,active,,er-gw-01.emea.azure.cloud,Azure ExpressRoute Gateway interface IP,EMEA-AZURE-ER-GW-01:wan0
+10.221.0.1/24,AMER-AWS-MGMT-VPC,active,,dx-gw-01.amer.aws.cloud,AWS Direct Connect Gateway interface IP,AMER-AWS-DX-GW-01:wan0
+10.211.0.1/24,APAC-GCP-MGMT-VPC,active,,vpn-gw-01.apac.gcp.cloud,GCP Cloud VPN Gateway 1 interface IP,APAC-GCP-VPN-GW-01:wan0
+10.211.0.2/24,APAC-GCP-MGMT-VPC,active,,vpn-gw-02.apac.gcp.cloud,GCP Cloud VPN Gateway 2 interface IP (HA),APAC-GCP-VPN-GW-02:wan1
+10.101.254.1/32,,active,,vpn-tunnel-1.apac.onprem,On-prem VPN Firewall tunnel 1 endpoint,APAC-ONPREM-VPN-FW-01:tunnel.1
+10.101.254.2/32,,active,,vpn-tunnel-2.apac.onprem,On-prem VPN Firewall tunnel 2 endpoint (HA),APAC-ONPREM-VPN-FW-01:tunnel.2

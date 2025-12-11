@@ -1,0 +1,4 @@
+prefix,rir,description
+10.200.0.0/15,RFC1918,EMEA Cloud Region - Azure VNets (Production + Management)
+10.210.0.0/15,RFC1918,APAC Cloud Region - GCP VPCs (Production + Management)
+10.220.0.0/15,RFC1918,AMER Cloud Region - AWS VPCs (Production + Management)
