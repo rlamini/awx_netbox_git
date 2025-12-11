@@ -1,0 +1,7 @@
+device,name,type,enabled,mgmt_only,description
+EMEA-AZURE-ER-GW-01,wan0,virtual,True,False,ExpressRoute connection interface to EMEA-DC-ONPREM
+AMER-AWS-DX-GW-01,wan0,virtual,True,False,Direct Connect interface to AMER-DC-ONPREM
+APAC-GCP-VPN-GW-01,wan0,virtual,True,False,VPN tunnel 1 interface to APAC-DC-ONPREM
+APAC-GCP-VPN-GW-02,wan1,virtual,True,False,VPN tunnel 2 interface to APAC-DC-ONPREM (redundant)
+APAC-ONPREM-VPN-FW-01,tunnel.1,virtual,True,False,IPSec VPN tunnel 1 to GCP
+APAC-ONPREM-VPN-FW-01,tunnel.2,virtual,True,False,IPSec VPN tunnel 2 to GCP (redundant)

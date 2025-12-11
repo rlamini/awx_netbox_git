@@ -94,7 +94,7 @@ EMEA-DC-ONPREM-CORE-SW01,Ethernet2/43,100gbase-x-qsfp28,True,False,100G QSFP28 P
 EMEA-DC-ONPREM-CORE-SW01,Ethernet2/44,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/44
 EMEA-DC-ONPREM-CORE-SW01,Ethernet2/45,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/45
 EMEA-DC-ONPREM-CORE-SW01,Ethernet2/46,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/46
-EMEA-DC-ONPREM-CORE-SW01,Ethernet2/47,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/47
+EMEA-DC-ONPREM-CORE-SW01,Ethernet2/47,100gbase-x-qsfp28,True,False,ExpressRoute circuit to Azure (1Gbps)
 EMEA-DC-ONPREM-CORE-SW01,Ethernet2/48,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/48
 EMEA-DC-ONPREM-CORE-SW01,Loopback0,virtual,True,False,Loopback interface for routing protocols
 EMEA-DC-ONPREM-CORE-SW02,mgmt0,1000base-t,True,True,Management interface
@@ -2508,7 +2508,7 @@ AMER-DC-ONPREM-CORE-SW01,Ethernet2/43,100gbase-x-qsfp28,True,False,100G QSFP28 P
 AMER-DC-ONPREM-CORE-SW01,Ethernet2/44,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/44
 AMER-DC-ONPREM-CORE-SW01,Ethernet2/45,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/45
 AMER-DC-ONPREM-CORE-SW01,Ethernet2/46,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/46
-AMER-DC-ONPREM-CORE-SW01,Ethernet2/47,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/47
+AMER-DC-ONPREM-CORE-SW01,Ethernet2/47,100gbase-x-qsfp28,True,False,Direct Connect circuit to AWS (10Gbps)
 AMER-DC-ONPREM-CORE-SW01,Ethernet2/48,100gbase-x-qsfp28,True,False,100G QSFP28 Port 2/48
 AMER-DC-ONPREM-CORE-SW01,Loopback0,virtual,True,False,Loopback interface for routing protocols
 AMER-DC-ONPREM-CORE-SW02,mgmt0,1000base-t,True,True,Management interface

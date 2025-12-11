@@ -1,5 +1,5 @@
-circuit,term_side,site,port_speed,upstream_speed,description
-EXPRESSROUTE-EMEA-001,A,EMEA-DC-ONPREM,1000,1000,EMEA OnPrem ExpressRoute endpoint
-EXPRESSROUTE-EMEA-001,Z,EMEA-DC-CLOUD,1000,1000,Azure ExpressRoute Gateway (eu-west-1)
-DIRECTCONNECT-AMER-001,A,AMER-DC-ONPREM,10000,10000,AMER OnPrem Direct Connect endpoint
-DIRECTCONNECT-AMER-001,Z,AMER-DC-CLOUD,10000,10000,AWS Direct Connect Gateway (us-east-1)
+circuit,term_side,site,termination_type,termination_id,port_speed,upstream_speed,xconnect_id,pp_info,description
+EXPRESSROUTE-EMEA-001,A,EMEA-DC-ONPREM,dcim.interface,EMEA-DC-ONPREM-CORE-SW01:Ethernet2/47,1000,1000,,,"EMEA OnPrem ExpressRoute endpoint on Core Switch"
+EXPRESSROUTE-EMEA-001,Z,EMEA-DC-CLOUD,dcim.interface,EMEA-AZURE-ER-GW-01:wan0,1000,1000,,,"Azure ExpressRoute Gateway (eu-west-1)"
+DIRECTCONNECT-AMER-001,A,AMER-DC-ONPREM,dcim.interface,AMER-DC-ONPREM-CORE-SW01:Ethernet2/47,10000,10000,,,"AMER OnPrem Direct Connect endpoint on Core Switch"
+DIRECTCONNECT-AMER-001,Z,AMER-DC-CLOUD,dcim.interface,AMER-AWS-DX-GW-01:wan0,10000,10000,,,"AWS Direct Connect Gateway (us-east-1)"
