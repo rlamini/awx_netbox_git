@@ -33,7 +33,7 @@ feature lacp
 feature lldp
 feature ssh
 feature tacacs+
-{% if security.dot1x.enabled %}
+{% if security is defined and security.dot1x is defined and security.dot1x.enabled %}
 feature dot1x
 {% endif %}
 
@@ -59,47 +59,47 @@ spanning-tree vlan 1-4094 priority 32768
 ! GLOBAL SECURITY FEATURES
 ! ============================================================================
 !
-{% if security.dhcp_snooping.enabled %}
+{% if security is defined and security.dhcp_snooping is defined and security.dhcp_snooping.enabled %}
 ! DHCP Snooping Configuration
 ip dhcp snooping
 ip dhcp snooping vlan {{ security.dhcp_snooping.vlan_list }}
-{% if security.dhcp_snooping.information_option %}
+{% if security.dhcp_snooping.information_option | default(false) %}
 ip dhcp snooping information option
 {% endif %}
-{% if security.dhcp_snooping.verify_mac %}
+{% if security.dhcp_snooping.verify_mac | default(false) %}
 ip dhcp snooping verify mac-address
 {% endif %}
 {% endif %}
 
 !
-{% if security.arp_inspection.enabled %}
+{% if security is defined and security.arp_inspection is defined and security.arp_inspection.enabled %}
 ! Dynamic ARP Inspection Configuration
 ip arp inspection vlan {{ security.arp_inspection.vlan_list }}
-{% if security.arp_inspection.validate.src_mac %}
+{% if security.arp_inspection.validate.src_mac | default(false) %}
 ip arp inspection validate src-mac
 {% endif %}
-{% if security.arp_inspection.validate.dst_mac %}
+{% if security.arp_inspection.validate.dst_mac | default(false) %}
 ip arp inspection validate dst-mac
 {% endif %}
-{% if security.arp_inspection.validate.ip %}
+{% if security.arp_inspection.validate.ip | default(false) %}
 ip arp inspection validate ip
 {% endif %}
 ip arp inspection log-buffer entries {{ security.arp_inspection.log_buffer.entries }}
 {% endif %}
 
 !
-{% if security.port_security.enabled %}
+{% if security is defined and security.port_security is defined and security.port_security.enabled %}
 ! Port Security Global Configuration (NX-OS)
 ! Note: Port security on NX-OS is configured per-interface
 {% endif %}
 
 !
-{% if security.dot1x.enabled %}
+{% if security is defined and security.dot1x is defined and security.dot1x.enabled %}
 ! 802.1X Global Configuration
 aaa authentication dot1x default group {{ security.dot1x.radius.group_name | default('DOT1X-GROUP') }}
 !
 ! RADIUS Server Configuration
-{% set radius_servers = aaa.radius.dot1x.get(region, aaa.radius.dot1x.emea) %}
+{% set radius_servers = aaa.radius.dot1x.get(region, aaa.radius.dot1x.get("emea", [])) %}
 {% for server in radius_servers %}
 radius-server host {{ server }} key 7 {{ security.dot1x.radius.key }}
   authentication
@@ -128,7 +128,7 @@ vlan {{ vlan.vid }}
   name {{ vlan.name }}
 {% endfor %}
 
-{% if security.dot1x.enabled %}
+{% if security is defined and security.dot1x is defined and security.dot1x.enabled %}
 vlan {{ security.dot1x.guest_vlan }}
   name DOT1X-GUEST-VLAN
 vlan {{ security.dot1x.auth_fail_vlan }}
@@ -181,26 +181,26 @@ interface {{ iface_name }}
   storm-control multicast level 10.00
   storm-control unicast level 10.00
 
-{% if security.dhcp_snooping.enabled %}
+{% if security is defined and security.dhcp_snooping is defined and security.dhcp_snooping.enabled %}
   {# DHCP Snooping - Access ports are NOT trusted #}
   ip dhcp snooping limit rate {{ security.dhcp_snooping.rate_limit }}
 {% endif %}
 
-{% if security.arp_inspection.enabled %}
+{% if security is defined and security.arp_inspection is defined and security.arp_inspection.enabled %}
   {# ARP Inspection - Access ports are NOT trusted (default) #}
 {% endif %}
 
-{% if security.port_security.enabled %}
+{% if security is defined and security.port_security is defined and security.port_security.enabled %}
   {# Port Security for Access Ports (NX-OS) #}
   switchport port-security
   switchport port-security maximum {{ security.port_security.default.maximum }}
   switchport port-security violation {{ security.port_security.default.violation }}
-{% if security.port_security.sticky_mac %}
+{% if security.port_security.sticky_mac | default(false) %}
   switchport port-security mac-address sticky
 {% endif %}
 {% endif %}
 
-{% if security.dot1x.enabled %}
+{% if security is defined and security.dot1x is defined and security.dot1x.enabled %}
   {# 802.1X for Access Ports #}
   dot1x pae authenticator
   dot1x timeout quiet-period {{ security.dot1x.default_port_config.timeout.quiet_period }}
@@ -237,7 +237,7 @@ interface {{ iface_name }}
   storm-control broadcast level 20.00
   storm-control multicast level 20.00
 
-{% if security.dhcp_snooping.enabled %}
+{% if security is defined and security.dhcp_snooping is defined and security.dhcp_snooping.enabled %}
 {% if 'uplink' in iface_desc | lower or 'core' in iface_desc | lower or 'distribution' in iface_desc | lower %}
   {# DHCP Snooping - Uplink/Trunk ports are TRUSTED #}
   ip dhcp snooping trust
@@ -247,7 +247,7 @@ interface {{ iface_name }}
 {% endif %}
 {% endif %}
 
-{% if security.arp_inspection.enabled %}
+{% if security is defined and security.arp_inspection is defined and security.arp_inspection.enabled %}
 {% if 'uplink' in iface_desc | lower or 'core' in iface_desc | lower or 'distribution' in iface_desc | lower %}
   {# ARP Inspection - Uplink/Trunk ports are TRUSTED #}
   ip arp inspection trust
@@ -277,7 +277,7 @@ interface Vlan{{ vlan.vid }}
 {% for ip in svi_ips %}
   ip address {{ ip.address.ip }}/{{ ip.address.prefix_length }}
 {% endfor %}
-{% if services.dhcp_servers %}
+{% if services is defined and services.dhcp_servers is defined %}
 {% set dhcp_servers = services.dhcp_servers.get(region, []) %}
 {% for server in dhcp_servers %}
   ip dhcp relay address {{ server }}
@@ -293,7 +293,7 @@ interface Vlan{{ vlan.vid }}
 ! NTP CONFIGURATION
 ! ============================================================================
 !
-{% if ntp %}
+{% if ntp is defined %}
 {% for server in ntp.servers %}
 ntp server {{ server }} use-vrf management
 {% endfor %}
@@ -305,7 +305,7 @@ ntp server {{ server }} use-vrf management
 ! DNS CONFIGURATION
 ! ============================================================================
 !
-{% if dns %}
+{% if dns is defined %}
 ip domain-name {{ dns.domain | default('local') }}
 {% set dns_servers = services.dns_servers.get(region, []) %}
 {% for server in dns_servers %}
@@ -319,7 +319,7 @@ ip name-server {{ server }} use-vrf management
 ! SNMP CONFIGURATION
 ! ============================================================================
 !
-{% if snmp %}
+{% if snmp is defined %}
 snmp-server community {{ snmp.community_ro }} group network-operator
 snmp-server community {{ snmp.community_rw }} group network-admin
 snmp-server location {{ device.site.name }} - {{ device.location.name }}
@@ -335,7 +335,7 @@ snmp-server host {{ trap_server }} traps version 2c {{ snmp.community_ro }}
 ! LOGGING CONFIGURATION
 ! ============================================================================
 !
-{% if logging %}
+{% if logging is defined %}
 logging timestamp milliseconds
 logging monitor {{ logging.severity | default('informational') }}
 logging logfile messages {{ logging.severity | default('informational') }} size 16384
@@ -350,7 +350,7 @@ logging server {{ syslog_server }} {{ logging.severity }} facility {{ logging.fa
 ! AAA/TACACS+ CONFIGURATION
 ! ============================================================================
 !
-{% if aaa %}
+{% if aaa is defined %}
 ! TACACS+ Servers for Management Access
 {% set tacacs_servers = aaa.tacacs.servers.get(region, []) %}
 {% for server in tacacs_servers %}
