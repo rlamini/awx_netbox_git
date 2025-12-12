@@ -77,10 +77,10 @@ DEFAULT_HOST_GROUP = "NetBox Devices"
 DEFAULT_TEMPLATE = "Linux by Zabbix agent"
 ZABBIX_AGENT_PORT = 10050
 
-# Custom Field for Monitoring Control
-MONITORING_CUSTOM_FIELD = "cf_monitoring"  # NetBox custom field name
-MONITORING_ENABLED_VALUE = "yes"           # Value to enable monitoring
-MONITORING_DISABLED_VALUE = "no"           # Value to disable monitoring
+# Custom Fields for Monitoring Control and Zabbix Integration
+# NetBox custom field names
+CF_MONITORED = "cf_monitored"      # Boolean field to enable/disable monitoring
+CF_ZABBIX_ID = "cf_zabbix_id"      # Store Zabbix host ID back to NetBox
 
 # Logging Configuration
 LOG_FILE = os.getenv('LOG_FILE', '/var/log/netbox-zabbix-sync.log')
@@ -234,38 +234,62 @@ class NetBoxZabbixSync:
 
     def get_monitoring_status(self, device):
         """
-        Determine if monitoring should be enabled based on NetBox custom field
+        Determine if monitoring should be enabled based on NetBox cf_monitored custom field
 
         Returns:
-            0 = Enabled
-            1 = Disabled
+            0 = Enabled (monitored)
+            1 = Disabled (not monitored)
         """
         try:
-            # Get custom field value
-            cf_value = device.custom_fields.get(MONITORING_CUSTOM_FIELD)
+            # Get cf_monitored value (boolean field)
+            cf_monitored = device.custom_fields.get(CF_MONITORED)
 
-            if cf_value is None:
+            if cf_monitored is None:
                 # Custom field not set, default to enabled
-                logger.debug(f"{device.name}: Custom field '{MONITORING_CUSTOM_FIELD}' not set, defaulting to enabled")
-                return 0
-
-            # Convert to string and lowercase for comparison
-            cf_value_str = str(cf_value).lower().strip()
-
-            if cf_value_str == MONITORING_ENABLED_VALUE.lower():
-                logger.debug(f"{device.name}: Monitoring ENABLED (cf_monitoring='{cf_value}')")
+                logger.debug(f"{device.name}: cf_monitored not set, defaulting to enabled")
                 return 0  # Enabled
-            elif cf_value_str == MONITORING_DISABLED_VALUE.lower():
-                logger.debug(f"{device.name}: Monitoring DISABLED (cf_monitoring='{cf_value}')")
-                return 1  # Disabled
+
+            # Handle boolean or string values
+            if isinstance(cf_monitored, bool):
+                # Boolean field: True = enabled, False = disabled
+                status = 0 if cf_monitored else 1
+                status_text = "ENABLED" if cf_monitored else "DISABLED"
+                logger.debug(f"{device.name}: cf_monitored={cf_monitored} → {status_text}")
+                return status
             else:
-                # Unknown value, default to enabled with warning
-                logger.warning(f"{device.name}: Unknown cf_monitoring value '{cf_value}', defaulting to enabled")
-                return 0
+                # String value: convert to boolean
+                cf_str = str(cf_monitored).lower().strip()
+                if cf_str in ('true', '1', 'yes', 'enabled'):
+                    logger.debug(f"{device.name}: cf_monitored='{cf_monitored}' → ENABLED")
+                    return 0
+                elif cf_str in ('false', '0', 'no', 'disabled'):
+                    logger.debug(f"{device.name}: cf_monitored='{cf_monitored}' → DISABLED")
+                    return 1
+                else:
+                    logger.warning(f"{device.name}: Unknown cf_monitored value '{cf_monitored}', defaulting to enabled")
+                    return 0
 
         except Exception as e:
-            logger.warning(f"{device.name}: Error reading custom field: {e}, defaulting to enabled")
+            logger.warning(f"{device.name}: Error reading cf_monitored: {e}, defaulting to enabled")
             return 0
+
+    def update_netbox_zabbix_id(self, device, zabbix_host_id):
+        """
+        Write Zabbix host ID back to NetBox cf_zabbix_id custom field
+
+        Args:
+            device: NetBox device object
+            zabbix_host_id: Zabbix host ID to store
+        """
+        try:
+            # Update the custom field
+            device.custom_fields[CF_ZABBIX_ID] = str(zabbix_host_id)
+            device.save()
+            logger.debug(f"{device.name}: Updated cf_zabbix_id={zabbix_host_id}")
+            return True
+        except Exception as e:
+            logger.warning(f"{device.name}: Failed to update cf_zabbix_id: {e}")
+            return False
 
     def sync_devices(self, filter_site=None, filter_status='active'):
         """
@@ -360,6 +384,9 @@ class NetBoxZabbixSync:
 
             self.zabbix.host.update(**update_params)
 
+            # Update cf_zabbix_id in NetBox
+            self.update_netbox_zabbix_id(device, host_id)
+
             # Log status change if it occurred
             if old_status != monitoring_status:
                 logger.info(f"🔄 {device_name} ({device_ip}) - Updated | Status: {old_status_text} → {status_text}")
@@ -381,8 +408,13 @@ class NetBoxZabbixSync:
             if template_id:
                 create_params["templates"] = [{"templateid": template_id}]
 
-            self.zabbix.host.create(**create_params)
-            logger.info(f"✅ {device_name} ({device_ip}) - Created | Status: {status_text}")
+            result = self.zabbix.host.create(**create_params)
+            host_id = result['hostids'][0]  # Get the newly created host ID
+
+            # Update cf_zabbix_id in NetBox
+            self.update_netbox_zabbix_id(device, host_id)
+
+            logger.info(f"✅ {device_name} ({device_ip}) - Created | Status: {status_text} | Zabbix ID: {host_id}")
             self.stats['created'] += 1
 
     def sync_with_tags(self):
