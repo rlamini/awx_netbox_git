@@ -8,9 +8,11 @@ This folder contains all Zabbix-related configuration, documentation, and integr
 - **zabbix-docker-compose.yml** - Docker Compose configuration for Zabbix stack
 - **zabbix-env.example** - Environment variables template for Zabbix
 - **.env.example** - Combined NetBox & Zabbix environment variables for integration
+- **requirements.txt** - Python package dependencies
 
 ### Setup Scripts
 - **setup-zabbix.sh** - Automated setup script for Zabbix installation
+- **setup_venv.sh** - Virtual environment setup script (recommended)
 
 ### Integration Scripts
 - **netbox_to_zabbix_sync.py** - Synchronizes devices from NetBox to Zabbix
@@ -22,25 +24,68 @@ This folder contains all Zabbix-related configuration, documentation, and integr
 
 ## 🚀 Quick Start
 
-### 1. Test Connections
+### 1. Setup Python Virtual Environment (Recommended)
 
-Before running any integration, test connectivity to both NetBox and Zabbix:
+Using a virtual environment isolates Python dependencies and is the recommended approach:
 
 ```bash
-# Install required Python packages
-pip install pynetbox pyzabbix python-dotenv requests
+# Run automated setup script
+./setup_venv.sh
 
+# This will:
+# - Create a virtual environment in ./venv
+# - Install all required packages from requirements.txt
+# - Verify all installations
+
+# Activate the virtual environment
+source venv/bin/activate
+```
+
+**Manual Setup (Alternative):**
+
+If you prefer to set up manually:
+
+```bash
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+**Without Virtual Environment (Not Recommended):**
+
+```bash
+# Install globally (requires sudo on some systems)
+pip install pynetbox pyzabbix python-dotenv requests
+```
+
+### 2. Configure Environment
+
+```bash
 # Copy environment template
 cp .env.example .env
 
 # Edit .env with your credentials
 nano .env
-
-# Run connection test
-python3 test_connections.py
 ```
 
-### 2. Setup Zabbix (if not already running)
+### 3. Test Connections
+
+Before running any integration, test connectivity to both NetBox and Zabbix:
+
+```bash
+# Ensure venv is activated
+source venv/bin/activate
+
+# Run connection test
+python test_connections.py
+```
+
+### 4. Setup Zabbix (if not already running)
 
 ```bash
 # Run setup script
@@ -50,11 +95,23 @@ python3 test_connections.py
 docker-compose -f zabbix-docker-compose.yml up -d
 ```
 
-### 3. Run NetBox to Zabbix Sync
+### 5. Run NetBox to Zabbix Sync
 
 ```bash
+# Ensure venv is activated
+source venv/bin/activate
+
 # After successful connection tests
-python3 netbox_to_zabbix_sync.py
+python netbox_to_zabbix_sync.py
+```
+
+### Deactivating Virtual Environment
+
+When you're done working with the scripts:
+
+```bash
+# Deactivate the virtual environment
+deactivate
 ```
 
 ## 🔧 Configuration
