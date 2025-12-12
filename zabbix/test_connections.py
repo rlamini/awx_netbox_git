@@ -28,6 +28,8 @@ import os
 from pathlib import Path
 from datetime import datetime
 import logging
+import urllib3
+import requests
 
 # ============================================
 # COLOR CODES FOR TERMINAL OUTPUT
@@ -89,6 +91,32 @@ def load_environment():
         return False
 
 # ============================================
+# SSL AND PROXY CONFIGURATION
+# ============================================
+def configure_network():
+    """Configure SSL and proxy settings"""
+    # Get configuration from environment
+    verify_ssl = os.getenv('VERIFY_SSL', 'false').lower() in ('true', '1', 'yes')
+    disable_proxy = os.getenv('DISABLE_PROXY', 'true').lower() in ('true', '1', 'yes')
+
+    # Disable SSL warnings if SSL verification is disabled
+    if not verify_ssl:
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+        print(f"{Colors.WARNING}⚠️  SSL verification disabled{Colors.ENDC}")
+
+    # Disable proxy for internal network communication
+    if disable_proxy:
+        os.environ['NO_PROXY'] = '*'
+        os.environ['no_proxy'] = '*'
+        # Clear any existing proxy settings
+        for proxy_var in ['HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy']:
+            if proxy_var in os.environ:
+                del os.environ[proxy_var]
+        print(f"{Colors.OKCYAN}🔧 Proxy disabled for all connections{Colors.ENDC}")
+
+    return verify_ssl, disable_proxy
+
+# ============================================
 # CONFIGURATION
 # ============================================
 def get_config():
@@ -109,7 +137,7 @@ def get_config():
 # ============================================
 # NETBOX CONNECTION TEST
 # ============================================
-def test_netbox_connection(url, token):
+def test_netbox_connection(url, token, verify_ssl=False, disable_proxy=False):
     """Test connection to NetBox API"""
     print(f"\n{Colors.HEADER}{'=' * 60}{Colors.ENDC}")
     print(f"{Colors.HEADER}{Colors.BOLD}TESTING NETBOX CONNECTION{Colors.ENDC}")
@@ -125,12 +153,18 @@ def test_netbox_connection(url, token):
 
     try:
         from pynetbox import api as netbox_api
-        import requests
 
         logger.info("Connecting to NetBox...")
 
+        # Create custom session with SSL and proxy settings
+        session = requests.Session()
+        session.verify = verify_ssl
+        if disable_proxy:
+            session.proxies = {'http': None, 'https': None}
+
         # Initialize NetBox API
         nb = netbox_api(url, token=token)
+        nb.http_session = session
 
         # Test connection by getting status
         status = nb.status()
@@ -191,7 +225,7 @@ def test_netbox_connection(url, token):
 # ============================================
 # ZABBIX CONNECTION TEST
 # ============================================
-def test_zabbix_connection(url, user, password):
+def test_zabbix_connection(url, user, password, verify_ssl=False, disable_proxy=False):
     """Test connection to Zabbix API"""
     print(f"\n{Colors.HEADER}{'=' * 60}{Colors.ENDC}")
     print(f"{Colors.HEADER}{Colors.BOLD}TESTING ZABBIX CONNECTION{Colors.ENDC}")
@@ -211,6 +245,11 @@ def test_zabbix_connection(url, user, password):
 
         # Initialize Zabbix API
         zapi = ZabbixAPI(url)
+
+        # Configure Zabbix session with SSL and proxy settings
+        zapi.session.verify = verify_ssl
+        if disable_proxy:
+            zapi.session.proxies = {'http': None, 'https': None}
 
         # Login to Zabbix
         zapi.login(user, password)
@@ -292,19 +331,26 @@ def main():
     # Load environment variables
     load_environment()
 
+    # Configure network settings (SSL and proxy)
+    verify_ssl, disable_proxy = configure_network()
+
     # Get configuration
     config = get_config()
 
     # Test connections
     netbox_success = test_netbox_connection(
         config['netbox']['url'],
-        config['netbox']['token']
+        config['netbox']['token'],
+        verify_ssl,
+        disable_proxy
     )
 
     zabbix_success = test_zabbix_connection(
         config['zabbix']['url'],
         config['zabbix']['user'],
-        config['zabbix']['password']
+        config['zabbix']['password'],
+        verify_ssl,
+        disable_proxy
     )
 
     # Print summary
