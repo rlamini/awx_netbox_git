@@ -24,10 +24,37 @@ License: MIT
 
 import sys
 import os
+from pathlib import Path
 from pynetbox import api as netbox_api
 from pyzabbix import ZabbixAPI
 import logging
 from datetime import datetime
+
+# ============================================
+# LOAD ENVIRONMENT VARIABLES
+# ============================================
+
+try:
+    from dotenv import load_dotenv
+
+    # Try to find .env file in current directory or parent directories
+    current_dir = Path.cwd()
+    env_file = None
+
+    # Check current directory and up to 2 parent levels
+    for parent in [current_dir] + list(current_dir.parents)[:2]:
+        potential_env = parent / '.env'
+        if potential_env.exists():
+            env_file = potential_env
+            break
+
+    if env_file:
+        load_dotenv(env_file)
+        print(f"✅ Loaded environment from: {env_file}")
+    else:
+        print("⚠️  No .env file found, using environment variables or defaults")
+except ImportError:
+    print("⚠️  python-dotenv not installed, using environment variables only")
 
 # ============================================
 # CONFIGURATION
