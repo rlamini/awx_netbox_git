@@ -71,7 +71,7 @@ AUTHORIZED ACCESS ONLY
 !
 interface Loopback0
  description LOOPBACK - ROUTER ID / BGP
-{% if device.primary_ip4 is defined %}
+{% if device.primary_ip4 %}
  ip address {{ device.primary_ip4.address.ip }} 255.255.255.255
 {% endif %}
  no shutdown

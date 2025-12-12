@@ -52,7 +52,7 @@ vrf management
 !
 interface Loopback0
  description LOOPBACK - ROUTER ID / BGP
-{% if device.primary_ip4 is defined %}
+{% if device.primary_ip4 %}
  ipv4 address {{ device.primary_ip4.address }}
 {% endif %}
  no shutdown
@@ -66,7 +66,7 @@ interface Loopback0
 interface MgmtEth0/RP0/CPU0/0
  description OOB MANAGEMENT INTERFACE
  vrf management
-{% if device.primary_ip4 is defined %}
+{% if device.primary_ip4 %}
  ipv4 address {{ device.primary_ip4.address }}
 {% endif %}
  no shutdown
@@ -363,7 +363,7 @@ sampler-map NETFLOW-SAMPLER
 !
 ! OSPF Configuration
 router ospf {{ routing.ospf.process_id | default(1) }}
-{% if device.primary_ip4 is defined %}
+{% if device.primary_ip4 %}
  router-id {{ device.primary_ip4.address.ip }}
 {% endif %}
  log adjacency changes detail
@@ -383,7 +383,7 @@ router ospf {{ routing.ospf.process_id | default(1) }}
 !
 ! BGP Configuration
 router bgp {{ routing.bgp.as_number | default(65001) }}
- bgp router-id {{ device.primary_ip4.address.ip | default('1.1.1.1') }}
+ bgp router-id {{ device.primary_ip4.address.ip if device.primary_ip4 else '1.1.1.1' }}
  bgp log neighbor changes detail
  bgp bestpath as-path multipath-relax
  address-family ipv4 unicast

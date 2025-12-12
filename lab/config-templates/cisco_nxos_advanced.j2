@@ -149,14 +149,14 @@ vlan {{ security.dot1x.critical_vlan }}
 interface mgmt0
   description OOB MANAGEMENT INTERFACE
   vrf member management
-{% if device.primary_ip4 is defined %}
+{% if device.primary_ip4 %}
   ip address {{ device.primary_ip4.address }}
 {% endif %}
   no shutdown
 !
 interface loopback0
   description LOOPBACK - ROUTER ID / BGP
-{% if device.primary_ip4 is defined %}
+{% if device.primary_ip4 %}
   ip address {{ device.primary_ip4.address.ip }}/32
 {% endif %}
   no shutdown
