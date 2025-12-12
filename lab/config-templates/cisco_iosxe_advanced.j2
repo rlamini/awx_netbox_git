@@ -370,13 +370,14 @@ logging facility {{ logging.facility }}
 ! AAA/TACACS+ CONFIGURATION
 ! ============================================================================
 !
-{% if aaa is defined %}
+{% if aaa is defined and aaa.tacacs is defined and aaa.tacacs.servers is defined %}
 {% if not (security is defined and security.dot1x is defined and security.dot1x.enabled) %}
 aaa new-model
 !
 {% endif %}
 ! TACACS+ Servers for Management Access
 {% set tacacs_servers = aaa.tacacs.servers.get(region, []) %}
+{% if tacacs_servers %}
 {% for server in tacacs_servers %}
 tacacs server TACACS-{{ loop.index }}
  address ipv4 {{ server }}
@@ -397,6 +398,7 @@ aaa authorization commands 15 default group TACACS-GROUP local
 aaa accounting exec default start-stop group TACACS-GROUP
 aaa accounting commands 15 default start-stop group TACACS-GROUP
 !
+{% endif %}
 {% endif %}
 
 !

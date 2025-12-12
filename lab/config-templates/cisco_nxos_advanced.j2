@@ -356,9 +356,10 @@ logging server {{ syslog_server }} {{ logging.severity }} facility {{ logging.fa
 ! AAA/TACACS+ CONFIGURATION
 ! ============================================================================
 !
-{% if aaa is defined %}
+{% if aaa is defined and aaa.tacacs is defined and aaa.tacacs.servers is defined %}
 ! TACACS+ Servers for Management Access
 {% set tacacs_servers = aaa.tacacs.servers.get(region, []) %}
+{% if tacacs_servers %}
 {% for server in tacacs_servers %}
 tacacs-server host {{ server }} key 7 {{ aaa.tacacs.key }}
 {% endfor %}
@@ -375,6 +376,7 @@ aaa authorization config-commands default group TACACS-GROUP local
 aaa authorization commands default group TACACS-GROUP local
 aaa accounting default group TACACS-GROUP
 !
+{% endif %}
 {% endif %}
 
 !
