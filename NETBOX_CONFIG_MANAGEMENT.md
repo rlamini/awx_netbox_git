@@ -530,6 +530,10 @@ Step 5: Export
 
 ### Config Context Hierarchy Design
 
+#### Base Config Contexts (Weights 1000-4000)
+
+The following contexts provide foundational configuration applicable to all or specific groups of devices.
+
 #### 1. Global Context (All Devices)
 
 **File**: `global_context.json`
@@ -823,6 +827,465 @@ Step 5: Export
   }
 }
 ```
+
+---
+
+#### Advanced Config Contexts (Weights 5000-5500) ⭐ NEW
+
+These contexts provide **enterprise-grade Layer 2 security features** with comprehensive configuration for advanced security controls. They work in conjunction with the **advanced configuration templates** (`cisco_iosxe_advanced.j2` and `cisco_nxos_advanced.j2`).
+
+#### 10. Advanced Security - Access Switch
+
+**File**: `netbox_config_contexts_advanced.csv` (row 2)
+**Weight**: 5000
+**Applies To**: All Access Switch devices
+**Purpose**: Complete Layer 2 security stack for access layer
+
+**Features Included**:
+
+1. **DHCP Snooping**: Prevents rogue DHCP servers
+   - VLAN-based protection (200-299)
+   - Rate limiting (15 packets/sec)
+   - MAC address verification
+   - Database persistence to flash
+   - Trust ports: uplinks and trunks
+
+2. **Dynamic ARP Inspection (DAI)**: Prevents ARP spoofing
+   - VLAN-based protection (200-299)
+   - Triple validation (src-mac, dst-mac, IP)
+   - Log buffer (1024 entries, 10s interval)
+   - Trust ports: uplinks and trunks
+
+3. **Port Security**: Prevents MAC flooding and CAM table attacks
+   - Maximum 3 MAC addresses per port
+   - Sticky MAC learning
+   - Violation mode: restrict (drops packets, logs)
+   - Aging: 120 minutes (inactivity-based)
+   - Auto-recovery: 600 seconds
+
+4. **802.1X Network Access Control**: Enterprise authentication
+   - RADIUS integration (10.100.50.100-101 for EMEA)
+   - Multi-auth and multi-domain modes
+   - Guest VLAN (220), Auth-fail VLAN (221), Critical VLAN (222)
+   - Timeout configuration (quiet 60s, tx 30s, server 30s)
+   - Re-authentication every 3600s (1 hour)
+
+5. **Interface Profiles**: Pre-configured port templates
+   - `access_data`: User access (data only, VLAN 200)
+   - `access_voice`: User access with voice (data VLAN 200, voice VLAN 210)
+   - `trunk_uplink`: Uplink to distribution/core (trusted, root guard)
+   - `trunk_server`: Server/ESXi trunk (untrusted, ESXi VLANs)
+
+**Example JSON Structure**:
+
+```json
+{
+  "security": {
+    "dhcp_snooping": {
+      "enabled": true,
+      "vlan_list": "200-299",
+      "information_option": true,
+      "rate_limit": 15,
+      "verify_mac": true,
+      "database": {
+        "agent": "flash:/dhcp_snooping.db",
+        "write_delay": 60
+      },
+      "trust_ports": ["uplink", "trunk"]
+    },
+    "arp_inspection": {
+      "enabled": true,
+      "vlan_list": "200-299",
+      "validate": {
+        "src_mac": true,
+        "dst_mac": true,
+        "ip": true
+      },
+      "log_buffer": {
+        "entries": 1024,
+        "interval": 10
+      },
+      "trust_ports": ["uplink", "trunk"]
+    },
+    "port_security": {
+      "enabled": true,
+      "default": {
+        "maximum": 3,
+        "violation": "restrict",
+        "aging_time": 120,
+        "aging_type": "inactivity"
+      },
+      "sticky_mac": true,
+      "recovery": {
+        "interval": 600,
+        "cause": "psecure-violation"
+      }
+    },
+    "dot1x": {
+      "enabled": true,
+      "system_auth_control": true,
+      "radius": {
+        "servers": ["10.100.50.100", "10.100.50.101"],
+        "timeout": 5,
+        "retransmit": 3,
+        "key": "DOT1X_RADIUS_KEY"
+      },
+      "default_port_config": {
+        "pae": "authenticator",
+        "host_mode": "multi-auth",
+        "violation_mode": "restrict",
+        "max_reauth_req": 2,
+        "timeout": {
+          "quiet_period": 60,
+          "tx_period": 30,
+          "supp_timeout": 30,
+          "server_timeout": 30
+        },
+        "reauthentication": true,
+        "reauth_period": 3600
+      },
+      "guest_vlan": 220,
+      "auth_fail_vlan": 221,
+      "critical_vlan": 222
+    }
+  },
+  "interface_profiles": {
+    "access_data": {
+      "description": "User access port - data only",
+      "switchport_mode": "access",
+      "access_vlan": 200,
+      "voice_vlan": null,
+      "spanning_tree": {
+        "portfast": true,
+        "bpduguard": true
+      },
+      "storm_control": {
+        "broadcast": 10,
+        "multicast": 10,
+        "unicast": 10
+      },
+      "dhcp_snooping_trust": false,
+      "arp_inspection_trust": false,
+      "port_security": {
+        "enabled": true,
+        "maximum": 2
+      },
+      "dot1x": {
+        "enabled": true,
+        "host_mode": "multi-auth"
+      }
+    },
+    "access_voice": {
+      "description": "User access port - data + voice",
+      "switchport_mode": "access",
+      "access_vlan": 200,
+      "voice_vlan": 210,
+      "spanning_tree": {
+        "portfast": true,
+        "bpduguard": true
+      },
+      "storm_control": {
+        "broadcast": 10,
+        "multicast": 10,
+        "unicast": 10
+      },
+      "dhcp_snooping_trust": false,
+      "arp_inspection_trust": false,
+      "port_security": {
+        "enabled": true,
+        "maximum": 3
+      },
+      "dot1x": {
+        "enabled": true,
+        "host_mode": "multi-domain"
+      }
+    },
+    "trunk_uplink": {
+      "description": "Trunk to distribution/core",
+      "switchport_mode": "trunk",
+      "native_vlan": 1,
+      "allowed_vlans": "1,100,200-299",
+      "spanning_tree": {
+        "portfast": false,
+        "bpduguard": false,
+        "guard": "root"
+      },
+      "storm_control": {
+        "broadcast": 20,
+        "multicast": 20
+      },
+      "dhcp_snooping_trust": true,
+      "arp_inspection_trust": true,
+      "port_security": {
+        "enabled": false
+      }
+    },
+    "trunk_server": {
+      "description": "Trunk to ESXi host",
+      "switchport_mode": "trunk",
+      "native_vlan": 1,
+      "allowed_vlans": "1,10,20,30,40,50,60,70,80",
+      "spanning_tree": {
+        "portfast": "trunk",
+        "bpduguard": false
+      },
+      "storm_control": {
+        "broadcast": 20,
+        "multicast": 20
+      },
+      "dhcp_snooping_trust": false,
+      "arp_inspection_trust": false,
+      "port_security": {
+        "enabled": false
+      }
+    }
+  }
+}
+```
+
+#### 11. Advanced Security - Distribution Switch
+
+**File**: `netbox_config_contexts_advanced.csv` (row 3)
+**Weight**: 5000
+**Applies To**: All Distribution Switch devices
+**Purpose**: Layer 2 security for distribution layer with SVI gateway support
+
+**Features Included**:
+
+1. **DHCP Snooping**: Distribution layer protection
+   - Same as access layer
+   - Database persistence
+   - Trust configuration for core uplinks
+
+2. **Dynamic ARP Inspection**: Distribution layer ARP protection
+   - Same validation as access layer
+   - Larger log buffer (2048 entries)
+   - Trust configuration for core uplinks
+
+3. **IP Source Guard**: Additional IP spoofing protection
+   - VLAN-based (200-299)
+   - Binds IP to MAC and port
+   - Works with DHCP snooping database
+
+4. **Interface Profiles**: Distribution-specific templates
+   - `trunk_access_downlink`: Trunk to access switches (untrusted)
+   - `trunk_core_uplink`: Trunk to core switches (trusted, root guard)
+   - `svi_gateway`: VLAN gateway interfaces with DHCP relay
+
+**Example JSON Structure**:
+
+```json
+{
+  "security": {
+    "dhcp_snooping": {
+      "enabled": true,
+      "vlan_list": "200-299",
+      "information_option": true,
+      "verify_mac": true,
+      "database": {
+        "agent": "flash:/dhcp_snooping.db",
+        "write_delay": 60
+      }
+    },
+    "arp_inspection": {
+      "enabled": true,
+      "vlan_list": "200-299",
+      "validate": {
+        "src_mac": true,
+        "dst_mac": true,
+        "ip": true
+      },
+      "log_buffer": {
+        "entries": 2048,
+        "interval": 10
+      }
+    },
+    "ip_source_guard": {
+      "enabled": true,
+      "vlan_list": "200-299"
+    }
+  },
+  "interface_profiles": {
+    "trunk_access_downlink": {
+      "description": "Trunk to access switch",
+      "switchport_mode": "trunk",
+      "native_vlan": 1,
+      "allowed_vlans": "1,100,200-299",
+      "spanning_tree": {
+        "portfast": false,
+        "bpduguard": false
+      },
+      "dhcp_snooping_trust": false,
+      "arp_inspection_trust": false
+    },
+    "trunk_core_uplink": {
+      "description": "Trunk to core switch",
+      "switchport_mode": "trunk",
+      "native_vlan": 1,
+      "allowed_vlans": "all",
+      "spanning_tree": {
+        "portfast": false,
+        "bpduguard": false,
+        "guard": "root"
+      },
+      "dhcp_snooping_trust": true,
+      "arp_inspection_trust": true
+    },
+    "svi_gateway": {
+      "description": "SVI gateway for VLAN",
+      "dhcp_relay": {
+        "enabled": true,
+        "servers": ["10.100.50.200", "10.101.50.200"]
+      },
+      "ip_helper": true
+    }
+  }
+}
+```
+
+#### 12. DHCP and DNS Servers (Regional)
+
+**File**: `netbox_config_contexts_advanced.csv` (row 4)
+**Weight**: 5500
+**Applies To**: All devices (global)
+**Purpose**: Region-specific DHCP and DNS server addresses
+
+**Regional Server Allocation**:
+
+| Region | DHCP Servers | DNS Servers |
+|--------|-------------|-------------|
+| EMEA   | 10.100.50.200, 10.100.50.201 | 10.100.50.210, 10.100.50.211 |
+| APAC   | 10.101.50.200, 10.101.50.201 | 10.101.50.210, 10.101.50.211 |
+| AMER   | 10.102.50.200, 10.102.50.201 | 10.102.50.210, 10.102.50.211 |
+
+**Example JSON Structure**:
+
+```json
+{
+  "services": {
+    "dhcp_servers": {
+      "emea": ["10.100.50.200", "10.100.50.201"],
+      "apac": ["10.101.50.200", "10.101.50.201"],
+      "amer": ["10.102.50.200", "10.102.50.201"]
+    },
+    "dns_servers": {
+      "emea": ["10.100.50.210", "10.100.50.211"],
+      "apac": ["10.101.50.210", "10.101.50.211"],
+      "amer": ["10.102.50.210", "10.102.50.211"]
+    }
+  }
+}
+```
+
+**Usage in Templates**:
+
+Templates use region detection to select appropriate servers:
+
+```jinja2
+{% set region = device.site.name.split('-')[0] | lower %}
+{% set dhcp_servers = config_context.services.dhcp_servers.get(region, []) %}
+{% for server in dhcp_servers %}
+ ip helper-address {{ server }}
+{% endfor %}
+```
+
+#### 13. RADIUS and AAA Servers (Regional)
+
+**File**: `netbox_config_contexts_advanced.csv` (row 5)
+**Weight**: 5500
+**Applies To**: All devices (global)
+**Purpose**: Region-specific RADIUS and TACACS+ authentication servers
+
+**Regional Server Allocation**:
+
+| Region | 802.1X RADIUS | Management RADIUS | TACACS+ |
+|--------|---------------|-------------------|---------|
+| EMEA   | 10.100.50.100, 10.100.50.101 | 10.100.50.110, 10.100.50.111 | 10.100.50.120, 10.100.50.121 |
+| APAC   | 10.101.50.100, 10.101.50.101 | 10.101.50.110, 10.101.50.111 | 10.101.50.120, 10.101.50.121 |
+| AMER   | 10.102.50.100, 10.102.50.101 | 10.102.50.110, 10.102.50.111 | 10.102.50.120, 10.102.50.121 |
+
+**Server Purposes**:
+- **802.1X RADIUS (.100-.101)**: Network Access Control (NAC) authentication for end devices
+- **Management RADIUS (.110-.111)**: Wireless/VPN authentication (future use)
+- **TACACS+ (.120-.121)**: Network device management authentication
+
+**Example JSON Structure**:
+
+```json
+{
+  "aaa": {
+    "radius": {
+      "dot1x": {
+        "emea": ["10.100.50.100", "10.100.50.101"],
+        "apac": ["10.101.50.100", "10.101.50.101"],
+        "amer": ["10.102.50.100", "10.102.50.101"]
+      },
+      "management": {
+        "emea": ["10.100.50.110", "10.100.50.111"],
+        "apac": ["10.101.50.110", "10.101.50.111"],
+        "amer": ["10.102.50.110", "10.102.50.111"]
+      },
+      "timeout": 5,
+      "retransmit": 3
+    },
+    "tacacs": {
+      "servers": {
+        "emea": ["10.100.50.120", "10.100.50.121"],
+        "apac": ["10.101.50.120", "10.101.50.121"],
+        "amer": ["10.102.50.120", "10.102.50.121"]
+      },
+      "timeout": 5,
+      "key": "TACACS_SECRET_KEY"
+    }
+  }
+}
+```
+
+**Usage in Templates**:
+
+```jinja2
+{% set region = device.site.name.split('-')[0] | lower %}
+{% set radius_servers = config_context.aaa.radius.dot1x.get(region, []) %}
+{% for server in radius_servers %}
+radius server DOT1X-{{ loop.index }}
+ address ipv4 {{ server }} auth-port 1812 acct-port 1813
+ key {{ config_context.security.dot1x.radius.key }}
+{% endfor %}
+```
+
+---
+
+### Advanced Config Context Assignment Matrix
+
+| Context Name | Weight | Site | Role | Platform | Applies To |
+|--------------|--------|------|------|----------|------------|
+| **Base Contexts** |
+| Global Configuration | 1000 | - | - | - | ALL devices |
+| Cisco NX-OS Platform | 2000 | - | - | NX-OS | All NX-OS devices |
+| Cisco IOS-XE Platform | 2000 | - | - | IOS-XE | All IOS-XE devices |
+| Cisco IOS-XR Platform | 2000 | - | - | IOS-XR | All IOS-XR devices |
+| Cisco IOS Platform | 2000 | - | - | IOS | All IOS devices |
+| EMEA-DC-ONPREM Site | 3000 | EMEA-DC-ONPREM | - | - | All EMEA-DC-ONPREM devices |
+| Core Switch Role | 4000 | - | Core Switch | - | All Core Switches |
+| Distribution Switch Role | 4000 | - | Distribution Switch | - | All Distribution Switches |
+| Access Switch Role | 4000 | - | Access Switch | - | All Access Switches |
+| Router Role | 4000 | - | Router | - | All Routers |
+| OOB Router Role | 4000 | - | OOB Router | - | All OOB Routers |
+| **Advanced Contexts** ⭐ |
+| Advanced Security - Access Switch | 5000 | - | Access Switch | - | All Access Switches |
+| Advanced Security - Distribution Switch | 5000 | - | Distribution Switch | - | All Distribution Switches |
+| DHCP and DNS Servers | 5500 | - | - | - | ALL devices |
+| RADIUS and AAA Servers | 5500 | - | - | - | ALL devices |
+
+**Context Merge Order** (for an Access Switch in EMEA-DC-ONPREM):
+
+1. ✅ Global Configuration (1000)
+2. ✅ Cisco IOS-XE Platform (2000) *or* Cisco NX-OS Platform
+3. ✅ EMEA-DC-ONPREM Site (3000)
+4. ✅ Access Switch Role (4000)
+5. ✅ Advanced Security - Access Switch (5000) ⭐ **NEW**
+6. ✅ DHCP and DNS Servers (5500) ⭐ **NEW**
+7. ✅ RADIUS and AAA Servers (5500) ⭐ **NEW**
 
 ---
 
@@ -1359,28 +1822,46 @@ print(config['content'])
 
 ## Files Generated
 
-### Config Context JSON Files
+### Config Context CSV Files
 
 Located in: `lab/config-contexts/`
 
-1. `global_context.json` - Global settings
-2. `emea_dc_onprem_context.json` - Site-specific
-3. `platform_nxos_context.json` - NX-OS defaults
-4. `platform_iosxe_context.json` - IOS-XE defaults
-5. `platform_iosxr_context.json` - IOS-XR defaults
-6. `role_core_switch_context.json` - Core switches
-7. `role_distribution_switch_context.json` - Distribution switches
-8. `role_access_switch_context.json` - Access switches
-9. `role_router_context.json` - Routers
+**Base Config Contexts** (`netbox_config_contexts.csv`):
+1. Global Configuration - Universal settings
+2. Cisco NX-OS Platform - NX-OS defaults
+3. Cisco IOS-XE Platform - IOS-XE defaults
+4. Cisco IOS-XR Platform - IOS-XR defaults
+5. Cisco IOS Platform - IOS defaults
+6. EMEA-DC-ONPREM Site - Site-specific settings
+7. Core Switch Role - Core layer configuration
+8. Distribution Switch Role - Distribution layer configuration
+9. Access Switch Role - Access layer configuration
+10. Router Role - Router configuration
+11. OOB Router Role - Out-of-band management
+
+**Advanced Config Contexts** ⭐ (`netbox_config_contexts_advanced.csv`):
+12. Advanced Security - Access Switch - Layer 2 security for access layer
+13. Advanced Security - Distribution Switch - Layer 2 security for distribution layer
+14. DHCP and DNS Servers - Regional server addresses
+15. RADIUS and AAA Servers - Regional authentication servers
 
 ### Config Template Files
 
 Located in: `lab/config-templates/`
 
-1. `cisco_nxos_base.j2` - Nexus NX-OS template
-2. `cisco_iosxe_base.j2` - Catalyst IOS-XE template
-3. `cisco_iosxr_base.j2` - ASR IOS-XR template
-4. `cisco_ios_base.j2` - ISR IOS template
+**Base Templates**:
+1. `cisco_nxos_base.j2` - Nexus NX-OS base template
+2. `cisco_iosxe_base.j2` - Catalyst IOS-XE base template
+3. `cisco_iosxr_base.j2` - ASR IOS-XR base template
+4. `cisco_ios_base.j2` - ISR IOS base template
+
+**Advanced Templates** ⭐:
+5. `cisco_iosxe_advanced.j2` - **Complete** IOS-XE template (base + advanced security) - 444 lines
+6. `cisco_nxos_advanced.j2` - **Complete** NX-OS template (base + advanced security) - 414 lines
+
+**Template Metadata**:
+7. `template_inventory.csv` - Template descriptions and feature lists
+8. `README.md` - Template documentation and usage guide
 
 ### Python Generation Scripts
 
@@ -1408,15 +1889,23 @@ Located in root directory:
 ## Benefits Summary
 
 ✅ **Single Source of Truth**: All config data in NetBox
-✅ **Consistency**: Same template ensures uniform configs
-✅ **Scalability**: Add new devices automatically inherit contexts
-✅ **Version Control**: Track changes to contexts and templates
-✅ **Automation Ready**: Export configs to Ansible/Terraform
-✅ **Role-Based**: Different configs for different device roles
-✅ **Multi-Platform**: Support NX-OS, IOS-XE, IOS-XR, IOS, Arista, etc.
+✅ **Consistency**: Same template ensures uniform configs across all devices
+✅ **Scalability**: Add new devices automatically inherit contexts based on role/site/platform
+✅ **Version Control**: Track changes to contexts and templates over time
+✅ **Automation Ready**: Export configs to Ansible/Terraform/AWX for deployment
+✅ **Role-Based**: Different configs for different device roles (Core, Distribution, Access)
+✅ **Multi-Platform**: Support NX-OS, IOS-XE, IOS-XR, IOS, Arista, and more
+✅ **Enterprise Security** ⭐: Advanced L2 security (DHCP snooping, ARP inspection, port security, 802.1X)
+✅ **Regional Awareness**: Automatic server selection based on region (EMEA/APAC/AMER)
+✅ **Complete Templates**: Standalone templates with base config + security (no separate files needed)
+✅ **Interface Intelligence**: Auto-detection of trunk vs access, trusted vs untrusted ports
+✅ **Production-Ready**: Templates include all necessary features for enterprise deployment
 
 ---
 
-**Document Version**: 1.0
-**Last Updated**: 2025-12-06
+**Document Version**: 2.0
+**Last Updated**: 2025-12-12
 **Author**: NetOps Team
+**Changelog**:
+- v2.0 (2025-12-12): Added Advanced Config Contexts (DHCP snooping, ARP inspection, port security, 802.1X) and Advanced Templates
+- v1.0 (2025-12-06): Initial release with base config contexts and templates
