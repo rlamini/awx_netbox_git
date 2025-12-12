@@ -1,0 +1,59 @@
+{
+  "vlans": {
+    "voice_vlan": 210,
+    "native_vlan": 1,
+    "management_vlan": 100,
+    "default_vlans": [
+      {
+        "vid": 10,
+        "name": "USERS",
+        "description": "User workstations"
+      },
+      {
+        "vid": 20,
+        "name": "SERVERS",
+        "description": "Server VLAN"
+      },
+      {
+        "vid": 30,
+        "name": "GUEST",
+        "description": "Guest wireless"
+      },
+      {
+        "vid": 40,
+        "name": "PRINTERS",
+        "description": "Network printers"
+      },
+      {
+        "vid": 50,
+        "name": "IOT",
+        "description": "IoT devices"
+      },
+      {
+        "vid": 100,
+        "name": "MGMT",
+        "description": "Management VLAN"
+      },
+      {
+        "vid": 210,
+        "name": "VOICE",
+        "description": "Voice VLAN"
+      },
+      {
+        "vid": 997,
+        "name": "DOT1X-CRITICAL",
+        "description": "802.1X Critical VLAN"
+      },
+      {
+        "vid": 998,
+        "name": "DOT1X-AUTH-FAIL",
+        "description": "802.1X Auth Fail VLAN"
+      },
+      {
+        "vid": 999,
+        "name": "DOT1X-GUEST",
+        "description": "802.1X Guest VLAN"
+      }
+    ]
+  }
+}

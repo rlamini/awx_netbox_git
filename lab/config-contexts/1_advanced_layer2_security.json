@@ -1,0 +1,63 @@
+{
+  "security": {
+    "dhcp_snooping": {
+      "enabled": true,
+      "vlan_list": "10,20,30,40,50,100-199",
+      "rate_limit": 100,
+      "information_option": true,
+      "verify_mac": true,
+      "database": {
+        "agent": "flash:dhcp_snooping.db",
+        "write_delay": 300
+      }
+    },
+    "arp_inspection": {
+      "enabled": true,
+      "vlan_list": "10,20,30,40,50,100-199",
+      "validate": {
+        "src_mac": true,
+        "dst_mac": true,
+        "ip": true
+      },
+      "log_buffer": {
+        "entries": 1024,
+        "interval": 10
+      }
+    },
+    "port_security": {
+      "enabled": true,
+      "sticky_mac": true,
+      "default": {
+        "maximum": 3,
+        "violation": "restrict",
+        "aging_time": 1440,
+        "aging_type": "inactivity"
+      },
+      "recovery": {
+        "interval": 300
+      }
+    },
+    "dot1x": {
+      "enabled": true,
+      "guest_vlan": 999,
+      "auth_fail_vlan": 998,
+      "critical_vlan": 997,
+      "radius": {
+        "key": "Radius-SecretKey-2024",
+        "group_name": "DOT1X-GROUP"
+      },
+      "default_port_config": {
+        "host_mode": "multi-auth",
+        "violation_mode": "restrict",
+        "reauth_period": 3600,
+        "max_reauth_req": 2,
+        "timeout": {
+          "quiet_period": 60,
+          "tx_period": 30,
+          "supp_timeout": 30,
+          "server_timeout": 30
+        }
+      }
+    }
+  }
+}
