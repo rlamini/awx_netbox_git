@@ -60,13 +60,25 @@ LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
 # LOGGING SETUP
 # ============================================
 
+# Setup logging handlers
+handlers = [logging.StreamHandler(sys.stdout)]
+
+# Try to add file handler if possible
+try:
+    # Create log directory if it doesn't exist
+    log_dir = os.path.dirname(LOG_FILE)
+    if log_dir and not os.path.exists(log_dir):
+        os.makedirs(log_dir, exist_ok=True)
+    handlers.append(logging.FileHandler(LOG_FILE))
+except (OSError, PermissionError) as e:
+    # If we can't write to the log file, just use console logging
+    print(f"Warning: Could not create log file {LOG_FILE}: {e}")
+    print("Continuing with console logging only...")
+
 logging.basicConfig(
     level=getattr(logging, LOG_LEVEL),
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler(LOG_FILE),
-        logging.StreamHandler(sys.stdout)
-    ]
+    handlers=handlers
 )
 logger = logging.getLogger(__name__)
 
