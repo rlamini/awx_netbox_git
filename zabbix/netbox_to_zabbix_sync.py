@@ -24,6 +24,7 @@ License: MIT
 
 import sys
 import os
+import io
 from pathlib import Path
 from pynetbox import api as netbox_api
 from pyzabbix import ZabbixAPI
@@ -112,8 +113,10 @@ if DISABLE_PROXY:
 # LOGGING SETUP
 # ============================================
 
-# Setup logging handlers
-handlers = [logging.StreamHandler(sys.stdout)]
+# Setup logging handlers with UTF-8 encoding for Windows compatibility
+# Create console handler with UTF-8 encoding to support emojis on Windows
+console_handler = logging.StreamHandler(io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8'))
+handlers = [console_handler]
 
 # Try to add file handler if possible
 try:
@@ -121,7 +124,9 @@ try:
     log_dir = os.path.dirname(LOG_FILE)
     if log_dir and not os.path.exists(log_dir):
         os.makedirs(log_dir, exist_ok=True)
-    handlers.append(logging.FileHandler(LOG_FILE))
+    # File handler with UTF-8 encoding
+    file_handler = logging.FileHandler(LOG_FILE, encoding='utf-8')
+    handlers.append(file_handler)
 except (OSError, PermissionError) as e:
     # If we can't write to the log file, just use console logging
     print(f"Warning: Could not create log file {LOG_FILE}: {e}")
