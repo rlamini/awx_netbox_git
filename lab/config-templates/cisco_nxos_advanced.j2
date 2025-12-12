@@ -307,10 +307,16 @@ ntp server {{ server }} use-vrf management
 !
 {% if dns is defined %}
 ip domain-name {{ dns.domain | default('local') }}
+{% if services is defined and services.dns_servers is defined %}
 {% set dns_servers = services.dns_servers.get(region, []) %}
 {% for server in dns_servers %}
 ip name-server {{ server }} use-vrf management
 {% endfor %}
+{% elif dns.servers is defined %}
+{% for server in dns.servers %}
+ip name-server {{ server }} use-vrf management
+{% endfor %}
+{% endif %}
 !
 {% endif %}
 
