@@ -31,7 +31,11 @@ service tcp-keepalives-in
 service tcp-keepalives-out
 !
 no ip domain lookup
+{% if dns is defined %}
 ip domain name {{ dns.domain | default('local') }}
+{% else %}
+ip domain name local
+{% endif %}
 !
 ! ============================================================================
 ! VTP CONFIGURATION
@@ -309,9 +313,16 @@ interface Vlan{{ vlan.vid }}
 ! ============================================================================
 !
 {% if ntp is defined %}
+{% if services is defined and services.ntp_servers is defined %}
+{% set ntp_servers = services.ntp_servers.get(region, []) %}
+{% for server in ntp_servers %}
+ntp server {{ server }}
+{% endfor %}
+{% elif ntp.servers is defined %}
 {% for server in ntp.servers %}
 ntp server {{ server }}
 {% endfor %}
+{% endif %}
 !
 clock timezone {{ site.timezone | default('UTC') }} 0 0
 !
@@ -346,9 +357,16 @@ snmp-server community {{ snmp.community_ro }} RO
 snmp-server community {{ snmp.community_rw }} RW
 snmp-server location {{ device.site.name }} - {{ device.location.name }}
 snmp-server contact {{ snmp.contact }}
-{% for trap_server in snmp.trap_servers %}
-snmp-server host {{ trap_server }} version 2c {{ snmp.community_ro }}
+{% if services is defined and services.snmp_servers is defined %}
+{% set snmp_servers = services.snmp_servers.get(region, []) %}
+{% for server in snmp_servers %}
+snmp-server host {{ server }} version 2c {{ snmp.community_ro }}
 {% endfor %}
+{% elif snmp.trap_servers is defined %}
+{% for server in snmp.trap_servers %}
+snmp-server host {{ server }} version 2c {{ snmp.community_ro }}
+{% endfor %}
+{% endif %}
 snmp-server enable traps snmp linkdown linkup
 snmp-server enable traps config
 !
@@ -361,11 +379,18 @@ snmp-server enable traps config
 !
 {% if logging is defined %}
 logging buffered {{ logging.severity | default('informational') }}
-{% for syslog_server in logging.syslog_servers %}
-logging host {{ syslog_server }}
+{% if services is defined and services.syslog_servers is defined %}
+{% set syslog_servers = services.syslog_servers.get(region, []) %}
+{% for server in syslog_servers %}
+logging host {{ server }}
 {% endfor %}
-logging trap {{ logging.severity }}
-logging facility {{ logging.facility }}
+{% elif logging.syslog_servers is defined %}
+{% for server in logging.syslog_servers %}
+logging host {{ server }}
+{% endfor %}
+{% endif %}
+logging trap {{ logging.severity | default('informational') }}
+logging facility {{ logging.facility | default('local7') }}
 !
 {% endif %}
 
