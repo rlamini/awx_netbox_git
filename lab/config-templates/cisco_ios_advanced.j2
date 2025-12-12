@@ -1,0 +1,367 @@
+!
+! Cisco IOS Advanced Configuration Template (Complete)
+! Device: {{ device.name }}
+! Role: {{ device.role.name }}
+! Site: {{ device.site.name }}
+! Generated: {{ now() }}
+!
+! This template includes:
+! - Complete base router configuration
+! - Advanced security features (CoPP, infrastructure ACLs, routing security)
+! - Regional service awareness (AAA, NTP, DNS, Syslog)
+! - Enhanced management and monitoring
+!
+{% set region = device.site.name.split('-')[0] | lower %}
+
+!
+! ============================================================================
+! GLOBAL CONFIGURATION
+! ============================================================================
+!
+service timestamps debug datetime msec localtime show-timezone
+service timestamps log datetime msec localtime show-timezone
+service password-encryption
+service compress-config
+service tcp-keepalives-in
+service tcp-keepalives-out
+service sequence-numbers
+!
+hostname {{ device.name }}
+!
+boot-start-marker
+boot-end-marker
+!
+no ip domain lookup
+{% if dns is defined %}
+ip domain name {{ dns.domain | default('local') }}
+{% endif %}
+!
+ip cef
+!
+
+!
+! ============================================================================
+! SECURITY BANNERS
+! ============================================================================
+!
+banner motd ^
+******************************************
+* {{ device.name }}
+* {{ device.site.name }} - {{ device.role.name }}
+*
+* {{ global.organization | default('Organization') }}
+* Contact: {{ global.contact_email | default('netops@example.com') }}
+*
+* UNAUTHORIZED ACCESS PROHIBITED
+* All access is logged and monitored
+******************************************
+^
+!
+banner login ^
+******************************************
+AUTHORIZED ACCESS ONLY
+******************************************
+^
+!
+
+!
+! ============================================================================
+! LOOPBACK INTERFACES
+! ============================================================================
+!
+interface Loopback0
+ description LOOPBACK - ROUTER ID / BGP
+{% if device.primary_ip4 is defined %}
+ ip address {{ device.primary_ip4.address.ip }} 255.255.255.255
+{% endif %}
+ no shutdown
+!
+
+!
+! ============================================================================
+! INTERFACE CONFIGURATION
+! ============================================================================
+!
+{% for interface in device.interfaces.all() %}
+{% if not interface.mgmt_only and interface.enabled %}
+{% set iface_name = interface.name %}
+{% set iface_desc = interface.description | default('') %}
+interface {{ iface_name }}
+ description {{ iface_desc }}
+{% if interface.mode and interface.mode.value == 'access' %}
+ {# Switch port in access mode #}
+ switchport mode access
+{% if interface.untagged_vlan %}
+ switchport access vlan {{ interface.untagged_vlan.vid }}
+{% endif %}
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+{% elif interface.mode and interface.mode.value == 'tagged' %}
+ {# Trunk port configuration #}
+ switchport mode trunk
+{% if interface.untagged_vlan %}
+ switchport trunk native vlan {{ interface.untagged_vlan.vid }}
+{% endif %}
+{% if interface.tagged_vlans.count() > 0 %}
+ switchport trunk allowed vlan {{ interface.tagged_vlans.all() | map(attribute='vid') | join(',') }}
+{% endif %}
+{% elif interface.ip_addresses.count() > 0 %}
+ {# Routed interface with IP #}
+{% for ip in interface.ip_addresses.all() %}
+ ip address {{ ip.address.ip }} {{ ip.address.netmask }}
+{% endfor %}
+{% endif %}
+{% if interface.mtu %}
+ mtu {{ interface.mtu }}
+{% endif %}
+ no shutdown
+!
+{% endif %}
+{% endfor %}
+
+!
+! ============================================================================
+! NTP CONFIGURATION
+! ============================================================================
+!
+{% if ntp is defined %}
+{% if services is defined and services.ntp_servers is defined %}
+{% set ntp_servers = services.ntp_servers.get(region, []) %}
+{% for server in ntp_servers %}
+ntp server {{ server }}
+{% endfor %}
+{% elif ntp.servers is defined %}
+{% for server in ntp.servers %}
+ntp server {{ server }}
+{% endfor %}
+{% endif %}
+!
+clock timezone {{ site.timezone | default('UTC') }} 0 0
+ntp source Loopback0
+ntp update-calendar
+!
+{% endif %}
+
+!
+! ============================================================================
+! DNS CONFIGURATION
+! ============================================================================
+!
+{% if dns is defined %}
+{% if services is defined and services.dns_servers is defined %}
+{% set dns_servers = services.dns_servers.get(region, []) %}
+{% for server in dns_servers %}
+ip name-server {{ server }}
+{% endfor %}
+{% elif dns.servers is defined %}
+{% for server in dns.servers %}
+ip name-server {{ server }}
+{% endfor %}
+{% endif %}
+!
+{% endif %}
+
+!
+! ============================================================================
+! SNMP CONFIGURATION
+! ============================================================================
+!
+{% if snmp is defined %}
+snmp-server contact {{ snmp.contact }}
+snmp-server location {{ device.site.name }} - {{ device.location.name }}
+snmp-server community {{ snmp.community_ro }} RO
+snmp-server community {{ snmp.community_rw }} RW
+{% for trap_server in snmp.trap_servers %}
+snmp-server host {{ trap_server }} version 2c {{ snmp.community_ro }}
+{% endfor %}
+snmp-server enable traps snmp linkdown linkup coldstart
+snmp-server enable traps config
+snmp-server enable traps cpu threshold
+snmp-server enable traps memory bufferpeak
+!
+{% endif %}
+
+!
+! ============================================================================
+! LOGGING CONFIGURATION
+! ============================================================================
+!
+{% if logging is defined %}
+logging buffered {{ logging.buffer_size | default(16384) }} {{ logging.severity | default('informational') }}
+logging console {{ logging.console_severity | default('warnings') }}
+{% if services is defined and services.syslog_servers is defined %}
+{% set syslog_servers = services.syslog_servers.get(region, []) %}
+{% for server in syslog_servers %}
+logging host {{ server }}
+{% endfor %}
+{% elif logging.syslog_servers is defined %}
+{% for server in logging.syslog_servers %}
+logging host {{ server }}
+{% endfor %}
+{% endif %}
+logging trap {{ logging.severity | default('informational') }}
+logging facility {{ logging.facility | default('local7') }}
+logging source-interface Loopback0
+!
+{% endif %}
+
+!
+! ============================================================================
+! AAA/TACACS+ CONFIGURATION
+! ============================================================================
+!
+{% if aaa is defined and aaa.tacacs is defined and aaa.tacacs.servers is defined %}
+aaa new-model
+!
+! TACACS+ Servers for Management Access
+{% set tacacs_servers = aaa.tacacs.servers.get(region, []) %}
+{% if tacacs_servers %}
+{% for server in tacacs_servers %}
+tacacs server TACACS-{{ loop.index }}
+ address ipv4 {{ server }}
+ key {{ aaa.tacacs.key }}
+ timeout {{ aaa.tacacs.timeout }}
+!
+{% endfor %}
+!
+aaa group server tacacs+ TACACS-GROUP
+{% for server in tacacs_servers %}
+ server name TACACS-{{ loop.index }}
+{% endfor %}
+!
+aaa authentication login default group TACACS-GROUP local
+aaa authentication enable default group TACACS-GROUP enable
+aaa authorization exec default group TACACS-GROUP local
+aaa authorization commands 15 default group TACACS-GROUP local
+aaa accounting exec default start-stop group TACACS-GROUP
+aaa accounting commands 15 default start-stop group TACACS-GROUP
+!
+{% endif %}
+{% endif %}
+
+!
+! ============================================================================
+! SSH & MANAGEMENT ACCESS
+! ============================================================================
+!
+crypto key generate rsa modulus 2048
+ip ssh version 2
+ip ssh time-out 60
+ip ssh authentication-retries 3
+!
+line con 0
+ exec-timeout 30 0
+ logging synchronous
+ transport output none
+!
+line aux 0
+ exec-timeout 30 0
+ no exec
+!
+line vty 0 4
+ exec-timeout 30 0
+ logging synchronous
+ transport input ssh
+ transport output ssh
+!
+line vty 5 15
+ exec-timeout 30 0
+ logging synchronous
+ transport input ssh
+ transport output ssh
+!
+
+!
+! ============================================================================
+! CONTROL PLANE PROTECTION
+! ============================================================================
+!
+{% if security is defined and security.control_plane is defined and security.control_plane.enabled %}
+!
+! Control Plane Policing (CoPP)
+access-list 100 remark ICMP traffic
+access-list 100 permit icmp any any
+!
+access-list 101 remark Management protocols
+access-list 101 permit tcp any any eq 22
+access-list 101 permit udp any any eq snmp
+!
+access-list 102 remark Routing protocols
+access-list 102 permit ospf any any
+access-list 102 permit tcp any any eq bgp
+access-list 102 permit tcp any eq bgp any
+!
+class-map match-any ICMP-CLASS
+ match access-group 100
+!
+class-map match-any MGMT-CLASS
+ match access-group 101
+!
+class-map match-any ROUTING-CLASS
+ match access-group 102
+!
+policy-map CONTROL-PLANE-POLICY
+ class ROUTING-CLASS
+  police 2000000 conform-action transmit exceed-action drop
+ class MGMT-CLASS
+  police 1000000 conform-action transmit exceed-action drop
+ class ICMP-CLASS
+  police 500000 conform-action transmit exceed-action drop
+!
+control-plane
+ service-policy input CONTROL-PLANE-POLICY
+!
+{% endif %}
+
+!
+! ============================================================================
+! INFRASTRUCTURE ACCESS LISTS (if defined)
+! ============================================================================
+!
+{% if security is defined and security.infrastructure_acl is defined and security.infrastructure_acl.enabled %}
+!
+! Infrastructure Protection ACL
+ip access-list extended INFRASTRUCTURE-ACL
+{% if security.infrastructure_acl.management_networks is defined %}
+{% for network in security.infrastructure_acl.management_networks %}
+ permit tcp {{ network }} any eq 22
+ permit udp {{ network }} any eq snmp
+{% endfor %}
+{% endif %}
+ deny   ip any any log
+!
+! Apply to management interface if exists
+{% for interface in device.interfaces.all() %}
+{% if interface.mgmt_only %}
+interface {{ interface.name }}
+ ip access-group INFRASTRUCTURE-ACL in
+{% endif %}
+{% endfor %}
+!
+{% endif %}
+
+!
+! ============================================================================
+! NETFLOW CONFIGURATION (if defined)
+! ============================================================================
+!
+{% if services is defined and services.netflow is defined and services.netflow.enabled %}
+!
+! NetFlow Export Configuration
+{% set netflow_collectors = services.netflow.collectors.get(region, []) %}
+{% if netflow_collectors %}
+{% for collector in netflow_collectors %}
+ip flow-export destination {{ collector }} {{ services.netflow.port | default(2055) }}
+{% endfor %}
+ip flow-export version {{ services.netflow.version | default(9) }}
+ip flow-export source Loopback0
+!
+{% endif %}
+{% endif %}
+
+!
+! ============================================================================
+! END OF CONFIGURATION
+! ============================================================================
+!
+end

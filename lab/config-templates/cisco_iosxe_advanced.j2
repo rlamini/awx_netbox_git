@@ -94,8 +94,10 @@ errdisable recovery interval {{ security.port_security.recovery.interval }}
 ! 802.1X Global Configuration
 aaa new-model
 !
+{% if aaa is defined and aaa.radius is defined and aaa.radius.dot1x is defined %}
 ! RADIUS Configuration for 802.1X
 {% set radius_servers = aaa.radius.dot1x.get(region, aaa.radius.dot1x.get("emea", [])) %}
+{% if radius_servers %}
 {% for server in radius_servers %}
 radius server DOT1X-{{ loop.index }}
  address ipv4 {{ server }} auth-port 1812 acct-port 1813
@@ -113,6 +115,8 @@ aaa group server radius DOT1X-GROUP
 aaa authentication dot1x default group DOT1X-GROUP
 aaa authorization network default group DOT1X-GROUP
 !
+{% endif %}
+{% endif %}
 ! 802.1X System Configuration
 dot1x system-auth-control
 !

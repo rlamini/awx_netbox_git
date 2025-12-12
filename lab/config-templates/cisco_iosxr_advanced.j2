@@ -1,0 +1,479 @@
+!
+! Cisco IOS-XR Advanced Configuration Template (Complete)
+! Device: {{ device.name }}
+! Role: {{ device.role.name }}
+! Site: {{ device.site.name }}
+! Generated: {{ now() }}
+!
+! This template includes:
+! - Complete base router configuration
+! - Advanced security features (MPP, infrastructure ACLs, routing security)
+! - Regional service awareness (AAA, NTP, DNS, Syslog)
+! - Enhanced management and monitoring (NetFlow, SNMP)
+!
+{% set region = device.site.name.split('-')[0] | lower %}
+
+!
+! ============================================================================
+! GLOBAL CONFIGURATION
+! ============================================================================
+!
+hostname {{ device.name }}
+!
+clock timezone {{ site.timezone | default('UTC') }} 0
+!
+{% if dns is defined %}
+domain name {{ dns.domain | default('local') }}
+{% endif %}
+!
+service timestamps log datetime msec show-timezone
+service timestamps debug datetime msec show-timezone
+!
+username admin
+ group root-lr
+ group cisco-support
+ secret {{ global.admin_password | default('ADMIN_SECRET') }}
+!
+
+!
+! ============================================================================
+! VRF CONFIGURATION
+! ============================================================================
+!
+vrf management
+ address-family ipv4 unicast
+ !
+!
+
+!
+! ============================================================================
+! LOOPBACK INTERFACES
+! ============================================================================
+!
+interface Loopback0
+ description LOOPBACK - ROUTER ID / BGP
+{% if device.primary_ip4 is defined %}
+ ipv4 address {{ device.primary_ip4.address }}
+{% endif %}
+ no shutdown
+!
+
+!
+! ============================================================================
+! MANAGEMENT INTERFACE
+! ============================================================================
+!
+interface MgmtEth0/RP0/CPU0/0
+ description OOB MANAGEMENT INTERFACE
+ vrf management
+{% if device.primary_ip4 is defined %}
+ ipv4 address {{ device.primary_ip4.address }}
+{% endif %}
+ no shutdown
+!
+
+!
+! ============================================================================
+! DATA INTERFACES
+! ============================================================================
+!
+{% for interface in device.interfaces.all() %}
+{% if not interface.mgmt_only and interface.enabled %}
+{% set iface_name = interface.name %}
+{% set iface_desc = interface.description | default('') %}
+interface {{ iface_name }}
+ description {{ iface_desc }}
+{% if interface.ip_addresses.count() > 0 %}
+{% for ip in interface.ip_addresses.all() %}
+ ipv4 address {{ ip.address.ip }} {{ ip.address.netmask }}
+{% endfor %}
+{% endif %}
+{% if interface.ipv6_addresses.count() > 0 %}
+{% for ip in interface.ipv6_addresses.all() %}
+ ipv6 address {{ ip.address }}
+{% endfor %}
+{% endif %}
+{% if interface.mtu %}
+ mtu {{ interface.mtu }}
+{% endif %}
+ no shutdown
+!
+{% endif %}
+{% endfor %}
+
+!
+! ============================================================================
+! MANAGEMENT PLANE PROTECTION (MPP)
+! ============================================================================
+!
+{% if security is defined and security.mpp is defined and security.mpp.enabled %}
+!
+! Control Plane Management Plane Protection
+control-plane
+ management-plane
+  inband
+{% if security.mpp.allowed_protocols is defined %}
+{% for protocol in security.mpp.allowed_protocols %}
+   interface all
+    allow {{ protocol }}
+{% endfor %}
+{% else %}
+   interface all
+    allow SSH
+    allow SNMP
+    allow NETCONF
+{% endif %}
+  !
+ !
+!
+{% endif %}
+
+!
+! ============================================================================
+! NTP CONFIGURATION
+! ============================================================================
+!
+{% if ntp is defined %}
+ntp
+{% if services is defined and services.ntp_servers is defined %}
+{% set ntp_servers = services.ntp_servers.get(region, []) %}
+{% for server in ntp_servers %}
+ server {{ server }}
+{% endfor %}
+{% elif ntp.servers is defined %}
+{% for server in ntp.servers %}
+ server {{ server }}
+{% endfor %}
+{% endif %}
+ source Loopback0
+ update-calendar
+!
+{% endif %}
+
+!
+! ============================================================================
+! DNS CONFIGURATION
+! ============================================================================
+!
+{% if dns is defined %}
+domain vrf default name {{ dns.domain | default('local') }}
+{% if services is defined and services.dns_servers is defined %}
+{% set dns_servers = services.dns_servers.get(region, []) %}
+{% for server in dns_servers %}
+domain vrf default name-server {{ server }}
+{% endfor %}
+{% elif dns.servers is defined %}
+{% for server in dns.servers %}
+domain vrf default name-server {{ server }}
+{% endfor %}
+{% endif %}
+!
+domain vrf management name {{ dns.domain | default('local') }}
+{% if services is defined and services.dns_servers is defined %}
+{% set dns_servers = services.dns_servers.get(region, []) %}
+{% for server in dns_servers %}
+domain vrf management name-server {{ server }}
+{% endfor %}
+{% elif dns.servers is defined %}
+{% for server in dns.servers %}
+domain vrf management name-server {{ server }}
+{% endfor %}
+{% endif %}
+!
+{% endif %}
+
+!
+! ============================================================================
+! SNMP CONFIGURATION
+! ============================================================================
+!
+{% if snmp is defined %}
+snmp-server community {{ snmp.community_ro }} RO
+snmp-server community {{ snmp.community_rw }} RW
+snmp-server location {{ device.site.name }} - {{ device.location.name }}
+snmp-server contact {{ snmp.contact }}
+{% if services is defined and services.snmp_servers is defined %}
+{% set snmp_servers = services.snmp_servers.get(region, []) %}
+{% for server in snmp_servers %}
+snmp-server host {{ server }} traps version 2c {{ snmp.community_ro }}
+{% endfor %}
+{% elif snmp.trap_servers is defined %}
+{% for server in snmp.trap_servers %}
+snmp-server host {{ server }} traps version 2c {{ snmp.community_ro }}
+{% endfor %}
+{% endif %}
+snmp-server traps config
+snmp-server traps entity
+snmp-server traps ospf state-change
+snmp-server traps bgp
+snmp-server traps mpls ldp up down
+snmp-server traps mpls traffic-eng up down
+!
+{% endif %}
+
+!
+! ============================================================================
+! LOGGING CONFIGURATION
+! ============================================================================
+!
+{% if logging is defined %}
+logging console {{ logging.console_severity | default('warnings') }}
+logging monitor {{ logging.severity | default('informational') }}
+logging buffered {{ logging.buffer_size | default(16384) }}
+logging facility {{ logging.facility | default('local7') }}
+logging source-interface Loopback0
+{% if services is defined and services.syslog_servers is defined %}
+{% set syslog_servers = services.syslog_servers.get(region, []) %}
+{% for server in syslog_servers %}
+logging {{ server }} vrf management severity {{ logging.severity | default('informational') }}
+{% endfor %}
+{% elif logging.syslog_servers is defined %}
+{% for server in logging.syslog_servers %}
+logging {{ server }} vrf management severity {{ logging.severity | default('informational') }}
+{% endfor %}
+{% endif %}
+!
+{% endif %}
+
+!
+! ============================================================================
+! AAA/TACACS+ CONFIGURATION
+! ============================================================================
+!
+{% if aaa is defined and aaa.tacacs is defined and aaa.tacacs.servers is defined %}
+! TACACS+ Servers for Management Access
+{% set tacacs_servers = aaa.tacacs.servers.get(region, []) %}
+{% if tacacs_servers %}
+{% for server in tacacs_servers %}
+tacacs-server host {{ server }} port 49
+ address ipv4 {{ server }}
+ key 7 {{ aaa.tacacs.key }}
+ timeout {{ aaa.tacacs.timeout | default(5) }}
+!
+{% endfor %}
+!
+aaa group server tacacs+ TACACS-GROUP
+{% for server in tacacs_servers %}
+ server {{ server }}
+{% endfor %}
+ vrf management
+!
+aaa authentication login default group TACACS-GROUP local
+aaa authorization exec default group TACACS-GROUP local
+aaa authorization commands default group TACACS-GROUP local
+aaa accounting exec default start-stop group TACACS-GROUP
+aaa accounting commands default start-stop group TACACS-GROUP
+!
+{% endif %}
+{% endif %}
+
+!
+! ============================================================================
+! SSH & MANAGEMENT ACCESS
+! ============================================================================
+!
+ssh server v2
+ssh server vrf management
+ssh server session-limit 10
+ssh timeout 60
+!
+{% if security is defined and security.netconf is defined and security.netconf.enabled %}
+netconf-yang agent
+ ssh
+!
+ssh server netconf vrf management
+!
+{% endif %}
+!
+line console
+ exec-timeout 30 0
+ session-timeout 30
+ transport input all
+!
+line default
+ exec-timeout 30 0
+ session-timeout 30
+ transport input ssh
+ transport output ssh
+!
+
+!
+! ============================================================================
+! INFRASTRUCTURE ACCESS LISTS (if defined)
+! ============================================================================
+!
+{% if security is defined and security.infrastructure_acl is defined and security.infrastructure_acl.enabled %}
+!
+! Infrastructure Protection ACL
+ipv4 access-list INFRASTRUCTURE-ACL
+{% if security.infrastructure_acl.management_networks is defined %}
+{% for network in security.infrastructure_acl.management_networks %}
+ 10 permit tcp {{ network }} any eq ssh
+ 20 permit udp {{ network }} any eq snmp
+{% endfor %}
+{% endif %}
+ 1000 deny ipv4 any any log
+!
+! Apply to management interface
+interface MgmtEth0/RP0/CPU0/0
+ ipv4 access-group INFRASTRUCTURE-ACL ingress
+!
+{% endif %}
+
+!
+! ============================================================================
+! NETFLOW/IPFIX CONFIGURATION (if defined)
+! ============================================================================
+!
+{% if services is defined and services.netflow is defined and services.netflow.enabled %}
+!
+! NetFlow Export Configuration (IPFIX for IOS-XR)
+flow exporter-map NETFLOW-EXPORTER
+{% set netflow_collectors = services.netflow.collectors.get(region, []) %}
+{% if netflow_collectors %}
+{% for collector in netflow_collectors %}
+ destination {{ collector }}
+{% endfor %}
+ source Loopback0
+ transport udp {{ services.netflow.port | default(2055) }}
+ version v9
+  template timeout {{ services.netflow.template_timeout | default(30) }}
+ !
+!
+flow monitor-map NETFLOW-MONITOR
+ record ipv4
+ exporter NETFLOW-EXPORTER
+ cache entries {{ services.netflow.cache_entries | default(65535) }}
+ cache timeout active {{ services.netflow.active_timeout | default(60) }}
+ cache timeout inactive {{ services.netflow.inactive_timeout | default(15) }}
+!
+sampler-map NETFLOW-SAMPLER
+ random 1 out-of {{ services.netflow.sampling_rate | default(1000) }}
+!
+{% endif %}
+{% endif %}
+
+!
+! ============================================================================
+! ROUTING PROTOCOLS (if defined)
+! ============================================================================
+!
+{% if routing is defined %}
+{% if routing.ospf is defined %}
+!
+! OSPF Configuration
+router ospf {{ routing.ospf.process_id | default(1) }}
+{% if device.primary_ip4 is defined %}
+ router-id {{ device.primary_ip4.address.ip }}
+{% endif %}
+ log adjacency changes detail
+{% if routing.ospf.passive_interfaces is defined %}
+{% for interface in routing.ospf.passive_interfaces %}
+ passive-interface {{ interface }}
+{% endfor %}
+{% endif %}
+ area {{ routing.ospf.area | default('0.0.0.0') }}
+{% if routing.ospf.authentication is defined and routing.ospf.authentication.enabled %}
+  authentication message-digest
+{% endif %}
+ !
+!
+{% endif %}
+{% if routing.bgp is defined %}
+!
+! BGP Configuration
+router bgp {{ routing.bgp.as_number | default(65001) }}
+ bgp router-id {{ device.primary_ip4.address.ip | default('1.1.1.1') }}
+ bgp log neighbor changes detail
+ bgp bestpath as-path multipath-relax
+ address-family ipv4 unicast
+  network 0.0.0.0/0
+ !
+{% if routing.bgp.neighbors is defined %}
+{% for neighbor in routing.bgp.neighbors %}
+ neighbor {{ neighbor.ip }}
+  remote-as {{ neighbor.remote_as }}
+  description {{ neighbor.description | default('BGP Peer') }}
+{% if neighbor.password is defined %}
+  password encrypted {{ neighbor.password }}
+{% endif %}
+  address-family ipv4 unicast
+   route-policy {{ neighbor.route_policy_in | default('ACCEPT-ALL') }} in
+   route-policy {{ neighbor.route_policy_out | default('ACCEPT-ALL') }} out
+  !
+ !
+{% endfor %}
+{% endif %}
+!
+{% endif %}
+{% endif %}
+
+!
+! ============================================================================
+! QoS POLICIES (if defined)
+! ============================================================================
+!
+{% if services is defined and services.qos is defined and services.qos.enabled %}
+!
+! QoS Classification and Marking
+class-map match-any VOICE
+ match dscp ef
+!
+class-map match-any VIDEO
+ match dscp af41
+!
+class-map match-any CRITICAL-DATA
+ match dscp af31
+!
+policy-map CORE-QOS-POLICY
+ class VOICE
+  priority level 1
+  queue-limit 100 us
+ !
+ class VIDEO
+  bandwidth percent 30
+  queue-limit 200 us
+ !
+ class CRITICAL-DATA
+  bandwidth percent 20
+  queue-limit 300 us
+ !
+ class class-default
+  bandwidth percent 40
+  queue-limit 500 us
+ !
+!
+{% endif %}
+
+!
+! ============================================================================
+! BANNER CONFIGURATION
+! ============================================================================
+!
+banner motd ^
+******************************************
+* {{ device.name }}
+* {{ device.site.name }} - {{ device.role.name }}
+*
+* {{ global.organization | default('Organization') }}
+* Contact: {{ global.contact_email | default('netops@example.com') }}
+*
+* UNAUTHORIZED ACCESS PROHIBITED
+* All access is logged and monitored
+******************************************
+^
+!
+banner login ^
+******************************************
+AUTHORIZED ACCESS ONLY
+******************************************
+^
+!
+
+!
+! ============================================================================
+! END OF CONFIGURATION
+! ============================================================================
+!
+commit
+end

@@ -98,8 +98,10 @@ ip arp inspection log-buffer entries {{ security.arp_inspection.log_buffer.entri
 ! 802.1X Global Configuration
 aaa authentication dot1x default group {{ security.dot1x.radius.group_name | default('DOT1X-GROUP') }}
 !
+{% if aaa is defined and aaa.radius is defined and aaa.radius.dot1x is defined %}
 ! RADIUS Server Configuration
 {% set radius_servers = aaa.radius.dot1x.get(region, aaa.radius.dot1x.get("emea", [])) %}
+{% if radius_servers %}
 {% for server in radius_servers %}
 radius-server host {{ server }} key 7 {{ security.dot1x.radius.key }}
   authentication
@@ -114,6 +116,8 @@ aaa group server radius DOT1X-GROUP
 {% endfor %}
   use-vrf management
 !
+{% endif %}
+{% endif %}
 dot1x system-auth-control
 !
 {% endif %}
