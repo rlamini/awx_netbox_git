@@ -1,7 +1,7 @@
 !
 ! Cisco IOS-XE Advanced Configuration Template (Complete)
 ! Device: {{ device.name }}
-! Role: {{ device.device_role.name }}
+! Role: {{ device.role.name }}
 ! Site: {{ device.site.name }}
 ! Generated: {{ now() }}
 !
@@ -427,7 +427,7 @@ line vty 0 15
 banner motd ^
 ******************************************
 * {{ device.name }}
-* {{ device.site.name }} - {{ device.device_role.name }}
+* {{ device.site.name }} - {{ device.role.name }}
 *
 * {{ config_context.global.organization | default('Organization') }}
 * Contact: {{ config_context.global.contact_email | default('netops@example.com') }}
