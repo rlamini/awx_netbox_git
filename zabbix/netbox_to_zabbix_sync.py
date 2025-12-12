@@ -29,6 +29,8 @@ from pynetbox import api as netbox_api
 from pyzabbix import ZabbixAPI
 import logging
 from datetime import datetime
+import urllib3
+import requests
 
 # ============================================
 # LOAD ENVIRONMENT VARIABLES
@@ -83,6 +85,29 @@ MONITORING_DISABLED_VALUE = "no"           # Value to disable monitoring
 LOG_FILE = os.getenv('LOG_FILE', '/var/log/netbox-zabbix-sync.log')
 LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
 
+# Network Configuration
+VERIFY_SSL = os.getenv('VERIFY_SSL', 'false').lower() in ('true', '1', 'yes')
+DISABLE_PROXY = os.getenv('DISABLE_PROXY', 'true').lower() in ('true', '1', 'yes')
+
+# ============================================
+# SSL AND PROXY CONFIGURATION
+# ============================================
+
+# Disable SSL warnings if SSL verification is disabled
+if not VERIFY_SSL:
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    print("⚠️  SSL verification disabled")
+
+# Disable proxy for internal network communication
+if DISABLE_PROXY:
+    os.environ['NO_PROXY'] = '*'
+    os.environ['no_proxy'] = '*'
+    # Clear any existing proxy settings
+    for proxy_var in ['HTTP_PROXY', 'HTTPS_PROXY', 'http_proxy', 'https_proxy']:
+        if proxy_var in os.environ:
+            del os.environ[proxy_var]
+    print("🔧 Proxy disabled for all connections")
+
 # ============================================
 # LOGGING SETUP
 # ============================================
@@ -132,7 +157,15 @@ class NetBoxZabbixSync:
 
             # Connect to NetBox
             logger.info(f"Connecting to NetBox at {NETBOX_URL}...")
+
+            # Create custom session for NetBox with SSL and proxy settings
+            session = requests.Session()
+            session.verify = VERIFY_SSL
+            if DISABLE_PROXY:
+                session.proxies = {'http': None, 'https': None}
+
             self.netbox = netbox_api(NETBOX_URL, token=NETBOX_TOKEN)
+            self.netbox.http_session = session
 
             # Test NetBox connection
             _ = self.netbox.status()
@@ -141,6 +174,11 @@ class NetBoxZabbixSync:
             # Connect to Zabbix
             logger.info(f"Connecting to Zabbix at {ZABBIX_URL}...")
             self.zabbix = ZabbixAPI(ZABBIX_URL)
+
+            # Configure Zabbix session with SSL and proxy settings
+            self.zabbix.session.verify = VERIFY_SSL
+            if DISABLE_PROXY:
+                self.zabbix.session.proxies = {'http': None, 'https': None}
             self.zabbix.login(ZABBIX_USER, ZABBIX_PASSWORD)
             logger.info("✅ Zabbix connection successful")
 
